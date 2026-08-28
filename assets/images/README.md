@@ -1,0 +1,1 @@
+Replace the visible photo placeholders with your real Faster work photos. Suggested filenames: hero.jpg, intervention-1.jpg, intervention-2.jpg, towing.jpg, transport.jpg, forklift.jpg, international.jpg. Do not use stock/AI photos for the final site.
