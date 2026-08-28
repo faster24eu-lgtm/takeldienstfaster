@@ -1,102 +1,1904 @@
 <!doctype html>
 <html lang="nl">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Takeldienst Faster | 24/7 Takeldienst Antwerpen &amp; Vlaanderen</title>
-  <meta name="description" content="Takeldienst Faster: 24/7 bereikbaarheid, pechverhelping, takelen, autotransport, machines en internationale repatriëring vanuit Antwerpen.">
-  <meta name="theme-color" content="#121212">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Takeldienst Faster | Takeldienst Antwerpen & Vlaanderen</title>
+
+  <meta
+    name="description"
+    content="Takeldienst Faster vanuit Antwerpen. Pechverhelping, takelen, autotransport, heftrucks, machines en internationale repatriëring. Duidelijke prijs vooraf."
+  >
+
+  <meta name="theme-color" content="#111111">
   <link rel="canonical" href="https://takeldienstfaster.be/">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script defer src="assets/js/site.js"></script>
+
+  <style>
+    :root {
+      --black: #111111;
+      --black-2: #181818;
+      --black-3: #222222;
+      --white: #ffffff;
+      --paper: #f4f2ec;
+      --grey: #6c6a63;
+      --line: #d9d6cd;
+      --yellow: #f6c500;
+      --yellow-dark: #d8aa00;
+      --whatsapp: #25D366;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--black);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(17, 17, 17, 0.98);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .nav-wrap {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--white);
+      flex-shrink: 0;
+    }
+
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      background: var(--yellow);
+      color: var(--black);
+      border: 2px solid #000;
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;
+    }
+
+    .brand-text strong {
+      font-size: 21px;
+      letter-spacing: .06em;
+    }
+
+    .brand-text small {
+      margin-top: 5px;
+      color: #b9b9b9;
+      font-size: 9px;
+      letter-spacing: .15em;
+    }
+
+    .main-nav {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
+
+    .main-nav a {
+      color: #d5d5d5;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .main-nav a:hover {
+      color: #ffffff;
+    }
+
+    .nav-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 16px;
+      background: var(--whatsapp);
+      color: #ffffff;
+      font-weight: 900;
+      border: 0;
+      white-space: nowrap;
+    }
+
+    .wa-icon {
+      width: 20px;
+      height: 20px;
+      flex: 0 0 20px;
+    }
+
+    /* =========================
+       BUTTONS
+    ========================== */
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 50px;
+      padding: 13px 20px;
+      border: 2px solid transparent;
+      background: var(--yellow);
+      color: var(--black);
+      font-weight: 900;
+      cursor: pointer;
+      transition: .18s ease;
+    }
+
+    .button:hover {
+      background: #ffd71f;
+      transform: translateY(-1px);
+    }
+
+    .button-whatsapp {
+      background: var(--whatsapp);
+      color: #ffffff;
+    }
+
+    .button-whatsapp:hover {
+      background: #1fba59;
+    }
+
+    .button-dark {
+      background: var(--black);
+      color: #ffffff;
+    }
+
+    .button-outline {
+      border-color: rgba(255,255,255,.35);
+      background: transparent;
+      color: #ffffff;
+    }
+
+    .button-outline:hover {
+      background: #ffffff;
+      color: var(--black);
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      background: var(--black);
+      color: #ffffff;
+      padding: 76px 0 0;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: 52px;
+      align-items: stretch;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: #85837c;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .hero .eyebrow {
+      color: var(--yellow);
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      max-width: 680px;
+      margin: 0 0 22px;
+      font-size: clamp(48px, 6vw, 80px);
+      line-height: .98;
+      letter-spacing: -.045em;
+      font-weight: 900;
+    }
+
+    h1 span {
+      color: var(--yellow);
+    }
+
+    .hero-lead {
+      max-width: 660px;
+      margin: 0 0 28px;
+      color: #d0d0d0;
+      font-size: 20px;
+      line-height: 1.55;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero-proof {
+      margin-top: 42px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid rgba(255,255,255,.12);
+    }
+
+    .hero-proof div {
+      padding: 18px 18px 22px 0;
+      border-right: 1px solid rgba(255,255,255,.08);
+    }
+
+    .hero-proof div:last-child {
+      border-right: 0;
+    }
+
+    .hero-proof strong {
+      display: block;
+      font-size: 19px;
+    }
+
+    .hero-proof span {
+      display: block;
+      margin-top: 4px;
+      color: #919191;
+      font-size: 12px;
+    }
+
+    .hero-media {
+      min-height: 560px;
+      position: relative;
+      border: 1px solid #2c2c2c;
+      background:
+        radial-gradient(circle at 60% 25%, rgba(255,255,255,.09), transparent 26%),
+        linear-gradient(135deg, #2a2a28, #0d0d0d 68%);
+      overflow: hidden;
+    }
+
+    .hero-media-label {
+      position: absolute;
+      left: 26px;
+      bottom: 22px;
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .08em;
+    }
+
+    .hero-media-placeholder {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      color: #777;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       EMAIL FORM
+    ========================== */
+
+    .contact-strip {
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+      padding: 44px 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 44px;
+      align-items: start;
+    }
+
+    .contact-copy h2 {
+      margin: 0 0 14px;
+      font-size: clamp(34px, 4vw, 52px);
+      line-height: 1;
+      letter-spacing: -.04em;
+    }
+
+    .contact-copy p {
+      max-width: 540px;
+      color: var(--grey);
+      margin: 0;
+    }
+
+    .contact-copy .direct-wa {
+      margin-top: 22px;
+    }
+
+    .email-form {
+      padding: 28px;
+      border: 1px solid var(--line);
+      background: #fafaf7;
+    }
+
+    .email-form h3 {
+      margin: 0 0 5px;
+      font-size: 24px;
+    }
+
+    .email-form > p {
+      margin: 0 0 20px;
+      color: var(--grey);
+      font-size: 14px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .field {
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    .field span {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      border: 1px solid #d2d0c7;
+      background: #ffffff;
+      padding: 13px 14px;
+      border-radius: 0;
+      color: var(--black);
+    }
+
+    .field textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .form-submit {
+      width: 100%;
+      border: 0;
+    }
+
+    .form-note {
+      margin: 10px 0 0;
+      font-size: 11px;
+      color: #85837c;
+    }
+
+    /* =========================
+       TRUST BAR
+    ========================== */
+
+    .trustbar {
+      background: #f0eee8;
+      border-bottom: 1px solid var(--line);
+      padding: 20px 0;
+    }
+
+    .trust-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .google-mark {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #d3d0c5;
+      background: #ffffff;
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      font-weight: 900;
+      color: #4285F4;
+    }
+
+    .trust-copy strong {
+      display: block;
+      font-size: 14px;
+    }
+
+    .trust-copy span {
+      color: var(--grey);
+      font-size: 12px;
+    }
+
+    .stars {
+      color: #e3a900;
+      font-size: 18px;
+      letter-spacing: .08em;
+      font-weight: 900;
+    }
+
+    /* =========================
+       SECTIONS
+    ========================== */
+
+    .section {
+      padding: 94px 0;
+    }
+
+    .section-head {
+      margin-bottom: 38px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 30px;
+    }
+
+    .section-head h2 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(34px, 4vw, 54px);
+      line-height: 1.02;
+      letter-spacing: -.045em;
+    }
+
+    .section-head p {
+      max-width: 450px;
+      margin: 0;
+      color: var(--grey);
+    }
+
+    .light-section {
+      background: #ffffff;
+    }
+
+    .grey-section {
+      background: #ebe9e2;
+    }
+
+    .dark-section {
+      background: var(--black);
+      color: #ffffff;
+    }
+
+    .dark-section .section-head p {
+      color: #a8a8a8;
+    }
+
+    /* =========================
+       HOW IT WORKS
+    ========================== */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .process-card {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      padding: 30px;
+    }
+
+    .step-number {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 20px;
+      background: var(--yellow);
+      color: var(--black);
+      font-weight: 900;
+    }
+
+    .process-card h3 {
+      margin: 0 0 10px;
+      font-size: 23px;
+    }
+
+    .process-card p {
+      margin: 0;
+      color: var(--grey);
+    }
+
+    /* =========================
+       SERVICES
+    ========================== */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 28px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+      position: relative;
+      transition: .18s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-3px);
+      border-color: #bebaa9;
+    }
+
+    .service-number {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      background: var(--yellow);
+      color: var(--black);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .service-card h3 {
+      margin: 0 0 9px;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+
+    .service-card p {
+      margin: 0;
+      color: var(--grey);
+    }
+
+    /* =========================
+       SAFETY
+    ========================== */
+
+    .safety-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 42px;
+      align-items: stretch;
+    }
+
+    .safety-copy h2 {
+      max-width: 680px;
+      margin: 0 0 20px;
+      font-size: clamp(38px, 4.5vw, 62px);
+      line-height: .98;
+      letter-spacing: -.045em;
+    }
+
+    .safety-copy p {
+      max-width: 700px;
+      color: #c9c9c9;
+    }
+
+    .safety-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 28px 0 0;
+    }
+
+    .safety-item {
+      padding: 16px;
+      border: 1px solid rgba(255,255,255,.1);
+      background: #181818;
+    }
+
+    .safety-item strong {
+      display: block;
+      color: var(--yellow);
+      font-size: 12px;
+      letter-spacing: .05em;
+      margin-bottom: 3px;
+    }
+
+    .safety-item span {
+      color: #efefef;
+      font-size: 14px;
+    }
+
+    .quote-box {
+      background: var(--yellow);
+      color: var(--black);
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .quote-box strong {
+      font-size: 32px;
+      line-height: 1.05;
+    }
+
+    .quote-box p {
+      color: #3f3600;
+      margin: 15px 0 0;
+    }
+
+    /* =========================
+       PHOTO SECTION
+    ========================== */
+
+    .photo-layout {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 14px;
+    }
+
+    .photo-large,
+    .photo-small {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 65% 25%, rgba(255,255,255,.10), transparent 25%),
+        linear-gradient(145deg, #282826, #111111 70%);
+      border: 1px solid #2d2d2d;
+      color: #ffffff;
+    }
+
+    .photo-large {
+      min-height: 560px;
+    }
+
+    .photo-small {
+      min-height: 270px;
+    }
+
+    .photo-side {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .photo-label {
+      position: absolute;
+      left: 18px;
+      bottom: 16px;
+    }
+
+    .photo-label strong {
+      display: block;
+      font-size: 16px;
+    }
+
+    .photo-label span {
+      color: #b5b5b5;
+      font-size: 12px;
+    }
+
+    /* =========================
+       REVIEWS
+    ========================== */
+
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .review-card {
+      background: #1b1b1b;
+      border: 1px solid #303030;
+      padding: 26px;
+    }
+
+    .review-card p {
+      margin: 14px 0 0;
+      color: #dddddd;
+      font-size: 16px;
+    }
+
+    .review-name {
+      margin-top: 18px;
+      color: #ffffff;
+      font-weight: 900;
+    }
+
+    .review-source {
+      margin-top: 3px;
+      color: #888888;
+      font-size: 12px;
+    }
+
+    /* =========================
+       AREA
+    ========================== */
+
+    .area-grid {
+      display: grid;
+      grid-template-columns: 1fr .9fr;
+      gap: 20px;
+    }
+
+    .area-card {
+      padding: 32px;
+      background: var(--black);
+      color: #ffffff;
+      border: 1px solid #242424;
+    }
+
+    .area-card h3 {
+      margin: 0 0 10px;
+      font-size: 30px;
+    }
+
+    .area-card p {
+      margin: 0 0 22px;
+      color: #bdbdbd;
+    }
+
+    .area-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 26px;
+    }
+
+    .area-link {
+      padding: 9px 11px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+
+    .about-card {
+      padding: 30px;
+      border: 1px solid var(--line);
+      background: #ffffff;
+    }
+
+    .about-card strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .about-card p {
+      margin: 0;
+      color: var(--grey);
+    }
+
+    /* =========================
+       FAQ
+    ========================== */
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .faq-grid details {
+      border: 1px solid var(--line);
+      background: #ffffff;
+      padding: 18px 20px;
+    }
+
+    .faq-grid summary {
+      cursor: pointer;
+      font-weight: 900;
+      list-style: none;
+    }
+
+    .faq-grid summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-answer {
+      padding-top: 11px;
+      color: var(--grey);
+      font-size: 15px;
+    }
+
+    /* =========================
+       CTA
+    ========================== */
+
+    .cta-band {
+      padding: 44px 0;
+      background: var(--yellow);
+    }
+
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .cta-inner h2 {
+      margin: 0;
+      font-size: clamp(34px, 4vw, 52px);
+      line-height: 1;
+      letter-spacing: -.04em;
+    }
+
+    .cta-inner p {
+      margin: 8px 0 0;
+      color: #5a4b00;
+    }
+
+    .cta-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    .site-footer {
+      background: #0d0d0d;
+      color: #ffffff;
+      padding: 68px 0 24px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 34px;
+    }
+
+    .footer-grid h3 {
+      margin: 0 0 12px;
+      font-size: 14px;
+    }
+
+    .footer-grid a,
+    .footer-grid p {
+      display: block;
+      margin: 6px 0;
+      color: #a9a9a9;
+      font-size: 13px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .social-link {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #333333;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .footer-bottom {
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid #262626;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: #777777;
+      font-size: 11px;
+    }
+
+    /* =========================
+       MOBILE
+    ========================== */
+
+    @media (max-width: 980px) {
+      .main-nav {
+        display: none;
+      }
+
+      .hero-grid,
+      .contact-grid,
+      .safety-grid,
+      .photo-layout,
+      .area-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid,
+      .process-grid,
+      .review-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-media {
+        min-height: 420px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      body {
+        font-size: 16px;
+      }
+
+      .container {
+        width: min(var(--max), calc(100% - 28px));
+      }
+
+      .section {
+        padding: 68px 0;
+      }
+
+      .nav-wrap {
+        min-height: 70px;
+      }
+
+      .brand-text strong {
+        font-size: 18px;
+      }
+
+      .brand-mark {
+        width: 40px;
+        height: 40px;
+      }
+
+      .nav-wa {
+        padding: 10px 12px;
+        font-size: 12px;
+      }
+
+      .hero {
+        padding-top: 46px;
+      }
+
+      h1 {
+        font-size: clamp(42px, 15vw, 60px);
+      }
+
+      .hero-lead {
+        font-size: 17px;
+      }
+
+      .hero-proof {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-proof div {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255,255,255,.08);
+      }
+
+      .hero-media {
+        min-height: 320px;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .section-head p {
+        margin-top: 14px;
+      }
+
+      .services-grid,
+      .process-grid,
+      .review-grid,
+      .faq-grid,
+      .safety-list {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-side {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .photo-large {
+        min-height: 360px;
+      }
+
+      .photo-small {
+        min-height: 180px;
+      }
+
+      .cta-inner {
+        display: block;
+      }
+
+      .cta-actions {
+        margin-top: 20px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-bottom {
+        display: block;
+      }
+
+      .footer-bottom span {
+        display: block;
+        margin-bottom: 6px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <header class="site-header">
-      <div class="container nav-wrap">
-        <a class="brand" href="index.html" aria-label="Takeldienst Faster home">
-          <span class="brand-mark">F</span>
-          <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span>
-        </a>
-        <nav class="main-nav" aria-label="Hoofdnavigatie">
-          <a href="diensten/">Diensten</a>
-          <a href="#hoe-het-werkt">Hoe het werkt</a>
-          <a href="#werkgebied">Werkgebied</a>
-          <a href="ervaringen/">Ervaringen</a>
-          <a href="over-ons/">Over Faster</a>
-        </nav>
-        <div class="nav-actions">
-          <a class="nav-wa" href="https://wa.me/32480204733?text=Hallo%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig." target="_blank" rel="noopener">WhatsApp</a>
-          <a class="button button-small" href="tel:+32480204733">Bel nu</a>
-        </div>
-      </div>
-    </header>
-  <main>
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <span class="eyebrow">TAKELDIENST ANTWERPEN & VLAANDEREN</span>
-      <h1>Takeldienst die<br><span>komt opdagen.</span></h1>
-      <p class="hero-lead">Pech, ongeval of transport nodig? Je krijgt een mens aan de telefoon, een duidelijke prijs vooraf en een oplossing die past bij je situatie.</p>
-      <div class="hero-actions"><a class="button button-large" href="tel:+32480204733">Bel nu · 24/7</a><a class="button button-outline-light" href="https://wa.me/32480204733?text=Hallo%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig." target="_blank" rel="noopener">WhatsApp</a></div>
-      <div class="hero-trust"><span><b>●</b> 24/7 bereikbaar</span><span><b>●</b> Prijs vooraf</span><span><b>●</b> Eigen takelwagen + netwerk</span></div>
-    </div>
-    <div class="hero-media"><div class="photo-slot"><span>EIGEN FOTO — TAKELWAGEN</span><small>Plaats hier een echte foto van Faster</small></div></div>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+
+    <a href="./index.html" class="brand" aria-label="Takeldienst Faster home">
+      <span class="brand-mark">F</span>
+      <span class="brand-text">
+        <strong>FASTER</strong>
+        <small>DEPANNAGE & TAKELDIENST</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Hoofdnavigatie">
+      <a href="#diensten">Diensten</a>
+      <a href="#hoe-het-werkt">Hoe het werkt</a>
+      <a href="#werkgebied">Werkgebied</a>
+      <a href="#ervaring">Ervaring</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a
+      class="nav-wa"
+      href="https://wa.me/32480204733?text=Hallo%20Faster%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig."
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M12.04 2a9.91 9.91 0 0 0-8.5 15.03L2 22l5.12-1.5A9.92 9.92 0 1 0 12.04 2Zm0 18.05a8.1 8.1 0 0 1-4.13-1.14l-.3-.18-3.04.9.92-2.96-.2-.31a8.1 8.1 0 1 1 6.75 3.69Zm4.45-6.08c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.01.4 1.36.51.57.18 1.09.15 1.5.09.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+      </svg>
+      WhatsApp
+    </a>
+
   </div>
-</section>
+</header>
 
-<section class="proof-strip"><div class="container proof-grid"><div><strong>7-tonner</strong><span>plateau + bril</span></div><div><strong>2 voertuigen</strong><span>mogelijk per rit</span></div><div><strong>30 min*</strong><span>meestal mogelijk bij spoed</span></div><div><strong>Vlaanderen</strong><span>plus internationaal</span></div></div></section>
+<main>
 
-<section id="hoe-het-werkt" class="section process"><div class="container"><div class="section-head"><div><span class="eyebrow">ZO WERKT HET</span><h2>Geen callcenter. Gewoon iemand die helpt.</h2></div><p>De situatie bepaalt wat er nodig is. Ik stel eerst de juiste vragen en dan regelen we de rest.</p></div><div class="process-grid"><article><span>01</span><h3>Je belt Faster</h3><p>Wat is er gebeurd? Waar sta je? Welk merk en model is je voertuig?</p></article><article><span>02</span><h3>We spreken af</h3><p>Ik bespreek de situatie, geef advies en vertel je vooraf wat het kost.</p></article><article><span>03</span><h3>Wij regelen het</h3><p>Ik kom zelf of schakel een betrouwbare partner in uit mijn netwerk.</p></article></div></div></section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
 
-<section class="section services-section"><div class="container"><div class="section-head"><div><span class="eyebrow">DIENSTEN</span><h2>Van klassieke depannage tot werk waar je zwaar materiaal voor nodig hebt.</h2></div><a class="text-link" href="diensten/">Bekijk alle diensten →</a></div><div class="service-grid">
-  <a id="pechverhelping" class="service-card" href="diensten/#pechverhelping"><span class="service-no">01</span><h3>Pechverhelping</h3><p>Accu, lekke band, startproblemen, buitengesloten voertuig en meer.</p></a>
-  <a class="service-card featured" href="diensten/#takeldienst"><span class="service-no">02</span><h3>Takeldienst & berging</h3><p>Van een gewone sleep tot voertuigen na ongeval, brand of zware schade.</p></a>
-  <a class="service-card" href="diensten/#transport"><span class="service-no">03</span><h3>Autotransport</h3><p>Transport naar huis, garage, haven, koper of verkoper — in België of verder.</p></a>
-  <a class="service-card" href="diensten/#machines"><span class="service-no">04</span><h3>Machines & heftrucks</h3><p>Juiste aanpak en materiaal voor zwaar materieel. Veilig laden is alles.</p></a>
-  <a class="service-card" href="diensten/#internationaal"><span class="service-no">05</span><h3>Internationale repatriëring</h3><p>Frankrijk, Spanje, Duitsland, Ierland en verder — met ervaring in ferry's en papierwerk.</p></a>
-  <a class="service-card" href="diensten/#bestelwagens"><span class="service-no">06</span><h3>Bestelwagens & lichte vracht</h3><p>Voor voertuigen die net dat beetje meer capaciteit en zorg nodig hebben.</p></a>
-</div></div></section>
+      <div class="hero-copy">
+        <span class="eyebrow">24/7 TAKELDIENST ANTWERPEN & VLAANDEREN</span>
 
-<section class="section split safety"><div class="container split-grid"><div class="copy"><span class="eyebrow">STA JE OP DE WEG?</span><h2>Eerst veilig. Dan bellen.</h2><p>Bij pech of een ongeval op een gevaarlijke plaats: zet indien mogelijk je vier pinkers aan, trek een fluovest aan zodra je je voertuig op autosnelweg of autoweg verlaat en zorg voor de nodige signalisatie. Ga op een autosnelweg, als dat veilig en mogelijk is, achter de vangrail staan.</p><div class="safety-note"><strong>Gevarendriehoek</strong><span>Op de huidige Belgische wegcode geldt als richtlijn: minstens 30 m op gewone wegen en minstens 100 m op autosnelwegen; breng jezelf niet in gevaar om hem te plaatsen.</span></div><a class="text-link" href="diensten/#veiligheid">Lees de volledige veiligheidscheck →</a></div><div class="stat-card"><span>MIJN AANPAK</span><strong>“Wat er ook nodig is, we zoeken samen een oplossing.”</strong><p>Niet: “ik kan dat niet”. Wel: “hoe krijgen we dit geregeld?”</p></div></div></section>
+        <h1>
+          Takeldienst die
+          <span>komt opdagen.</span>
+        </h1>
 
-<section class="section photo-section"><div class="container"><div class="section-head"><div><span class="eyebrow">ECHT WERK</span><h2>Geen stockfoto's. Dit is Faster.</h2></div><p>Hier komen je echte interventies, voertuigen en transporten te staan — met korte verhalen zodra jij ze hebt aangevuld.</p></div><div class="photo-grid"><div class="photo-slot"><span>INTERVENTIE</span><small>Plaats hier een echte foto van Faster</small></div><div class="photo-slot"><span>TAKELWAGEN</span><small>Plaats hier een echte foto van Faster</small></div><div class="photo-slot"><span>AUTOTRANSPORT</span><small>Plaats hier een echte foto van Faster</small></div><div class="photo-slot"><span>BESTELWAGEN</span><small>Plaats hier een echte foto van Faster</small></div><div class="photo-slot"><span>HEFTRUCK</span><small>Plaats hier een echte foto van Faster</small></div><div class="photo-slot"><span>INTERNATIONAAL</span><small>Plaats hier een echte foto van Faster</small></div></div></div></section>
+        <p class="hero-lead">
+          Pech, ongeval of transport? Faster helpt particulieren met
+          pechverhelping, takelen en voertuigtransport — lokaal in Antwerpen,
+          over heel Vlaanderen en internationaal.
+        </p>
 
-<section class="section review-section"><div class="container"><div class="review-head"><div><div class="google-badge"><span class="google-g">G</span><span><b>Google</b><small>5.0 · echte klanten</small></span></div><span class="eyebrow">WAT KLANTEN ZEGGEN</span><h2>Een goede takeldienst merk je pas als het nodig is.</h2></div><p>Je reviews zijn een belangrijk bewijsstuk. We plaatsen hier alleen echte reviews uit Google.</p></div><div class="review-grid">
-  <article><div class="stars">★★★★★</div><p>“Really efficient service, good communication and very friendly, safe driver.”</p><strong>Sarah Lyon</strong><small>Google review</small></article>
-  <article><div class="stars">★★★★★</div><p>“Excellent service, very friendly driver. Thank you so much!”</p><strong>Stephen Cook</strong><small>Google review</small></article>
-  <article><div class="stars">★★★★★</div><p>“Op zondag pech gehad in Breda en meteen geholpen. Snelle, professionele en vriendelijke takeldienst.”</p><strong>Portsurmer</strong><small>Google review</small></article>
-</div><a class="text-link center-link" href="over-ons/">Meer over Faster en de reviews →</a></div></section>
-
-<section class="section contact-section"><div class="container contact-grid"><div><span class="eyebrow">GEEN SPOED?</span><h2>Vertel wat er aan de hand is.</h2><p>Voor transport of een niet-dringende interventie kan je hier je gegevens invullen. Het formulier opent WhatsApp met alle informatie, zodat ik meteen weet wat er speelt.</p><div class="contact-direct"><a href="tel:+32480204733"><strong>+32 480 20 47 33</strong><span>24/7 bereikbaar</span></a><a href="mailto:Faster24EU@gmail.com"><strong>Faster24EU@gmail.com</strong><span>E-mail</span></a></div></div><form id="quote-form" class="quote-form"><label>Naam<input name="name" required placeholder="Je naam"></label><label>Telefoon<input name="phone" type="tel" required placeholder="+32 ..."></label><label>Waar sta je?<input name="pickup" required placeholder="Plaats / adres / postcode"></label><label>Waar moet de wagen naartoe?<input name="dropoff" required placeholder="Garage / thuis / stad / land"></label><label>Merk + model<input name="vehicle" required placeholder="Bijv. BMW 320d"></label><label>Wat is er gebeurd?
-<textarea name="problem" rows="4" placeholder="Pech, ongeval, transport..."></textarea></label><button class="button button-large" type="submit">Verstuur via WhatsApp</button></form></div></section>
-
-<section id="werkgebied" class="section area-section"><div class="container area-grid"><div><span class="eyebrow">WERKGEBIED</span><h2>Antwerpen als basis. Vlaanderen als speelveld.</h2><p>Ik vertrek vanuit Kiel en werk over heel Vlaanderen. Voor internationale opdrachten regel ik het transport zelf of via mijn netwerk van betrouwbare zelfstandige takeldiensten.</p><div class="chips"><a href="takeldienst/antwerpen/">Antwerpen</a><a href="takeldienst/edegem/">Edegem</a><a href="takeldienst/wilrijk/">Wilrijk</a><a href="takeldienst/hoboken/">Hoboken</a><a href="takeldienst/deurne/">Deurne</a><a href="takeldienst/merksem/">Merksem</a><a href="takeldienst/wommelgem/">Wommelgem</a><span>Heel Vlaanderen</span></div></div><div class="area-card"><strong>Internationaal?</strong><p>Frankrijk · Spanje · Duitsland · Italië · Oostenrijk · Zwitserland · Verenigd Koninkrijk · Ierland</p><a href="diensten/#internationaal" class="text-link">Bekijk internationale service →</a></div></div></section>
-
-<section class="section story-teaser"><div class="container story-box"><div><span class="eyebrow">BINNENKORT</span><h2>Interventieverhalen uit de praktijk.</h2><p>De moeilijke ritten, de rare opdrachten, de klanten die echt in de problemen zaten. Deze pagina bouwen we later met jouw eigen verhalen.</p></div><a class="button button-dark" href="ervaringen/">Naar de verhalen</a></div></section>
-
-<section class="section faq-section"><div class="container"><div class="section-head"><div><span class="eyebrow">VEELGESTELDE VRAGEN</span><h2>Antwoorden voordat je belt.</h2></div><p>Geen generieke SEO-antwoorden. Hier staat wat jij als klant echt wilt weten.</p></div><div class="faq-grid">
-  <details><summary>Hoe snel kan je er zijn?</summary><div class="faq-answer">Dat hangt af van waar je staat, hoe dringend het is en wat er op dat moment rijdt. In veel dringende gevallen lukt ongeveer 30 minuten. Als het langer duurt, vertel ik dat eerlijk.</div></details>
-  <details><summary>Krijg ik vooraf een prijs?</summary><div class="faq-answer">Ja. Ik vraag minimaal waar je staat, waar je naartoe moet en welk merk/model je hebt. Op basis daarvan geef ik je vooraf een prijs. Een prijs verandert alleen als de situatie of afstand anders blijkt dan verteld.</div></details>
-  <details><summary>Kunnen jullie mijn wagen naar een garage brengen?</summary><div class="faq-answer">Ja. Naar een garage, thuisadres, haven of een andere bestemming. Dat kan ook internationaal.</div></details>
-  <details><summary>Doen jullie ook heftrucks en machines?</summary><div class="faq-answer">Ja. Ik beschik over een 7-tonner met plateau en bril en de juiste aanpak om zwaar materiaal veilig te laden. Een heftruck vraagt een andere aanpak dan een gewone personenwagen.</div></details>
-  <details><summary>Kan ik midden in de nacht bellen?</summary><div class="faq-answer">Ja. Ik ben 24/7 bereikbaar zolang mijn telefoon hoorbaar is. Het nummer dat geld kost, neem ik op.</div></details>
-  <details><summary>Wat doe ik bij een ongeval?</summary><div class="faq-answer">Maak eerst de situatie veilig, bel indien nodig de hulpdiensten en neem daarna contact op. Ik kan meedenken over de depannage en vertel je wat er nodig is. Of je kosten door de verzekering worden vergoed, hangt af van je polis.</div></details>
-</div></div></section>
-
-<section class="cta-band"><div class="container cta-inner"><div><span class="eyebrow">24/7 bereikbaar</span><h2>Staat je voertuig stil? Bel Faster.</h2><p>Je hoeft niet eerst uit te zoeken wat je precies nodig hebt. Vertel mij wat er gebeurd is en ik kijk mee naar de oplossing.</p></div><div class="cta-buttons"><a class="button" href="tel:+32480204733">Bel +32 480 20 47 33</a><a class="button button-outline" href="https://wa.me/32480204733?text=Hallo%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig." target="_blank" rel="noopener">WhatsApp</a></div></div></section>
-</main>
-  <footer class="site-footer">
-      <div class="container footer-grid">
-        <div>
-          <a class="brand brand-footer" href="index.html"><span class="brand-mark">F</span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
-          <p class="footer-copy">Persoonlijke takeldienst vanuit Antwerpen. Van een korte lokale interventie tot internationaal voertuigtransport.</p>
-          <div class="socials"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a><a href="#" aria-label="LinkedIn">LinkedIn</a></div>
+        <div class="hero-actions">
+          <a
+            class="button button-whatsapp"
+            href="https://wa.me/32480204733?text=Hallo%20Faster%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="currentColor" d="M12.04 2a9.91 9.91 0 0 0-8.5 15.03L2 22l5.12-1.5A9.92 9.92 0 1 0 12.04 2Zm0 18.05a8.1 8.1 0 0 1-4.13-1.14l-.3-.18-3.04.9.92-2.96-.2-.31a8.1 8.1 0 1 1 6.75 3.69Zm4.45-6.08c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.01.4 1.36.51.57.18 1.09.15 1.5.09.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+            </svg>
+            Stuur ons een WhatsApp
+          </a>
         </div>
-        <div><h3>Diensten</h3><a href="diensten/#pechverhelping">Pechverhelping</a><a href="diensten/#takeldienst">Takeldienst & berging</a><a href="diensten/#transport">Autotransport</a><a href="diensten/#internationaal">Internationaal</a><a href="diensten/#machines">Machines & heftrucks</a></div>
-        <div><h3>Contact</h3><a href="tel:+32480204733">+32 480 20 47 33</a><a href="mailto:Faster24EU@gmail.com">Faster24EU@gmail.com</a><p>Boschaarstraat 248<br>2020 Antwerpen (Kiel)</p><p>24/7 bereikbaar zolang mijn telefoon hoorbaar is.</p></div>
-        <div><h3>Snelle links</h3><a href="takeldienst/antwerpen/">Takeldienst Antwerpen</a><a href="over-ons/">Over Faster</a><a href="ervaringen/">Interventieverhalen</a><a href="en/">English</a><a href="fr/">Français</a><a href="de/">Deutsch</a></div>
+
+        <div class="hero-proof">
+          <div>
+            <strong>24/7</strong>
+            <span>Bereikbaar</span>
+          </div>
+          <div>
+            <strong>± 30 min*</strong>
+            <span>Bij dringende interventies vaak mogelijk</span>
+          </div>
+          <div>
+            <strong>Prijs vooraf</strong>
+            <span>Duidelijk besproken voordat we vertrekken</span>
+          </div>
+        </div>
       </div>
-      <div class="container footer-bottom"><span>© 2026 Faster Depannage / Takeldienst</span><span>Website V2 — inhoud blijft in ontwikkeling</span></div>
-    </footer>
-  <div class="mobile-bar"><a href="tel:+32480204733">Bel Faster</a><a href="https://wa.me/32480204733?text=Hallo%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig." target="_blank" rel="noopener">WhatsApp</a></div>
+
+      <div class="hero-media">
+        <div class="hero-media-placeholder">
+          JOUW ECHTE FASTER-FOTO
+        </div>
+        <div class="hero-media-label">
+          7-TONNER • PLATEAU + BRIL
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EMAIL FORM DIRECT OP HOMEPAGE -->
+  <section class="contact-strip" id="contact">
+    <div class="container contact-grid">
+
+      <div class="contact-copy">
+        <span class="eyebrow">GEEN DRINGENDHEID?</span>
+
+        <h2>Vertel wat er aan de hand is.</h2>
+
+        <p>
+          Heb je transport nodig, wil je een voertuig laten ophalen of
+          heb je een andere situatie? Stuur de gegevens door.
+          Ik bekijk wat er nodig is en neem contact met je op.
+        </p>
+
+        <a
+          class="button button-whatsapp direct-wa"
+          href="https://wa.me/32480204733?text=Hallo%20Faster%2C%20ik%20wil%20graag%20een%20offerte."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M12.04 2a9.91 9.91 0 0 0-8.5 15.03L2 22l5.12-1.5A9.92 9.92 0 1 0 12.04 2Zm0 18.05a8.1 8.1 0 0 1-4.13-1.14l-.3-.18-3.04.9.92-2.96-.2-.31a8.1 8.1 0 1 1 6.75 3.69Zm4.45-6.08c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.01.4 1.36.51.57.18 1.09.15 1.5.09.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+          </svg>
+          Liever via WhatsApp
+        </a>
+      </div>
+
+      <form
+        class="email-form"
+        action="https://formsubmit.co/Faster24EU@gmail.com"
+        method="POST"
+      >
+
+        <input type="hidden" name="_subject" value="Nieuwe aanvraag via Takeldienst Faster">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_next" value="https://takeldienstfaster.be/">
+
+        <h3>Offerte of aanvraag per e-mail</h3>
+        <p>Vul zoveel mogelijk informatie in. Hoe meer we weten, hoe beter we kunnen helpen.</p>
+
+        <div class="form-grid">
+
+          <label class="field">
+            <span>Naam *</span>
+            <input type="text" name="naam" required>
+          </label>
+
+          <label class="field">
+            <span>E-mail *</span>
+            <input type="email" name="email" required>
+          </label>
+
+          <label class="field">
+            <span>Telefoon</span>
+            <input type="tel" name="telefoon">
+          </label>
+
+          <label class="field">
+            <span>Merk & model</span>
+            <input type="text" name="voertuig">
+          </label>
+
+          <label class="field full">
+            <span>Waar staat het voertuig?</span>
+            <input type="text" name="ophaalplaats">
+          </label>
+
+          <label class="field full">
+            <span>Waar moet het voertuig naartoe?</span>
+            <input type="text" name="bestemming">
+          </label>
+
+          <label class="field full">
+            <span>Wat is er gebeurd?</span>
+            <textarea name="situatie"></textarea>
+          </label>
+
+        </div>
+
+        <button class="button form-submit" type="submit">
+          Verstuur aanvraag per e-mail
+        </button>
+
+        <p class="form-note">
+          Je aanvraag wordt doorgestuurd naar Faster24EU@gmail.com.
+        </p>
+
+      </form>
+
+    </div>
+  </section>
+
+  <!-- GOOGLE TRUST -->
+  <section class="trustbar">
+    <div class="container trust-inner">
+
+      <div class="google-mark">G</div>
+
+      <div class="trust-copy">
+        <strong>Echte reviews op Google</strong>
+        <span>Bekijk de ervaringen van klanten met Faster</span>
+      </div>
+
+      <div class="stars">★★★★★</div>
+
+      <a class="button button-dark" href="#reviews">
+        Bekijk reviews
+      </a>
+
+    </div>
+  </section>
+
+  <!-- HOE HET WERKT -->
+  <section class="section grey-section" id="hoe-het-werkt">
+    <div class="container">
+
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">ZO WERKT HET</span>
+          <h2>De situatie bepaalt wat er nodig is. Niet andersom.</h2>
+        </div>
+
+        <p>
+          Elke interventie is anders. Daarom luisteren we eerst naar de
+          situatie en bepalen we daarna wat de beste oplossing is.
+        </p>
+      </div>
+
+      <div class="process-grid">
+
+        <article class="process-card">
+          <div class="step-number">01</div>
+          <h3>Vertel wat er gebeurd is</h3>
+          <p>
+            Waar sta je? Wat is er gebeurd? Welk merk en model heb je?
+            Hoe dringend is het?
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="step-number">02</div>
+          <h3>We bespreken de oplossing</h3>
+          <p>
+            We bekijken wat er nodig is en spreken vooraf duidelijk af
+            wat er moet gebeuren en wat het kost.
+          </p>
+        </article>
+
+        <article class="process-card">
+          <div class="step-number">03</div>
+          <h3>Wij regelen het</h3>
+          <p>
+            Ik kom zelf wanneer dat kan. Wanneer dat niet kan, schakel ik
+            een betrouwbare partner uit mijn netwerk in.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIENSTEN -->
+  <section class="section light-section" id="diensten">
+    <div class="container">
+
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">ONZE DIENSTEN</span>
+          <h2>Van gewone pech tot zwaar en internationaal transport.</h2>
+        </div>
+
+        <p>
+          Eén aanspreekpunt voor personenwagens, bestelwagens, machines,
+          heftrucks en transport over de grens.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <a class="service-card" href="diensten/#pechverhelping">
+          <span class="service-number">01</span>
+          <h3>Pechverhelping</h3>
+          <p>Accu, startproblemen, lekke band, buitengesloten voertuig en meer.</p>
+        </a>
+
+        <a class="service-card" href="diensten/#takeldienst">
+          <span class="service-number">02</span>
+          <h3>Takeldienst & berging</h3>
+          <p>Na pech, ongeval, brand of zware schade — veilig ophalen en vervoeren.</p>
+        </a>
+
+        <a class="service-card" href="diensten/#transport">
+          <span class="service-number">03</span>
+          <h3>Autotransport</h3>
+          <p>Naar garage, thuis, haven, koper of verkoper, in België of verder.</p>
+        </a>
+
+        <a class="service-card" href="diensten/#bestelwagens">
+          <span class="service-number">04</span>
+          <h3>Bestelwagens & lichte vracht</h3>
+          <p>Ook voor voertuigen die meer capaciteit en een andere aanpak vragen.</p>
+        </a>
+
+        <a class="service-card" href="diensten/#machines">
+          <span class="service-number">05</span>
+          <h3>Machines & heftrucks</h3>
+          <p>Juiste materieel, juiste laadwijze en ervaring met zwaar werk.</p>
+        </a>
+
+        <a class="service-card" href="diensten/#internationaal">
+          <span class="service-number">06</span>
+          <h3>Internationale repatriëring</h3>
+          <p>Frankrijk, Spanje, Duitsland, Italië, Ierland en verder.</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VEILIGHEID -->
+  <section class="section dark-section">
+    <div class="container safety-grid">
+
+      <div class="safety-copy">
+
+        <span class="eyebrow">STA JE OP DE WEG?</span>
+
+        <h2>Eerst veilig.<br>Dan contact opnemen.</h2>
+
+        <p>
+          Zet indien mogelijk je vier pinkers aan, trek een fluovest aan
+          en plaats de nodige signalisatie zonder jezelf in gevaar te brengen.
+          Sta je op een snelweg of autoweg, ga dan — wanneer het veilig kan —
+          achter de vangrail staan.
+        </p>
+
+        <div class="safety-list">
+
+          <div class="safety-item">
+            <strong>01</strong>
+            <span>Veiligheid eerst</span>
+          </div>
+
+          <div class="safety-item">
+            <strong>02</strong>
+            <span>Fluovest gebruiken</span>
+          </div>
+
+          <div class="safety-item">
+            <strong>03</strong>
+            <span>Gevarendriehoek indien nodig</span>
+          </div>
+
+          <div class="safety-item">
+            <strong>04</strong>
+            <span>Ga bij gevaar achter de vangrail</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="quote-box">
+        <span class="eyebrow" style="color:#756000;">MIJN AANPAK</span>
+
+        <strong>
+          “Wat er ook nodig is, we zoeken samen een oplossing.”
+        </strong>
+
+        <p>
+          Ik hoor liever “hoe krijgen we dit geregeld?” dan “ik kan dat niet”.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ECHT WERK -->
+  <section class="section light-section" id="ervaring">
+    <div class="container">
+
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">ECHT WERK</span>
+          <h2>Geen stock. Dit is Faster.</h2>
+        </div>
+
+        <p>
+          Hier komen jouw echte foto's van interventies, transporten,
+          heftrucks, bestelwagens en internationale ritten.
+        </p>
+      </div>
+
+      <div class="photo-layout">
+
+        <div class="photo-large">
+          <div class="photo-label">
+            <strong>Beste Faster-foto</strong>
+            <span>Jouw 7-tonner in actie</span>
+          </div>
+        </div>
+
+        <div class="photo-side">
+
+          <div class="photo-small">
+            <div class="photo-label">
+              <strong>Takelen</strong>
+              <span>Echte interventie</span>
+            </div>
+          </div>
+
+          <div class="photo-small">
+            <div class="photo-label">
+              <strong>Autotransport</strong>
+              <span>Echte rit</span>
+            </div>
+          </div>
+
+          <div class="photo-small">
+            <div class="photo-label">
+              <strong>Heftrucks</strong>
+              <span>Zwaar materiaal</span>
+            </div>
+          </div>
+
+          <div class="photo-small">
+            <div class="photo-label">
+              <strong>Internationaal</strong>
+              <span>Europa & verder</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section dark-section" id="reviews">
+    <div class="container">
+
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">WAT KLANTEN ZEGGEN</span>
+          <h2>Echte reviews van echte klanten.</h2>
+        </div>
+
+        <p>
+          Alleen echte Google-ervaringen. Geen verzonnen testimonials.
+        </p>
+      </div>
+
+      <div class="review-grid">
+
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Really efficient service, good communication and very friendly,
+            safe driver.”
+          </p>
+          <div class="review-name">Sarah Lyon</div>
+          <div class="review-source">Google review</div>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Excellent service, very friendly driver. Thank you so much!”
+          </p>
+          <div class="review-name">Stephen Cook</div>
+          <div class="review-source">Google review</div>
+        </article>
+
+        <article class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>
+            “Op zondag pech gehad in Breda en meteen geholpen. Snelle,
+            professionele en vriendelijke takeldienst.”
+          </p>
+          <div class="review-name">Portsurmer</div>
+          <div class="review-source">Google review</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WERKGEBIED -->
+  <section class="section light-section" id="werkgebied">
+    <div class="container area-grid">
+
+      <div>
+        <span class="eyebrow">WERKGEBIED</span>
+
+        <h2>
+          Antwerpen als basis.<br>
+          Vlaanderen als speelveld.
+        </h2>
+
+        <p>
+          Vanuit Kiel help ik klanten in Antwerpen en ver daarbuiten.
+          Voor opdrachten die verder gaan regel ik het zelf of via mijn
+          netwerk van betrouwbare zelfstandige takeldiensten.
+        </p>
+
+        <div class="area-links">
+          <span class="area-link">Antwerpen</span>
+          <span class="area-link">Hoboken</span>
+          <span class="area-link">Wilrijk</span>
+          <span class="area-link">Edegem</span>
+          <span class="area-link">Deurne</span>
+          <span class="area-link">Merksem</span>
+          <span class="area-link">Wommelgem</span>
+          <span class="area-link">Heel Vlaanderen</span>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <h3>Ook internationaal</h3>
+
+        <p>
+          Frankrijk · Spanje · Duitsland · Italië · Oostenrijk ·
+          Zwitserland · Verenigd Koninkrijk · Ierland
+        </p>
+
+        <a
+          class="button button-whatsapp"
+          href="https://wa.me/32480204733?text=Hallo%20Faster%2C%20ik%20heb%20internationaal%20transport%20nodig."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M12.04 2a9.91 9.91 0 0 0-8.5 15.03L2 22l5.12-1.5A9.92 9.92 0 1 0 12.04 2Zm0 18.05a8.1 8.1 0 0 1-4.13-1.14l-.3-.18-3.04.9.92-2.96-.2-.31a8.1 8.1 0 1 1 6.75 3.69Zm4.45-6.08c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.01.4 1.36.51.57.18 1.09.15 1.5.09.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+          </svg>
+          WhatsApp Faster
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OVER FASTER -->
+  <section class="section grey-section">
+    <div class="container">
+
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">DE MENS ACHTER FASTER</span>
+          <h2>Geen grote dispatchcentrale. Wel één aanspreekpunt.</h2>
+        </div>
+
+        <p>
+          Faster is ontstaan vanuit de autosector, met jaren ervaring in
+          voertuigen, transport, import/export en depannage.
+        </p>
+      </div>
+
+      <div class="about-grid">
+
+        <article class="about-card">
+          <strong>30+ zelfstandige partners</strong>
+          <p>
+            Een netwerk van kleine, capabele takeldiensten waarop ik kan
+            terugvallen wanneer dat nodig is.
+          </p>
+        </article>
+
+        <article class="about-card">
+          <strong>Eigen 7-tonner</strong>
+          <p>
+            Plateau + bril, geschikt voor personenwagens, bestelwagens,
+            machines en zwaar materiaal.
+          </p>
+        </article>
+
+        <article class="about-card">
+          <strong>Ervaring in de autosector</strong>
+          <p>
+            Voor Faster zat ik al in de autosector en werkte ik zelf aan
+            auto's. Die ervaring neem ik mee in elke interventie.
+          </p>
+        </article>
+
+        <article class="about-card">
+          <strong>Oplossingsgericht</strong>
+          <p>
+            Ik probeer niet zo snel mogelijk “nee” te zeggen. Ik zoek samen
+            met de klant naar een oplossing die technisch en praktisch klopt.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section light-section" id="faq">
+    <div class="container">
+
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">VEELGESTELDE VRAGEN</span>
+          <h2>Antwoorden voordat je contact opneemt.</h2>
+        </div>
+
+        <p>
+          Praktisch, eerlijk en zonder onnodige marketingtaal.
+        </p>
+      </div>
+
+      <div class="faq-grid">
+
+        <details>
+          <summary>Hoe snel kunnen jullie ter plaatse zijn?</summary>
+          <div class="faq-answer">
+            Dat hangt af van locatie, verkeer, drukte en urgentie.
+            Bij dringende interventies is ongeveer 30 minuten vaak mogelijk.
+          </div>
+        </details>
+
+        <details>
+          <summary>Krijg ik vooraf een prijs?</summary>
+          <div class="faq-answer">
+            Ja. Ik vraag waar je staat, waar je naartoe moet, welk merk en
+            model je hebt en wat er gebeurd is. Op basis daarvan geef ik
+            vooraf een duidelijke prijs.
+          </div>
+        </details>
+
+        <details>
+          <summary>Wanneer kan een prijs veranderen?</summary>
+          <div class="faq-answer">
+            Alleen wanneer de situatie of afstand anders blijkt te zijn dan
+            oorspronkelijk doorgegeven. Denk bijvoorbeeld aan een veel
+            grotere afstand of meer schade dan verwacht.
+          </div>
+        </details>
+
+        <details>
+          <summary>Kunnen jullie mijn voertuig naar een garage brengen?</summary>
+          <div class="faq-answer">
+            Ja. Naar een garage, thuisadres, haven of andere bestemming,
+            ook internationaal.
+          </div>
+        </details>
+
+        <details>
+          <summary>Doen jullie heftrucks en machines?</summary>
+          <div class="faq-answer">
+            Ja. Met de juiste uitrusting en laadwijze. Heftrucks vragen een
+            andere aanpak dan gewone personenwagens.
+          </div>
+        </details>
+
+        <details>
+          <summary>Kan ik ook 's nachts contact opnemen?</summary>
+          <div class="faq-answer">
+            Ja. Faster is 24/7 bereikbaar via WhatsApp.
+          </div>
+        </details>
+
+        <details>
+          <summary>Doen jullie internationale transporten?</summary>
+          <div class="faq-answer">
+            Ja. Ik heb ervaring met onder andere Frankrijk, Spanje, Duitsland,
+            Italië, Oostenrijk, Zwitserland, het Verenigd Koninkrijk en Ierland.
+          </div>
+        </details>
+
+        <details>
+          <summary>Kunnen jullie ook voertuigen ophalen bij aankoop of verkoop?</summary>
+          <div class="faq-answer">
+            Ja. Voertuigen kunnen worden opgehaald en vervoerd naar een garage,
+            thuisadres, haven, koper, verkoper of andere bestemming.
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container cta-inner">
+
+      <div>
+        <span class="eyebrow" style="color:#695700;">24/7 BEREIKBAAR</span>
+
+        <h2>Staat je voertuig stil? Neem contact op.</h2>
+
+        <p>
+          WhatsApp voor een snelle reactie. E-mail voor een uitgebreide aanvraag.
+        </p>
+      </div>
+
+      <div class="cta-actions">
+
+        <a
+          class="button button-dark"
+          href="https://wa.me/32480204733?text=Hallo%20Faster%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig."
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M12.04 2a9.91 9.91 0 0 0-8.5 15.03L2 22l5.12-1.5A9.92 9.92 0 1 0 12.04 2Zm0 18.05a8.1 8.1 0 0 1-4.13-1.14l-.3-.18-3.04.9.92-2.96-.2-.31a8.1 8.1 0 1 1 6.75 3.69Zm4.45-6.08c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.01.4 1.36.51.57.18 1.09.15 1.5.09.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+          </svg>
+          WhatsApp Faster
+        </a>
+
+        <a class="button" href="#contact">
+          E-mail formulier
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div>
+      <a href="./index.html" class="brand">
+        <span class="brand-mark">F</span>
+        <span class="brand-text">
+          <strong>FASTER</strong>
+          <small>DEPANNAGE & TAKELDIENST</small>
+        </span>
+      </a>
+
+      <p>
+        Persoonlijke takeldienst vanuit Kiel.
+        Van lokale depannage tot internationaal voertuigtransport.
+      </p>
+
+      <div class="social-links">
+        <a class="social-link" href="#" aria-label="Instagram">IG</a>
+        <a class="social-link" href="#" aria-label="Facebook">FB</a>
+        <a class="social-link" href="#" aria-label="X">X</a>
+      </div>
+    </div>
+
+    <div>
+      <h3>Diensten</h3>
+      <a href="diensten/">Alle diensten</a>
+      <a href="diensten/#pechverhelping">Pechverhelping</a>
+      <a href="diensten/#takeldienst">Takeldienst</a>
+      <a href="diensten/#transport">Autotransport</a>
+      <a href="diensten/#machines">Machines & heftrucks</a>
+    </div>
+
+    <div>
+      <h3>Over Faster</h3>
+      <a href="over-ons/">Over Faster</a>
+      <a href="ervaringen/">Interventieverhalen</a>
+      <a href="en/">English</a>
+      <a href="fr/">Français</a>
+      <a href="de/">Deutsch</a>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <a href="mailto:Faster24EU@gmail.com">Faster24EU@gmail.com</a>
+      <p>
+        Boschaarstraat 248<br>
+        2020 Antwerpen (Kiel)
+      </p>
+
+      <a
+        class="button button-whatsapp"
+        href="https://wa.me/32480204733"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="margin-top:14px;"
+      >
+        <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M12.04 2a9.91 9.91 0 0 0-8.5 15.03L2 22l5.12-1.5A9.92 9.92 0 1 0 12.04 2Zm0 18.05a8.1 8.1 0 0 1-4.13-1.14l-.3-.18-3.04.9.92-2.96-.2-.31a8.1 8.1 0 1 1 6.75 3.69Zm4.45-6.08c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.95-1.2-.72-.64-1.2-1.43-1.34-1.67-.14-.24-.02-.37.1-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.46-.4-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.58 4.1 3.62.57.25 1.01.4 1.36.51.57.18 1.09.15 1.5.09.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28Z"/>
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© 2026 Faster Depannage / Takeldienst</span>
+    <span>Professioneel · Persoonlijk · Oplossingsgericht</span>
+  </div>
+</footer>
+
 </body>
 </html>
