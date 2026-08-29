@@ -1,5 +1,10 @@
-# Takeldienst Faster – V4 Light / RAC-inspired
+# Takeldienst Faster — V8 Final
 
-Professional white, light-grey and yellow redesign. Square controls, WhatsApp-first contact and homepage email form.
+White, light-grey and yellow mobile-first website for Faster Takeldienst.
 
-Real Faster photos are included from the uploaded source files. Replace or add more as needed.
+Contact:
+- Phone: +32 3 375 67 37
+- WhatsApp: +353 89 970 7462
+- Email: faster@takeldienstfaster.be
+
+The footer uses the real Faster logo and contains no social-media buttons.
