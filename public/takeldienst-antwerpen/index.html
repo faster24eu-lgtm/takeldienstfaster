@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Takeldienst Antwerpen 24/7 | Faster Depannage</title>
+
+  <meta name="description"
+    content="24/7 takeldienst en depannage in Antwerpen. Autopech, ongeval, startproblemen, lekke band, verkeerd getankt en autotransport. Faster Depannage helpt snel in Antwerpen en omgeving.">
+
+  <link rel="canonical" href="https://takeldienstfaster.be/takeldienst-antwerpen/">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #202020;
+      background: #f4f4f4;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .topbar {
+      background: #111;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .header-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 900;
+      text-decoration: none;
+      letter-spacing: -1px;
+    }
+
+    .logo span {
+      color: #f5c400;
+    }
+
+    .header-phone {
+      background: #f5c400;
+      color: #111;
+      text-decoration: none;
+      padding: 13px 20px;
+      font-weight: 800;
+      border-radius: 0;
+    }
+
+    .hero {
+      background: #fff;
+      border-bottom: 5px solid #f5c400;
+    }
+
+    .hero-inner {
+      max-width: 1180px;
+      margin: auto;
+      padding: 65px 20px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: #f5c400;
+      color: #111;
+      padding: 7px 12px;
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      line-height: 1.05;
+      max-width: 850px;
+      margin: 0 0 22px;
+      letter-spacing: -2px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      font-size: 19px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 23px;
+      text-decoration: none;
+      font-weight: 800;
+      border-radius: 0;
+    }
+
+    .button-yellow {
+      background: #f5c400;
+      color: #111;
+    }
+
+    .button-dark {
+      background: #111;
+      color: white;
+    }
+
+    main {
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    section {
+      background: white;
+      margin-top: 22px;
+      padding: 45px 30px;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 1.15;
+      margin: 0 0 18px;
+    }
+
+    h3 {
+      font-size: 21px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    .intro {
+      font-size: 18px;
+      max-width: 900px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      margin-top: 30px;
+      background: #ddd;
+    }
+
+    .card {
+      background: #fff;
+      padding: 28px;
+    }
+
+    .card strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+      background: #ddd;
+      margin-top: 25px;
+    }
+
+    .service {
+      background: white;
+      padding: 25px;
+    }
+
+    .service-number {
+      font-size: 13px;
+      font-weight: 900;
+      color: #8b7200;
+      margin-bottom: 8px;
+    }
+
+    .area-list {
+      columns: 3;
+      column-gap: 40px;
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    .area-list li {
+      margin-bottom: 8px;
+    }
+
+    .warning {
+      border-left: 6px solid #f5c400;
+      background: #fafafa;
+      padding: 22px;
+      margin-top: 25px;
+    }
+
+    .cta {
+      background: #111;
+      color: white;
+      border-bottom: 6px solid #f5c400;
+    }
+
+    .cta h2 {
+      color: white;
+    }
+
+    .cta p {
+      color: #ddd;
+      max-width: 750px;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2px;
+      background: #ddd;
+      margin-top: 30px;
+    }
+
+    .contact-box {
+      background: white;
+      padding: 25px;
+    }
+
+    .contact-box strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      margin-top: 25px;
+      padding: 35px 20px;
+    }
+
+    .footer-inner {
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    @media (max-width: 800px) {
+      .header-inner {
+        padding: 13px 15px;
+      }
+
+      .logo {
+        font-size: 21px;
+      }
+
+      .header-phone {
+        padding: 10px 12px;
+        font-size: 14px;
+      }
+
+      .hero-inner {
+        padding: 45px 18px;
+      }
+
+      section {
+        padding: 35px 20px;
+        margin-top: 15px;
+      }
+
+      .grid,
+      .service-list,
+      .contact {
+        grid-template-columns: 1fr;
+      }
+
+      .area-list {
+        columns: 1;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TowingService",
+    "name": "Faster Depannage Takeldienst",
+    "url": "https://takeldienstfaster.be/takeldienst-antwerpen/",
+    "telephone": "+3233756737",
+    "email": "faster@takeldienstfaster.be",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "De Bosschaertstraat 248",
+      "postalCode": "2020",
+      "addressLocality": "Antwerpen",
+      "addressCountry": "BE"
+    },
+    "areaServed": [
+      "Antwerpen",
+      "Deurne",
+      "Berchem",
+      "Borgerhout",
+      "Hoboken",
+      "Wilrijk",
+      "Merksem",
+      "Mortsel",
+      "Edegem",
+      "Kontich",
+      "Aartselaar",
+      "Wommelgem"
+    ],
+    "openingHours": "Mo-Su 00:00-23:59"
+  }
+  </script>
+</head>
+
+<body>
+
+  <div class="topbar">
+    24/7 bereikbaar voor takeldienst en pechverhelping in Antwerpen
+  </div>
+
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="https://takeldienstfaster.be/">
+        Faster <span>Depannage</span>
+      </a>
+
+      <a class="header-phone" href="tel:+3233756737">
+        03 375 67 37
+      </a>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="hero-inner">
+
+      <div class="eyebrow">Takeldienst Antwerpen · 24/7</div>
+
+      <h1>
+        Takeldienst Antwerpen wanneer je niet meer verder kunt
+      </h1>
+
+      <p>
+        Autopech, een ongeval, een lege batterij, een lekke band of een
+        voertuig dat veilig vervoerd moet worden? Faster Depannage helpt
+        automobilisten in Antwerpen en omgeving, dag en nacht.
+      </p>
+
+      <div class="buttons">
+        <a class="button button-yellow" href="tel:+3233756737">
+          Bel 03 375 67 37
+        </a>
+
+        <a class="button button-dark"
+           href="https://wa.me/353899707462">
+          WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <main>
+
+    <section>
+      <h2>Takeldienst in Antwerpen</h2>
+
+      <p class="intro">
+        Bij een depannage willen we eerst weten wat er precies aan de hand is.
+        Dat klinkt vanzelfsprekend, maar de juiste informatie maakt in de
+        praktijk een groot verschil.
+      </p>
+
+      <p>
+        We vragen daarom meestal waar het voertuig staat, waar het naartoe
+        moet, wat het probleem is en welk merk en model het voertuig heeft.
+        Ook vragen we of het dringend is. Op basis daarvan kunnen we beter
+        inschatten welk voertuig en welke uitrusting nodig zijn.
+      </p>
+
+      <p>
+        Dat is belangrijk omdat voertuigen sterk kunnen verschillen in gewicht
+        en afmetingen. Een gewone personenwagen van ongeveer 900 kg vraagt
+        bijvoorbeeld een andere aanpak dan een zwaar voertuig van rond de
+        2.000 kg.
+      </p>
+
+      <div class="warning">
+        <strong>Niet elke depannage is hetzelfde.</strong><br>
+        Door vooraf de juiste informatie te verzamelen, vermijden we dat we
+        met verkeerde apparatuur aankomen of dat een transport ingewikkelder
+        blijkt dan verwacht.
+      </div>
+    </section>
+
+    <section>
+      <h2>Waar in Antwerpen zijn we actief?</h2>
+
+      <p>
+        Faster Depannage werkt in Antwerpen en de omliggende gemeenten.
+        We krijgen oproepen vanuit zowel de stad als de rand van Antwerpen.
+      </p>
+
+      <ul class="area-list">
+        <li>Antwerpen centrum</li>
+        <li>Deurne</li>
+        <li>Berchem</li>
+        <li>Borgerhout</li>
+        <li>Hoboken</li>
+        <li>Wilrijk</li>
+        <li>Merksem</li>
+        <li>Mortsel</li>
+        <li>Edegem</li>
+        <li>Kontich</li>
+        <li>Aartselaar</li>
+        <li>Wommelgem</li>
+        <li>omgeving Antwerpse Ring</li>
+        <li>omgeving Singel</li>
+      </ul>
+
+      <p>
+        Ook wanneer je voertuig in een drukke omgeving of in het centrum
+        staat, bekijken we welke takelwagen het meest geschikt is om het
+        voertuig veilig op te halen.
+      </p>
+    </section>
+
+    <section>
+      <h2>Veel voorkomende depannage in Antwerpen</h2>
+
+      <div class="service-list">
+
+        <div class="service">
+          <div class="service-number">01</div>
+          <h3>Autopech</h3>
+          <p>
+            Start je wagen niet meer of is er een technisch probleem waardoor
+            je niet verder kunt? We kunnen het voertuig takelen en naar een
+            garage of andere bestemming brengen.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-number">02</div>
+          <h3>Ongeval</h3>
+          <p>
+            Na een ongeval kan het voertuig vaak niet meer zelfstandig rijden.
+            We zorgen voor het veilig ophalen en vervoeren van de wagen.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-number">03</div>
+          <h3>Lege batterij</h3>
+          <p>
+            Een lege batterij kan soms ter plaatse worden opgelost met een
+            booster of startkabels. Wanneer starten niet lukt, kan het
+            voertuig worden getakeld.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-number">04</div>
+          <h3>Lekke band</h3>
+          <p>
+            Bij een lekke band kan takelen naar een bandencentrale een
+            praktische en voordelige oplossing zijn. Een andere oplossing
+            kan afhankelijk van de situatie ter plaatse worden bekeken.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-number">05</div>
+          <h3>Verkeerd getankt</h3>
+          <p>
+            Verkeerd tanken? Stop indien mogelijk met rijden en laat het
+            voertuig controleren. We kunnen het voertuig naar een garage
+            of geschikte locatie vervoeren.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-number">06</div>
+          <h3>Autotransport</h3>
+          <p>
+            Niet elk transport is een depannage. Soms moet een voertuig
+            gewoon van punt A naar punt B worden gebracht. Ook daarvoor
+            kun je Faster contacteren.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Lekke band in Antwerpen</h2>
+
+      <p>
+        Bij een lekke band denken veel mensen onmiddellijk aan een mobiele
+        bandenservice. Toch is dat niet altijd de goedkoopste oplossing.
+      </p>
+
+      <p>
+        Wanneer de band niet ter plaatse kan worden vervangen, kan het
+        interessanter zijn om de wagen naar een bandencentrale te brengen.
+        Wat het beste is, hangt af van de situatie, het voertuig en wat de
+        klant nodig heeft.
+      </p>
+    </section>
+
+    <section>
+      <h2>Lege batterij of startproblemen</h2>
+
+      <p>
+        Een lege batterij is één van de meest voorkomende redenen waarom
+        automobilisten niet meer kunnen vertrekken.
+      </p>
+
+      <p>
+        Wanneer het probleem eenvoudig opgelost kan worden, kunnen we
+        proberen het voertuig opnieuw te starten met een booster.
+        Lukt dat niet, dan kan de wagen naar een garage worden vervoerd.
+      </p>
+
+      <p>
+        In sommige situaties is het ook mogelijk om een batterij ter plaatse
+        te vervangen wanneer de juiste batterij beschikbaar is.
+      </p>
+    </section>
+
+    <section>
+      <h2>Verkeerd getankt?</h2>
+
+      <p>
+        Heb je benzine in een dieselwagen of diesel in een benzinewagen
+        getankt? Probeer dan vooral niet verder te rijden.
+      </p>
+
+      <p>
+        Afhankelijk van het voertuig kan een gespecialiseerde technieker
+        de brandstof verwijderen en het systeem controleren. Wanneer het
+        voertuig naar een garage moet, kunnen wij het transport verzorgen.
+      </p>
+    </section>
+
+    <section>
+      <h2>Ook grotere en bijzondere voertuigen</h2>
+
+      <p>
+        Niet alleen gewone personenwagens komen bij ons terecht. Afhankelijk
+        van de situatie kunnen ook SUV's, bestelwagens, oldtimers,
+        limousines en voertuigen met geblokkeerde wielen worden opgehaald.
+      </p>
+
+      <p>
+        Wanneer een situatie specifieke apparatuur vereist, wordt bekeken
+        welke oplossing het veiligst is.
+      </p>
+    </section>
+
+    <section>
+      <h2>Dringende of geplande takeling</h2>
+
+      <p>
+        Een dringende depannage proberen we zo snel mogelijk op te nemen.
+        Wanneer een transport minder dringend is, kan het soms praktischer
+        zijn om het moment van ophaling te plannen.
+      </p>
+
+      <p>
+        Bij een gepland transport kunnen we rekening houden met andere
+        opdrachten en de beschikbare planning. In sommige situaties kan
+        daardoor ook een gunstiger prijs worden afgesproken.
+      </p>
+    </section>
+
+    <section>
+      <h2>Takeldienst op de Antwerpse Ring</h2>
+
+      <p>
+        Pech of een ongeval op of rond de Antwerpse Ring is een andere
+        situatie dan pech voor de deur.
+      </p>
+
+      <p>
+        Veiligheid komt daar eerst. Wanneer je voertuig nog kan worden
+        verplaatst, probeer het dan zo veilig mogelijk aan de kant te zetten.
+        Zet je alarmlichten aan en ga, wanneer dat veilig mogelijk is,
+        achter de vangrail staan.
+      </p>
+
+      <div class="warning">
+        <strong>Sta je op een gevaarlijke plaats op de snelweg?</strong><br>
+        Verlaat het voertuig alleen wanneer dat veilig kan. Bij een ernstig
+        ongeval of een onmiddellijk gevaar voor personen moet je de
+        hulpdiensten inschakelen.
+      </div>
+    </section>
+
+    <section>
+      <h2>Wat kost een takeldienst in Antwerpen?</h2>
+
+      <p>
+        Er bestaat geen vaste prijs voor elke depannage. De prijs hangt
+        onder andere af van de plaats waar het voertuig staat, de bestemming,
+        het type voertuig, de situatie en het tijdstip.
+      </p>
+
+      <p>
+        Daarom vragen we vooraf naar de belangrijkste details. Zo kunnen we
+        de situatie beter inschatten voordat we vertrekken.
+      </p>
+
+      <p>
+        Wil je weten wat jouw takeling ongeveer kost? Neem dan rechtstreeks
+        contact met ons op en geef door waar je staat, wat er gebeurd is en
+        waar het voertuig naartoe moet.
+      </p>
+    </section>
+
+    <section>
+      <h2>Fout geparkeerde wagen</h2>
+
+      <p>
+        Een voertuig dat door de overheid wegens foutparkeren werd getakeld,
+        is een andere situatie dan een gewone pechoproep.
+      </p>
+
+      <p>
+        Wanneer je wagen officieel werd getakeld, moet je eerst nagaan welke
+        instantie de takeling heeft laten uitvoeren en waar het voertuig
+        werd overgebracht. De procedure en kosten kunnen verschillen van
+        een gewone particuliere depannage.
+      </p>
+    </section>
+
+    <section>
+      <h2>Waarom Faster Depannage?</h2>
+
+      <p>
+        Bij een probleem onderweg wil je vooral weten waar je aan toe bent.
+        Daarom proberen we duidelijk te communiceren over de situatie,
+        de mogelijkheden en de prijs.
+      </p>
+
+      <p>
+        Onze focus ligt op een correcte service, een vriendelijke aanpak
+        en een goede verhouding tussen prijs en kwaliteit.
+      </p>
+
+      <div class="grid">
+
+        <div class="card">
+          <strong>24/7 bereikbaar</strong>
+          <p>
+            Ook 's avonds, 's nachts en in het weekend kun je contact
+            opnemen voor een dringende depannage.
+          </p>
+        </div>
+
+        <div class="card">
+          <strong>Antwerpen en omgeving</strong>
+          <p>
+            Actief in Antwerpen en verschillende gemeenten in de regio.
+          </p>
+        </div>
+
+        <div class="card">
+          <strong>Duidelijke aanpak</strong>
+          <p>
+            We vragen vooraf de informatie die nodig is om de situatie
+            goed in te schatten.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta">
+
+      <h2>Heb je nu een takeldienst nodig?</h2>
+
+      <p>
+        Bel ons rechtstreeks. Vertel waar je staat, wat er met de wagen
+        gebeurd is en waar het voertuig eventueel naartoe moet.
+      </p>
+
+      <div class="buttons">
+
+        <a class="button button-yellow" href="tel:+3233756737">
+          03 375 67 37
+        </a>
+
+        <a class="button button-yellow"
+           href="https://wa.me/353899707462">
+          WhatsApp
+        </a>
+
+      </div>
+
+    </section>
+
+    <section>
+
+      <h2>Contact</h2>
+
+      <div class="contact">
+
+        <div class="contact-box">
+          <strong>Telefoon</strong>
+          <a href="tel:+3233756737">
+            03 375 67 37
+          </a>
+        </div>
+
+        <div class="contact-box">
+          <strong>E-mail</strong>
+          <a href="mailto:faster@takeldienstfaster.be">
+            faster@takeldienstfaster.be
+          </a>
+        </div>
+
+        <div class="contact-box">
+          <strong>Adres</strong>
+          De Bosschaertstraat 248<br>
+          2020 Antwerpen
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <strong>Faster Depannage Takeldienst</strong><br>
+      24/7 takeldienst en pechverhelping in Antwerpen en omgeving.
+      <br><br>
+      De Bosschaertstraat 248, 2020 Antwerpen<br>
+      03 375 67 37 · faster@takeldienstfaster.be
+    </div>
+  </footer>
+
+</body>
+</html>
