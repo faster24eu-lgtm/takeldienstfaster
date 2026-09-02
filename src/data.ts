@@ -1,6 +1,6 @@
-export const phoneDisplay = '+32 480 20 47 33';
-export const phoneHref = 'tel:+32480204733';
-export const whatsapp = 'https://wa.me/32480204733';
+export const phoneDisplay = '+32 3 375 67 37';
+export const phoneHref = 'tel:+3233756737';
+export const whatsapp = 'https://wa.me/3233756737?text=Hallo%20Faster%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig.';
 
 export const cities = [
   {slug:'antwerpen', name:'Antwerpen'},
