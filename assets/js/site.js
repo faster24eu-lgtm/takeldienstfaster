@@ -24,7 +24,7 @@ if (quoteForm) {
       `Situatie: ${form.get('problem') || ''}`
     ].join('
 ');
-    window.open('https://wa.me/32480204733?text=' + encodeURIComponent(message), '_blank', 'noopener');
+    window.open('https://wa.me/3233756737?text=' + encodeURIComponent(message), '_blank', 'noopener');
   });
 }
 
