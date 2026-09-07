@@ -158,4 +158,48 @@
 <section class="cta"><div class="container cta-inner"><div><h2>Staat je voertuig stil?</h2><p>Bel ons rechtstreeks. We bekijken meteen wat er nodig is.</p></div><a class="btn btn-yellow" href="tel:+3233756737">Bel +32 3 375 67 37</a></div></section>
 </main>
 <footer class="footer"><div class="container footer-grid"><div><div class="brand"><span class="brand-mark"><img src="assets/images/faster-logo.png" alt="Faster logo"></span><span><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></div><p>Persoonlijke takeldienst vanuit Antwerpen, actief in Vlaanderen en internationaal.</p></div><div><h3>Diensten</h3><a href="diensten/">Alle diensten</a><a href="diensten/#pechverhelping">Pechverhelping</a><a href="diensten/#takeldienst">Takeldienst</a><a href="diensten/#machines">Machines & heftrucks</a></div><div><h3>Over Faster</h3><a href="over-ons/">Over Faster</a><a href="ervaringen/">Interventieverhalen</a><a href="en/">English</a><a href="fr/">Français</a><a href="de/">Deutsch</a></div><div><h3>Contact</h3><a href="mailto:faster@takeldienstfaster.be">faster@takeldienstfaster.be</a><p>De Bosschaertstraat 248<br>2020 Antwerpen (Kiel)</p><a class="btn btn-wa" href="https://wa.me/3233756737?text=Hallo%20Faster%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig." target="_blank" rel="noopener noreferrer">WhatsApp</a></div></div><div class="container bottom"><span>© 2026 Faster Depannage / Takeldienst</span><span>Persoonlijk · Betrouwbaar · Oplossingsgericht</span></div></footer>
+<script>
+// Lead webhook forwarding (Make.com Custom Webhook).
+// Paste the Make.com "Custom Webhook" URL below to activate. Leave empty to do nothing.
+// This does NOT replace or block the existing FormSubmit.co submission (still the
+// system of record for email delivery) - it just also forwards a copy of the same
+// lead data to Make.com in parallel, for automation (e.g. SMS/CRM/Slack via Make).
+(function () {
+  var MAKE_WEBHOOK_URL = "";
+
+  var form = document.querySelector(".formbox");
+  if (!form) return;
+
+  form.addEventListener("submit", function () {
+    if (!MAKE_WEBHOOK_URL) return;
+
+    try {
+      var data = new FormData(form);
+      var payload = {
+        naam: data.get("naam") || "",
+        email: data.get("email") || "",
+        telefoon: data.get("telefoon") || "",
+        voertuig: data.get("voertuig") || "",
+        ophaalplaats: data.get("ophaalplaats") || "",
+        bestemming: data.get("bestemming") || "",
+        situatie: data.get("situatie") || "",
+        bron: "takeldienstfaster.be",
+        pagina: window.location.href,
+        verzonden_op: new Date().toISOString()
+      };
+
+      fetch(MAKE_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+        keepalive: true
+      }).catch(function () {
+        // Silently ignore - the real submission (FormSubmit.co) is unaffected.
+      });
+    } catch (e) {
+      // Never let webhook forwarding break the actual form submission.
+    }
+  });
+})();
+</script>
 </body></html>
