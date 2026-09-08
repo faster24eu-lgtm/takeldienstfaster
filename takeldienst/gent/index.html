@@ -88,6 +88,13 @@
 }
 @media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}
 .disclaimer{font-size:11px;color:var(--muted);margin-top:10px}
+.formbox{border:1px solid var(--line);background:#fafaf8;padding:25px}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.formgrid label{display:block;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+.formgrid input,.formgrid textarea{display:block;width:100%;margin-top:6px;border:1px solid #ccc;background:#fff;border-radius:0;padding:12px 13px;font:inherit}
+.formgrid textarea{min-height:100px;resize:vertical}
+.formgrid .full{grid-column:1/-1}
+@media(max-width:640px){.formgrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -184,6 +191,41 @@
           <h3>Staat het voertuig al veilig?</h3>
           <p>Moet je wagen morgen gewoon van thuis naar de garage? Dan plannen we dat in op een moment dat past.</p>
         </div>
+      </div>
+    </section>
+
+    <!-- LEAD FORM -->
+    <section class="section grey">
+      <div class="container safety-grid">
+        <div>
+          <span class="eyebrow">HULP NODIG?</span>
+          <h2>Hulp nodig of een voertuig laten vervoeren?</h2>
+          <p>Liever je situatie eerst doorgeven? Vul het formulier in. We bekijken wat er nodig is en nemen zo snel mogelijk contact met je op.</p>
+          <div class="quote-box" style="margin-top:20px">
+            <strong>Dringend en sta je langs de weg?</strong>
+            <p>Bel ons direct.</p>
+            <div class="cta-actions">
+              <a class="button" href="tel:+3233756737">Bel +32 3 375 67 37</a>
+            </div>
+          </div>
+        </div>
+        <form class="formbox" action="https://formsubmit.co/faster24eu@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nieuwe aanvraag via Takeldienst Faster">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_next" value="https://takeldienstfaster.be/bedankt/">
+          <div class="formgrid">
+            <label>Naam *<input name="naam" required></label>
+            <label>E-mail *<input type="email" name="email" required></label>
+            <label>Telefoon<input name="telefoon"></label>
+            <label>Merk & model<input name="voertuig"></label>
+            <label class="full">Waar staat het voertuig?<input name="ophaalplaats"></label>
+            <label class="full">Waar moet het naartoe?<input name="bestemming"></label>
+            <label class="full">Wat is er gebeurd?<textarea name="situatie"></textarea></label>
+            <div class="full"><button class="button" type="submit" style="width:100%">Verstuur aanvraag</button></div>
+          </div>
+          <p class="disclaimer">Deze aanvraag wordt per e-mail doorgestuurd naar Faster. Voor snelle hulp: WhatsApp of bel.</p>
+        </form>
       </div>
     </section>
 
@@ -401,5 +443,51 @@
     <div class="container footer-bottom"><span>© 2026 Faster Depannage / Takeldienst</span><span>Takeldienst Gent • 24/7</span></div>
   </footer>
   <div class="mobile-bar"><a class="call" href="tel:+3233756737">Bel nu</a><a class="wa" href="https://wa.me/3233756737?text=Hallo%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig%20in%20Gent." target="_blank" rel="noopener">WhatsApp</a></div>
+<script>
+// Lead webhook forwarding (Make.com Custom Webhook).
+// Reuses the exact same Make webhook already active on the homepage form -
+// this is not a new webhook or a new automation, just the same one wired to
+// this page's copy of the form. See index.html for the reference version.
+// This does NOT replace or block the existing FormSubmit.co submission (still the
+// system of record for email delivery) - it just also forwards a copy of the same
+// lead data to Make.com in parallel, for automation (Twilio call + email via Make).
+(function () {
+  var MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/obnmmlyanvmpn9yznpxxdxgryf4o22t8";
+
+  var form = document.querySelector(".formbox");
+  if (!form) return;
+
+  form.addEventListener("submit", function () {
+    if (!MAKE_WEBHOOK_URL) return;
+
+    try {
+      var data = new FormData(form);
+      var payload = {
+        naam: data.get("naam") || "",
+        email: data.get("email") || "",
+        telefoon: data.get("telefoon") || "",
+        voertuig: data.get("voertuig") || "",
+        ophaalplaats: data.get("ophaalplaats") || "",
+        bestemming: data.get("bestemming") || "",
+        situatie: data.get("situatie") || "",
+        bron: "takeldienstfaster.be",
+        pagina: window.location.href,
+        verzonden_op: new Date().toISOString()
+      };
+
+      fetch(MAKE_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+        keepalive: true
+      }).catch(function () {
+        // Silently ignore - the real submission (FormSubmit.co) is unaffected.
+      });
+    } catch (e) {
+      // Never let webhook forwarding break the actual form submission.
+    }
+  });
+})();
+</script>
 </body>
 </html>
