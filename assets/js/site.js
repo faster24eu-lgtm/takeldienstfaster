@@ -22,8 +22,7 @@ if (quoteForm) {
       `Bestemming: ${form.get('dropoff') || ''}`,
       `Voertuig: ${form.get('vehicle') || ''}`,
       `Situatie: ${form.get('problem') || ''}`
-    ].join('
-');
+    ].join('\n');
     window.open('https://wa.me/3233756737?text=' + encodeURIComponent(message), '_blank', 'noopener');
   });
 }
