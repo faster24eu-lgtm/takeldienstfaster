@@ -122,6 +122,27 @@
 .leaflet-popup-content-wrapper{border-radius:0;font-family:Arial,Helvetica,sans-serif}
 .leaflet-popup-content{margin:10px 12px;font-size:13px;font-weight:700}
 .leaflet-popup-tip{border-radius:0}
+
+/* The shared stylesheet leaves bare .card (used by the "Hoe het werkt"
+   steps) and .review-card h3 (used by the area cards below) unstyled -
+   they were falling back to plain browser-default heading rendering.
+   Scoped to this page only. */
+.process-grid .card{background:#fff;border:1px solid var(--line);padding:26px}
+.process-grid .card h3{margin:0 0 8px;font-size:21px;font-weight:900}
+.process-grid .card p{margin:0;color:#696969}
+
+.review-card h3{margin:0 0 8px;font-size:22px;font-weight:900;letter-spacing:-.01em}
+#werkgebied-detail .review-card{border-top:3px solid var(--accent)}
+
+.safety-grid>div>p{line-height:1.6}
+.safety-grid>div>p+p{margin-top:14px}
+
+.safety-item{display:flex;align-items:flex-start;gap:12px;line-height:1.5}
+.safety-item b{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:24px;height:24px;background:var(--accent);color:var(--ink);font-size:11px;font-weight:900}
+
+.area-links{gap:10px}
+.area-links .area-link{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:800;padding:11px 16px}
+.area-links .area-link:before{content:"";width:6px;height:6px;background:var(--accent);flex-shrink:0}
 </style>
 </head>
 <body>
@@ -151,7 +172,7 @@
         <div>
           <span class="eyebrow">TAKELDIENST AALST & REGIO · 24/7</span>
           <h1>Takeldienst Aalst & Regio</h1>
-          <p class="hero-lead">24/7 takeldienst voor Aalst, Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele en de omliggende gemeenten.</p>
+          <p class="hero-lead">24/7 takeldienst voor Aalst, Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere en de omliggende gemeenten.</p>
           <div class="hero-actions">
             <a class="button" href="tel:+3233756737">Bel +32 3 375 67 37</a>
             <a class="button button-green" href="https://wa.me/3233756737?text=Hallo%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig%20in%20de%20regio%20Aalst." target="_blank" rel="noopener">WhatsApp</a>
@@ -203,7 +224,7 @@
     <section class="section grey">
       <div class="container">
         <div class="section-head">
-          <div><span class="eyebrow">REGIO</span><h2>Takeldienst in Aalst en de omliggende regio</h2></div>
+          <div><span class="eyebrow">REGIO</span><h2>Van Aalst tot Dendermonde en Ninove.</h2></div>
           <p>We rijden dagelijks tussen deze gemeenten. Aalst levert veel aanvragen, de rest van de regio evengoed.</p>
         </div>
         <div id="regio-map-groot" class="regio-map-large" role="img" aria-label="Kaart met de gemeenten waar Faster actief is rond Aalst"></div>
@@ -384,7 +405,7 @@
     <section class="section grey" id="werkgebied-detail">
       <div class="container">
         <div class="section-head">
-          <div><span class="eyebrow">GEMEENTE PER GEMEENTE</span><h2>Aalst en de regio, gemeente per gemeente.</h2></div>
+          <div><span class="eyebrow">GEMEENTE PER GEMEENTE</span><h2>Ons werkgebied.</h2></div>
           <p>Negen gemeenten waar we het vaakst uitrukken.</p>
         </div>
         <div class="review-grid">
@@ -461,7 +482,7 @@
           <p>Aalst, Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele of Erpe-Mere: bel of WhatsApp Faster. We bespreken de prijs voor we vertrekken.</p>
         </div>
         <div class="cta-actions">
-          <a class="button" href="tel:+3233756737">Bel voor een prijs</a>
+          <a class="button" href="tel:+3233756737">Bel +32 3 375 67 37</a>
           <a class="button button-outline" href="https://wa.me/3233756737?text=Hallo%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig%20in%20de%20regio%20Aalst." target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </div>
