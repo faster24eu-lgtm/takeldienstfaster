@@ -164,15 +164,15 @@
           </div>
         </div>
         <div class="hero-media hero-visual">
-          <div class="hero-visual-panel hero-visual-photo is-active">
+          <div class="hero-visual-panel hero-visual-photo">
             <img src="../../assets/images/faster-road-transport.jpg" alt="Takelwagen van Faster met voertuigtransport" loading="eager" fetchpriority="high" width="1200" height="900">
           </div>
-          <div class="hero-visual-panel hero-visual-map">
+          <div class="hero-visual-panel hero-visual-map is-active">
             <div id="hero-regio-map" class="regio-map-embed" role="img" aria-label="Kaart met het werkgebied van Faster rond Aalst"></div>
           </div>
           <div class="hero-visual-dots" aria-hidden="true">
-            <span data-dot="photo" class="is-active"></span>
-            <span data-dot="map"></span>
+            <span data-dot="photo"></span>
+            <span data-dot="map" class="is-active"></span>
           </div>
         </div>
       </div>
@@ -529,7 +529,13 @@ function buildRegioMap(containerId, opts) {
 
 var regioMapLarge = buildRegioMap("regio-map-groot", {includeExtra: true, zoomControl: true});
 
-var heroRegioMap = null;
+// Map shows first on page load (hero-visual-map already carries is-active
+// in the HTML), then alternates with the truck photo.
+var heroRegioMap = buildRegioMap("hero-regio-map", {includeExtra: false, zoomControl: false});
+if (heroRegioMap) {
+  setTimeout(function () { heroRegioMap.invalidateSize(); }, 60);
+}
+
 var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 if (!reduceMotion) {
   var heroPhoto = document.querySelector(".hero-visual-photo");
@@ -537,16 +543,15 @@ if (!reduceMotion) {
   var dotPhoto = document.querySelector(".hero-visual-dots [data-dot='photo']");
   var dotMap = document.querySelector(".hero-visual-dots [data-dot='map']");
   if (heroPhoto && heroMapPanel) {
-    var showingPhoto = true;
+    var showingMap = true;
     setInterval(function () {
-      showingPhoto = !showingPhoto;
-      heroPhoto.classList.toggle("is-active", showingPhoto);
-      heroMapPanel.classList.toggle("is-active", !showingPhoto);
-      if (dotPhoto) dotPhoto.classList.toggle("is-active", showingPhoto);
-      if (dotMap) dotMap.classList.toggle("is-active", !showingPhoto);
-      if (!showingPhoto) {
-        if (!heroRegioMap) heroRegioMap = buildRegioMap("hero-regio-map", {includeExtra: false, zoomControl: false});
-        setTimeout(function () { if (heroRegioMap) heroRegioMap.invalidateSize(); }, 60);
+      showingMap = !showingMap;
+      heroMapPanel.classList.toggle("is-active", showingMap);
+      heroPhoto.classList.toggle("is-active", !showingMap);
+      if (dotMap) dotMap.classList.toggle("is-active", showingMap);
+      if (dotPhoto) dotPhoto.classList.toggle("is-active", !showingMap);
+      if (showingMap && heroRegioMap) {
+        setTimeout(function () { heroRegioMap.invalidateSize(); }, 60);
       }
     }, 6000);
   }
