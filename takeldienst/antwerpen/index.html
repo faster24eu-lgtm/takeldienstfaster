@@ -105,6 +105,25 @@
     ]
   }
   </script>
+
+<style>
+.price-hero-inner{max-width:760px}
+.price-desc-inner{max-width:640px}
+.price-form-inner{max-width:640px}
+.price-num{color:#c81e1e}
+.price-hl{color:#c81e1e;text-decoration:underline;text-underline-offset:2px}
+a.price-hl{font-weight:800}
+.price-cta{background:#c81e1e;border-color:#c81e1e;color:#fff}
+.price-cta:hover{background:#a81717;border-color:#a81717}
+.disclaimer{font-size:11px;color:var(--muted);margin-top:10px}
+.formbox{border:1px solid var(--line);background:#fafaf8;padding:25px}
+.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.formgrid label{display:block;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.04em}
+.formgrid input,.formgrid textarea{display:block;width:100%;margin-top:6px;border:1px solid #ccc;background:#fff;border-radius:0;padding:12px 13px;font:inherit}
+.formgrid textarea{min-height:100px;resize:vertical}
+.formgrid .full{grid-column:1/-1}
+@media(max-width:640px){.formgrid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
   <header class="site-header">
@@ -130,42 +149,40 @@
 
   <main>
     <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow">TAKELDIENST ANTWERPEN • 24/7</span>
-          <h1>Takeldienst in Antwerpen nodig?</h1>
-          <p class="hero-lead">Pech, ongeval of transport nodig? Faster helpt vanuit Antwerpen met pechverhelping, takelen, berging en voertuigtransport. Je krijgt een duidelijke aanpak en één aanspreekpunt.</p>
-          <div class="hero-actions">
-            <a class="button button-green" href="https://wa.me/3233756737?text=Hallo%20Faster%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig." target="_blank" rel="noopener noreferrer">WhatsApp Faster</a>
-            <a class="button" href="tel:+3233756737">03.375.67.37</a>
-          </div>
-          <div class="hero-proof">
-            <div><strong>24/7</strong><span>Bereikbaar</span></div>
-            <div><strong>Antwerpen</strong><span>Vaste uitvalsbasis</span></div>
-            <div><strong>Pech + transport</strong><span>Van lokaal tot internationaal</span></div>
-            <div><strong>Prijs vooraf</strong><span>Situatie eerst bespreken</span></div>
-          </div>
-        </div>
-        <div class="hero-media">
-          <img src="../../assets/images/faster-road-transport.jpg" alt="Faster takeldienst en voertuigtransport in Antwerpen" loading="eager" fetchpriority="high" width="1200" height="900">
-        </div>
+      <div class="container price-hero-inner">
+        <span class="eyebrow">DEPANNAGE ANTWERPEN • 24/7</span>
+        <h1>Snelle depannage in Antwerpen vanaf <span class="price-num">€100 euro</span></h1>
+        <p class="hero-lead">Depannage nodig in Antwerpen? <a class="price-hl" href="tel:+3233756737">Bel nu</a> voor een snelle oplossing. Wij zijn binnen 15 tot 30 minuten op locatie. Prijzen worden vooraf besproken.</p>
       </div>
     </section>
 
-    <section class="section contact">
-      <div class="container area-grid">
-        <div class="area-card">
-          <span class="eyebrow">DIRECT CONTACT</span>
-          <h2>Staat je wagen stil in Antwerpen?</h2>
-          <p>Stuur via WhatsApp kort waar je staat, welk voertuig je hebt en wat er gebeurd is. Foto's van de situatie zijn ook handig.</p>
-          <a class="button button-green" href="https://wa.me/3233756737?text=Hallo%20Faster%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig." target="_blank" rel="noopener noreferrer">Stuur WhatsApp</a>
-        </div>
-        <div class="area-card">
-          <span class="eyebrow">TELEFONISCH</span>
-          <h2>03.375.67.37</h2>
-          <p>Dit is het vaste Faster-nummer. Bel wanneer je liever meteen mondeling uitlegt wat er aan de hand is.</p>
-          <a class="button" href="tel:+3233756737">Bel Faster — 03.375.67.37</a>
-        </div>
+    <section class="section light">
+      <div class="container price-desc-inner">
+        <h2>Wat kost een depannage?</h2>
+        <p>Elke situatie is natuurlijk anders. Vul ons <span class="price-hl">gratis</span> formulier in en ontvang <span class="price-hl">direct</span> een prijsofferte.</p>
+      </div>
+    </section>
+
+    <section class="section grey">
+      <div class="container price-form-inner">
+        <h2>Ontvang <span class="price-hl">direct</span> een prijsofferte</h2>
+        <form class="formbox" action="https://formsubmit.co/faster24eu@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nieuwe prijsofferte-aanvraag via Takeldienst Antwerpen">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_next" value="https://takeldienstfaster.be/prijsofferte-verzonden/">
+          <div class="formgrid">
+            <label>Naam *<input name="naam" required></label>
+            <label>E-mail *<input type="email" name="email" required></label>
+            <label>Telefoon<input name="telefoon"></label>
+            <label>Merk & model<input name="voertuig"></label>
+            <label class="full">Waar staat het voertuig?<input name="ophaalplaats"></label>
+            <label class="full">Waar moet het naartoe?<input name="bestemming"></label>
+            <label class="full">Wat is er gebeurd?<textarea name="situatie"></textarea></label>
+            <div class="full"><button class="button price-cta" type="submit" style="width:100%">Ontvang mijn prijsofferte</button></div>
+          </div>
+          <p class="disclaimer">Je ontvangt je prijsofferte per e-mail of telefoon. Spoedgeval? Bel of WhatsApp meteen.</p>
+        </form>
       </div>
     </section>
 
@@ -258,9 +275,9 @@
           <p>Een wagen die midden op de weg staat heeft voorrang. Staat je voertuig al veilig geparkeerd en moet het pas later vervoerd worden, dan bekijken we samen welk moment praktisch is. Past dat toevallig bij een rit die we toch al maken, dan kan dat een gunstiger prijs opleveren.</p>
         </div>
         <div class="area-card">
-          <span class="eyebrow">WAT KOST EEN TAKELDIENST IN ANTWERPEN?</span>
-          <h3>Eerst de situatie, dan de prijs.</h3>
-          <p>De prijs hangt af van locatie, bestemming, type voertuig en dringendheid. Daarom geven we liever geen willekeurig vast bedrag. Bel of WhatsApp ons met die gegevens en we spreken vooraf een duidelijke prijs af.</p>
+          <span class="eyebrow">WAT KOST EEN DEPANNAGE IN ANTWERPEN?</span>
+          <h3>Vanaf €100 euro.</h3>
+          <p>De uiteindelijke prijs hangt af van locatie, bestemming, type voertuig en dringendheid, maar we starten vanaf €100 euro. Vul het formulier hierboven in voor een prijsofferte, of bel of WhatsApp ons met je gegevens voor een duidelijke prijs vooraf.</p>
         </div>
       </div>
     </section>
@@ -368,5 +385,51 @@
     <div class="container footer-bottom"><span>© 2026 Faster Depannage / Takeldienst</span><span>Takeldienst Antwerpen • 24/7</span></div>
   </footer>
   <div class="mobile-bar"><a href="https://wa.me/3233756737?text=Hallo%20Faster%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig." target="_blank" rel="noopener noreferrer">WhatsApp Faster</a></div>
+<script>
+// Lead webhook forwarding (Make.com Custom Webhook).
+// Reuses the exact same Make webhook already active on the homepage form -
+// this is not a new webhook or a new automation, just the same one wired to
+// this page's copy of the form. See index.html for the reference version.
+// This does NOT replace or block the existing FormSubmit.co submission (still the
+// system of record for email delivery) - it just also forwards a copy of the same
+// lead data to Make.com in parallel, for automation (Twilio call + email via Make).
+(function () {
+  var MAKE_WEBHOOK_URL = "https://hook.eu1.make.com/obnmmlyanvmpn9yznpxxdxgryf4o22t8";
+
+  var form = document.querySelector(".formbox");
+  if (!form) return;
+
+  form.addEventListener("submit", function () {
+    if (!MAKE_WEBHOOK_URL) return;
+
+    try {
+      var data = new FormData(form);
+      var payload = {
+        naam: data.get("naam") || "",
+        email: data.get("email") || "",
+        telefoon: data.get("telefoon") || "",
+        voertuig: data.get("voertuig") || "",
+        ophaalplaats: data.get("ophaalplaats") || "",
+        bestemming: data.get("bestemming") || "",
+        situatie: data.get("situatie") || "",
+        bron: "takeldienstfaster.be",
+        pagina: window.location.href,
+        verzonden_op: new Date().toISOString()
+      };
+
+      fetch(MAKE_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+        keepalive: true
+      }).catch(function () {
+        // Silently ignore - the real submission (FormSubmit.co) is unaffected.
+      });
+    } catch (e) {
+      // Never let webhook forwarding break the actual form submission.
+    }
+  });
+})();
+</script>
 </body>
 </html>
