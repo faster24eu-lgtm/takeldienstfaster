@@ -1,3 +1,12 @@
+// Google Ads conversion: WhatsApp klik (every link to wa.me and the quote form that opens WhatsApp)
+function trackWhatsApp() {
+  if (typeof gtag === 'function') { gtag('event', 'conversion', {'send_to': 'AW-10963026341/GaNaCICrtIYdEKWDyuso'}); }
+}
+document.addEventListener('click', function (e) {
+  var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"]') : null;
+  if (a) { trackWhatsApp(); }
+}, true);
+
 
 document.addEventListener('click', (e) => {
   const link = e.target.closest('a[href^="#"]');
@@ -23,6 +32,7 @@ if (quoteForm) {
       `Voertuig: ${form.get('vehicle') || ''}`,
       `Situatie: ${form.get('problem') || ''}`
     ].join('\n');
+    trackWhatsApp();
     window.open('https://wa.me/3233756737?text=' + encodeURIComponent(message), '_blank', 'noopener');
   });
 }
