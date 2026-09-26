@@ -191,14 +191,6 @@
 </script>
 
 <style>
-.mobile-bar{display:none}
-@media(max-width:640px){
-  body{padding-bottom:66px}
-  .mobile-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;gap:8px;padding:8px;background:var(--ink);box-shadow:0 -2px 14px rgba(0,0,0,.18)}
-  .mobile-bar a{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;min-height:46px;font-weight:800;font-size:14px;border:1px solid transparent}
-  .mobile-bar a.call{background:var(--accent);color:var(--ink)}
-  .mobile-bar a.wa{background:var(--green);color:#fff}
-}
 @media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}
 .disclaimer{font-size:11px;color:var(--muted);margin-top:10px}
 .formbox{border:1px solid var(--line);background:#fafaf8;padding:25px}
@@ -542,7 +534,6 @@
     </div>
     <div class="container footer-bottom"><span>© 2026 Faster Depannage Takeldienst</span><span>Pomoc drogowa Gandawa • 24/7</span></div>
   </footer>
-  <div class="mobile-bar"><a class="call" href="tel:+3233756737">Zadzwoń teraz</a><a class="wa" href="https://wa.me/3233756737?text=Dzie%C5%84%20dobry%2C%20potrzebuj%C4%99%20pomocy%20z%20moim%20pojazdem%20w%20Gandawie." target="_blank" rel="noopener">WhatsApp</a></div>
 <script>
 // Lead webhook forwarding (Make.com Custom Webhook).
 // Reuses the exact same Make webhook already active on the homepage form -
