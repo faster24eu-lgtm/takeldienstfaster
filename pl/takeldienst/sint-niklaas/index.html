@@ -53,6 +53,10 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/",
+      "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
       "priceRange": "€€",
       "areaServed": [
         {
@@ -60,58 +64,55 @@
           "@type": "City"
         },
         {
-          "name": "Temse",
-          "@type": "City"
+          "@type": "City",
+          "name": "Temse"
         },
         {
           "@type": "City",
           "name": "Waasmunster"
         },
         {
-          "name": "Hamme",
-          "@type": "City"
+          "@type": "City",
+          "name": "Hamme"
         },
         {
           "@type": "City",
           "name": "Sint-Gillis-Waas"
         },
         {
-          "@type": "City",
-          "name": "Stekene"
+          "name": "Stekene",
+          "@type": "City"
         },
         {
-          "name": "E17",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "E17"
         },
         {
-          "name": "N70",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "N70"
         }
       ],
-      "email": "faster@takeldienstfaster.be",
+      "@id": "https://takeldienstfaster.be/#business",
       "image": "https://takeldienstfaster.be/assets/images/faster-intervention-workshop.jpg",
-      "url": "https://takeldienstfaster.be/",
-      "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "email": "faster@takeldienstfaster.be",
       "address": {
         "@type": "PostalAddress",
         "postalCode": "2020",
-        "addressLocality": "Antwerpen",
         "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE"
+        "addressLocality": "Antwerpen",
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen"
       },
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
-      "@id": "https://takeldienstfaster.be/#business"
+      "@type": "LocalBusiness"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
-          "item": "https://takeldienstfaster.be/pl/",
-          "name": "Strona główna"
+          "name": "Strona główna",
+          "item": "https://takeldienstfaster.be/pl/"
         },
         {
           "@type": "ListItem",
@@ -120,80 +121,79 @@
           "name": "Pomoc drogowa"
         },
         {
-          "@type": "ListItem",
-          "position": 3,
           "item": "https://takeldienstfaster.be/pl/takeldienst/sint-niklaas/",
-          "name": "Sint-Niklaas"
+          "name": "Sint-Niklaas",
+          "position": 3,
+          "@type": "ListItem"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
-          "name": "Czy są Państwo dostępni 24/7?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Tak. W pilnej sytuacji sam odbieram telefon, także w nocy.",
-            "@type": "Answer"
-          }
+            "@type": "Answer",
+            "text": "Tak. W pilnej sytuacji sam odbieram telefon, także w nocy."
+          },
+          "name": "Czy są Państwo dostępni 24/7?",
+          "@type": "Question"
         },
         {
-          "name": "Jak szybko mogą Państwo być w Sint-Niklaas?",
           "@type": "Question",
+          "name": "Jak szybko mogą Państwo być w Sint-Niklaas?",
           "acceptedAnswer": {
             "text": "Sint-Niklaas leży około 30 minut od Antwerpii przy normalnym ruchu. W pilnej sytuacji staram się wyruszyć jak najszybciej; przy planowanym kursie po prostu umawiam termin.",
             "@type": "Answer"
           }
         },
         {
-          "name": "Czy mogą Państwo przewieźć mój samochód do mojego warsztatu?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Tak. Sami Państwo wybierają, dokąd trafi samochód, ja doradzam, jeśli to przydatne.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Tak. Sami Państwo wybierają, dokąd trafi samochód, ja doradzam, jeśli to przydatne."
           },
-          "@type": "Question"
+          "name": "Czy mogą Państwo przewieźć mój samochód do mojego warsztatu?"
         },
         {
-          "name": "Czy przewożą Państwo również samochody dostawcze?",
           "@type": "Question",
+          "name": "Czy przewożą Państwo również samochody dostawcze?",
           "acceptedAnswer": {
             "text": "Tak, pojazdy do 3,5 tony.",
             "@type": "Answer"
           }
         },
         {
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Często tak. Najpierw sprawdzam, czy problem da się rozwiązać na miejscu, na przykład boosterem, czy jednak pojazd trzeba odholować."
           },
-          "@type": "Question",
           "name": "Czy mogą Państwo pomóc, gdy samochód nie chce zapalić?"
         },
         {
-          "@type": "Question",
+          "name": "Czy wykonują Państwo również planowane transporty?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tak. Nie każdy kurs jest pilny. Jeśli samochód stoi bezpiecznie i trzeba go przestawić dopiero później, po prostu to planuję."
+            "text": "Tak. Nie każdy kurs jest pilny. Jeśli samochód stoi bezpiecznie i trzeba go przestawić dopiero później, po prostu to planuję.",
+            "@type": "Answer"
           },
-          "name": "Czy wykonują Państwo również planowane transporty?"
+          "@type": "Question"
         },
         {
-          "@type": "Question",
+          "name": "Czy przewożą Państwo pojazdy również za granicę?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Tak. Znam trasę i współpracuję z siecią kontaktów w transporcie międzynarodowym."
           },
-          "name": "Czy przewożą Państwo pojazdy również za granicę?"
+          "@type": "Question"
         },
         {
           "name": "Jak ustalana jest cena?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Cenę omawiam z góry. Jeśli przekazane informacje są prawidłowe, dotrzymuję ustaleń, bez niespodzianek po fakcie."
-          }
+            "text": "Cenę omawiam z góry. Jeśli przekazane informacje są prawidłowe, dotrzymuję ustaleń, bez niespodzianek po fakcie.",
+            "@type": "Answer"
+          },
+          "@type": "Question"
         }
       ]
     }

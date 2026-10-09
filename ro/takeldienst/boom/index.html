@@ -54,111 +54,111 @@
     {
       "name": "Faster Depannage Takeldienst",
       "@id": "https://takeldienstfaster.be/#business",
-      "telephone": "+3233756737",
       "@type": "LocalBusiness",
-      "priceRange": "€€",
+      "address": {
+        "postalCode": "2020",
+        "@type": "PostalAddress",
+        "addressCountry": "BE",
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressRegion": "Antwerpen"
+      },
+      "url": "https://takeldienstfaster.be/",
       "email": "faster@takeldienstfaster.be",
+      "priceRange": "€€",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "areaServed": [
         {
-          "name": "Boom",
-          "@type": "City"
+          "@type": "City",
+          "name": "Boom"
         },
         {
-          "name": "Boom Markt",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Boom Markt"
         },
         {
-          "name": "Industrieterrein Boom-Willebroek",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Industrieterrein Boom-Willebroek"
         },
         {
-          "name": "Willebroek",
-          "@type": "City"
+          "@type": "City",
+          "name": "Willebroek"
         },
         {
           "@type": "Place",
           "name": "A12"
         }
       ],
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "address": {
-        "postalCode": "2020",
-        "addressCountry": "BE",
-        "@type": "PostalAddress",
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressLocality": "Antwerpen"
-      },
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "url": "https://takeldienstfaster.be/"
+      "telephone": "+3233756737",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/ro/",
-          "@type": "ListItem",
           "name": "Acasă",
-          "position": 1
+          "item": "https://takeldienstfaster.be/ro/",
+          "position": 1,
+          "@type": "ListItem"
         },
         {
-          "name": "Serviciu de tractare",
-          "position": 2,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "position": 2,
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "name": "Serviciu de tractare"
         },
         {
-          "name": "Boom",
+          "item": "https://takeldienstfaster.be/ro/takeldienst/boom/",
           "position": 3,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/ro/takeldienst/boom/"
+          "name": "Boom"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "În condiții normale de trafic sunt pe drum, în medie, aproximativ 15–20 de minute pe A12. La aglomerație, desigur, poate fi altfel."
-          },
           "@type": "Question",
+          "acceptedAnswer": {
+            "text": "În condiții normale de trafic sunt pe drum, în medie, aproximativ 15–20 de minute pe A12. La aglomerație, desigur, poate fi altfel.",
+            "@type": "Answer"
+          },
           "name": "Cât de repede ajungeți în Boom?"
         },
         {
           "@type": "Question",
+          "name": "Cât costă un serviciu de tractare în Boom?",
           "acceptedAnswer": {
             "text": "Stabilesc întotdeauna un preț clar înainte să plec. Fără costuri ascunse.",
             "@type": "Answer"
-          },
-          "name": "Cât costă un serviciu de tractare în Boom?"
+          }
         },
         {
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Pe lângă autoturisme transport și autoutilitare, iar din când în când o motocicletă."
+            "text": "Da. Pe lângă autoturisme transport și autoutilitare, iar din când în când o motocicletă.",
+            "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Puteți tracta și autoutilitare?"
+          "name": "Puteți tracta și autoutilitare?",
+          "@type": "Question"
         },
         {
           "name": "Puteți transporta vehicule spre Anvers sau Puurs?",
           "acceptedAnswer": {
-            "text": "Da. Transport regulat vehicule din Boom spre Anvers sau Puurs și, dacă e nevoie, la un specialist din Bruxelles.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Da. Transport regulat vehicule din Boom spre Anvers sau Puurs și, dacă e nevoie, la un specialist din Bruxelles."
           },
           "@type": "Question"
         },
         {
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Da. O mașină care nu pornește, o problemă electrică sau un defect mecanic sunt apeluri frecvente în Boom.",
             "@type": "Answer"
           },
-          "name": "Ajutați și la o mașină care nu pornește?"
+          "name": "Ajutați și la o mașină care nu pornește?",
+          "@type": "Question"
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
   ],
   "@context": "https://schema.org"

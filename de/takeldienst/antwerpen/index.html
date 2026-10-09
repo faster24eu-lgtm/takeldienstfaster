@@ -51,8 +51,24 @@
 
   <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
+      "priceRange": "€€",
+      "name": "Faster Depannage Takeldienst",
+      "url": "https://takeldienstfaster.be/",
+      "address": {
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressLocality": "Antwerpen",
+        "addressRegion": "Antwerpen",
+        "postalCode": "2020"
+      },
+      "@id": "https://takeldienstfaster.be/#business",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "telephone": "+3233756737",
       "areaServed": [
         {
           "@type": "City",
@@ -63,12 +79,12 @@
           "name": "Wilrijk"
         },
         {
-          "name": "Hoboken",
-          "@type": "City"
+          "@type": "City",
+          "name": "Hoboken"
         },
         {
-          "name": "Deurne",
-          "@type": "City"
+          "@type": "City",
+          "name": "Deurne"
         },
         {
           "name": "Berchem",
@@ -83,72 +99,56 @@
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Edegem"
-        },
-        {
-          "name": "Wommelgem",
-          "@type": "City"
-        },
-        {
-          "name": "Mortsel",
+          "name": "Edegem",
           "@type": "City"
         },
         {
           "@type": "City",
-          "name": "Kontich"
+          "name": "Wommelgem"
+        },
+        {
+          "@type": "City",
+          "name": "Mortsel"
+        },
+        {
+          "name": "Kontich",
+          "@type": "City"
         },
         {
           "@type": "City",
           "name": "Aartselaar"
         }
       ],
-      "name": "Faster Depannage Takeldienst",
-      "@id": "https://takeldienstfaster.be/#business",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "sameAs": [
         "https://wa.me/3233756737"
       ],
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@type": "LocalBusiness",
-      "telephone": "+3233756737",
-      "priceRange": "€€",
-      "url": "https://takeldienstfaster.be/",
       "email": "faster@takeldienstfaster.be",
-      "address": {
-        "streetAddress": "De Bosschaertstraat 248",
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
-        "postalCode": "2020",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE"
-      }
+      "@type": "LocalBusiness"
     },
     {
       "itemListElement": [
         {
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/de/",
+          "name": "Startseite",
           "position": 1,
-          "name": "Startseite"
+          "item": "https://takeldienstfaster.be/de/"
         },
         {
+          "name": "Abschleppdienst",
           "@type": "ListItem",
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "position": 2,
-          "name": "Abschleppdienst"
+          "position": 2
         },
         {
-          "name": "Abschleppdienst Antwerpen",
-          "position": 3,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/de/takeldienst/antwerpen/"
+          "name": "Abschleppdienst Antwerpen",
+          "item": "https://takeldienstfaster.be/de/takeldienst/antwerpen/",
+          "position": 3
         }
       ],
       "@type": "BreadcrumbList"
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 

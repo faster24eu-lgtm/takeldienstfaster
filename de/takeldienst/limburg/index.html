@@ -53,20 +53,34 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "name": "Faster Depannage Takeldienst",
+      "priceRange": "€€",
+      "address": {
+        "postalCode": "2020",
+        "addressLocality": "Antwerpen",
+        "addressRegion": "Antwerpen",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressCountry": "BE"
+      },
+      "url": "https://takeldienstfaster.be/",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "@id": "https://takeldienstfaster.be/#business",
+      "email": "faster@takeldienstfaster.be",
+      "@type": "LocalBusiness",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "areaServed": [
         {
-          "name": "Limburg",
-          "@type": "AdministrativeArea"
+          "@type": "AdministrativeArea",
+          "name": "Limburg"
         },
         {
           "name": "Zonhoven",
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Hasselt"
+          "name": "Hasselt",
+          "@type": "City"
         },
         {
           "name": "Genk",
@@ -81,8 +95,8 @@
           "name": "Tongeren"
         },
         {
-          "@type": "City",
-          "name": "Borgloon"
+          "name": "Borgloon",
+          "@type": "City"
         },
         {
           "name": "Beringen",
@@ -97,24 +111,24 @@
           "@type": "City"
         },
         {
-          "name": "Bilzen",
+          "@type": "City",
+          "name": "Bilzen"
+        },
+        {
+          "name": "Hoeselt",
           "@type": "City"
         },
         {
           "@type": "City",
-          "name": "Hoeselt"
-        },
-        {
-          "name": "Lommel",
-          "@type": "City"
+          "name": "Lommel"
         },
         {
           "@type": "City",
           "name": "Maaseik"
         },
         {
-          "name": "Bree",
-          "@type": "City"
+          "@type": "City",
+          "name": "Bree"
         },
         {
           "@type": "City",
@@ -125,97 +139,83 @@
           "name": "Pelt"
         }
       ],
-      "name": "Faster Depannage Takeldienst",
-      "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "url": "https://takeldienstfaster.be/",
-      "priceRange": "€€",
-      "telephone": "+3233756737",
-      "email": "faster@takeldienstfaster.be",
-      "address": {
-        "postalCode": "2020",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE",
-        "@type": "PostalAddress",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressLocality": "Antwerpen"
-      }
+      "telephone": "+3233756737"
     },
     {
       "itemListElement": [
         {
-          "name": "Startseite",
           "position": 1,
+          "item": "https://takeldienstfaster.be/de/",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/de/"
+          "name": "Startseite"
         },
         {
           "name": "Abschleppdienst",
+          "@type": "ListItem",
           "position": 2,
-          "item": "https://takeldienstfaster.be/takeldienst/",
-          "@type": "ListItem"
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
-          "name": "Abschleppdienst Limburg",
           "position": 3,
           "item": "https://takeldienstfaster.be/de/takeldienst/limburg/",
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "name": "Abschleppdienst Limburg"
         }
       ],
       "@type": "BreadcrumbList"
     },
     {
+      "@type": "FAQPage",
       "mainEntity": [
         {
           "name": "Helfen Sie auch in Genk?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja, wir kommen zum Abschleppen und/oder zur Pannenhilfe in ganz Limburg, auch in Genk."
-          },
-          "@type": "Question"
+            "text": "Ja, wir kommen zum Abschleppen und/oder zur Pannenhilfe in ganz Limburg, auch in Genk.",
+            "@type": "Answer"
+          }
         },
         {
+          "@type": "Question",
+          "name": "Können Sie mein Auto zu einer Werkstatt in Hasselt bringen?",
           "acceptedAnswer": {
             "text": "Natürlich! Wir transportieren Ihr Fahrzeug an den Ort, den Sie auswählen.",
             "@type": "Answer"
-          },
-          "@type": "Question",
-          "name": "Können Sie mein Auto zu einer Werkstatt in Hasselt bringen?"
+          }
         },
         {
-          "name": "Sind Sie auch in Limburg 24/7 erreichbar?",
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Faster ist in Limburg 24/7 erreichbar. Das heißt auch abends, nachts oder am Wochenende.",
             "@type": "Answer"
-          }
+          },
+          "@type": "Question",
+          "name": "Sind Sie auch in Limburg 24/7 erreichbar?"
         },
         {
-          "name": "Wie arbeiten Sie mit einem vereinbarten Preis?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ein Abschleppdienst in der Provinz Limburg beginnt ab 125 Euro pro Abschleppvorgang. Ich bespreche den Preis vorab mit Ihnen, sobald ich die Situation anhand der Informationen, die Sie durchgeben, einschätzen kann. Dann erleben Sie hinterher keine Überraschungen."
-          }
+          },
+          "name": "Wie arbeiten Sie mit einem vereinbarten Preis?",
+          "@type": "Question"
         },
         {
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Ja, WhatsApp ist oft das schnellste Kommunikationsmittel. Sie senden Ihren Standort und Ihre Situation, eventuell mit einem Foto zur Verdeutlichung.",
             "@type": "Answer"
           },
-          "name": "Kann ich über WhatsApp Kontakt aufnehmen?"
+          "name": "Kann ich über WhatsApp Kontakt aufnehmen?",
+          "@type": "Question"
         },
         {
           "name": "Führen Sie auch internationale Transporte durch?",
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ja, neben lokalen Einsätzen in Limburg organisiere ich auch Fahrzeugtransporte außerhalb Belgiens. Diese Anfragen werden immer persönlich betreut."
-          },
-          "@type": "Question"
+          }
         }
-      ],
-      "@type": "FAQPage"
+      ]
     }
   ]
 }

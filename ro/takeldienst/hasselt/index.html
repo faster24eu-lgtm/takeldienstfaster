@@ -47,16 +47,26 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
+      "address": {
+        "postalCode": "2020",
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
+        "addressRegion": "Antwerpen"
+      },
+      "url": "https://takeldienstfaster.be/",
       "name": "Faster Depannage Takeldienst",
-      "telephone": "+3233756737",
+      "@type": "LocalBusiness",
       "@id": "https://takeldienstfaster.be/#business",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "telephone": "+3233756737",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Hasselt"
+          "name": "Hasselt",
+          "@type": "City"
         },
         {
           "name": "Kermt",
@@ -67,28 +77,28 @@
           "@type": "Place"
         },
         {
-          "@type": "Place",
-          "name": "Stevoort"
-        },
-        {
-          "name": "Sint-Lambrechts-Herk",
+          "name": "Stevoort",
           "@type": "Place"
         },
         {
           "@type": "Place",
-          "name": "Stokrooie"
+          "name": "Sint-Lambrechts-Herk"
         },
         {
-          "name": "Wimmertingen",
+          "name": "Stokrooie",
           "@type": "Place"
         },
         {
           "@type": "Place",
-          "name": "Kuringen"
+          "name": "Wimmertingen"
         },
         {
-          "name": "Kortessem",
+          "name": "Kuringen",
           "@type": "Place"
+        },
+        {
+          "@type": "Place",
+          "name": "Kortessem"
         },
         {
           "@type": "City",
@@ -99,56 +109,47 @@
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Genk"
+          "name": "Genk",
+          "@type": "City"
         },
         {
           "name": "Lummen",
           "@type": "City"
         }
       ],
-      "email": "faster@takeldienstfaster.be",
-      "priceRange": "€€",
-      "@type": "LocalBusiness",
-      "url": "https://takeldienstfaster.be/",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "postalCode": "2020",
-        "addressCountry": "BE",
-        "addressRegion": "Antwerpen",
-        "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248"
-      }
+      "email": "faster@takeldienstfaster.be",
+      "priceRange": "€€"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/ro/",
-          "name": "Acasă",
-          "position": 1,
-          "@type": "ListItem"
-        },
-        {
-          "name": "Serviciu de tractare",
-          "position": 2,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "position": 1,
+          "item": "https://takeldienstfaster.be/ro/",
+          "name": "Acasă"
         },
         {
-          "item": "https://takeldienstfaster.be/ro/takeldienst/limburg/",
+          "position": 2,
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "@type": "ListItem",
+          "name": "Serviciu de tractare"
+        },
+        {
           "name": "Serviciu de tractare Limburg",
+          "@type": "ListItem",
           "position": 3,
-          "@type": "ListItem"
+          "item": "https://takeldienstfaster.be/ro/takeldienst/limburg/"
         },
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "Hasselt",
-          "item": "https://takeldienstfaster.be/ro/takeldienst/hasselt/"
+          "item": "https://takeldienstfaster.be/ro/takeldienst/hasselt/",
+          "name": "Hasselt"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
       "@type": "FAQPage",
@@ -158,53 +159,52 @@
             "text": "Condusul cu combustibil greșit vă poate deteriora vehiculul. Sunați-ne și vă propunem diverse soluții.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Ce fac dacă am alimentat cu combustibil greșit?"
+          "name": "Ce fac dacă am alimentat cu combustibil greșit?",
+          "@type": "Question"
         },
         {
-          "name": "Mașina mea a fost ridicată?",
           "@type": "Question",
           "acceptedAnswer": {
             "text": "Pentru o mașină ridicată după o parcare neregulamentară trebuie să vă adresați serviciului care a efectuat ridicarea. Adesea acest lucru se face în colaborare cu primăria. Interesați-vă la ei unde se află mașina. Aceasta este o altă procedură decât asistența la pană.",
             "@type": "Answer"
-          }
+          },
+          "name": "Mașina mea a fost ridicată?"
         },
         {
           "name": "Am rămas în pană. Ce fac mai întâi?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Asigurați-vă mai întâi că dumneavoastră și pasagerii sunteți în siguranță. Abia după aceea sunați la Faster. Dacă dumneavoastră aveți grijă de dumneavoastră și de pasageri, noi avem grijă de vehicul."
-          }
+          },
+          "@type": "Question"
         },
         {
-          "acceptedAnswer": {
-            "text": "Putem depana și tracta vehicule de până la 3,5 tone.",
-            "@type": "Answer"
-          },
           "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Putem depana și tracta vehicule de până la 3,5 tone."
+          },
           "name": "Am o mașină mare. O puteți tracta și pe ea?"
         },
         {
-          "name": "Cât de repede ajungeți la fața locului în Hasselt?",
           "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Avem o echipă care pleacă din Zonhoven, astfel încât poate fi la fața locului în Hasselt în aproximativ 20 de minute."
-          }
+          },
+          "name": "Cât de repede ajungeți la fața locului în Hasselt?"
         },
         {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Un serviciu de tractare Faster vine la fața locului în Hasselt de la 125 de euro. Stabilim întotdeauna prețul cu dumneavoastră în avans."
           },
-          "@type": "Question",
-          "name": "Cât costă un serviciu de tractare în Hasselt?"
+          "name": "Cât costă un serviciu de tractare în Hasselt?",
+          "@type": "Question"
         }
       ]
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 

@@ -50,53 +50,53 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
+      "@id": "https://takeldienstfaster.be/#business",
+      "name": "Faster Depannage Takeldienst",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "address": {
-        "streetAddress": "De Bosschaertstraat 248",
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
-        "addressRegion": "Antwerpen",
-        "postalCode": "2020",
-        "addressCountry": "BE"
-      },
-      "email": "faster@takeldienstfaster.be",
-      "@type": "LocalBusiness",
       "areaServed": {
-        "@type": "City",
-        "name": "Edegem"
+        "name": "Edegem",
+        "@type": "City"
       },
       "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
       "url": "https://takeldienstfaster.be/",
-      "@id": "https://takeldienstfaster.be/#business"
+      "address": {
+        "postalCode": "2020",
+        "addressLocality": "Antwerpen",
+        "addressRegion": "Antwerpen",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressCountry": "BE"
+      },
+      "@type": "LocalBusiness",
+      "email": "faster@takeldienstfaster.be"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "name": "Startseite",
-          "@type": "ListItem",
+          "position": 1,
           "item": "https://takeldienstfaster.be/de/",
-          "position": 1
+          "name": "Startseite",
+          "@type": "ListItem"
         },
         {
+          "item": "https://takeldienstfaster.be/takeldienst/",
           "position": 2,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/takeldienst/",
           "name": "Abschleppdienst"
         },
         {
-          "name": "Edegem",
-          "position": 3,
           "item": "https://takeldienstfaster.be/de/takeldienst/edegem/",
+          "position": 3,
+          "name": "Edegem",
           "@type": "ListItem"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

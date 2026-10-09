@@ -50,78 +50,77 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
+      "@id": "https://takeldienstfaster.be/#business",
+      "priceRange": "€€",
+      "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
+      "@type": "LocalBusiness",
+      "email": "faster@takeldienstfaster.be",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "areaServed": [
         {
           "@type": "City",
           "name": "Merksem"
         },
         {
-          "@type": "Place",
-          "name": "Antwerpse ring"
+          "name": "Antwerpse ring",
+          "@type": "Place"
         },
         {
-          "name": "N148",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "N148"
         }
       ],
-      "@id": "https://takeldienstfaster.be/#business",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "address": {
-        "addressLocality": "Antwerpen",
         "streetAddress": "De Bosschaertstraat 248",
-        "postalCode": "2020",
-        "@type": "PostalAddress",
+        "addressRegion": "Antwerpen",
         "addressCountry": "BE",
-        "addressRegion": "Antwerpen"
+        "postalCode": "2020",
+        "addressLocality": "Antwerpen",
+        "@type": "PostalAddress"
       },
-      "priceRange": "€€",
-      "url": "https://takeldienstfaster.be/",
-      "name": "Faster Depannage Takeldienst",
-      "@type": "LocalBusiness",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
-      "telephone": "+3233756737"
+      "url": "https://takeldienstfaster.be/"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/",
           "position": 1,
+          "@type": "ListItem",
           "name": "Home",
-          "@type": "ListItem"
+          "item": "https://takeldienstfaster.be/en/"
         },
         {
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "position": 2,
+          "@type": "ListItem",
           "name": "Towing service",
-          "@type": "ListItem"
+          "position": 2
         },
         {
+          "item": "https://takeldienstfaster.be/en/takeldienst/merksem/",
           "name": "Merksem",
           "@type": "ListItem",
-          "position": 3,
-          "item": "https://takeldienstfaster.be/en/takeldienst/merksem/"
+          "position": 3
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
-          "name": "How quickly are you in Merksem?",
           "@type": "Question",
+          "name": "How quickly are you in Merksem?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Usually about 20 minutes. I leave from Kiel via the N148 to the Antwerp ring, and then either take the Merksem exit or drive on to Deurne and over the bridge — depending on exactly where you are. With heavy traffic on the ring it can take longer."
+            "text": "Usually about 20 minutes. I leave from Kiel via the N148 to the Antwerp ring, and then either take the Merksem exit or drive on to Deurne and over the bridge — depending on exactly where you are. With heavy traffic on the ring it can take longer.",
+            "@type": "Answer"
           }
         },
         {
-          "@type": "Question",
           "name": "What does a towing service in Merksem cost?",
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Call or WhatsApp me with your situation. I give the price right away, before I set off."
@@ -131,29 +130,30 @@
           "name": "Do you know Merksem well?",
           "@type": "Question",
           "acceptedAnswer": {
-            "text": "Yes. I used to work at the Arvesta factory near Merksem and also went to school there. I also know a number of small, independent garages and body shops in the municipality.",
+            "@type": "Answer",
+            "text": "Yes. I used to work at the Arvesta factory near Merksem and also went to school there. I also know a number of small, independent garages and body shops in the municipality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my car breaks down on the ring near Merksem?",
+          "acceptedAnswer": {
+            "text": "Most calls from Merksem come from the ring itself, often older vehicles that break down for various reasons. Switch on your hazard lights, stand as safely as possible and call — I know which exit to take.",
             "@type": "Answer"
           }
         },
         {
           "acceptedAnswer": {
-            "text": "Most calls from Merksem come from the ring itself, often older vehicles that break down for various reasons. Switch on your hazard lights, stand as safely as possible and call — I know which exit to take.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Yes. Besides passenger cars I also do vans, forklifts, machines and international transport."
           },
-          "name": "What if my car breaks down on the ring near Merksem?",
+          "name": "Can you also transport vans, forklifts or machines?",
           "@type": "Question"
-        },
-        {
-          "acceptedAnswer": {
-            "text": "Yes. Besides passenger cars I also do vans, forklifts, machines and international transport.",
-            "@type": "Answer"
-          },
-          "@type": "Question",
-          "name": "Can you also transport vans, forklifts or machines?"
         }
       ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>
@@ -161,9 +161,9 @@
 <body>
   <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="../../../index.html" aria-label="Faster towing service home"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
+        <a class="brand" href="../../index.html" aria-label="Faster towing service home"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
         <nav class="main-nav" aria-label="Main navigation">
-          <a href="../../diensten/">Services</a> <a href="../../../#hoe-het-werkt">How it works</a> <a href="../../../#werkgebied">Service area</a>
+          <a href="../../diensten/">Services</a> <a href="../../#hoe-het-werkt">How it works</a> <a href="../../#werkgebied">Service area</a>
           
           
         </nav>
@@ -300,7 +300,7 @@
   <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <a class="brand brand-footer" href="../../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
+          <a class="brand brand-footer" href="../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
           <p class="footer-copy">Personal towing service, active throughout Flanders. From a short local intervention to international vehicle transport.</p>
         </div>
         <div><h3>Services</h3><a href="../../diensten/#pechverhelping">Breakdown assistance</a><a href="../../diensten/#takeldienst">Towing & recovery</a><a href="../../diensten/#transport">Car transport</a><a href="../../diensten/#internationaal">International</a><a href="../../diensten/#machines">Machines & forklifts</a></div>
@@ -310,6 +310,6 @@
       <div class="container footer-bottom"><span>© 2026 Faster Depannage Takeldienst</span></div>
     </footer>
   <div class="mobile-bar"><a href="https://wa.me/3233756737?text=Hello%2C%20I%20need%20help%20with%20my%20vehicle." target="_blank" rel="noopener">WhatsApp</a></div>
-<a class="call-fab" href="tel:+3233756737" onclick="gtag('event','conversion',{'send_to':'AW-10963026341/i8ihCMaJo4QdEKWDyuso'});"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Call now — immediate help</span></a> <a class="price-badge" href="../../../#contact" aria-label="From 125 euros - request a price"><img src="../../../assets/images/price-badge-125-en.png" width="92" height="92" alt="From 125 euros" decoding="async"></a>
+<a class="call-fab" href="tel:+3233756737" onclick="gtag('event','conversion',{'send_to':'AW-10963026341/i8ihCMaJo4QdEKWDyuso'});"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Call now — immediate help</span></a> <a class="price-badge" href="../../#contact" aria-label="From 125 euros - request a price"><img src="../../../assets/images/price-badge-125-en.png" width="92" height="92" alt="From 125 euros" decoding="async"></a>
 </body>
 </html>

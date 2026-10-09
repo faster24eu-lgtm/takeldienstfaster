@@ -52,17 +52,29 @@
 {
   "@graph": [
     {
-      "@id": "https://takeldienstfaster.be/#business",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "priceRange": "€€",
       "name": "Faster Depannage Takeldienst",
+      "url": "https://takeldienstfaster.be/",
+      "address": {
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "postalCode": "2020"
+      },
+      "@id": "https://takeldienstfaster.be/#business",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "telephone": "+3233756737",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Boom"
+          "name": "Boom",
+          "@type": "City"
         },
         {
-          "@type": "Place",
-          "name": "Boom Markt"
+          "name": "Boom Markt",
+          "@type": "Place"
         },
         {
           "@type": "Place",
@@ -78,25 +90,13 @@
         }
       ],
       "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "url": "https://takeldienstfaster.be/",
-      "telephone": "+3233756737",
-      "priceRange": "€€",
-      "email": "faster@takeldienstfaster.be",
-      "address": {
-        "addressLocality": "Antwerpen",
-        "@type": "PostalAddress",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen",
-        "postalCode": "2020",
-        "addressCountry": "BE"
-      }
+      "email": "faster@takeldienstfaster.be"
     },
     {
       "itemListElement": [
         {
-          "position": 1,
           "item": "https://takeldienstfaster.be/de/",
+          "position": 1,
           "@type": "ListItem",
           "name": "Startseite"
         },
@@ -107,9 +107,9 @@
           "name": "Abschleppdienst"
         },
         {
+          "@type": "ListItem",
           "name": "Boom",
           "item": "https://takeldienstfaster.be/de/takeldienst/boom/",
-          "@type": "ListItem",
           "position": 3
         }
       ],
@@ -120,43 +120,43 @@
       "mainEntity": [
         {
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Bei normalen Verkehrsverhältnissen bin ich über die A12 durchschnittlich etwa 15 bis 20 Minuten unterwegs. Bei viel Verkehr kann das natürlich abweichen."
+            "text": "Bei normalen Verkehrsverhältnissen bin ich über die A12 durchschnittlich etwa 15 bis 20 Minuten unterwegs. Bei viel Verkehr kann das natürlich abweichen.",
+            "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Wie schnell sind Sie in Boom?"
-        },
-        {
-          "name": "Was kostet ein Abschleppdienst in Boom?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ich vereinbare immer einen klaren Preis, bevor ich losfahre. Keine versteckten Kosten."
-          },
+          "name": "Wie schnell sind Sie in Boom?",
           "@type": "Question"
         },
         {
-          "name": "Können Sie auch Transporter abschleppen?",
+          "acceptedAnswer": {
+            "text": "Ich vereinbare immer einen klaren Preis, bevor ich losfahre. Keine versteckten Kosten.",
+            "@type": "Answer"
+          },
+          "name": "Was kostet ein Abschleppdienst in Boom?",
+          "@type": "Question"
+        },
+        {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ja. Neben Pkw transportiere ich auch Transporter und ab und zu ein Motorrad."
           },
+          "name": "Können Sie auch Transporter abschleppen?",
           "@type": "Question"
         },
         {
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Ja. Ich transportiere regelmäßig Fahrzeuge von Boom nach Antwerpen oder Puurs und bei Bedarf zu einem Spezialisten in Brüssel.",
             "@type": "Answer"
           },
+          "@type": "Question",
           "name": "Können Sie Fahrzeuge nach Antwerpen oder Puurs transportieren?"
         },
         {
+          "@type": "Question",
           "name": "Helfen Sie auch bei einem Auto, das nicht anspringt?",
           "acceptedAnswer": {
-            "text": "Ja. Ein Auto, das nicht anspringt, ein elektrisches Problem oder ein mechanischer Defekt sind häufige Anrufe in Boom.",
-            "@type": "Answer"
-          },
-          "@type": "Question"
+            "@type": "Answer",
+            "text": "Ja. Ein Auto, das nicht anspringt, ein elektrisches Problem oder ein mechanischer Defekt sind häufige Anrufe in Boom."
+          }
         }
       ]
     }

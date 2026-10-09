@@ -53,18 +53,19 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "areaServed": [
         {
           "@type": "AdministrativeArea",
           "name": "Limburg"
         },
         {
-          "name": "Zonhoven",
-          "@type": "City"
+          "@type": "City",
+          "name": "Zonhoven"
         },
         {
-          "@type": "City",
-          "name": "Hasselt"
+          "name": "Hasselt",
+          "@type": "City"
         },
         {
           "@type": "City",
@@ -75,32 +76,32 @@
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Tongeren"
-        },
-        {
-          "@type": "City",
-          "name": "Borgloon"
-        },
-        {
-          "name": "Beringen",
+          "name": "Tongeren",
           "@type": "City"
+        },
+        {
+          "name": "Borgloon",
+          "@type": "City"
+        },
+        {
+          "@type": "City",
+          "name": "Beringen"
         },
         {
           "name": "Houthalen-Helchteren",
           "@type": "City"
         },
         {
-          "name": "Diepenbeek",
-          "@type": "City"
+          "@type": "City",
+          "name": "Diepenbeek"
         },
         {
           "name": "Bilzen",
           "@type": "City"
         },
         {
-          "name": "Hoeselt",
-          "@type": "City"
+          "@type": "City",
+          "name": "Hoeselt"
         },
         {
           "name": "Lommel",
@@ -115,107 +116,106 @@
           "name": "Bree"
         },
         {
-          "@type": "City",
-          "name": "Peer"
+          "name": "Peer",
+          "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Pelt"
+          "name": "Pelt",
+          "@type": "City"
         }
       ],
-      "priceRange": "€€",
-      "@type": "LocalBusiness",
-      "email": "faster@takeldienstfaster.be",
+      "telephone": "+3233756737",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "postalCode": "2020",
-        "addressCountry": "BE",
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressLocality": "Antwerpen"
-      },
+      "priceRange": "€€",
+      "email": "faster@takeldienstfaster.be",
       "url": "https://takeldienstfaster.be/",
-      "name": "Faster Depannage Takeldienst",
+      "address": {
+        "addressRegion": "Antwerpen",
+        "@type": "PostalAddress",
+        "addressCountry": "BE",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressLocality": "Antwerpen",
+        "postalCode": "2020"
+      },
+      "@type": "LocalBusiness",
       "@id": "https://takeldienstfaster.be/#business",
-      "telephone": "+3233756737"
+      "name": "Faster Depannage Takeldienst"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/ro/",
+          "name": "Acasă",
           "@type": "ListItem",
-          "position": 1,
-          "name": "Acasă"
+          "item": "https://takeldienstfaster.be/ro/",
+          "position": 1
         },
         {
+          "name": "Serviciu de tractare",
           "item": "https://takeldienstfaster.be/takeldienst/",
           "position": 2,
-          "name": "Serviciu de tractare",
           "@type": "ListItem"
         },
         {
-          "name": "Serviciu de tractare Limburg",
-          "position": 3,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/ro/takeldienst/limburg/"
+          "position": 3,
+          "item": "https://takeldienstfaster.be/ro/takeldienst/limburg/",
+          "name": "Serviciu de tractare Limburg"
         }
       ]
     },
     {
+      "@type": "FAQPage",
       "mainEntity": [
         {
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da, venim să vă tractăm și/sau să vă depanăm în tot Limburg, inclusiv în Genk."
-          },
           "@type": "Question",
-          "name": "Ajutați și în Genk?"
+          "name": "Ajutați și în Genk?",
+          "acceptedAnswer": {
+            "text": "Da, venim să vă tractăm și/sau să vă depanăm în tot Limburg, inclusiv în Genk.",
+            "@type": "Answer"
+          }
         },
         {
-          "name": "Îmi puteți duce mașina la un service din Hasselt?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sigur! Vă transportăm vehiculul la locul pe care îl alegeți."
+            "text": "Sigur! Vă transportăm vehiculul la locul pe care îl alegeți.",
+            "@type": "Answer"
           },
+          "name": "Îmi puteți duce mașina la un service din Hasselt?",
           "@type": "Question"
         },
         {
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Faster poate fi contactat 24/7 în Limburg. Adică și seara, noaptea sau în weekend.",
             "@type": "Answer"
           },
-          "name": "Puteți fi contactați 24/7 și în Limburg?"
+          "name": "Puteți fi contactați 24/7 și în Limburg?",
+          "@type": "Question"
         },
         {
+          "@type": "Question",
           "name": "Cum lucrați cu un preț convenit?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Un serviciu de tractare în provincia Limburg pornește de la 125 de euro pe tractare. Discut prețul cu dumneavoastră în avans, de îndată ce pot evalua situația pe baza informațiilor pe care mi le transmiteți. Astfel nu aveți surprize după aceea."
-          },
-          "@type": "Question"
+            "text": "Un serviciu de tractare în provincia Limburg pornește de la 125 de euro pe tractare. Discut prețul cu dumneavoastră în avans, de îndată ce pot evalua situația pe baza informațiilor pe care mi le transmiteți. Astfel nu aveți surprize după aceea.",
+            "@type": "Answer"
+          }
         },
         {
           "acceptedAnswer": {
             "text": "Da, WhatsApp este adesea cel mai rapid mijloc de comunicare. Trimiteți locația și situația, eventual cu o fotografie pentru clarificare.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Pot lua legătura pe WhatsApp?"
+          "name": "Pot lua legătura pe WhatsApp?",
+          "@type": "Question"
         },
         {
           "name": "Efectuați și transport internațional?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Da, pe lângă intervențiile locale din Limburg organizez și transport de vehicule în afara Belgiei. Aceste cereri primesc întotdeauna o abordare personală."
-          }
+          },
+          "@type": "Question"
         }
-      ],
-      "@type": "FAQPage"
+      ]
     }
   ]
 }

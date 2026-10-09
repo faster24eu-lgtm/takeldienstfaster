@@ -53,48 +53,48 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
       "email": "faster@takeldienstfaster.be",
+      "name": "Faster Depannage Takeldienst",
+      "@id": "https://takeldienstfaster.be/#business",
+      "@type": "LocalBusiness",
+      "telephone": "+3233756737",
       "areaServed": {
-        "name": "Hoboken",
-        "@type": "City"
+        "@type": "City",
+        "name": "Hoboken"
       },
-      "url": "https://takeldienstfaster.be/",
       "address": {
+        "addressRegion": "Antwerpen",
         "addressCountry": "BE",
-        "postalCode": "2020",
         "@type": "PostalAddress",
-        "streetAddress": "De Bosschaertstraat 248",
         "addressLocality": "Antwerpen",
-        "addressRegion": "Antwerpen"
+        "streetAddress": "De Bosschaertstraat 248",
+        "postalCode": "2020"
       },
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "name": "Faster Depannage Takeldienst",
-      "telephone": "+3233756737",
-      "@id": "https://takeldienstfaster.be/#business"
+      "url": "https://takeldienstfaster.be/"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/ro/",
           "position": 1,
-          "name": "Acasă",
-          "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/ro/"
+          "name": "Acasă"
         },
         {
-          "name": "Serviciu de tractare",
+          "@type": "ListItem",
           "position": 2,
-          "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "name": "Serviciu de tractare"
         },
         {
-          "name": "Hoboken",
+          "item": "https://takeldienstfaster.be/ro/takeldienst/hoboken/",
           "position": 3,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/ro/takeldienst/hoboken/"
+          "name": "Hoboken"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     }
   ]
 }

@@ -50,60 +50,62 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      "url": "https://takeldienstfaster.be/",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "address": {
-        "addressLocality": "Antwerpen",
-        "postalCode": "2020",
-        "@type": "PostalAddress",
-        "addressCountry": "BE",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen"
-      },
-      "@id": "https://takeldienstfaster.be/#business",
-      "name": "Faster Depannage Takeldienst",
+      "priceRange": "€€",
       "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/",
+      "@type": "LocalBusiness",
+      "address": {
+        "addressRegion": "Antwerpen",
+        "addressCountry": "BE",
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
+        "postalCode": "2020",
+        "@type": "PostalAddress"
+      },
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "email": "faster@takeldienstfaster.be",
       "areaServed": [
         {
           "@type": "AdministrativeArea",
           "name": "West-Vlaanderen"
         },
         {
+          "name": "Brugge",
+          "@type": "City"
+        },
+        {
           "@type": "City",
-          "name": "Brugge"
+          "name": "Kortrijk"
         },
         {
-          "name": "Kortrijk",
-          "@type": "City"
-        },
-        {
-          "name": "Oostende",
-          "@type": "City"
+          "@type": "City",
+          "name": "Oostende"
         },
         {
           "name": "Roeselare",
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Torhout"
+          "name": "Torhout",
+          "@type": "City"
         },
         {
           "@type": "City",
           "name": "Waregem"
         },
         {
-          "@type": "City",
-          "name": "Menen"
+          "name": "Menen",
+          "@type": "City"
         },
         {
           "name": "Poperinge",
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Tielt"
+          "name": "Tielt",
+          "@type": "City"
         },
         {
           "name": "Ieper",
@@ -118,33 +120,31 @@
           "name": "De Panne"
         },
         {
-          "name": "Knokke-Heist",
-          "@type": "City"
+          "@type": "City",
+          "name": "Knokke-Heist"
         }
       ],
-      "priceRange": "€€",
-      "email": "faster@takeldienstfaster.be",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg"
+      "@id": "https://takeldienstfaster.be/#business"
     },
     {
       "itemListElement": [
         {
+          "name": "Strona główna",
           "item": "https://takeldienstfaster.be/pl/",
-          "position": 1,
           "@type": "ListItem",
-          "name": "Strona główna"
+          "position": 1
         },
         {
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "@type": "ListItem",
+          "name": "Pomoc drogowa",
           "position": 2,
-          "name": "Pomoc drogowa"
+          "@type": "ListItem"
         },
         {
           "item": "https://takeldienstfaster.be/pl/takeldienst/west-vlaanderen/",
-          "@type": "ListItem",
+          "name": "Pomoc drogowa Flandria Zachodnia",
           "position": 3,
-          "name": "Pomoc drogowa Flandria Zachodnia"
+          "@type": "ListItem"
         }
       ],
       "@type": "BreadcrumbList"

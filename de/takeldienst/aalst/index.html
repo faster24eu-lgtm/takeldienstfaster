@@ -51,21 +51,22 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
-      "priceRange": "€€",
-      "telephone": "+3233756737",
-      "url": "https://takeldienstfaster.be/",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "De Bosschaertstraat 248",
-        "addressLocality": "Antwerpen",
         "addressCountry": "BE",
         "postalCode": "2020",
+        "addressLocality": "Antwerpen",
         "addressRegion": "Antwerpen"
       },
-      "email": "faster@takeldienstfaster.be",
+      "url": "https://takeldienstfaster.be/",
       "name": "Faster Depannage Takeldienst",
+      "priceRange": "€€",
+      "email": "faster@takeldienstfaster.be",
+      "@type": "LocalBusiness",
       "areaServed": [
         {
           "name": "Aalst",
@@ -76,12 +77,12 @@
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Wetteren"
+          "name": "Wetteren",
+          "@type": "City"
         },
         {
-          "name": "Zele",
-          "@type": "City"
+          "@type": "City",
+          "name": "Zele"
         },
         {
           "name": "Berlare",
@@ -104,125 +105,124 @@
           "@type": "City"
         },
         {
-          "@type": "Place",
-          "name": "E40"
+          "name": "E40",
+          "@type": "Place"
         }
       ],
+      "telephone": "+3233756737",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "@id": "https://takeldienstfaster.be/#business",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@type": "LocalBusiness"
+      "@id": "https://takeldienstfaster.be/#business"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "item": "https://takeldienstfaster.be/de/",
-          "@type": "ListItem",
           "position": 1,
-          "name": "Startseite"
+          "name": "Startseite",
+          "@type": "ListItem"
         },
         {
-          "name": "Abschleppdienst",
-          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "position": 2
+          "position": 2,
+          "name": "Abschleppdienst",
+          "@type": "ListItem"
         },
         {
+          "name": "Aalst & Region",
           "@type": "ListItem",
           "item": "https://takeldienstfaster.be/de/takeldienst/aalst/",
-          "position": 3,
-          "name": "Aalst & Region"
+          "position": 3
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
-          "name": "Arbeiten Sie auch außerhalb von Aalst?",
           "acceptedAnswer": {
-            "text": "Ja. Ich fahre genauso nach Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere und in die umliegenden Gemeinden.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Ja. Ich fahre genauso nach Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere und in die umliegenden Gemeinden."
           },
-          "@type": "Question"
+          "@type": "Question",
+          "name": "Arbeiten Sie auch außerhalb von Aalst?"
         },
         {
+          "@type": "Question",
           "name": "Sind Sie nachts erreichbar?",
           "acceptedAnswer": {
-            "text": "Ja, 24/7. Auch am Wochenende und an Feiertagen.",
-            "@type": "Answer"
-          },
-          "@type": "Question"
+            "@type": "Answer",
+            "text": "Ja, 24/7. Auch am Wochenende und an Feiertagen."
+          }
         },
         {
-          "name": "Kann ich vorab wissen, was ein Abschleppen kostet?",
           "@type": "Question",
+          "name": "Kann ich vorab wissen, was ein Abschleppen kostet?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ja. Ich bespreche den Preis, bevor ich den Abschleppwagen schicke, telefonisch, über WhatsApp oder per Mail."
           }
         },
         {
-          "name": "Können Sie einen Wagen abschleppen, der nicht in den Leerlauf geschaltet werden kann?",
           "acceptedAnswer": {
-            "text": "Meistens ja. Ich habe Dollies und anderes Material für schwierigere Bergungen.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Meistens ja. Ich habe Dollies und anderes Material für schwierigere Bergungen."
           },
+          "name": "Können Sie einen Wagen abschleppen, der nicht in den Leerlauf geschaltet werden kann?",
           "@type": "Question"
         },
         {
           "name": "Können Sie ein Auto ohne Rad transportieren?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "text": "In vielen Fällen ja, je nach Situation und mit dem richtigen Material.",
+            "@type": "Answer",
+            "text": "In vielen Fällen ja, je nach Situation und mit dem richtigen Material."
+          }
+        },
+        {
+          "acceptedAnswer": {
+            "text": "Ja, auch ein Fahrzeug ohne Kennzeichen.",
             "@type": "Answer"
           },
+          "name": "Können Sie ein Auto transportieren, das ich gerade gekauft habe?",
           "@type": "Question"
         },
         {
           "@type": "Question",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja, auch ein Fahrzeug ohne Kennzeichen."
-          },
-          "name": "Können Sie ein Auto transportieren, das ich gerade gekauft habe?"
-        },
-        {
           "name": "Können Sie nach einem Unfall helfen?",
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Ja, ich sorge für eine sichere Bergung des Fahrzeugs.",
             "@type": "Answer"
           }
         },
         {
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Niederländisch, Französisch und Englisch."
+            "text": "Niederländisch, Französisch und Englisch.",
+            "@type": "Answer"
           },
+          "@type": "Question",
           "name": "Welche Sprachen sprechen Sie?"
         },
         {
-          "name": "Arbeiten Sie nur tagsüber?",
           "acceptedAnswer": {
             "text": "Nein. Ich bin 24/7 erreichbar, auch nachts, am Wochenende und an Feiertagen.",
             "@type": "Answer"
           },
-          "@type": "Question"
+          "@type": "Question",
+          "name": "Arbeiten Sie nur tagsüber?"
         },
         {
           "name": "Warum ist einer Ihrer Fahrer in Erpe-Mere stationiert?",
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Das ist direkt an der E40 zwischen Brüssel und Gent, was die ganze Region um Aalst leicht erreichbar macht."
-          },
-          "@type": "Question"
+          }
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 

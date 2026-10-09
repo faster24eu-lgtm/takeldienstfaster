@@ -52,18 +52,28 @@
 {
   "@graph": [
     {
+      "url": "https://takeldienstfaster.be/",
+      "address": {
+        "postalCode": "2020",
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressLocality": "Antwerpen",
+        "addressRegion": "Antwerpen"
+      },
       "name": "Faster Depannage Takeldienst",
-      "telephone": "+3233756737",
       "@id": "https://takeldienstfaster.be/#business",
+      "@type": "LocalBusiness",
       "image": "https://takeldienstfaster.be/assets/images/faster-intervention-workshop.jpg",
+      "telephone": "+3233756737",
       "areaServed": [
         {
           "@type": "City",
           "name": "Sint-Niklaas"
         },
         {
-          "@type": "City",
-          "name": "Temse"
+          "name": "Temse",
+          "@type": "City"
         },
         {
           "name": "Waasmunster",
@@ -74,55 +84,45 @@
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Sint-Gillis-Waas"
-        },
-        {
-          "name": "Stekene",
+          "name": "Sint-Gillis-Waas",
           "@type": "City"
         },
         {
-          "name": "E17",
-          "@type": "Place"
+          "@type": "City",
+          "name": "Stekene"
+        },
+        {
+          "@type": "Place",
+          "name": "E17"
         },
         {
           "@type": "Place",
           "name": "N70"
         }
       ],
-      "priceRange": "€€",
-      "@type": "LocalBusiness",
-      "email": "faster@takeldienstfaster.be",
-      "url": "https://takeldienstfaster.be/",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "address": {
-        "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen",
-        "@type": "PostalAddress",
-        "addressCountry": "BE",
-        "postalCode": "2020"
-      }
+      "priceRange": "€€",
+      "email": "faster@takeldienstfaster.be"
     },
     {
       "itemListElement": [
         {
+          "@type": "ListItem",
           "position": 1,
-          "name": "Acasă",
-          "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/ro/"
+          "item": "https://takeldienstfaster.be/ro/",
+          "name": "Acasă"
         },
         {
-          "@type": "ListItem",
-          "position": 2,
           "name": "Serviciu de tractare",
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "position": 2
         },
         {
-          "@type": "ListItem",
-          "position": 3,
           "name": "Sint-Niklaas",
-          "item": "https://takeldienstfaster.be/ro/takeldienst/sint-niklaas/"
+          "position": 3,
+          "item": "https://takeldienstfaster.be/ro/takeldienst/sint-niklaas/",
+          "@type": "ListItem"
         }
       ],
       "@type": "BreadcrumbList"
@@ -130,68 +130,68 @@
     {
       "mainEntity": [
         {
-          "name": "Puteți fi contactați 24/7?",
           "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Da. Într-o situație urgentă răspund chiar eu la telefon, și noaptea."
-          }
+          },
+          "name": "Puteți fi contactați 24/7?"
         },
         {
-          "name": "Cât de repede puteți fi în Sint-Niklaas?",
           "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Sint-Niklaas se află la aproximativ 30 de minute de Anvers, în trafic normal. Într-o situație urgentă încerc să plec cât mai repede posibil; la o cursă planificată stabilesc pur și simplu un moment."
-          }
+          },
+          "name": "Cât de repede puteți fi în Sint-Niklaas?"
         },
         {
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Alegeți dumneavoastră unde merge mașina, eu vă sfătuiesc dacă este util."
+            "text": "Da. Alegeți dumneavoastră unde merge mașina, eu vă sfătuiesc dacă este util.",
+            "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Îmi puteți duce mașina la propriul meu service?"
+          "name": "Îmi puteți duce mașina la propriul meu service?",
+          "@type": "Question"
         },
         {
-          "name": "Transportați și autoutilitare?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Da, vehicule de până la 3,5 tone."
           },
+          "name": "Transportați și autoutilitare?",
           "@type": "Question"
         },
         {
-          "name": "Puteți ajuta dacă mașina nu pornește?",
           "@type": "Question",
+          "name": "Puteți ajuta dacă mașina nu pornește?",
           "acceptedAnswer": {
-            "text": "Adesea, da. Verific mai întâi dacă problema poate fi rezolvată la fața locului, de exemplu cu un booster, sau dacă vehiculul trebuie totuși tractat.",
+            "@type": "Answer",
+            "text": "Adesea, da. Verific mai întâi dacă problema poate fi rezolvată la fața locului, de exemplu cu un booster, sau dacă vehiculul trebuie totuși tractat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Efectuați și transporturi planificate?",
+          "acceptedAnswer": {
+            "text": "Da. Nu orice cursă este urgentă. Dacă mașina este în siguranță și trebuie mutată abia mai târziu, pur și simplu o planific.",
             "@type": "Answer"
           }
         },
         {
           "@type": "Question",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Nu orice cursă este urgentă. Dacă mașina este în siguranță și trebuie mutată abia mai târziu, pur și simplu o planific."
-          },
-          "name": "Efectuați și transporturi planificate?"
-        },
-        {
           "name": "Transportați vehicule și în străinătate?",
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Da. Cunosc traseul și lucrez cu o rețea de contacte pentru transportul internațional.",
             "@type": "Answer"
           }
         },
         {
+          "@type": "Question",
           "name": "Cum funcționează prețul?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Discut prețul în avans. Dacă informațiile pe care le transmiteți sunt corecte, respect înțelegerea, fără surprize după aceea."
-          },
-          "@type": "Question"
+          }
         }
       ],
       "@type": "FAQPage"

@@ -50,53 +50,53 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
-      "name": "Faster Depannage Takeldienst",
       "@id": "https://takeldienstfaster.be/#business",
-      "telephone": "+3233756737",
-      "areaServed": {
-        "@type": "City",
-        "name": "Wilrijk"
-      },
-      "email": "faster@takeldienstfaster.be",
       "@type": "LocalBusiness",
+      "name": "Faster Depannage Takeldienst",
+      "email": "faster@takeldienstfaster.be",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/",
       "address": {
-        "addressCountry": "BE",
         "postalCode": "2020",
-        "@type": "PostalAddress",
         "streetAddress": "De Bosschaertstraat 248",
         "addressLocality": "Antwerpen",
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
         "addressRegion": "Antwerpen"
       },
-      "url": "https://takeldienstfaster.be/"
+      "areaServed": {
+        "name": "Wilrijk",
+        "@type": "City"
+      },
+      "telephone": "+3233756737"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
+          "name": "Acasă",
           "item": "https://takeldienstfaster.be/ro/",
           "position": 1,
-          "name": "Acasă",
           "@type": "ListItem"
         },
         {
           "name": "Serviciu de tractare",
+          "item": "https://takeldienstfaster.be/takeldienst/",
           "position": 2,
-          "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "@type": "ListItem"
         },
         {
-          "position": 3,
           "name": "Wilrijk",
           "@type": "ListItem",
+          "position": 3,
           "item": "https://takeldienstfaster.be/ro/takeldienst/wilrijk/"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

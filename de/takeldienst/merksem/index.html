@@ -50,39 +50,38 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "@id": "https://takeldienstfaster.be/#business",
       "@type": "LocalBusiness",
+      "email": "faster@takeldienstfaster.be",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Merksem"
+          "name": "Merksem",
+          "@type": "City"
         },
         {
-          "name": "Antwerpse ring",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Antwerpse ring"
         },
         {
           "@type": "Place",
           "name": "N148"
         }
       ],
-      "name": "Faster Depannage Takeldienst",
-      "@id": "https://takeldienstfaster.be/#business",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressLocality": "Antwerpen",
-        "postalCode": "2020",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE"
-      },
-      "priceRange": "€€",
       "telephone": "+3233756737",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "name": "Faster Depannage Takeldienst",
+      "priceRange": "€€",
+      "address": {
+        "addressCountry": "BE",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "addressLocality": "Antwerpen",
+        "addressRegion": "Antwerpen",
+        "postalCode": "2020"
+      },
       "url": "https://takeldienstfaster.be/"
     },
     {
@@ -90,19 +89,19 @@
         {
           "position": 1,
           "item": "https://takeldienstfaster.be/de/",
-          "@type": "ListItem",
-          "name": "Startseite"
+          "name": "Startseite",
+          "@type": "ListItem"
         },
         {
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "@type": "ListItem",
           "position": 2,
-          "name": "Abschleppdienst"
+          "name": "Abschleppdienst",
+          "@type": "ListItem"
         },
         {
+          "@type": "ListItem",
           "name": "Merksem",
           "item": "https://takeldienstfaster.be/de/takeldienst/merksem/",
-          "@type": "ListItem",
           "position": 3
         }
       ],
@@ -112,48 +111,49 @@
       "@type": "FAQPage",
       "mainEntity": [
         {
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Meistens etwa 20 Minuten. Ich fahre von Kiel über die N148 zum Antwerpener Ring und nehme dann entweder die Ausfahrt Merksem oder fahre weiter bis Deurne und über die Brücke — je nachdem, wo Sie genau stehen. Bei viel Verkehr auf dem Ring kann es länger dauern."
           },
+          "@type": "Question",
           "name": "Wie schnell sind Sie in Merksem?"
         },
         {
-          "name": "Was kostet ein Abschleppdienst in Merksem?",
           "acceptedAnswer": {
-            "text": "Rufen Sie mich an oder schreiben Sie mir per WhatsApp mit Ihrer Situation. Ich nenne den Preis sofort, bevor ich losfahre.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Rufen Sie mich an oder schreiben Sie mir per WhatsApp mit Ihrer Situation. Ich nenne den Preis sofort, bevor ich losfahre."
           },
-          "@type": "Question"
+          "@type": "Question",
+          "name": "Was kostet ein Abschleppdienst in Merksem?"
         },
         {
-          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Ja. Ich habe früher in der Arvesta-Fabrik in der Nähe von Merksem gearbeitet und bin dort auch zur Schule gegangen. Ich kenne auch einige kleine, unabhängige Werkstätten und Karosseriebetriebe in der Gemeinde.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Ja. Ich habe früher in der Arvesta-Fabrik in der Nähe von Merksem gearbeitet und bin dort auch zur Schule gegangen. Ich kenne auch einige kleine, unabhängige Werkstätten und Karosseriebetriebe in der Gemeinde."
           },
+          "@type": "Question",
           "name": "Kennen Sie Merksem gut?"
         },
         {
+          "@type": "Question",
+          "name": "Was, wenn mein Wagen auf dem Ring bei Merksem eine Panne hat?",
           "acceptedAnswer": {
             "text": "Die meisten Anrufe aus Merksem kommen vom Ring selbst, oft von älteren Fahrzeugen, die aus unterschiedlichen Gründen ausfallen. Schalten Sie die Warnblinkanlage ein, stellen Sie sich so sicher wie möglich hin und rufen Sie an — ich weiß, welche Ausfahrt ich nehmen muss.",
             "@type": "Answer"
-          },
-          "@type": "Question",
-          "name": "Was, wenn mein Wagen auf dem Ring bei Merksem eine Panne hat?"
+          }
         },
         {
+          "name": "Können Sie auch Transporter, Gabelstapler oder Maschinen transportieren?",
           "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja. Neben Pkw mache ich auch Transporter, Gabelstapler, Maschinen und internationalen Transport."
-          },
-          "name": "Können Sie auch Transporter, Gabelstapler oder Maschinen transportieren?"
+            "text": "Ja. Neben Pkw mache ich auch Transporter, Gabelstapler, Maschinen und internationalen Transport.",
+            "@type": "Answer"
+          }
         }
       ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

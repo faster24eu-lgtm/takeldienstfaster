@@ -50,46 +50,33 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
-      "url": "https://takeldienstfaster.be/",
-      "address": {
-        "postalCode": "2020",
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
-        "addressCountry": "BE",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen"
-      },
-      "priceRange": "€€",
-      "image": "https://takeldienstfaster.be/assets/images/faster-intervention-workshop.jpg",
-      "email": "faster@takeldienstfaster.be",
       "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
+      "url": "https://takeldienstfaster.be/",
       "@id": "https://takeldienstfaster.be/#business",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@type": "LocalBusiness",
+      "image": "https://takeldienstfaster.be/assets/images/faster-intervention-workshop.jpg",
+      "name": "Faster Depannage Takeldienst",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Sint-Niklaas"
+          "name": "Sint-Niklaas",
+          "@type": "City"
         },
         {
           "name": "Temse",
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Waasmunster"
+          "name": "Waasmunster",
+          "@type": "City"
         },
         {
           "@type": "City",
           "name": "Hamme"
         },
         {
-          "@type": "City",
-          "name": "Sint-Gillis-Waas"
+          "name": "Sint-Gillis-Waas",
+          "@type": "City"
         },
         {
           "name": "Stekene",
@@ -100,30 +87,42 @@
           "@type": "Place"
         },
         {
-          "@type": "Place",
-          "name": "N70"
+          "name": "N70",
+          "@type": "Place"
         }
-      ]
+      ],
+      "address": {
+        "postalCode": "2020",
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress"
+      },
+      "email": "faster@takeldienstfaster.be",
+      "priceRange": "€€",
+      "@type": "LocalBusiness",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/fr/",
           "position": 1,
+          "item": "https://takeldienstfaster.be/fr/",
           "@type": "ListItem",
           "name": "Accueil"
         },
         {
-          "position": 2,
-          "item": "https://takeldienstfaster.be/takeldienst/",
           "name": "Service de remorquage",
-          "@type": "ListItem"
+          "position": 2,
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
-          "item": "https://takeldienstfaster.be/fr/takeldienst/sint-niklaas/",
           "position": 3,
           "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/fr/takeldienst/sint-niklaas/",
           "name": "Saint-Nicolas"
         }
       ]
@@ -133,11 +132,11 @@
       "mainEntity": [
         {
           "name": "Êtes-vous joignables 24/7 ?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui. En cas de situation urgente, je décroche moi-même, aussi la nuit."
-          }
+            "text": "Oui. En cas de situation urgente, je décroche moi-même, aussi la nuit.",
+            "@type": "Answer"
+          },
+          "@type": "Question"
         },
         {
           "name": "En combien de temps pouvez-vous être à Saint-Nicolas ?",
@@ -148,20 +147,20 @@
           }
         },
         {
-          "acceptedAnswer": {
-            "text": "Oui. Vous choisissez vous-même où va la voiture, je vous conseille si c’est utile.",
-            "@type": "Answer"
-          },
           "name": "Pouvez-vous amener ma voiture à mon propre garage ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui. Vous choisissez vous-même où va la voiture, je vous conseille si c’est utile."
+          },
           "@type": "Question"
         },
         {
-          "name": "Transportez-vous aussi des camionnettes ?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Oui, des véhicules jusqu’à 3,5 tonnes.",
-            "@type": "Answer"
-          }
+            "@type": "Answer",
+            "text": "Oui, des véhicules jusqu’à 3,5 tonnes."
+          },
+          "@type": "Question",
+          "name": "Transportez-vous aussi des camionnettes ?"
         },
         {
           "name": "Pouvez-vous aider si la voiture ne démarre pas ?",
@@ -172,19 +171,19 @@
           }
         },
         {
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui. Tous les trajets ne sont pas urgents. Si la voiture est en sécurité et ne doit être déplacée que plus tard, je le planifie simplement."
-          },
+          "name": "Faites-vous aussi des transports planifiés ?",
           "@type": "Question",
-          "name": "Faites-vous aussi des transports planifiés ?"
+          "acceptedAnswer": {
+            "text": "Oui. Tous les trajets ne sont pas urgents. Si la voiture est en sécurité et ne doit être déplacée que plus tard, je le planifie simplement.",
+            "@type": "Answer"
+          }
         },
         {
+          "name": "Transportez-vous aussi des véhicules à l’étranger ?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Oui. Je connais le trajet et travaille avec un réseau de contacts pour le transport international."
           },
-          "name": "Transportez-vous aussi des véhicules à l’étranger ?",
           "@type": "Question"
         },
         {
@@ -197,7 +196,8 @@
         }
       ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 

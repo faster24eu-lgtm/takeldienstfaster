@@ -50,130 +50,130 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
-      "name": "Faster Depannage Takeldienst",
-      "@id": "https://takeldienstfaster.be/#business",
-      "telephone": "+3233756737",
-      "priceRange": "€€",
-      "email": "faster@takeldienstfaster.be",
-      "@type": "LocalBusiness",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Puurs-Sint-Amands"
+          "name": "Puurs-Sint-Amands",
+          "@type": "City"
         },
         {
           "@type": "Place",
           "name": "Puurs"
         },
         {
+          "name": "Sint-Amands",
+          "@type": "Place"
+        },
+        {
           "@type": "Place",
-          "name": "Sint-Amands"
+          "name": "Ruisbroek"
         },
         {
-          "name": "Ruisbroek",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "A12"
         },
         {
-          "name": "A12",
-          "@type": "Place"
-        },
-        {
-          "name": "N16",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "N16"
         }
       ],
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "address": {
-        "addressCountry": "BE",
-        "postalCode": "2020",
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen"
-      },
+      "telephone": "+3233756737",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "url": "https://takeldienstfaster.be/"
+      "priceRange": "€€",
+      "email": "faster@takeldienstfaster.be",
+      "url": "https://takeldienstfaster.be/",
+      "address": {
+        "addressRegion": "Antwerpen",
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressLocality": "Antwerpen",
+        "postalCode": "2020"
+      },
+      "name": "Faster Depannage Takeldienst",
+      "@id": "https://takeldienstfaster.be/#business",
+      "@type": "LocalBusiness"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "@type": "ListItem",
           "name": "Acasă",
+          "@type": "ListItem",
           "position": 1,
           "item": "https://takeldienstfaster.be/ro/"
         },
         {
-          "@type": "ListItem",
-          "name": "Serviciu de tractare",
           "position": 2,
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "@type": "ListItem",
+          "name": "Serviciu de tractare"
         },
         {
-          "item": "https://takeldienstfaster.be/ro/takeldienst/puurs-sint-amands/",
           "@type": "ListItem",
-          "name": "Puurs-Sint-Amands",
-          "position": 3
+          "item": "https://takeldienstfaster.be/ro/takeldienst/puurs-sint-amands/",
+          "position": 3,
+          "name": "Puurs-Sint-Amands"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
       "mainEntity": [
         {
-          "@type": "Question",
+          "name": "Cât de repede puteți fi în Puurs?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Adesea ajung din Anvers-Sud/Hoboken la fața locului în aproximativ 20–30 de minute. Este o estimare, nu o garanție: traficul, locul și situația contează."
+            "text": "Adesea ajung din Anvers-Sud/Hoboken la fața locului în aproximativ 20–30 de minute. Este o estimare, nu o garanție: traficul, locul și situația contează.",
+            "@type": "Answer"
           },
-          "name": "Cât de repede puteți fi în Puurs?"
+          "@type": "Question"
         },
         {
-          "name": "Puteți fi contactați 24/7?",
           "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Faster poate fi contactat 24/7, și seara, noaptea și în weekend."
-          }
+            "text": "Da. Faster poate fi contactat 24/7, și seara, noaptea și în weekend.",
+            "@type": "Answer"
+          },
+          "name": "Puteți fi contactați 24/7?"
         },
         {
+          "@type": "Question",
           "name": "Puteți ajuta pe A12 lângă Puurs?",
           "acceptedAnswer": {
             "text": "Da, dacă este sigur și accesibil. Asigurați-vă mai întâi că sunteți într-un loc sigur și apoi sunați-mă, văd imediat ce este necesar.",
             "@type": "Answer"
-          },
-          "@type": "Question"
+          }
         },
         {
           "acceptedAnswer": {
             "text": "Da. Unde este posibil, încerc să pornesc vehiculul cu un booster. Dacă nu reușește, organizez tractare sau transport.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Ajutați și la o baterie descărcată?"
+          "name": "Ajutați și la o baterie descărcată?",
+          "@type": "Question"
         },
         {
-          "name": "Transportați și mașini pentru service-uri și comercianți?",
           "@type": "Question",
+          "name": "Transportați și mașini pentru service-uri și comercianți?",
           "acceptedAnswer": {
             "text": "Da. În jurul Puurs merg regulat pentru service-uri, comercianți auto și firme care trebuie să ducă un vehicul undeva.",
             "@type": "Answer"
           }
         },
         {
-          "name": "Lucrați doar în Puurs?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nu. Sunt activ în Puurs-Sint-Amands și regiunea din jur, iar transportul de vehicule poate merge și mult mai departe."
-          }
+            "text": "Nu. Sunt activ în Puurs-Sint-Amands și regiunea din jur, iar transportul de vehicule poate merge și mult mai departe.",
+            "@type": "Answer"
+          },
+          "name": "Lucrați doar în Puurs?",
+          "@type": "Question"
         }
       ],
       "@type": "FAQPage"
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 

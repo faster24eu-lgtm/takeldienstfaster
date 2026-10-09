@@ -47,38 +47,21 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
-      "name": "Faster Depannage Takeldienst",
-      "telephone": "+3233756737",
       "@id": "https://takeldienstfaster.be/#business",
-      "address": {
-        "@type": "PostalAddress",
-        "postalCode": "2020",
-        "addressLocality": "Antwerpen",
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressCountry": "BE"
-      },
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "url": "https://takeldienstfaster.be/",
-      "@type": "LocalBusiness",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
-      "priceRange": "€€",
       "areaServed": [
         {
           "@type": "City",
           "name": "Hasselt"
         },
         {
-          "name": "Kermt",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Kermt"
         },
         {
-          "@type": "Place",
-          "name": "Spalbeek"
+          "name": "Spalbeek",
+          "@type": "Place"
         },
         {
           "name": "Stevoort",
@@ -89,65 +72,81 @@
           "@type": "Place"
         },
         {
-          "name": "Stokrooie",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Stokrooie"
         },
         {
           "name": "Wimmertingen",
           "@type": "Place"
         },
         {
-          "@type": "Place",
-          "name": "Kuringen"
+          "name": "Kuringen",
+          "@type": "Place"
         },
         {
           "name": "Kortessem",
           "@type": "Place"
         },
         {
-          "name": "Zonhoven",
-          "@type": "City"
+          "@type": "City",
+          "name": "Zonhoven"
         },
         {
-          "name": "Diepenbeek",
-          "@type": "City"
+          "@type": "City",
+          "name": "Diepenbeek"
         },
         {
           "@type": "City",
           "name": "Genk"
         },
         {
-          "@type": "City",
-          "name": "Lummen"
+          "name": "Lummen",
+          "@type": "City"
         }
-      ]
+      ],
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "email": "faster@takeldienstfaster.be",
+      "address": {
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen",
+        "@type": "PostalAddress",
+        "postalCode": "2020",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressLocality": "Antwerpen"
+      },
+      "@type": "LocalBusiness",
+      "url": "https://takeldienstfaster.be/",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "name": "Faster Depannage Takeldienst",
+      "telephone": "+3233756737",
+      "priceRange": "€€"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "position": 1,
-          "@type": "ListItem",
+          "name": "Strona główna",
           "item": "https://takeldienstfaster.be/pl/",
-          "name": "Strona główna"
+          "@type": "ListItem",
+          "position": 1
         },
         {
-          "name": "Pomoc drogowa",
-          "item": "https://takeldienstfaster.be/takeldienst/",
           "position": 2,
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "name": "Pomoc drogowa",
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
-          "name": "Pomoc drogowa Limburgia",
-          "item": "https://takeldienstfaster.be/pl/takeldienst/limburg/",
+          "@type": "ListItem",
           "position": 3,
-          "@type": "ListItem"
+          "item": "https://takeldienstfaster.be/pl/takeldienst/limburg/",
+          "name": "Pomoc drogowa Limburgia"
         },
         {
           "item": "https://takeldienstfaster.be/pl/takeldienst/hasselt/",
-          "@type": "ListItem",
+          "name": "Hasselt",
           "position": 4,
-          "name": "Hasselt"
+          "@type": "ListItem"
         }
       ]
     },
@@ -155,40 +154,40 @@
       "@type": "FAQPage",
       "mainEntity": [
         {
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Jazda na niewłaściwym paliwie może uszkodzić pojazd. Proszę do nas zadzwonić, a zaproponujemy różne rozwiązania.",
             "@type": "Answer"
           },
-          "name": "Co zrobić, jeśli zatankowałem niewłaściwe paliwo?"
+          "name": "Co zrobić, jeśli zatankowałem niewłaściwe paliwo?",
+          "@type": "Question"
         },
         {
-          "name": "Mój samochód został odholowany?",
           "@type": "Question",
+          "name": "Mój samochód został odholowany?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "W przypadku samochodu odholowanego za złe parkowanie należy zwrócić się do służby, która wykonała holowanie. Często odbywa się to we współpracy z miastem. Proszę zapytać tam, gdzie stoi samochód. To inna procedura niż pomoc przy awarii."
+            "text": "W przypadku samochodu odholowanego za złe parkowanie należy zwrócić się do służby, która wykonała holowanie. Często odbywa się to we współpracy z miastem. Proszę zapytać tam, gdzie stoi samochód. To inna procedura niż pomoc przy awarii.",
+            "@type": "Answer"
           }
         },
         {
           "name": "Mam awarię. Co robię najpierw?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Najpierw proszę zadbać o to, by Państwo i pasażerowie byli bezpieczni. Dopiero potem proszę dzwonić do Faster. Jeśli Państwo zadbają o siebie i pasażerów, my zadbamy o pojazd.",
-            "@type": "Answer"
-          }
+            "@type": "Answer",
+            "text": "Najpierw proszę zadbać o to, by Państwo i pasażerowie byli bezpieczni. Dopiero potem proszę dzwonić do Faster. Jeśli Państwo zadbają o siebie i pasażerów, my zadbamy o pojazd."
+          },
+          "@type": "Question"
         },
         {
-          "acceptedAnswer": {
-            "text": "Możemy udzielać pomocy drogowej i holować pojazdy do 3,5 tony.",
-            "@type": "Answer"
-          },
           "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Możemy udzielać pomocy drogowej i holować pojazdy do 3,5 tony."
+          },
           "name": "Mam duży samochód. Czy mogą go Państwo również odholować?"
         },
         {
-          "name": "Jak szybko są Państwo na miejscu w Hasselt?",
           "@type": "Question",
+          "name": "Jak szybko są Państwo na miejscu w Hasselt?",
           "acceptedAnswer": {
             "text": "Mamy zespół, który wyrusza z Zonhoven, dzięki czemu może być na miejscu w Hasselt w około 20 minut.",
             "@type": "Answer"
@@ -197,14 +196,15 @@
         {
           "name": "Ile kosztuje pomoc drogowa w Hasselt?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Pomoc drogowa Faster przyjeżdża w Hasselt już od 125 euro. Zawsze uzgadniamy z Państwem cenę z góry."
+            "text": "Pomoc drogowa Faster przyjeżdża w Hasselt już od 125 euro. Zawsze uzgadniamy z Państwem cenę z góry.",
+            "@type": "Answer"
           },
           "@type": "Question"
         }
       ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 

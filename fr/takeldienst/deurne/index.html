@@ -53,105 +53,105 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "name": "Faster Depannage Takeldienst",
+      "@id": "https://takeldienstfaster.be/#business",
+      "url": "https://takeldienstfaster.be/",
+      "telephone": "+3233756737",
+      "@type": "LocalBusiness",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "email": "faster@takeldienstfaster.be",
+      "priceRange": "€€",
+      "address": {
+        "postalCode": "2020",
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress"
+      },
       "areaServed": [
         {
-          "name": "Deurne",
-          "@type": "City"
+          "@type": "City",
+          "name": "Deurne"
         },
         {
           "name": "Lotto Arena",
           "@type": "Place"
         },
         {
-          "name": "N120",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "N120"
         }
-      ],
-      "@type": "LocalBusiness",
-      "@id": "https://takeldienstfaster.be/#business",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
-      "priceRange": "€€",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
-        "postalCode": "2020",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE"
-      },
-      "url": "https://takeldienstfaster.be/"
+      ]
     },
     {
       "itemListElement": [
         {
-          "@type": "ListItem",
           "name": "Accueil",
           "item": "https://takeldienstfaster.be/fr/",
+          "@type": "ListItem",
           "position": 1
         },
         {
-          "@type": "ListItem",
           "name": "Service de remorquage",
-          "item": "https://takeldienstfaster.be/takeldienst/",
-          "position": 2
+          "position": 2,
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
+          "name": "Deurne",
           "item": "https://takeldienstfaster.be/fr/takeldienst/deurne/",
-          "position": 3,
           "@type": "ListItem",
-          "name": "Deurne"
+          "position": 3
         }
       ],
       "@type": "BreadcrumbList"
     },
     {
+      "@type": "FAQPage",
       "mainEntity": [
         {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "La plupart du temps, je suis en environ 13 minutes à la limite de Deurne, à la sortie tout près du Lotto Arena. De là, je suis vite chez vous, où que vous soyez à Deurne."
           },
-          "name": "En combien de temps êtes-vous à Deurne ?",
-          "@type": "Question"
+          "@type": "Question",
+          "name": "En combien de temps êtes-vous à Deurne ?"
         },
         {
-          "name": "Combien coûte un service de remorquage à Deurne ?",
           "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Appelez-moi ou envoyez-moi un WhatsApp avec votre situation. Je communique le prix tout de suite, avant de partir."
-          }
+            "text": "Appelez-moi ou envoyez-moi un WhatsApp avec votre situation. Je communique le prix tout de suite, avant de partir.",
+            "@type": "Answer"
+          },
+          "name": "Combien coûte un service de remorquage à Deurne ?"
         },
         {
+          "name": "Où ont lieu la plupart des interventions à Deurne ?",
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "La plupart des récupérations ont lieu sur et autour de la N120 et des rues latérales. Je connais aussi bien les garages le long de la Ten Eekhovelei et de la Bisschoppenhoflaan."
-          },
-          "@type": "Question",
-          "name": "Où ont lieu la plupart des interventions à Deurne ?"
-        },
-        {
-          "@type": "Question",
-          "name": "Travaillez-vous avec des garages ou des spécialistes à Deurne ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui. Pour les pièces, je travaille avec Victoria Auto Parts et Recuparts. Dans la Melkerijstraat, je travaille avec Old School Mechanics pour les travaux moteur spécialisés et avec AM Tronic, leur voisin, pour la programmation des ordinateurs de bord."
           }
         },
         {
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Oui. Je récupère régulièrement des véhicules chez Ford Van Mossel et d’autres concessionnaires à proximité."
+            "text": "Oui. Pour les pièces, je travaille avec Victoria Auto Parts et Recuparts. Dans la Melkerijstraat, je travaille avec Old School Mechanics pour les travaux moteur spécialisés et avec AM Tronic, leur voisin, pour la programmation des ordinateurs de bord."
           },
-          "name": "Pouvez-vous récupérer des véhicules chez des concessionnaires à Deurne ?",
-          "@type": "Question"
+          "@type": "Question",
+          "name": "Travaillez-vous avec des garages ou des spécialistes à Deurne ?"
+        },
+        {
+          "acceptedAnswer": {
+            "text": "Oui. Je récupère régulièrement des véhicules chez Ford Van Mossel et d’autres concessionnaires à proximité.",
+            "@type": "Answer"
+          },
+          "@type": "Question",
+          "name": "Pouvez-vous récupérer des véhicules chez des concessionnaires à Deurne ?"
         }
-      ],
-      "@type": "FAQPage"
+      ]
     }
   ]
 }

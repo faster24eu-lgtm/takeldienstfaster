@@ -50,110 +50,110 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
-      "telephone": "+3233756737",
-      "priceRange": "€€",
       "url": "https://takeldienstfaster.be/",
-      "email": "faster@takeldienstfaster.be",
       "address": {
+        "addressCountry": "BE",
         "streetAddress": "De Bosschaertstraat 248",
         "@type": "PostalAddress",
         "addressLocality": "Antwerpen",
-        "postalCode": "2020",
         "addressRegion": "Antwerpen",
-        "addressCountry": "BE"
+        "postalCode": "2020"
       },
+      "priceRange": "€€",
+      "name": "Faster Depannage Takeldienst",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "areaServed": [
         {
           "@type": "City",
           "name": "Kontich"
         },
         {
-          "name": "Park & Ride Kontich",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Park & Ride Kontich"
         },
         {
-          "@type": "Place",
-          "name": "E19"
+          "name": "E19",
+          "@type": "Place"
         }
       ],
-      "name": "Faster Depannage Takeldienst",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "telephone": "+3233756737",
+      "email": "faster@takeldienstfaster.be",
+      "@type": "LocalBusiness",
       "@id": "https://takeldienstfaster.be/#business",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@type": "LocalBusiness"
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "position": 1,
-          "item": "https://takeldienstfaster.be/de/",
           "@type": "ListItem",
-          "name": "Startseite"
+          "name": "Startseite",
+          "item": "https://takeldienstfaster.be/de/",
+          "position": 1
         },
         {
-          "position": 2,
+          "name": "Abschleppdienst",
           "@type": "ListItem",
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "name": "Abschleppdienst"
+          "position": 2
         },
         {
-          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/de/takeldienst/kontich/",
           "position": 3,
+          "@type": "ListItem",
           "name": "Kontich"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "acceptedAnswer": {
-            "text": "Kontich ist über die E19 gut erreichbar. Meistens bin ich in etwa 10 bis 20 Minuten da, je nach Verkehr und Verfügbarkeit. In manchen Fällen kann das bis zu etwa 30 Minuten dauern.",
-            "@type": "Answer"
-          },
-          "name": "Wie schnell sind Sie in Kontich?"
-        },
-        {
-          "@type": "Question",
+          "name": "Wie schnell sind Sie in Kontich?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ich nenne immer zuerst einen klaren Preis. Erst nachdem Sie zustimmen, komme ich zu Ihnen."
-          },
-          "name": "Was kostet ein Abschleppdienst in Kontich?"
+            "text": "Kontich ist über die E19 gut erreichbar. Meistens bin ich in etwa 10 bis 20 Minuten da, je nach Verkehr und Verfügbarkeit. In manchen Fällen kann das bis zu etwa 30 Minuten dauern."
+          }
+        },
+        {
+          "name": "Was kostet ein Abschleppdienst in Kontich?",
+          "@type": "Question",
+          "acceptedAnswer": {
+            "text": "Ich nenne immer zuerst einen klaren Preis. Erst nachdem Sie zustimmen, komme ich zu Ihnen.",
+            "@type": "Answer"
+          }
         },
         {
           "name": "Können Sie auch Transporter oder Motorräder abschleppen?",
           "@type": "Question",
           "acceptedAnswer": {
-            "text": "Ja. Die meisten Anrufe in Kontich betreffen Pkw, die nicht anspringen oder nicht weiterkönnen, aber ich helfe auch bei Transportern und ab und zu einem Motorrad.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Ja. Die meisten Anrufe in Kontich betreffen Pkw, die nicht anspringen oder nicht weiterkönnen, aber ich helfe auch bei Transportern und ab und zu einem Motorrad."
           }
         },
         {
           "@type": "Question",
+          "name": "Kennen Sie Kontich gut?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ja. Ich habe selbst an der Grenze von Edegem und Kontich gewohnt und kenne unter anderem das Zentrum, die Einkaufsstraße, die Umgebung der Kirche, das Park & Ride an der E19 und die Fahrzeugprüfstelle."
-          },
-          "name": "Kennen Sie Kontich gut?"
+          }
         },
         {
           "name": "Können Sie ein Fahrzeug bei einer Werkstatt oder einem Händler in Kontich abholen?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja. Ich hole regelmäßig Fahrzeuge bei Werkstätten und Händlern in Kontich ab."
-          },
-          "@type": "Question"
+            "text": "Ja. Ich hole regelmäßig Fahrzeuge bei Werkstätten und Händlern in Kontich ab.",
+            "@type": "Answer"
+          }
         }
       ]
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

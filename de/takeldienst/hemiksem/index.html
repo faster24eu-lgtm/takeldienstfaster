@@ -50,14 +50,22 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@id": "https://takeldienstfaster.be/#business",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "priceRange": "€€",
       "name": "Faster Depannage Takeldienst",
+      "url": "https://takeldienstfaster.be/",
+      "address": {
+        "postalCode": "2020",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "addressCountry": "BE",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress"
+      },
+      "@id": "https://takeldienstfaster.be/#business",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "areaServed": [
         {
           "name": "Hemiksem",
@@ -72,72 +80,64 @@
           "@type": "Place"
         }
       ],
-      "address": {
-        "addressCountry": "BE",
-        "postalCode": "2020",
-        "addressRegion": "Antwerpen",
-        "addressLocality": "Antwerpen",
-        "@type": "PostalAddress",
-        "streetAddress": "De Bosschaertstraat 248"
-      },
+      "telephone": "+3233756737",
       "email": "faster@takeldienstfaster.be",
-      "url": "https://takeldienstfaster.be/",
-      "priceRange": "€€",
-      "telephone": "+3233756737"
+      "@type": "LocalBusiness"
     },
     {
       "itemListElement": [
         {
+          "@type": "ListItem",
           "name": "Startseite",
           "item": "https://takeldienstfaster.be/de/",
-          "@type": "ListItem",
           "position": 1
         },
         {
+          "name": "Abschleppdienst",
           "@type": "ListItem",
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "position": 2,
-          "name": "Abschleppdienst"
+          "position": 2
         },
         {
-          "name": "Hemiksem",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/de/takeldienst/hemiksem/",
-          "position": 3
+          "name": "Hemiksem",
+          "position": 3,
+          "item": "https://takeldienstfaster.be/de/takeldienst/hemiksem/"
         }
       ],
       "@type": "BreadcrumbList"
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Meistens bin ich in etwa 20 Minuten da, je nach Verkehr, Verfügbarkeit und Dringlichkeit. Ich gebe lieber eine realistische Einschätzung als ein festes Versprechen."
-          },
-          "@type": "Question",
-          "name": "Wie schnell sind Sie in Hemiksem?"
-        },
-        {
-          "@type": "Question",
-          "acceptedAnswer": {
-            "text": "Ich nenne immer zuerst einen klaren Preis, bevor ich losfahre.",
+            "text": "Meistens bin ich in etwa 20 Minuten da, je nach Verkehr, Verfügbarkeit und Dringlichkeit. Ich gebe lieber eine realistische Einschätzung als ein festes Versprechen.",
             "@type": "Answer"
           },
-          "name": "Was kostet ein Abschleppdienst in Hemiksem?"
+          "name": "Wie schnell sind Sie in Hemiksem?",
+          "@type": "Question"
         },
         {
+          "@type": "Question",
+          "name": "Was kostet ein Abschleppdienst in Hemiksem?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ich nenne immer zuerst einen klaren Preis, bevor ich losfahre."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Helfen Sie auch beim Transport eines gerade gekauften Gebrauchtwagens?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ja. Neben Panneneinsätzen mache ich ab und zu auch Fahrzeugtransport, zum Beispiel nach dem Kauf eines Gebrauchtwagens."
-          },
-          "@type": "Question",
-          "name": "Helfen Sie auch beim Transport eines gerade gekauften Gebrauchtwagens?"
+          }
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

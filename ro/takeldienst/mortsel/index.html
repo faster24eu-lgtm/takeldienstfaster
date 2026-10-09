@@ -50,19 +50,9 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "address": {
-        "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen",
-        "@type": "PostalAddress",
-        "addressCountry": "BE",
-        "postalCode": "2020"
-      },
-      "url": "https://takeldienstfaster.be/",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "areaServed": [
         {
           "name": "Mortsel",
@@ -73,91 +63,101 @@
           "@type": "Place"
         },
         {
-          "name": "A12",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "A12"
         },
         {
-          "name": "R11",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "R11"
         }
       ],
-      "priceRange": "€€",
-      "@type": "LocalBusiness",
-      "email": "faster@takeldienstfaster.be",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "@id": "https://takeldienstfaster.be/#business",
       "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst"
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "priceRange": "€€",
+      "email": "faster@takeldienstfaster.be",
+      "url": "https://takeldienstfaster.be/",
+      "address": {
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen",
+        "postalCode": "2020"
+      },
+      "name": "Faster Depannage Takeldienst",
+      "@id": "https://takeldienstfaster.be/#business",
+      "@type": "LocalBusiness"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/ro/",
-          "@type": "ListItem",
+          "name": "Acasă",
           "position": 1,
-          "name": "Acasă"
+          "item": "https://takeldienstfaster.be/ro/",
+          "@type": "ListItem"
         },
         {
-          "position": 2,
           "name": "Serviciu de tractare",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "position": 2
         },
         {
-          "item": "https://takeldienstfaster.be/ro/takeldienst/mortsel/",
           "name": "Mortsel",
+          "@type": "ListItem",
           "position": 3,
-          "@type": "ListItem"
+          "item": "https://takeldienstfaster.be/ro/takeldienst/mortsel/"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Mortsel este aproape de baza mea din Hoboken. Pe A12 și R11 ajung de obicei la fața locului în aproximativ 15–25 de minute, în funcție de trafic și disponibilitate."
           },
-          "name": "Cât de repede ajungeți în Mortsel?"
+          "name": "Cât de repede ajungeți în Mortsel?",
+          "@type": "Question"
         },
         {
           "name": "Cât costă un serviciu de tractare în Mortsel?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Confirm întotdeauna prețul cu clientul înainte să plec."
-          }
+          },
+          "@type": "Question"
         },
         {
           "@type": "Question",
+          "name": "De ce aleg clienții din Mortsel Faster?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Mai ales pentru că sunt aproape, pot ajunge repede la fața locului și practic un preț rezonabil."
-          },
-          "name": "De ce aleg clienții din Mortsel Faster?"
+            "text": "Mai ales pentru că sunt aproape, pot ajunge repede la fața locului și practic un preț rezonabil.",
+            "@type": "Answer"
+          }
         },
         {
           "name": "Efectuați și transport de vehicule în Mortsel?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Pe lângă asistență la pană și tractare mă ocup și de transport de vehicule, de exemplu la preluarea sau livrarea unui vehicul."
-          }
+            "text": "Da. Pe lângă asistență la pană și tractare mă ocup și de transport de vehicule, de exemplu la preluarea sau livrarea unui vehicul.",
+            "@type": "Answer"
+          },
+          "@type": "Question"
         },
         {
-          "name": "Cunoașteți bine Mortsel?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Da. Am de mai mult timp experiență în Mortsel, printre altele cu preluarea și livrarea de vehicule (inclusiv mașini în leasing la sfârșitul contractului), intervenții în centru și preluarea de vehicule de la Cryns Carrosserie."
-          }
+          },
+          "name": "Cunoașteți bine Mortsel?",
+          "@type": "Question"
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

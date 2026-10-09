@@ -54,14 +54,15 @@
   "@graph": [
     {
       "@type": "LocalBusiness",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "areaServed": [
         {
           "name": "Aalst",
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Dendermonde"
+          "name": "Dendermonde",
+          "@type": "City"
         },
         {
           "name": "Wetteren",
@@ -72,20 +73,20 @@
           "name": "Zele"
         },
         {
-          "@type": "City",
-          "name": "Berlare"
+          "name": "Berlare",
+          "@type": "City"
         },
         {
-          "name": "Haaltert",
-          "@type": "City"
+          "@type": "City",
+          "name": "Haaltert"
         },
         {
           "@type": "City",
           "name": "Ninove"
         },
         {
-          "name": "Oosterzele",
-          "@type": "City"
+          "@type": "City",
+          "name": "Oosterzele"
         },
         {
           "@type": "City",
@@ -96,55 +97,54 @@
           "name": "E40"
         }
       ],
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@id": "https://takeldienstfaster.be/#business",
       "email": "faster@takeldienstfaster.be",
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "url": "https://takeldienstfaster.be/",
+      "priceRange": "€€",
       "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
+        "addressCountry": "BE",
         "postalCode": "2020",
-        "streetAddress": "De Bosschaertstraat 248",
         "addressRegion": "Antwerpen",
-        "addressCountry": "BE"
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "addressLocality": "Antwerpen"
       },
-      "priceRange": "€€"
+      "@id": "https://takeldienstfaster.be/#business",
+      "url": "https://takeldienstfaster.be/",
+      "telephone": "+3233756737",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "name": "Faster Depannage Takeldienst"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
+          "name": "Accueil",
           "item": "https://takeldienstfaster.be/fr/",
-          "position": 1,
           "@type": "ListItem",
-          "name": "Accueil"
+          "position": 1
         },
         {
           "name": "Service de remorquage",
-          "@type": "ListItem",
           "position": 2,
+          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
           "name": "Alost & région",
+          "item": "https://takeldienstfaster.be/fr/takeldienst/aalst/",
           "@type": "ListItem",
-          "position": 3,
-          "item": "https://takeldienstfaster.be/fr/takeldienst/aalst/"
+          "position": 3
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
-          "@type": "Question",
           "name": "Travaillez-vous aussi en dehors d’Alost ?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Oui. Je me déplace tout autant à Termonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere et dans les communes environnantes.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Oui. Je me déplace tout autant à Termonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere et dans les communes environnantes."
           }
         },
         {
@@ -156,52 +156,52 @@
           "name": "Êtes-vous joignables la nuit ?"
         },
         {
-          "name": "Puis-je savoir à l’avance combien coûte un remorquage ?",
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Oui. Je discute du prix avant d’envoyer la dépanneuse, par téléphone, via WhatsApp ou par e-mail.",
             "@type": "Answer"
-          }
+          },
+          "@type": "Question",
+          "name": "Puis-je savoir à l’avance combien coûte un remorquage ?"
         },
         {
-          "@type": "Question",
           "name": "Pouvez-vous remorquer une voiture qui ne peut pas être mise au point mort ?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "La plupart du temps, oui. J’ai des dollies et d’autre matériel pour les dépannages plus difficiles."
-          }
+            "text": "La plupart du temps, oui. J’ai des dollies et d’autre matériel pour les dépannages plus difficiles.",
+            "@type": "Answer"
+          },
+          "@type": "Question"
         },
         {
-          "@type": "Question",
           "name": "Pouvez-vous transporter une voiture sans roue ?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Dans beaucoup de cas, oui, selon la situation et avec le bon matériel."
-          }
-        },
-        {
-          "name": "Pouvez-vous transporter une voiture que je viens d’acheter ?",
-          "@type": "Question",
-          "acceptedAnswer": {
-            "text": "Oui, même un véhicule sans plaque d’immatriculation.",
-            "@type": "Answer"
-          }
-        },
-        {
-          "acceptedAnswer": {
-            "text": "Oui, j’assure un dépannage sûr du véhicule.",
-            "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Pouvez-vous aider après un accident ?"
+          "@type": "Question"
         },
         {
-          "@type": "Question",
-          "name": "Quelles langues parlez-vous ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Néerlandais, français et anglais."
-          }
+            "text": "Oui, même un véhicule sans plaque d’immatriculation."
+          },
+          "@type": "Question",
+          "name": "Pouvez-vous transporter une voiture que je viens d’acheter ?"
+        },
+        {
+          "name": "Pouvez-vous aider après un accident ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Oui, j’assure un dépannage sûr du véhicule."
+          },
+          "@type": "Question"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "text": "Néerlandais, français et anglais.",
+            "@type": "Answer"
+          },
+          "name": "Quelles langues parlez-vous ?"
         },
         {
           "name": "Travaillez-vous seulement en journée ?",
@@ -216,8 +216,8 @@
             "text": "C’est tout près de l’E40 entre Bruxelles et Gand, ce qui rend toute la région d’Alost facilement accessible.",
             "@type": "Answer"
           },
-          "name": "Pourquoi l’un de vos chauffeurs est-il basé à Erpe-Mere ?",
-          "@type": "Question"
+          "@type": "Question",
+          "name": "Pourquoi l’un de vos chauffeurs est-il basé à Erpe-Mere ?"
         }
       ]
     }

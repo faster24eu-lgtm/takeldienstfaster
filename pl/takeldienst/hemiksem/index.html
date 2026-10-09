@@ -53,10 +53,12 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "email": "faster@takeldienstfaster.be",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Hemiksem"
+          "name": "Hemiksem",
+          "@type": "City"
         },
         {
           "name": "N148",
@@ -67,72 +69,70 @@
           "@type": "Place"
         }
       ],
-      "priceRange": "€€",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@type": "LocalBusiness",
-      "url": "https://takeldienstfaster.be/",
       "@id": "https://takeldienstfaster.be/#business",
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
+      "@type": "LocalBusiness",
       "address": {
         "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
         "addressCountry": "BE",
-        "postalCode": "2020",
         "addressLocality": "Antwerpen",
-        "@type": "PostalAddress"
-      }
+        "@type": "PostalAddress",
+        "postalCode": "2020",
+        "streetAddress": "De Bosschaertstraat 248"
+      },
+      "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
+      "url": "https://takeldienstfaster.be/",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "priceRange": "€€"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "@type": "ListItem",
-          "position": 1,
+          "name": "Strona główna",
           "item": "https://takeldienstfaster.be/pl/",
-          "name": "Strona główna"
+          "@type": "ListItem",
+          "position": 1
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "item": "https://takeldienstfaster.be/takeldienst/",
-          "name": "Pomoc drogowa"
+          "name": "Pomoc drogowa",
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
-          "name": "Hemiksem",
-          "@type": "ListItem",
           "position": 3,
-          "item": "https://takeldienstfaster.be/pl/takeldienst/hemiksem/"
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/pl/takeldienst/hemiksem/",
+          "name": "Hemiksem"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
       "mainEntity": [
         {
+          "@type": "Question",
           "name": "Jak szybko są Państwo w Hemiksem?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Zazwyczaj jestem tam w około 20 minut, w zależności od ruchu, dostępności i pilności. Wolę podać realistyczną ocenę niż sztywną obietnicę."
-          },
-          "@type": "Question"
+          }
         },
         {
           "acceptedAnswer": {
-            "text": "Zawsze najpierw podaję jasną cenę, zanim wyruszę.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Zawsze najpierw podaję jasną cenę, zanim wyruszę."
           },
-          "@type": "Question",
-          "name": "Ile kosztuje pomoc drogowa w Hemiksem?"
+          "name": "Ile kosztuje pomoc drogowa w Hemiksem?",
+          "@type": "Question"
         },
         {
-          "name": "Czy pomagają Państwo również w przewiezieniu właśnie kupionego używanego samochodu?",
+          "@type": "Question",
           "acceptedAnswer": {
             "text": "Tak. Oprócz interwencji przy awariach od czasu do czasu wykonuję też transport pojazdów, na przykład po zakupie używanego samochodu.",
             "@type": "Answer"
           },
-          "@type": "Question"
+          "name": "Czy pomagają Państwo również w przewiezieniu właśnie kupionego używanego samochodu?"
         }
       ],
       "@type": "FAQPage"

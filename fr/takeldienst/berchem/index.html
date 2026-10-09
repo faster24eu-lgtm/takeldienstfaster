@@ -52,109 +52,109 @@
 {
   "@graph": [
     {
+      "@type": "LocalBusiness",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@id": "https://takeldienstfaster.be/#business",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Berchem"
+          "name": "Berchem",
+          "@type": "City"
         },
         {
           "name": "Berchem Station",
           "@type": "Place"
         },
         {
-          "name": "Singel",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Singel"
         },
         {
           "@type": "Place",
           "name": "Antwerpse Ring"
         }
       ],
-      "@type": "LocalBusiness",
+      "email": "faster@takeldienstfaster.be",
       "priceRange": "€€",
       "address": {
-        "addressLocality": "Antwerpen",
-        "@type": "PostalAddress",
-        "postalCode": "2020",
-        "addressRegion": "Antwerpen",
         "streetAddress": "De Bosschaertstraat 248",
-        "addressCountry": "BE"
+        "@type": "PostalAddress",
+        "addressLocality": "Antwerpen",
+        "addressRegion": "Antwerpen",
+        "addressCountry": "BE",
+        "postalCode": "2020"
       },
+      "@id": "https://takeldienstfaster.be/#business",
       "url": "https://takeldienstfaster.be/",
-      "name": "Faster Depannage Takeldienst",
       "telephone": "+3233756737",
-      "email": "faster@takeldienstfaster.be",
+      "name": "Faster Depannage Takeldienst",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "name": "Accueil",
+          "item": "https://takeldienstfaster.be/fr/",
           "@type": "ListItem",
-          "position": 1,
-          "item": "https://takeldienstfaster.be/fr/"
+          "position": 1
         },
         {
           "@type": "ListItem",
-          "name": "Service de remorquage",
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "position": 2
+          "position": 2,
+          "name": "Service de remorquage"
         },
         {
           "position": 3,
           "item": "https://takeldienstfaster.be/fr/takeldienst/berchem/",
-          "name": "Berchem",
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "name": "Berchem"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
+      "@type": "FAQPage",
       "mainEntity": [
         {
+          "name": "Connaissez-vous bien Berchem ?",
           "acceptedAnswer": {
             "text": "Oui. J’y ai déjà effectué de nombreuses interventions de remorquage et de dépannage, notamment autour du Singel, du Ring d’Anvers et de la gare de Berchem.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Connaissez-vous bien Berchem ?"
+          "@type": "Question"
         },
         {
+          "name": "Quels sont les appels les plus fréquents à Berchem ?",
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Surtout une batterie vide, des pannes mécaniques et des dépannages après un accident."
+          }
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "text": "Oui. Je peux amener un véhicule chez un garage ou un mécanicien à Berchem, ou par exemple à Hoboken, selon votre situation.",
+            "@type": "Answer"
           },
-          "name": "Quels sont les appels les plus fréquents à Berchem ?",
-          "@type": "Question"
+          "name": "Pouvez-vous amener ma voiture dans un garage à Berchem ?"
         },
         {
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Oui. Je peux amener un véhicule chez un garage ou un mécanicien à Berchem, ou par exemple à Hoboken, selon votre situation."
-          },
-          "name": "Pouvez-vous amener ma voiture dans un garage à Berchem ?",
-          "@type": "Question"
-        },
-        {
-          "acceptedAnswer": {
-            "text": "Je discute et confirme toujours le prix à l’avance, avant de partir.",
-            "@type": "Answer"
+            "text": "Je discute et confirme toujours le prix à l’avance, avant de partir."
           },
           "@type": "Question",
           "name": "Combien coûte un service de remorquage à Berchem ?"
         },
         {
-          "@type": "Question",
-          "name": "Êtes-vous joignables 24/7 à Berchem ?",
           "acceptedAnswer": {
             "text": "Oui. Faster est joignable 24/7 pour le remorquage et le dépannage à Berchem.",
             "@type": "Answer"
-          }
+          },
+          "@type": "Question",
+          "name": "Êtes-vous joignables 24/7 à Berchem ?"
         }
-      ],
-      "@type": "FAQPage"
+      ]
     }
   ],
   "@context": "https://schema.org"

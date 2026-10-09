@@ -20,6 +20,7 @@
 <link rel="alternate" hreflang="nl" href="https://takeldienstfaster.be/">
 <link rel="alternate" hreflang="de" href="https://takeldienstfaster.be/de/">
 <link rel="alternate" hreflang="fr" href="https://takeldienstfaster.be/fr/">
+<link rel="alternate" hreflang="en" href="https://takeldienstfaster.be/en/">
 <link rel="alternate" hreflang="pl" href="https://takeldienstfaster.be/pl/">
 <link rel="alternate" hreflang="ro" href="https://takeldienstfaster.be/ro/">
 <link rel="alternate" hreflang="x-default" href="https://takeldienstfaster.be/">
@@ -72,73 +73,33 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
-      "url": "https://takeldienstfaster.be/",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
-        "postalCode": "2020",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE"
-      },
-      "image": "https://takeldienstfaster.be/assets/images/faster-warehouse.jpg",
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "opens": "00:00",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
-          ],
-          "closes": "23:59"
-        }
-      ],
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "sameAs": [],
-      "@type": "AutomotiveBusiness",
-      "priceRange": "€€",
-      "name": "Faster Depannage Takeldienst",
-      "email": "faster@takeldienstfaster.be",
-      "telephone": "+3233756737",
-      "additionalType": "https://schema.org/EmergencyService",
-      "@id": "https://takeldienstfaster.be/#business",
-      "contactPoint": {
-        "contactType": "customer service",
-        "telephone": "+3233756737",
-        "@type": "ContactPoint",
-        "areaServed": "BE"
-      },
       "areaServed": [
         {
           "@type": "City",
           "name": "Antwerpen"
         },
         {
-          "@type": "City",
-          "name": "Deurne"
+          "name": "Deurne",
+          "@type": "City"
         },
         {
           "name": "Hoboken",
           "@type": "City"
         },
         {
-          "name": "Wilrijk",
-          "@type": "City"
+          "@type": "City",
+          "name": "Wilrijk"
         },
         {
-          "name": "Edegem",
-          "@type": "City"
+          "@type": "City",
+          "name": "Edegem"
         },
         {
-          "name": "Merksem",
-          "@type": "City"
+          "@type": "City",
+          "name": "Merksem"
         },
         {
           "@type": "City",
@@ -152,59 +113,99 @@
           "name": "België",
           "@type": "Country"
         }
-      ]
+      ],
+      "email": "faster@takeldienstfaster.be",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressLocality": "Antwerpen",
+        "addressCountry": "BE",
+        "postalCode": "2020",
+        "addressRegion": "Antwerpen"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "@type": "AutomotiveBusiness",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "sameAs": [],
+      "@id": "https://takeldienstfaster.be/#business",
+      "url": "https://takeldienstfaster.be/",
+      "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
+      "image": "https://takeldienstfaster.be/assets/images/faster-warehouse.jpg",
+      "additionalType": "https://schema.org/EmergencyService",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+3233756737",
+        "areaServed": "BE",
+        "contactType": "customer service"
+      }
     },
     {
       "name": "Faster Depannage Takeldienst",
-      "inLanguage": "nl-BE",
-      "url": "https://takeldienstfaster.be/",
-      "@type": "WebSite",
-      "@id": "https://takeldienstfaster.be/#website",
       "publisher": {
         "@id": "https://takeldienstfaster.be/#business"
-      }
+      },
+      "inLanguage": "nl-BE",
+      "@id": "https://takeldienstfaster.be/#website",
+      "url": "https://takeldienstfaster.be/",
+      "@type": "WebSite"
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
+  "@context": "https://schema.org",
   "mainEntity": [
     {
-      "@type": "Question",
-      "name": "En combien de temps pouvez-vous être sur place ?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Cela dépend de l’endroit, de la circulation, de l’affluence et de l’urgence. Pour les interventions urgentes, environ 30 minutes est souvent possible."
-      }
+      },
+      "@type": "Question",
+      "name": "En combien de temps pouvez-vous être sur place ?"
     },
     {
       "name": "Est-ce que je reçois un prix à l’avance ?",
-      "@type": "Question",
       "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui. Nous demandons où vous êtes, où vous devez aller, quelle marque et quel modèle vous avez et ce qui s’est passé. Sur cette base, nous convenons à l’avance d’un prix clair."
-      }
-    },
-    {
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Oui. Faster organise aussi le transport de véhicules et le rapatriement en Europe, selon la mission."
+        "text": "Oui. Nous demandons où vous êtes, où vous devez aller, quelle marque et quel modèle vous avez et ce qui s’est passé. Sur cette base, nous convenons à l’avance d’un prix clair.",
+        "@type": "Answer"
       },
-      "name": "Faites-vous des transports internationaux ?",
       "@type": "Question"
     },
     {
       "@type": "Question",
-      "name": "Puis-je aussi prendre contact la nuit ?",
       "acceptedAnswer": {
-        "text": "Oui. Faster est joignable 24/7.",
+        "text": "Oui. Faster organise aussi le transport de véhicules et le rapatriement en Europe, selon la mission.",
         "@type": "Answer"
-      }
+      },
+      "name": "Faites-vous des transports internationaux ?"
+    },
+    {
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Faster est joignable 24/7."
+      },
+      "@type": "Question",
+      "name": "Puis-je aussi prendre contact la nuit ?"
     }
   ]
 }

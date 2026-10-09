@@ -50,68 +50,68 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
-      "email": "faster@takeldienstfaster.be",
-      "telephone": "+3233756737",
-      "priceRange": "€€",
-      "address": {
-        "postalCode": "2020",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressLocality": "Antwerpen",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE",
-        "@type": "PostalAddress"
-      },
-      "name": "Faster Depannage Takeldienst",
       "url": "https://takeldienstfaster.be/",
-      "@type": "LocalBusiness",
       "image": "https://takeldienstfaster.be/assets/images/faster-intervention-workshop.jpg",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@id": "https://takeldienstfaster.be/#business",
+      "address": {
+        "addressCountry": "BE",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "@type": "PostalAddress",
+        "postalCode": "2020"
+      },
       "areaServed": [
         {
           "@type": "City",
           "name": "Sint-Niklaas"
         },
         {
-          "@type": "City",
-          "name": "Temse"
+          "name": "Temse",
+          "@type": "City"
         },
         {
           "@type": "City",
           "name": "Waasmunster"
         },
         {
-          "@type": "City",
-          "name": "Hamme"
+          "name": "Hamme",
+          "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Sint-Gillis-Waas"
+          "name": "Sint-Gillis-Waas",
+          "@type": "City"
         },
         {
           "@type": "City",
           "name": "Stekene"
         },
         {
-          "@type": "Place",
-          "name": "E17"
+          "name": "E17",
+          "@type": "Place"
         },
         {
           "name": "N70",
           "@type": "Place"
         }
-      ]
+      ],
+      "email": "faster@takeldienstfaster.be",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
+      "@type": "LocalBusiness",
+      "@id": "https://takeldienstfaster.be/#business",
+      "priceRange": "€€"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/",
-          "position": 1,
+          "item": "https://takeldienstfaster.be/en/",
           "name": "Home",
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "position": 1
         },
         {
           "position": 2,
@@ -120,84 +120,84 @@
           "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
-          "item": "https://takeldienstfaster.be/en/takeldienst/sint-niklaas/",
           "position": 3,
           "name": "Sint-Niklaas",
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/en/takeldienst/sint-niklaas/"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
+      "@type": "FAQPage",
       "mainEntity": [
         {
-          "@type": "Question",
           "name": "Can you be reached 24/7?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Yes. In an urgent situation I answer the phone myself, also at night.",
+            "@type": "Answer",
+            "text": "Yes. In an urgent situation I answer the phone myself, also at night."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How quickly can you be in Sint-Niklaas?",
+          "acceptedAnswer": {
+            "text": "Sint-Niklaas is about 30 minutes from Antwerp in normal traffic. In an urgent situation I try to leave as quickly as possible; for a planned trip I simply agree a time.",
             "@type": "Answer"
           }
         },
         {
-          "name": "How quickly can you be in Sint-Niklaas?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sint-Niklaas is about 30 minutes from Antwerp in normal traffic. In an urgent situation I try to leave as quickly as possible; for a planned trip I simply agree a time."
-          }
-        },
-        {
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. You choose where the car goes; I give advice if that is useful."
+            "text": "Yes. You choose where the car goes; I give advice if that is useful.",
+            "@type": "Answer"
           },
           "name": "Can you take my car to my own garage?",
           "@type": "Question"
         },
         {
           "acceptedAnswer": {
-            "text": "Yes, vehicles up to 3.5 tonnes.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Yes, vehicles up to 3.5 tonnes."
           },
           "@type": "Question",
           "name": "Do you also transport vans?"
         },
         {
-          "name": "Can you help if the car won’t start?",
           "@type": "Question",
+          "name": "Can you help if the car won’t start?",
           "acceptedAnswer": {
             "text": "Often, yes. I first check whether the problem can be solved on the spot, for example with a booster, or whether the vehicle needs to be towed after all.",
             "@type": "Answer"
           }
         },
         {
-          "name": "Do you also do planned transports?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. Not every trip is urgent. If the car is safe and only needs to be moved later, I simply schedule it."
-          }
+          },
+          "@type": "Question",
+          "name": "Do you also do planned transports?"
         },
         {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. I know the route and work with a network of contacts for international transport."
           },
-          "@type": "Question",
-          "name": "Do you also transport vehicles abroad?"
+          "name": "Do you also transport vehicles abroad?",
+          "@type": "Question"
         },
         {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "I discuss the price in advance. If the information you pass on is correct, I stick to that agreement, without surprises afterwards."
           },
-          "name": "How does the price work?",
-          "@type": "Question"
+          "@type": "Question",
+          "name": "How does the price work?"
         }
-      ],
-      "@type": "FAQPage"
+      ]
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 
@@ -218,9 +218,9 @@
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="../../../index.html" aria-label="Faster towing service home"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
+      <a class="brand" href="../../index.html" aria-label="Faster towing service home"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="../../diensten/">Services</a> <a href="../../../#hoe-het-werkt">How it works</a> <a href="../../../#werkgebied">Service area</a>
+        <a href="../../diensten/">Services</a> <a href="../../#hoe-het-werkt">How it works</a> <a href="../../#werkgebied">Service area</a>
         
         
       </nav>
@@ -461,7 +461,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand brand-footer" href="../../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
+        <a class="brand brand-footer" href="../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
         <p class="footer-copy">Personal towing service, active throughout Flanders. From a short local intervention to international vehicle transport.</p>
       </div>
       <div><h3>Services</h3><a href="../../diensten/#pechverhelping">Breakdown assistance</a><a href="../../diensten/#takeldienst">Towing & recovery</a><a href="../../diensten/#transport">Car transport</a><a href="../../diensten/#internationaal">International</a></div>
@@ -471,6 +471,6 @@
     <div class="container footer-bottom"><span>© 2026 Faster Depannage Takeldienst</span><span>Towing service Sint-Niklaas • 24/7</span></div>
   </footer>
   <div class="mobile-bar"><a class="call" href="tel:+3233756737">Call Faster</a><a class="wa" href="https://wa.me/3233756737?text=Hello%2C%20I%20need%20help%20with%20my%20vehicle%20in%20Sint-Niklaas." target="_blank" rel="noopener">WhatsApp</a></div>
-<a class="call-fab" href="tel:+3233756737" onclick="gtag('event','conversion',{'send_to':'AW-10963026341/i8ihCMaJo4QdEKWDyuso'});"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Call now — immediate help</span></a> <a class="price-badge" href="../../../#contact" aria-label="From 125 euros - request a price"><img src="../../../assets/images/price-badge-125-en.png" width="92" height="92" alt="From 125 euros" decoding="async"></a>
+<a class="call-fab" href="tel:+3233756737" onclick="gtag('event','conversion',{'send_to':'AW-10963026341/i8ihCMaJo4QdEKWDyuso'});"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Call now — immediate help</span></a> <a class="price-badge" href="../../#contact" aria-label="From 125 euros - request a price"><img src="../../../assets/images/price-badge-125-en.png" width="92" height="92" alt="From 125 euros" decoding="async"></a>
 </body>
 </html>

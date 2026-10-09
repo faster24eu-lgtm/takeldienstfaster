@@ -50,51 +50,42 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "name": "Faster Depannage Takeldienst",
-      "telephone": "+3233756737",
-      "email": "faster@takeldienstfaster.be",
+      "@id": "https://takeldienstfaster.be/#business",
       "url": "https://takeldienstfaster.be/",
-      "priceRange": "€€",
-      "address": {
-        "addressCountry": "BE",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen",
-        "postalCode": "2020",
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen"
-      },
-      "@type": "LocalBusiness",
+      "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "areaServed": [
         {
-          "@type": "AdministrativeArea",
-          "name": "Limburg"
+          "name": "Limburg",
+          "@type": "AdministrativeArea"
         },
         {
           "@type": "City",
           "name": "Zonhoven"
         },
         {
-          "@type": "City",
-          "name": "Hasselt"
+          "name": "Hasselt",
+          "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Genk"
-        },
-        {
-          "name": "Sint-Truiden",
+          "name": "Genk",
           "@type": "City"
         },
         {
           "@type": "City",
-          "name": "Tongeren"
+          "name": "Sint-Truiden"
         },
         {
-          "@type": "City",
-          "name": "Borgloon"
+          "name": "Tongeren",
+          "@type": "City"
+        },
+        {
+          "name": "Borgloon",
+          "@type": "City"
         },
         {
           "@type": "City",
@@ -105,12 +96,12 @@
           "name": "Houthalen-Helchteren"
         },
         {
-          "name": "Diepenbeek",
-          "@type": "City"
+          "@type": "City",
+          "name": "Diepenbeek"
         },
         {
-          "name": "Bilzen",
-          "@type": "City"
+          "@type": "City",
+          "name": "Bilzen"
         },
         {
           "name": "Hoeselt",
@@ -133,91 +124,100 @@
           "name": "Peer"
         },
         {
-          "@type": "City",
-          "name": "Pelt"
+          "name": "Pelt",
+          "@type": "City"
         }
       ],
-      "@id": "https://takeldienstfaster.be/#business",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
+      "priceRange": "€€",
+      "email": "faster@takeldienstfaster.be",
+      "address": {
+        "postalCode": "2020",
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress"
+      },
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "@type": "LocalBusiness"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "name": "Accueil",
           "@type": "ListItem",
-          "position": 1,
-          "item": "https://takeldienstfaster.be/fr/"
+          "item": "https://takeldienstfaster.be/fr/",
+          "position": 1
         },
         {
-          "position": 2,
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "name": "Service de remorquage",
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Service de remorquage"
         },
         {
-          "item": "https://takeldienstfaster.be/fr/takeldienst/limburg/",
           "position": 3,
           "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/fr/takeldienst/limburg/",
           "name": "Service de remorquage Limbourg"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui, nous venons vous remorquer et/ou vous dépanner dans tout le Limbourg, aussi à Genk."
-          },
+          "name": "Aidez-vous aussi à Genk ?",
           "@type": "Question",
-          "name": "Aidez-vous aussi à Genk ?"
-        },
-        {
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Bien sûr ! Nous transportons votre véhicule à l’endroit que vous choisissez."
-          },
-          "@type": "Question",
-          "name": "Pouvez-vous amener ma voiture dans un garage à Hasselt ?"
-        },
-        {
-          "@type": "Question",
-          "name": "Êtes-vous aussi joignables 24/7 dans le Limbourg ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Faster est joignable 24/7 dans le Limbourg. Cela veut dire aussi le soir, la nuit ou le week-end."
+            "text": "Oui, nous venons vous remorquer et/ou vous dépanner dans tout le Limbourg, aussi à Genk.",
+            "@type": "Answer"
           }
         },
         {
+          "name": "Pouvez-vous amener ma voiture dans un garage à Hasselt ?",
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bien sûr ! Nous transportons votre véhicule à l’endroit que vous choisissez."
+          }
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Faster est joignable 24/7 dans le Limbourg. Cela veut dire aussi le soir, la nuit ou le week-end."
+          },
+          "name": "Êtes-vous aussi joignables 24/7 dans le Limbourg ?"
+        },
+        {
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Un service de remorquage dans la province de Limbourg commence à partir de 125 euros par remorquage. Je discute du prix avec vous à l’avance, dès que je peux évaluer la situation à l’aide des informations que vous me transmettez. Ainsi, vous n’avez pas de surprises après coup."
           },
-          "@type": "Question",
           "name": "Comment travaillez-vous avec un prix convenu ?"
         },
         {
           "@type": "Question",
-          "name": "Puis-je prendre contact via WhatsApp ?",
           "acceptedAnswer": {
             "text": "Oui, WhatsApp est souvent le moyen de communication le plus rapide. Vous envoyez votre localisation et votre situation, éventuellement avec une photo pour clarifier.",
             "@type": "Answer"
-          }
+          },
+          "name": "Puis-je prendre contact via WhatsApp ?"
         },
         {
           "acceptedAnswer": {
             "text": "Oui, en plus des interventions locales dans le Limbourg, j’organise aussi le transport de véhicules hors de Belgique. Ces demandes reçoivent toujours une approche personnelle.",
             "@type": "Answer"
           },
-          "name": "Faites-vous aussi du transport international ?",
-          "@type": "Question"
+          "@type": "Question",
+          "name": "Faites-vous aussi du transport international ?"
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 

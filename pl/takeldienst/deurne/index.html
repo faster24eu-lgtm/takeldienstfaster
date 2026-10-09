@@ -52,52 +52,52 @@
 {
   "@graph": [
     {
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
       "@id": "https://takeldienstfaster.be/#business",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
-        "postalCode": "2020",
-        "addressCountry": "BE",
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248"
-      },
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "url": "https://takeldienstfaster.be/",
-      "@type": "LocalBusiness",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
-      "priceRange": "€€",
       "areaServed": [
         {
           "@type": "City",
           "name": "Deurne"
         },
         {
-          "name": "Lotto Arena",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Lotto Arena"
         },
         {
           "name": "N120",
           "@type": "Place"
         }
-      ]
+      ],
+      "email": "faster@takeldienstfaster.be",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "address": {
+        "postalCode": "2020",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressLocality": "Antwerpen",
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen"
+      },
+      "@type": "LocalBusiness",
+      "url": "https://takeldienstfaster.be/",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "name": "Faster Depannage Takeldienst",
+      "telephone": "+3233756737",
+      "priceRange": "€€"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
+          "name": "Strona główna",
           "item": "https://takeldienstfaster.be/pl/",
-          "position": 1,
           "@type": "ListItem",
-          "name": "Strona główna"
+          "position": 1
         },
         {
-          "item": "https://takeldienstfaster.be/takeldienst/",
           "position": 2,
           "@type": "ListItem",
-          "name": "Pomoc drogowa"
+          "name": "Pomoc drogowa",
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
           "@type": "ListItem",
@@ -108,49 +108,49 @@
       ]
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
-          "name": "Jak szybko są Państwo w Deurne?",
           "@type": "Question",
+          "name": "Jak szybko są Państwo w Deurne?",
           "acceptedAnswer": {
             "text": "Zazwyczaj jestem na granicy Deurne w około 13 minut, przy zjeździe tuż obok Lotto Arena. Stamtąd szybko jestem u Państwa, gdziekolwiek w Deurne Państwo stoją.",
             "@type": "Answer"
           }
         },
         {
-          "name": "Ile kosztuje pomoc drogowa w Deurne?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Proszę zadzwonić lub napisać do mnie na WhatsApp, opisując sytuację. Cenę podam od razu, zanim wyruszę."
-          }
-        },
-        {
-          "name": "Gdzie odbywa się najwięcej interwencji w Deurne?",
-          "acceptedAnswer": {
-            "text": "Najwięcej akcji odbywa się na N120 i w jej okolicy oraz w bocznych ulicach. Dobrze znam też warsztaty przy Ten Eekhovelei i Bisschoppenhoflaan.",
-            "@type": "Answer"
           },
+          "name": "Ile kosztuje pomoc drogowa w Deurne?",
           "@type": "Question"
         },
         {
           "@type": "Question",
           "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Najwięcej akcji odbywa się na N120 i w jej okolicy oraz w bocznych ulicach. Dobrze znam też warsztaty przy Ten Eekhovelei i Bisschoppenhoflaan."
+          },
+          "name": "Gdzie odbywa się najwięcej interwencji w Deurne?"
+        },
+        {
+          "acceptedAnswer": {
             "text": "Tak. W zakresie części współpracuję z Victoria Auto Parts i Recuparts. Na Melkerijstraat współpracuję z Old School Mechanics przy specjalistycznych pracach silnikowych oraz z AM Tronic, ich sąsiadem, przy programowaniu komputerów pokładowych.",
             "@type": "Answer"
           },
-          "name": "Czy współpracują Państwo z warsztatami lub specjalistami w Deurne?"
+          "name": "Czy współpracują Państwo z warsztatami lub specjalistami w Deurne?",
+          "@type": "Question"
         },
         {
           "@type": "Question",
+          "name": "Czy mogą Państwo odbierać pojazdy od dealerów w Deurne?",
           "acceptedAnswer": {
             "text": "Tak. Regularnie odbieram pojazdy z Ford Van Mossel i od innych dealerów w okolicy.",
             "@type": "Answer"
-          },
-          "name": "Czy mogą Państwo odbierać pojazdy od dealerów w Deurne?"
+          }
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
   ],
   "@context": "https://schema.org"

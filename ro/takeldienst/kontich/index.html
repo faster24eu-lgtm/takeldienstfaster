@@ -53,105 +53,105 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "name": "Faster Depannage Takeldienst",
+      "@id": "https://takeldienstfaster.be/#business",
+      "@type": "LocalBusiness",
       "url": "https://takeldienstfaster.be/",
       "address": {
-        "@type": "PostalAddress",
         "postalCode": "2020",
-        "addressCountry": "BE",
-        "addressRegion": "Antwerpen",
         "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248"
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen"
       },
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "@type": "LocalBusiness",
       "priceRange": "€€",
       "email": "faster@takeldienstfaster.be",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "telephone": "+3233756737",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Kontich"
+          "name": "Kontich",
+          "@type": "City"
         },
         {
-          "@type": "Place",
-          "name": "Park & Ride Kontich"
+          "name": "Park & Ride Kontich",
+          "@type": "Place"
         },
         {
           "name": "E19",
           "@type": "Place"
         }
       ],
-      "telephone": "+3233756737",
-      "@id": "https://takeldienstfaster.be/#business",
-      "name": "Faster Depannage Takeldienst"
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "@type": "ListItem",
-          "position": 1,
           "name": "Acasă",
-          "item": "https://takeldienstfaster.be/ro/"
+          "position": 1,
+          "item": "https://takeldienstfaster.be/ro/",
+          "@type": "ListItem"
         },
         {
-          "@type": "ListItem",
           "name": "Serviciu de tractare",
           "position": 2,
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "@type": "ListItem"
         },
         {
           "name": "Kontich",
+          "item": "https://takeldienstfaster.be/ro/takeldienst/kontich/",
           "position": 3,
-          "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/ro/takeldienst/kontich/"
+          "@type": "ListItem"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
+      "@type": "FAQPage",
       "mainEntity": [
         {
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Kontich este ușor de ajuns pe E19. De obicei ajung acolo în aproximativ 10–20 de minute, în funcție de trafic și disponibilitate. În unele cazuri poate dura până la aproximativ 30 de minute.",
             "@type": "Answer"
           },
-          "name": "Cât de repede ajungeți în Kontich?"
-        },
-        {
-          "name": "Cât costă un serviciu de tractare în Kontich?",
-          "acceptedAnswer": {
-            "text": "Comunic întotdeauna mai întâi un preț clar. Abia după ce sunteți de acord vin la dumneavoastră.",
-            "@type": "Answer"
-          },
+          "name": "Cât de repede ajungeți în Kontich?",
           "@type": "Question"
         },
         {
+          "@type": "Question",
+          "name": "Cât costă un serviciu de tractare în Kontich?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Da. Cele mai multe apeluri din Kontich sunt despre autoturisme care nu pornesc sau nu mai pot merge, dar ajut și la autoutilitare și din când în când la o motocicletă."
-          },
+            "text": "Comunic întotdeauna mai întâi un preț clar. Abia după ce sunteți de acord vin la dumneavoastră."
+          }
+        },
+        {
           "@type": "Question",
+          "acceptedAnswer": {
+            "text": "Da. Cele mai multe apeluri din Kontich sunt despre autoturisme care nu pornesc sau nu mai pot merge, dar ajut și la autoutilitare și din când în când la o motocicletă.",
+            "@type": "Answer"
+          },
           "name": "Puteți tracta și autoutilitare sau motociclete?"
         },
         {
+          "@type": "Question",
           "name": "Cunoașteți bine Kontich?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Am locuit chiar eu la granița dintre Edegem și Kontich și cunosc, printre altele, centrul, strada comercială, împrejurimile bisericii, Park & Ride de la E19 și stația de inspecție tehnică."
-          },
-          "@type": "Question"
+            "text": "Da. Am locuit chiar eu la granița dintre Edegem și Kontich și cunosc, printre altele, centrul, strada comercială, împrejurimile bisericii, Park & Ride de la E19 și stația de inspecție tehnică.",
+            "@type": "Answer"
+          }
         },
         {
           "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Preiau regulat vehicule de la service-uri și dealeri din Kontich."
+            "text": "Da. Preiau regulat vehicule de la service-uri și dealeri din Kontich.",
+            "@type": "Answer"
           },
           "name": "Puteți prelua un vehicul de la un service sau dealer din Kontich?"
         }
-      ],
-      "@type": "FAQPage"
+      ]
     }
   ]
 }

@@ -50,9 +50,22 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
+      "address": {
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
+        "addressRegion": "Antwerpen",
+        "postalCode": "2020"
+      },
+      "url": "https://takeldienstfaster.be/",
+      "@type": "LocalBusiness",
+      "@id": "https://takeldienstfaster.be/#business",
+      "name": "Faster Depannage Takeldienst",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "telephone": "+3233756737",
       "areaServed": [
         {
           "@type": "City",
@@ -63,97 +76,84 @@
           "@type": "Place"
         },
         {
-          "@type": "Place",
-          "name": "N148"
+          "name": "N148",
+          "@type": "Place"
         }
       ],
-      "email": "faster@takeldienstfaster.be",
-      "priceRange": "€€",
-      "@type": "LocalBusiness",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "BE",
-        "postalCode": "2020",
-        "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen"
-      },
-      "url": "https://takeldienstfaster.be/",
-      "name": "Faster Depannage Takeldienst",
-      "@id": "https://takeldienstfaster.be/#business",
-      "telephone": "+3233756737"
+      "email": "faster@takeldienstfaster.be",
+      "priceRange": "€€"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/ro/",
-          "position": 1,
           "name": "Acasă",
+          "@type": "ListItem",
+          "position": 1,
+          "item": "https://takeldienstfaster.be/ro/"
+        },
+        {
+          "name": "Serviciu de tractare",
+          "position": 2,
+          "item": "https://takeldienstfaster.be/takeldienst/",
           "@type": "ListItem"
         },
         {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Serviciu de tractare",
-          "item": "https://takeldienstfaster.be/takeldienst/"
-        },
-        {
-          "position": 3,
           "name": "Merksem",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/ro/takeldienst/merksem/"
+          "item": "https://takeldienstfaster.be/ro/takeldienst/merksem/",
+          "position": 3
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
+      "@type": "FAQPage",
       "mainEntity": [
         {
           "name": "Cât de repede ajungeți în Merksem?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "De obicei aproximativ 20 de minute. Plec din Kiel pe N148 spre Ring-ul din Anvers și apoi fie iau ieșirea Merksem, fie merg mai departe până la Deurne și peste pod — în funcție de unde vă aflați exact. La aglomerație pe Ring poate dura mai mult."
-          }
-        },
-        {
-          "name": "Cât costă un serviciu de tractare în Merksem?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sunați-mă sau scrieți-mi pe WhatsApp cu situația dumneavoastră. Vă comunic prețul imediat, înainte să plec."
           },
           "@type": "Question"
         },
         {
           "@type": "Question",
+          "name": "Cât costă un serviciu de tractare în Merksem?",
+          "acceptedAnswer": {
+            "text": "Sunați-mă sau scrieți-mi pe WhatsApp cu situația dumneavoastră. Vă comunic prețul imediat, înainte să plec.",
+            "@type": "Answer"
+          }
+        },
+        {
           "acceptedAnswer": {
             "text": "Da. Am lucrat cândva la fabrica Arvesta de lângă Merksem și am mers și la școală acolo. Cunosc și câteva service-uri mici, independente, și ateliere de caroserie din localitate.",
             "@type": "Answer"
           },
-          "name": "Cunoașteți bine Merksem?"
+          "name": "Cunoașteți bine Merksem?",
+          "@type": "Question"
+        },
+        {
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cele mai multe apeluri din Merksem vin chiar de pe Ring, adesea de la vehicule mai vechi care cedează din diverse motive. Porniți luminile de avarie, stați cât mai în siguranță și sunați — știu ce ieșire trebuie să iau."
+          },
+          "name": "Ce fac dacă mașina rămâne în pană pe Ring lângă Merksem?",
+          "@type": "Question"
         },
         {
           "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Cele mai multe apeluri din Merksem vin chiar de pe Ring, adesea de la vehicule mai vechi care cedează din diverse motive. Porniți luminile de avarie, stați cât mai în siguranță și sunați — știu ce ieșire trebuie să iau."
-          },
-          "name": "Ce fac dacă mașina rămâne în pană pe Ring lângă Merksem?"
-        },
-        {
-          "@type": "Question",
-          "acceptedAnswer": {
-            "text": "Da. Pe lângă autoturisme mă ocup și de autoutilitare, stivuitoare, utilaje și transport internațional.",
-            "@type": "Answer"
+            "text": "Da. Pe lângă autoturisme mă ocup și de autoutilitare, stivuitoare, utilaje și transport internațional."
           },
           "name": "Puteți transporta și autoutilitare, stivuitoare sau utilaje?"
         }
-      ],
-      "@type": "FAQPage"
+      ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

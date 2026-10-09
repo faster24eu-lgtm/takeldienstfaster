@@ -50,53 +50,53 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "@type": "LocalBusiness",
       "email": "faster@takeldienstfaster.be",
       "address": {
-        "addressRegion": "Antwerpen",
-        "postalCode": "2020",
         "addressCountry": "BE",
-        "addressLocality": "Antwerpen",
         "streetAddress": "De Bosschaertstraat 248",
-        "@type": "PostalAddress"
+        "@type": "PostalAddress",
+        "postalCode": "2020",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen"
       },
-      "name": "Faster Depannage Takeldienst",
-      "telephone": "+3233756737",
       "areaServed": {
-        "@type": "City",
-        "name": "Aartselaar"
+        "name": "Aartselaar",
+        "@type": "City"
       },
-      "@id": "https://takeldienstfaster.be/#business",
-      "url": "https://takeldienstfaster.be/"
+      "url": "https://takeldienstfaster.be/",
+      "telephone": "+3233756737",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "name": "Faster Depannage Takeldienst",
+      "@id": "https://takeldienstfaster.be/#business"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "position": 1,
           "item": "https://takeldienstfaster.be/de/",
+          "position": 1,
           "@type": "ListItem",
           "name": "Startseite"
         },
         {
           "name": "Abschleppdienst",
-          "item": "https://takeldienstfaster.be/takeldienst/",
           "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/takeldienst/",
           "position": 2
         },
         {
-          "name": "Aartselaar",
-          "item": "https://takeldienstfaster.be/de/takeldienst/aartselaar/",
           "@type": "ListItem",
-          "position": 3
+          "name": "Aartselaar",
+          "position": 3,
+          "item": "https://takeldienstfaster.be/de/takeldienst/aartselaar/"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

@@ -53,47 +53,47 @@
   "@graph": [
     {
       "@type": "LocalBusiness",
-      "url": "https://takeldienstfaster.be/",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "address": {
-        "addressCountry": "BE",
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "@type": "PostalAddress",
         "addressLocality": "Antwerpen",
-        "postalCode": "2020"
+        "@type": "PostalAddress",
+        "postalCode": "2020",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressRegion": "Antwerpen",
+        "addressCountry": "BE"
       },
+      "email": "faster@takeldienstfaster.be",
       "@id": "https://takeldienstfaster.be/#business",
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
       "areaServed": {
-        "@type": "City",
-        "name": "Wommelgem"
+        "name": "Wommelgem",
+        "@type": "City"
       },
-      "email": "faster@takeldienstfaster.be"
+      "name": "Faster Depannage Takeldienst",
+      "telephone": "+3233756737",
+      "url": "https://takeldienstfaster.be/",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "name": "Strona główna",
-          "position": 1,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/pl/"
+          "position": 1,
+          "item": "https://takeldienstfaster.be/pl/",
+          "name": "Strona główna"
         },
         {
-          "item": "https://takeldienstfaster.be/takeldienst/",
           "position": 2,
           "@type": "ListItem",
-          "name": "Pomoc drogowa"
+          "name": "Pomoc drogowa",
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
-          "name": "Wommelgem",
           "@type": "ListItem",
           "position": 3,
+          "name": "Wommelgem",
           "item": "https://takeldienstfaster.be/pl/takeldienst/wommelgem/"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     }
   ],
   "@context": "https://schema.org"

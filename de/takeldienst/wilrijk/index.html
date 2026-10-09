@@ -50,53 +50,53 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "telephone": "+3233756737",
+      "areaServed": {
+        "@type": "City",
+        "name": "Wilrijk"
+      },
+      "url": "https://takeldienstfaster.be/",
+      "address": {
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "postalCode": "2020",
+        "addressLocality": "Antwerpen",
+        "addressRegion": "Antwerpen"
+      },
       "@type": "LocalBusiness",
       "email": "faster@takeldienstfaster.be",
-      "address": {
-        "postalCode": "2020",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE",
-        "streetAddress": "De Bosschaertstraat 248",
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen"
-      },
-      "areaServed": {
-        "name": "Wilrijk",
-        "@type": "City"
-      },
-      "telephone": "+3233756737",
+      "@id": "https://takeldienstfaster.be/#business",
       "name": "Faster Depannage Takeldienst",
-      "url": "https://takeldienstfaster.be/",
-      "@id": "https://takeldienstfaster.be/#business"
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "position": 1,
+          "@type": "ListItem",
+          "name": "Startseite",
           "item": "https://takeldienstfaster.be/de/",
-          "@type": "ListItem",
-          "name": "Startseite"
+          "position": 1
         },
         {
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/takeldienst/",
+          "name": "Abschleppdienst",
           "position": 2,
-          "name": "Abschleppdienst"
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
-          "name": "Wilrijk",
-          "position": 3,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/de/takeldienst/wilrijk/"
+          "name": "Wilrijk",
+          "item": "https://takeldienstfaster.be/de/takeldienst/wilrijk/",
+          "position": 3
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

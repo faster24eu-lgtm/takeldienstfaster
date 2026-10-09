@@ -51,41 +51,34 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
+      "url": "https://takeldienstfaster.be/",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "address": {
-        "addressLocality": "Antwerpen",
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen",
         "streetAddress": "De Bosschaertstraat 248",
         "postalCode": "2020",
-        "addressCountry": "BE",
-        "@type": "PostalAddress",
-        "addressRegion": "Antwerpen"
+        "addressLocality": "Antwerpen",
+        "@type": "PostalAddress"
       },
-      "url": "https://takeldienstfaster.be/",
-      "priceRange": "€€",
-      "name": "Faster Depannage Takeldienst",
-      "@type": "LocalBusiness",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
-      "telephone": "+3233756737",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Aalst"
+          "name": "Aalst",
+          "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Dendermonde"
-        },
-        {
-          "name": "Wetteren",
+          "name": "Dendermonde",
           "@type": "City"
         },
         {
           "@type": "City",
-          "name": "Zele"
+          "name": "Wetteren"
+        },
+        {
+          "name": "Zele",
+          "@type": "City"
         },
         {
           "name": "Berlare",
@@ -104,105 +97,110 @@
           "name": "Oosterzele"
         },
         {
-          "@type": "City",
-          "name": "Erpe-Mere"
+          "name": "Erpe-Mere",
+          "@type": "City"
         },
         {
-          "name": "E40",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "E40"
         }
       ],
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "email": "faster@takeldienstfaster.be",
+      "name": "Faster Depannage Takeldienst",
+      "@type": "LocalBusiness",
+      "telephone": "+3233756737",
+      "priceRange": "€€",
       "@id": "https://takeldienstfaster.be/#business"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/",
-          "name": "Home",
+          "position": 1,
           "@type": "ListItem",
-          "position": 1
+          "name": "Home",
+          "item": "https://takeldienstfaster.be/en/"
         },
         {
-          "name": "Towing service",
           "@type": "ListItem",
-          "position": 2,
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "name": "Towing service",
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "position": 2
         },
         {
           "item": "https://takeldienstfaster.be/en/takeldienst/aalst/",
-          "position": 3,
           "@type": "ListItem",
-          "name": "Aalst & Region"
+          "name": "Aalst & Region",
+          "position": 3
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. I drive out just as well to Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere and the municipalities around them."
-          },
           "@type": "Question",
-          "name": "Do you also work outside Aalst?"
+          "name": "Do you also work outside Aalst?",
+          "acceptedAnswer": {
+            "text": "Yes. I drive out just as well to Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere and the municipalities around them.",
+            "@type": "Answer"
+          }
         },
         {
-          "@type": "Question",
           "name": "Can you be reached at night?",
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes, 24/7. Also at weekends and on public holidays."
           }
         },
         {
+          "@type": "Question",
+          "name": "Can I know in advance what a tow costs?",
           "acceptedAnswer": {
             "text": "Yes. I discuss the price before I send the tow truck, by phone, via WhatsApp or by email.",
             "@type": "Answer"
-          },
-          "@type": "Question",
-          "name": "Can I know in advance what a tow costs?"
+          }
         },
         {
           "acceptedAnswer": {
-            "text": "Usually, yes. I have dollies and other equipment for more difficult recoveries.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Usually, yes. I have dollies and other equipment for more difficult recoveries."
           },
           "name": "Can you tow a car that cannot be put in neutral?",
           "@type": "Question"
         },
         {
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In many cases yes, depending on the situation and with the right equipment."
-          },
           "name": "Can you transport a car without a wheel?",
-          "@type": "Question"
+          "@type": "Question",
+          "acceptedAnswer": {
+            "text": "In many cases yes, depending on the situation and with the right equipment.",
+            "@type": "Answer"
+          }
         },
         {
           "acceptedAnswer": {
             "text": "Yes, also a vehicle without a number plate.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Can you transport a car I have just bought?"
+          "name": "Can you transport a car I have just bought?",
+          "@type": "Question"
         },
         {
           "@type": "Question",
           "name": "Can you help after an accident?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, I take care of a safe recovery of the vehicle."
+            "text": "Yes, I take care of a safe recovery of the vehicle.",
+            "@type": "Answer"
           }
         },
         {
-          "acceptedAnswer": {
-            "text": "Dutch, French and English.",
-            "@type": "Answer"
-          },
           "@type": "Question",
-          "name": "Which languages do you speak?"
+          "name": "Which languages do you speak?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dutch, French and English."
+          }
         },
         {
           "@type": "Question",
@@ -213,16 +211,18 @@
           }
         },
         {
-          "name": "Why is one of your drivers based in Erpe-Mere?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "That is right next to the E40 between Brussels and Ghent, which makes the whole region around Aalst easy to reach."
-          }
+          },
+          "@type": "Question",
+          "name": "Why is one of your drivers based in Erpe-Mere?"
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 
@@ -292,9 +292,9 @@
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="../../../index.html" aria-label="Faster towing service home"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
+      <a class="brand" href="../../index.html" aria-label="Faster towing service home"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="../../diensten/">Services</a> <a href="../../../#hoe-het-werkt">How it works</a> <a href="../../../#werkgebied">Service area</a>
+        <a href="../../diensten/">Services</a> <a href="../../#hoe-het-werkt">How it works</a> <a href="../../#werkgebied">Service area</a>
         
         
       </nav>
@@ -621,7 +621,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand brand-footer" href="../../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
+        <a class="brand brand-footer" href="../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
         <p class="footer-copy">Towing service for Aalst and the region: Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele and Erpe-Mere.</p>
       </div>
       <div><h3>Services</h3><a href="../../diensten/#pechverhelping">Breakdown assistance</a><a href="../../diensten/#takeldienst">Towing & recovery</a><a href="../../diensten/#transport">Car transport</a><a href="../../diensten/#internationaal">International</a></div>

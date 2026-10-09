@@ -53,7 +53,11 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "name": "Faster Depannage Takeldienst",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "@id": "https://takeldienstfaster.be/#business",
+      "email": "faster@takeldienstfaster.be",
+      "@type": "LocalBusiness",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "areaServed": [
         {
           "name": "Berchem",
@@ -64,98 +68,94 @@
           "@type": "Place"
         },
         {
-          "@type": "Place",
-          "name": "Singel"
+          "name": "Singel",
+          "@type": "Place"
         },
         {
           "name": "Antwerpse Ring",
           "@type": "Place"
         }
       ],
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "@id": "https://takeldienstfaster.be/#business",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@type": "LocalBusiness",
-      "priceRange": "€€",
       "telephone": "+3233756737",
-      "url": "https://takeldienstfaster.be/",
+      "name": "Faster Depannage Takeldienst",
+      "priceRange": "€€",
       "address": {
-        "addressLocality": "Antwerpen",
+        "addressCountry": "BE",
         "streetAddress": "De Bosschaertstraat 248",
         "@type": "PostalAddress",
-        "addressCountry": "BE",
-        "postalCode": "2020",
-        "addressRegion": "Antwerpen"
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "postalCode": "2020"
       },
-      "email": "faster@takeldienstfaster.be"
+      "url": "https://takeldienstfaster.be/"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "name": "Startseite",
-          "position": 1,
+          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/de/",
-          "@type": "ListItem"
+          "position": 1
         },
         {
-          "name": "Abschleppdienst",
           "item": "https://takeldienstfaster.be/takeldienst/",
+          "position": 2,
           "@type": "ListItem",
-          "position": 2
+          "name": "Abschleppdienst"
         },
         {
           "name": "Berchem",
-          "item": "https://takeldienstfaster.be/de/takeldienst/berchem/",
           "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/de/takeldienst/berchem/",
           "position": 3
         }
       ]
     },
     {
+      "@type": "FAQPage",
       "mainEntity": [
         {
-          "acceptedAnswer": {
-            "text": "Ja. Ich habe dort schon viele Abschlepp- und Panneneinsätze durchgeführt, unter anderem rund um den Singel, den Antwerpener Ring und den Bahnhof Berchem.",
-            "@type": "Answer"
-          },
           "@type": "Question",
-          "name": "Kennen Sie Berchem gut?"
+          "name": "Kennen Sie Berchem gut?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Ich habe dort schon viele Abschlepp- und Panneneinsätze durchgeführt, unter anderem rund um den Singel, den Antwerpener Ring und den Bahnhof Berchem."
+          }
         },
         {
+          "@type": "Question",
           "name": "Was sind die häufigsten Anrufe in Berchem?",
           "acceptedAnswer": {
             "text": "Vor allem eine leere Batterie, mechanische Pannen und Bergungen nach einem Unfall.",
             "@type": "Answer"
-          },
-          "@type": "Question"
+          }
         },
         {
+          "name": "Können Sie meinen Wagen zu einer Werkstatt in Berchem bringen?",
+          "@type": "Question",
           "acceptedAnswer": {
             "text": "Ja. Ich kann ein Fahrzeug zu einer Werkstatt oder einem Mechaniker in Berchem bringen oder zum Beispiel nach Hoboken, je nach Ihrer Situation.",
             "@type": "Answer"
-          },
-          "@type": "Question",
-          "name": "Können Sie meinen Wagen zu einer Werkstatt in Berchem bringen?"
+          }
         },
         {
           "@type": "Question",
+          "name": "Was kostet ein Abschleppdienst in Berchem?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ich bespreche und bestätige den Preis immer vorab, bevor ich losfahre."
-          },
-          "name": "Was kostet ein Abschleppdienst in Berchem?"
+            "text": "Ich bespreche und bestätige den Preis immer vorab, bevor ich losfahre.",
+            "@type": "Answer"
+          }
         },
         {
           "name": "Sind Sie in Berchem 24/7 erreichbar?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja. Faster ist 24/7 für Abschleppdienst und Pannenhilfe in Berchem erreichbar."
-          },
-          "@type": "Question"
+            "text": "Ja. Faster ist 24/7 für Abschleppdienst und Pannenhilfe in Berchem erreichbar.",
+            "@type": "Answer"
+          }
         }
-      ],
-      "@type": "FAQPage"
+      ]
     }
   ]
 }

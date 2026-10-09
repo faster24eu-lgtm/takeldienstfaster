@@ -50,19 +50,29 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
+      "priceRange": "€€",
+      "name": "Faster Depannage Takeldienst",
+      "url": "https://takeldienstfaster.be/",
+      "address": {
+        "addressCountry": "BE",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "postalCode": "2020",
+        "addressLocality": "Antwerpen",
+        "addressRegion": "Antwerpen"
+      },
+      "@id": "https://takeldienstfaster.be/#business",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@type": "LocalBusiness",
       "areaServed": [
         {
           "@type": "City",
           "name": "Sint-Niklaas"
         },
         {
-          "name": "Temse",
-          "@type": "City"
+          "@type": "City",
+          "name": "Temse"
         },
         {
           "name": "Waasmunster",
@@ -73,8 +83,8 @@
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Sint-Gillis-Waas"
+          "name": "Sint-Gillis-Waas",
+          "@type": "City"
         },
         {
           "@type": "City",
@@ -85,46 +95,35 @@
           "@type": "Place"
         },
         {
-          "name": "N70",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "N70"
         }
       ],
-      "name": "Faster Depannage Takeldienst",
-      "image": "https://takeldienstfaster.be/assets/images/faster-intervention-workshop.jpg",
-      "@id": "https://takeldienstfaster.be/#business",
-      "address": {
-        "streetAddress": "De Bosschaertstraat 248",
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
-        "addressCountry": "BE",
-        "addressRegion": "Antwerpen",
-        "postalCode": "2020"
-      },
-      "email": "faster@takeldienstfaster.be",
-      "priceRange": "€€",
       "telephone": "+3233756737",
-      "url": "https://takeldienstfaster.be/"
+      "image": "https://takeldienstfaster.be/assets/images/faster-intervention-workshop.jpg",
+      "@type": "LocalBusiness",
+      "email": "faster@takeldienstfaster.be"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "name": "Startseite",
+          "position": 1,
           "item": "https://takeldienstfaster.be/de/",
           "@type": "ListItem",
-          "position": 1
+          "name": "Startseite"
         },
         {
-          "position": 2,
+          "name": "Abschleppdienst",
           "@type": "ListItem",
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "name": "Abschleppdienst"
+          "position": 2
         },
         {
-          "name": "Sint-Niklaas",
+          "position": 3,
           "item": "https://takeldienstfaster.be/de/takeldienst/sint-niklaas/",
           "@type": "ListItem",
-          "position": 3
+          "name": "Sint-Niklaas"
         }
       ]
     },
@@ -132,72 +131,73 @@
       "@type": "FAQPage",
       "mainEntity": [
         {
-          "name": "Sind Sie 24/7 erreichbar?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ja. Bei einer dringenden Situation gehe ich selbst ans Telefon, auch nachts."
-          }
-        },
-        {
-          "name": "Wie schnell können Sie in Sint-Niklaas sein?",
-          "@type": "Question",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sint-Niklaas liegt bei normalem Verkehr etwa 30 Minuten von Antwerpen entfernt. Bei einer dringenden Situation versuche ich, so schnell wie möglich loszufahren; bei einer geplanten Fahrt vereinbare ich einfach einen Zeitpunkt."
-          }
-        },
-        {
-          "name": "Können Sie meinen Wagen zu meiner eigenen Werkstatt bringen?",
-          "acceptedAnswer": {
-            "text": "Ja. Sie wählen selbst, wohin der Wagen geht, ich berate Sie, wenn das sinnvoll ist.",
-            "@type": "Answer"
           },
+          "name": "Sind Sie 24/7 erreichbar?",
           "@type": "Question"
         },
         {
-          "name": "Transportieren Sie auch Transporter?",
           "@type": "Question",
+          "name": "Wie schnell können Sie in Sint-Niklaas sein?",
+          "acceptedAnswer": {
+            "text": "Sint-Niklaas liegt bei normalem Verkehr etwa 30 Minuten von Antwerpen entfernt. Bei einer dringenden Situation versuche ich, so schnell wie möglich loszufahren; bei einer geplanten Fahrt vereinbare ich einfach einen Zeitpunkt.",
+            "@type": "Answer"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Können Sie meinen Wagen zu meiner eigenen Werkstatt bringen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Sie wählen selbst, wohin der Wagen geht, ich berate Sie, wenn das sinnvoll ist."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Transportieren Sie auch Transporter?",
           "acceptedAnswer": {
             "text": "Ja, Fahrzeuge bis 3,5 Tonnen.",
             "@type": "Answer"
           }
         },
         {
+          "@type": "Question",
           "name": "Können Sie helfen, wenn das Auto nicht anspringt?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oft ja. Ich prüfe zuerst, ob das Problem vor Ort gelöst werden kann, zum Beispiel mit einem Booster, oder ob das Fahrzeug doch abgeschleppt werden muss."
+            "text": "Oft ja. Ich prüfe zuerst, ob das Problem vor Ort gelöst werden kann, zum Beispiel mit einem Booster, oder ob das Fahrzeug doch abgeschleppt werden muss.",
+            "@type": "Answer"
+          }
+        },
+        {
+          "acceptedAnswer": {
+            "text": "Ja. Nicht jede Fahrt ist eilig. Steht der Wagen sicher und muss er erst später versetzt werden, plane ich das einfach ein.",
+            "@type": "Answer"
           },
+          "name": "Führen Sie auch geplante Transporte durch?",
           "@type": "Question"
         },
         {
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja. Nicht jede Fahrt ist eilig. Steht der Wagen sicher und muss er erst später versetzt werden, plane ich das einfach ein."
+            "text": "Ja. Ich kenne die Strecke und arbeite mit einem Netzwerk von Kontakten für den internationalen Transport.",
+            "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Führen Sie auch geplante Transporte durch?"
-        },
-        {
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja. Ich kenne die Strecke und arbeite mit einem Netzwerk von Kontakten für den internationalen Transport."
-          },
-          "@type": "Question",
-          "name": "Transportieren Sie Fahrzeuge auch ins Ausland?"
+          "name": "Transportieren Sie Fahrzeuge auch ins Ausland?",
+          "@type": "Question"
         },
         {
           "@type": "Question",
+          "name": "Wie funktioniert der Preis?",
           "acceptedAnswer": {
             "text": "Ich bespreche den Preis vorab. Stimmen die Informationen, die Sie durchgeben, halte ich mich an diese Absprache, ohne Überraschungen hinterher.",
             "@type": "Answer"
-          },
-          "name": "Wie funktioniert der Preis?"
+          }
         }
       ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 

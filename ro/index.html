@@ -20,6 +20,7 @@
 <link rel="alternate" hreflang="nl" href="https://takeldienstfaster.be/">
 <link rel="alternate" hreflang="de" href="https://takeldienstfaster.be/de/">
 <link rel="alternate" hreflang="fr" href="https://takeldienstfaster.be/fr/">
+<link rel="alternate" hreflang="en" href="https://takeldienstfaster.be/en/">
 <link rel="alternate" hreflang="pl" href="https://takeldienstfaster.be/pl/">
 <link rel="alternate" hreflang="ro" href="https://takeldienstfaster.be/ro/">
 <link rel="alternate" hreflang="x-default" href="https://takeldienstfaster.be/">
@@ -75,10 +76,63 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "priceRange": "€€",
+      "email": "faster@takeldienstfaster.be",
+      "telephone": "+3233756737",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Antwerpen"
+        },
+        {
+          "name": "Deurne",
+          "@type": "City"
+        },
+        {
+          "name": "Hoboken",
+          "@type": "City"
+        },
+        {
+          "@type": "City",
+          "name": "Wilrijk"
+        },
+        {
+          "name": "Edegem",
+          "@type": "City"
+        },
+        {
+          "@type": "City",
+          "name": "Merksem"
+        },
+        {
+          "name": "Wommelgem",
+          "@type": "City"
+        },
+        {
+          "name": "Vlaanderen",
+          "@type": "AdministrativeArea"
+        },
+        {
+          "name": "België",
+          "@type": "Country"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+3233756737",
+        "areaServed": "BE",
+        "contactType": "customer service"
+      },
+      "image": "https://takeldienstfaster.be/assets/images/faster-warehouse.jpg",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "name": "Faster Depannage Takeldienst",
+      "sameAs": [],
+      "@type": "AutomotiveBusiness",
+      "@id": "https://takeldienstfaster.be/#business",
       "openingHoursSpecification": [
         {
-          "closes": "23:59",
           "opens": "00:00",
+          "@type": "OpeningHoursSpecification",
           "dayOfWeek": [
             "Monday",
             "Tuesday",
@@ -88,82 +142,29 @@
             "Saturday",
             "Sunday"
           ],
-          "@type": "OpeningHoursSpecification"
+          "closes": "23:59"
         }
       ],
-      "telephone": "+3233756737",
-      "image": "https://takeldienstfaster.be/assets/images/faster-warehouse.jpg",
-      "additionalType": "https://schema.org/EmergencyService",
-      "areaServed": [
-        {
-          "name": "Antwerpen",
-          "@type": "City"
-        },
-        {
-          "@type": "City",
-          "name": "Deurne"
-        },
-        {
-          "@type": "City",
-          "name": "Hoboken"
-        },
-        {
-          "name": "Wilrijk",
-          "@type": "City"
-        },
-        {
-          "name": "Edegem",
-          "@type": "City"
-        },
-        {
-          "name": "Merksem",
-          "@type": "City"
-        },
-        {
-          "@type": "City",
-          "name": "Wommelgem"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Vlaanderen"
-        },
-        {
-          "name": "België",
-          "@type": "Country"
-        }
-      ],
-      "contactPoint": {
-        "areaServed": "BE",
-        "@type": "ContactPoint",
-        "telephone": "+3233756737",
-        "contactType": "customer service"
-      },
-      "priceRange": "€€",
-      "email": "faster@takeldienstfaster.be",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "name": "Faster Depannage Takeldienst",
-      "@id": "https://takeldienstfaster.be/#business",
-      "@type": "AutomotiveBusiness",
-      "sameAs": [],
       "url": "https://takeldienstfaster.be/",
+      "additionalType": "https://schema.org/EmergencyService",
       "address": {
+        "postalCode": "2020",
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
         "streetAddress": "De Bosschaertstraat 248",
         "addressLocality": "Antwerpen",
-        "addressRegion": "Antwerpen",
-        "@type": "PostalAddress",
-        "addressCountry": "BE",
-        "postalCode": "2020"
+        "addressRegion": "Antwerpen"
       }
     },
     {
       "url": "https://takeldienstfaster.be/",
-      "inLanguage": "nl-BE",
+      "@type": "WebSite",
+      "@id": "https://takeldienstfaster.be/#website",
       "publisher": {
         "@id": "https://takeldienstfaster.be/#business"
       },
-      "@type": "WebSite",
-      "@id": "https://takeldienstfaster.be/#website",
-      "name": "Faster Depannage Takeldienst"
+      "name": "Faster Depannage Takeldienst",
+      "inLanguage": "nl-BE"
     }
   ]
 }
@@ -175,34 +176,34 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "Cât de repede puteți fi la fața locului?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Depinde de locație, trafic, aglomerație și urgență. La intervențiile urgente, aproximativ 30 de minute este adesea posibil."
-      },
-      "name": "Cât de repede puteți fi la fața locului?"
+      }
     },
     {
-      "name": "Primesc un preț în avans?",
       "@type": "Question",
+      "name": "Primesc un preț în avans?",
       "acceptedAnswer": {
         "text": "Da. Întrebăm unde vă aflați, unde trebuie să ajungeți, ce marcă și model aveți și ce s-a întâmplat. Pe baza acestora, convenim în prealabil un preț clar.",
         "@type": "Answer"
       }
     },
     {
+      "@type": "Question",
+      "name": "Efectuați transporturi internaționale?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Da. Faster organizează și transport de vehicule și repatriere în Europa, în funcție de comandă."
-      },
-      "@type": "Question",
-      "name": "Efectuați transporturi internaționale?"
+      }
     },
     {
-      "name": "Pot lua legătura și noaptea?",
       "@type": "Question",
+      "name": "Pot lua legătura și noaptea?",
       "acceptedAnswer": {
-        "text": "Da. Faster poate fi contactat 24/7.",
-        "@type": "Answer"
+        "@type": "Answer",
+        "text": "Da. Faster poate fi contactat 24/7."
       }
     }
   ],

@@ -50,34 +50,23 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
-      "name": "Faster Depannage Takeldienst",
-      "telephone": "+3233756737",
-      "email": "faster@takeldienstfaster.be",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "priceRange": "€€",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
-        "postalCode": "2020",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE"
-      },
-      "url": "https://takeldienstfaster.be/",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "@type": "LocalBusiness",
       "areaServed": [
         {
-          "name": "Boom",
-          "@type": "City"
+          "@type": "City",
+          "name": "Boom"
         },
         {
           "@type": "Place",
           "name": "Boom Markt"
         },
         {
-          "name": "Industrieterrein Boom-Willebroek",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Industrieterrein Boom-Willebroek"
         },
         {
           "@type": "City",
@@ -88,80 +77,91 @@
           "@type": "Place"
         }
       ],
-      "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@id": "https://takeldienstfaster.be/#business"
+      "priceRange": "€€",
+      "email": "faster@takeldienstfaster.be",
+      "address": {
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "addressLocality": "Antwerpen",
+        "addressCountry": "BE",
+        "postalCode": "2020",
+        "addressRegion": "Antwerpen"
+      },
+      "@id": "https://takeldienstfaster.be/#business",
+      "url": "https://takeldienstfaster.be/",
+      "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "position": 1,
-          "item": "https://takeldienstfaster.be/fr/",
           "name": "Accueil",
-          "@type": "ListItem"
+          "position": 1,
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/fr/"
         },
         {
+          "position": 2,
           "@type": "ListItem",
-          "name": "Service de remorquage",
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "position": 2
+          "name": "Service de remorquage"
         },
         {
-          "@type": "ListItem",
           "name": "Boom",
           "item": "https://takeldienstfaster.be/fr/takeldienst/boom/",
+          "@type": "ListItem",
           "position": 3
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
           "acceptedAnswer": {
-            "text": "Dans des conditions de circulation normales, je mets en moyenne environ 15 à 20 minutes via l’A12. En cas d’affluence, cela peut évidemment varier.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Dans des conditions de circulation normales, je mets en moyenne environ 15 à 20 minutes via l’A12. En cas d’affluence, cela peut évidemment varier."
           },
-          "name": "En combien de temps êtes-vous à Boom ?",
-          "@type": "Question"
+          "@type": "Question",
+          "name": "En combien de temps êtes-vous à Boom ?"
         },
         {
+          "name": "Combien coûte un service de remorquage à Boom ?",
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Je conviens toujours d’un prix clair avant de partir. Pas de frais cachés."
-          },
-          "name": "Combien coûte un service de remorquage à Boom ?",
-          "@type": "Question"
+          }
         },
         {
-          "@type": "Question",
           "name": "Pouvez-vous aussi remorquer des camionnettes ?",
+          "@type": "Question",
           "acceptedAnswer": {
             "text": "Oui. En plus des voitures particulières, je transporte aussi des camionnettes et de temps en temps une moto.",
             "@type": "Answer"
           }
         },
         {
-          "name": "Pouvez-vous transporter des véhicules vers Anvers ou Puurs ?",
           "@type": "Question",
           "acceptedAnswer": {
-            "text": "Oui. Je transporte régulièrement des véhicules de Boom vers Anvers ou Puurs et, si nécessaire, chez un spécialiste à Bruxelles.",
-            "@type": "Answer"
-          }
+            "@type": "Answer",
+            "text": "Oui. Je transporte régulièrement des véhicules de Boom vers Anvers ou Puurs et, si nécessaire, chez un spécialiste à Bruxelles."
+          },
+          "name": "Pouvez-vous transporter des véhicules vers Anvers ou Puurs ?"
         },
         {
           "acceptedAnswer": {
-            "text": "Oui. Une voiture qui ne démarre pas, un problème électrique ou un défaut mécanique sont des appels fréquents à Boom.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Oui. Une voiture qui ne démarre pas, un problème électrique ou un défaut mécanique sont des appels fréquents à Boom."
           },
-          "name": "Aidez-vous aussi en cas de voiture qui ne démarre pas ?",
-          "@type": "Question"
+          "@type": "Question",
+          "name": "Aidez-vous aussi en cas de voiture qui ne démarre pas ?"
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

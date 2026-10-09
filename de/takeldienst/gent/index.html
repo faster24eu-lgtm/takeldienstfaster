@@ -50,42 +50,33 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
-      "url": "https://takeldienstfaster.be/",
-      "telephone": "+3233756737",
-      "priceRange": "€€",
-      "address": {
-        "postalCode": "2020",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE",
-        "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "@type": "PostalAddress"
-      },
-      "email": "faster@takeldienstfaster.be",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "@id": "https://takeldienstfaster.be/#business",
+      "email": "faster@takeldienstfaster.be",
+      "@type": "LocalBusiness",
       "areaServed": [
         {
           "name": "Gent",
           "@type": "City"
         },
         {
-          "name": "Merelbeke",
+          "@type": "City",
+          "name": "Merelbeke"
+        },
+        {
+          "name": "Destelbergen",
           "@type": "City"
         },
         {
           "@type": "City",
-          "name": "Destelbergen"
+          "name": "Evergem"
         },
         {
-          "name": "Evergem",
+          "name": "Deinze",
           "@type": "City"
-        },
-        {
-          "@type": "City",
-          "name": "Deinze"
         },
         {
           "name": "R4",
@@ -96,104 +87,113 @@
           "name": "E17"
         }
       ],
+      "telephone": "+3233756737",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "name": "Faster Depannage Takeldienst",
-      "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
+      "priceRange": "€€",
+      "address": {
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "postalCode": "2020",
+        "addressCountry": "BE",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress"
+      },
+      "url": "https://takeldienstfaster.be/"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/de/",
           "position": 1,
-          "name": "Startseite"
+          "item": "https://takeldienstfaster.be/de/",
+          "name": "Startseite",
+          "@type": "ListItem"
         },
         {
           "name": "Abschleppdienst",
-          "item": "https://takeldienstfaster.be/takeldienst/",
           "@type": "ListItem",
-          "position": 2
+          "position": 2,
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
-          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/de/takeldienst/gent/",
           "position": 3,
+          "@type": "ListItem",
           "name": "Gent"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
+      "@type": "FAQPage",
       "mainEntity": [
         {
-          "name": "Sind Sie in Gent 24/7 erreichbar?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ja. Faster ist 24/7 erreichbar, auch abends, nachts und am Wochenende."
           },
+          "name": "Sind Sie in Gent 24/7 erreichbar?",
           "@type": "Question"
         },
         {
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Ich habe ein lokales Team in Gent. Wir versuchen, innerhalb von 30 Minuten vor Ort zu sein, um Ihnen zu helfen.",
             "@type": "Answer"
           },
+          "@type": "Question",
           "name": "Wie schnell können Sie in Gent sein?"
         },
         {
           "name": "Können Sie meinen Wagen zu meiner eigenen Werkstatt in Gent bringen?",
           "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja. Sie wählen selbst, wohin das Fahrzeug geht, wir beraten Sie, wenn das sinnvoll ist."
+            "text": "Ja. Sie wählen selbst, wohin das Fahrzeug geht, wir beraten Sie, wenn das sinnvoll ist.",
+            "@type": "Answer"
           }
         },
         {
           "name": "Transportieren Sie auch Transporter in Gent?",
           "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja, Fahrzeuge bis 3,5 Tonnen."
+            "text": "Ja, Fahrzeuge bis 3,5 Tonnen.",
+            "@type": "Answer"
           }
         },
         {
-          "name": "Helfen Sie auch bei einem Auto, das nicht anspringt?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Oft ja. Wir schauen zuerst, was los ist und ob das Problem vor Ort gelöst werden kann oder ob das Fahrzeug doch abgeschleppt werden muss.",
-            "@type": "Answer"
-          }
+            "@type": "Answer",
+            "text": "Oft ja. Wir schauen zuerst, was los ist und ob das Problem vor Ort gelöst werden kann oder ob das Fahrzeug doch abgeschleppt werden muss."
+          },
+          "@type": "Question",
+          "name": "Helfen Sie auch bei einem Auto, das nicht anspringt?"
         },
         {
           "name": "Führen Sie auch geplante Transporte in Gent durch?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Ja. Nicht jede Fahrt ist eilig. Steht das Fahrzeug bereits sicher, planen wir den Transport einfach ein.",
-            "@type": "Answer"
-          },
-          "@type": "Question"
+            "@type": "Answer",
+            "text": "Ja. Nicht jede Fahrt ist eilig. Steht das Fahrzeug bereits sicher, planen wir den Transport einfach ein."
+          }
         },
         {
-          "name": "Transportieren Sie Fahrzeuge auch international?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ja. Wir kennen die Strecke und arbeiten mit einem Netzwerk von Kontakten für den internationalen Transport."
-          }
+          },
+          "name": "Transportieren Sie Fahrzeuge auch international?",
+          "@type": "Question"
         },
         {
-          "name": "Wie funktioniert der Preis?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Wir besprechen den Preis vorab. Geben Sie die richtigen Informationen weiter, halten wir uns an diese Absprache."
-          }
+            "text": "Wir besprechen den Preis vorab. Geben Sie die richtigen Informationen weiter, halten wir uns an diese Absprache.",
+            "@type": "Answer"
+          },
+          "name": "Wie funktioniert der Preis?",
+          "@type": "Question"
         }
-      ],
-      "@type": "FAQPage"
+      ]
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 

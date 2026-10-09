@@ -51,81 +51,83 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
-      "@id": "https://takeldienstfaster.be/#business",
-      "name": "Faster Depannage Takeldienst",
+      "priceRange": "€€",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/",
       "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
       "address": {
-        "streetAddress": "De Bosschaertstraat 248",
         "addressRegion": "Antwerpen",
         "addressCountry": "BE",
-        "postalCode": "2020",
         "addressLocality": "Antwerpen",
-        "@type": "PostalAddress"
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "postalCode": "2020"
       },
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "@type": "LocalBusiness",
-      "url": "https://takeldienstfaster.be/",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Aalst"
+          "name": "Aalst",
+          "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Dendermonde"
+          "name": "Dendermonde",
+          "@type": "City"
         },
         {
           "@type": "City",
           "name": "Wetteren"
         },
         {
-          "@type": "City",
-          "name": "Zele"
+          "name": "Zele",
+          "@type": "City"
         },
         {
           "@type": "City",
           "name": "Berlare"
         },
         {
-          "@type": "City",
-          "name": "Haaltert"
+          "name": "Haaltert",
+          "@type": "City"
         },
         {
-          "name": "Ninove",
-          "@type": "City"
+          "@type": "City",
+          "name": "Ninove"
         },
         {
           "@type": "City",
           "name": "Oosterzele"
         },
         {
-          "@type": "City",
-          "name": "Erpe-Mere"
+          "name": "Erpe-Mere",
+          "@type": "City"
         },
         {
-          "name": "E40",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "E40"
         }
       ],
-      "priceRange": "€€"
+      "@id": "https://takeldienstfaster.be/#business",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "email": "faster@takeldienstfaster.be"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
+          "name": "Strona główna",
           "item": "https://takeldienstfaster.be/pl/",
           "@type": "ListItem",
-          "position": 1,
-          "name": "Strona główna"
+          "position": 1
         },
         {
-          "name": "Pomoc drogowa",
-          "item": "https://takeldienstfaster.be/takeldienst/",
           "position": 2,
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "name": "Pomoc drogowa",
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
           "position": 3,
@@ -133,96 +135,94 @@
           "item": "https://takeldienstfaster.be/pl/takeldienst/aalst/",
           "name": "Aalst i region"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Czy pracują Państwo także poza Aalst?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Tak. Równie dobrze jeżdżę do Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere i okolicznych gmin."
-          },
-          "name": "Czy pracują Państwo także poza Aalst?"
+          }
         },
         {
+          "@type": "Question",
           "name": "Czy są Państwo dostępni w nocy?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Tak, 24/7. Również w weekendy i święta."
-          },
-          "@type": "Question"
+          }
         },
         {
-          "name": "Czy mogę z góry wiedzieć, ile kosztuje holowanie?",
           "@type": "Question",
+          "name": "Czy mogę z góry wiedzieć, ile kosztuje holowanie?",
           "acceptedAnswer": {
             "text": "Tak. Omawiam cenę, zanim wyślę lawetę, telefonicznie, przez WhatsApp lub e-mailem.",
             "@type": "Answer"
           }
         },
         {
-          "name": "Czy mogą Państwo odholować samochód, którego nie da się wrzucić na luz?",
-          "acceptedAnswer": {
-            "text": "Zazwyczaj tak. Mam wózki transportowe (dollies) i inny sprzęt do trudniejszych akcji.",
-            "@type": "Answer"
-          },
-          "@type": "Question"
-        },
-        {
-          "name": "Czy mogą Państwo przewieźć samochód bez koła?",
-          "@type": "Question",
-          "acceptedAnswer": {
-            "text": "W wielu przypadkach tak, w zależności od sytuacji i z odpowiednim sprzętem.",
-            "@type": "Answer"
-          }
-        },
-        {
-          "name": "Czy mogą Państwo przewieźć samochód, który właśnie kupiłem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Tak, również pojazd bez tablic rejestracyjnych."
+            "text": "Zazwyczaj tak. Mam wózki transportowe (dollies) i inny sprzęt do trudniejszych akcji."
           },
+          "name": "Czy mogą Państwo odholować samochód, którego nie da się wrzucić na luz?",
           "@type": "Question"
         },
         {
-          "name": "Czy mogą Państwo pomóc po wypadku?",
           "@type": "Question",
+          "name": "Czy mogą Państwo przewieźć samochód bez koła?",
           "acceptedAnswer": {
-            "text": "Tak, zapewniam bezpieczne zabezpieczenie i zabranie pojazdu.",
+            "@type": "Answer",
+            "text": "W wielu przypadkach tak, w zależności od sytuacji i z odpowiednim sprzętem."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Czy mogą Państwo przewieźć samochód, który właśnie kupiłem?",
+          "acceptedAnswer": {
+            "text": "Tak, również pojazd bez tablic rejestracyjnych.",
             "@type": "Answer"
           }
         },
         {
           "acceptedAnswer": {
-            "text": "Niderlandzki, francuski i angielski.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Tak, zapewniam bezpieczne zabezpieczenie i zabranie pojazdu."
           },
+          "name": "Czy mogą Państwo pomóc po wypadku?",
+          "@type": "Question"
+        },
+        {
           "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Niderlandzki, francuski i angielski."
+          },
           "name": "Jakimi językami Państwo mówią?"
         },
         {
-          "name": "Czy pracują Państwo tylko w dzień?",
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Nie. Jestem dostępny 24/7, także w nocy, w weekendy i w święta.",
             "@type": "Answer"
-          }
+          },
+          "name": "Czy pracują Państwo tylko w dzień?",
+          "@type": "Question"
         },
         {
+          "@type": "Question",
           "name": "Dlaczego jeden z Państwa kierowców stacjonuje w Erpe-Mere?",
           "acceptedAnswer": {
-            "text": "To tuż przy E40 między Brukselą a Gandawą, dzięki czemu cały region wokół Aalst jest łatwo dostępny.",
-            "@type": "Answer"
-          },
-          "@type": "Question"
+            "@type": "Answer",
+            "text": "To tuż przy E40 między Brukselą a Gandawą, dzięki czemu cały region wokół Aalst jest łatwo dostępny."
+          }
         }
       ],
       "@type": "FAQPage"
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 

@@ -52,48 +52,48 @@
 {
   "@graph": [
     {
-      "areaServed": {
-        "name": "Hoboken",
-        "@type": "City"
-      },
-      "@type": "LocalBusiness",
-      "@id": "https://takeldienstfaster.be/#business",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "telephone": "+3233756737",
-      "email": "faster@takeldienstfaster.be",
       "name": "Faster Depannage Takeldienst",
       "address": {
-        "addressLocality": "Antwerpen",
         "@type": "PostalAddress",
-        "postalCode": "2020",
-        "addressRegion": "Antwerpen",
         "streetAddress": "De Bosschaertstraat 248",
-        "addressCountry": "BE"
+        "addressLocality": "Antwerpen",
+        "addressCountry": "BE",
+        "postalCode": "2020",
+        "addressRegion": "Antwerpen"
       },
-      "url": "https://takeldienstfaster.be/"
+      "email": "faster@takeldienstfaster.be",
+      "areaServed": {
+        "@type": "City",
+        "name": "Hoboken"
+      },
+      "telephone": "+3233756737",
+      "@id": "https://takeldienstfaster.be/#business",
+      "url": "https://takeldienstfaster.be/",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "@type": "LocalBusiness"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "position": 1,
           "item": "https://takeldienstfaster.be/fr/",
-          "name": "Accueil",
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "name": "Accueil"
         },
         {
+          "name": "Service de remorquage",
           "position": 2,
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "name": "Service de remorquage",
           "@type": "ListItem"
         },
         {
-          "name": "Hoboken",
-          "@type": "ListItem",
           "position": 3,
-          "item": "https://takeldienstfaster.be/fr/takeldienst/hoboken/"
+          "item": "https://takeldienstfaster.be/fr/takeldienst/hoboken/",
+          "@type": "ListItem",
+          "name": "Hoboken"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     }
   ],
   "@context": "https://schema.org"

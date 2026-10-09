@@ -46,55 +46,54 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
-      "url": "https://takeldienstfaster.be/",
-      "address": {
-        "addressCountry": "BE",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen",
-        "postalCode": "2020",
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen"
-      },
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
-      "email": "faster@takeldienstfaster.be",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@id": "https://takeldienstfaster.be/#business",
       "@type": "LocalBusiness",
       "areaServed": {
-        "@type": "Country",
-        "name": "België"
-      }
+        "name": "België",
+        "@type": "Country"
+      },
+      "telephone": "+3233756737",
+      "@id": "https://takeldienstfaster.be/#business",
+      "url": "https://takeldienstfaster.be/",
+      "name": "Faster Depannage Takeldienst",
+      "address": {
+        "postalCode": "2020",
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248"
+      },
+      "email": "faster@takeldienstfaster.be"
     },
     {
-      "@type": "Service",
-      "description": "Dépannage, remorquage et transport de camions, semi-remorques, bus, autocars et machines à partir de 3,5 tonnes.",
       "areaServed": {
         "@type": "Country",
         "name": "België"
       },
-      "serviceType": "Dépannage camion",
+      "description": "Dépannage, remorquage et transport de camions, semi-remorques, bus, autocars et machines à partir de 3,5 tonnes.",
+      "@type": "Service",
       "name": "Dépannage et remorquage pour camions",
       "provider": {
         "@id": "https://takeldienstfaster.be/#business"
-      }
+      },
+      "serviceType": "Dépannage camion"
     },
     {
       "itemListElement": [
         {
-          "@type": "ListItem",
-          "name": "Accueil",
+          "position": 1,
           "item": "https://takeldienstfaster.be/fr/",
-          "position": 1
+          "@type": "ListItem",
+          "name": "Accueil"
         },
         {
-          "position": 2,
-          "item": "https://takeldienstfaster.be/fr/depannage-vrachtwagen/",
           "name": "Dépannage camion",
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/fr/depannage-vrachtwagen/",
+          "position": 2
         }
       ],
       "@type": "BreadcrumbList"
@@ -102,8 +101,8 @@
     {
       "mainEntity": [
         {
-          "@type": "Question",
           "name": "Mon camion est immobilisé sur l’autoroute. Puis-je alors vous appeler directement ?",
+          "@type": "Question",
           "acceptedAnswer": {
             "text": "Sur les autoroutes flamandes, les bandes d’arrêt d’urgence et les parkings le long de l’autoroute, un véhicule qui ne peut plus rouler est enlevé par le service de remorquage FAST désigné pour ce tronçon d’autoroute. Nous prenons ensuite le relais : du dépôt vers votre garage, le garage de la marque, votre propre terrain ou le retour à l’étranger.",
             "@type": "Answer"
@@ -113,21 +112,21 @@
           "name": "Combien coûte un dépannage de camion ?",
           "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Cela dépend du poids, de l’endroit, de la distance, de l’heure et de ce qui doit être fait sur place. Vous recevez le prix avant notre départ. Un remorquage avec grue après un renversement est une autre histoire qu’un tracteur qui ne démarre tout simplement plus sur un parking."
+            "text": "Cela dépend du poids, de l’endroit, de la distance, de l’heure et de ce qui doit être fait sur place. Vous recevez le prix avant notre départ. Un remorquage avec grue après un renversement est une autre histoire qu’un tracteur qui ne démarre tout simplement plus sur un parking.",
+            "@type": "Answer"
           }
         },
         {
           "name": "Aidez-vous aussi pour les bus et les autocars ?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Oui. Bus urbains, bus de ligne et autocars. Pour un bus avec des passagers, nous réfléchissons d’abord à la façon dont les gens peuvent continuer leur route, ensuite au bus lui-même."
-          }
+          },
+          "@type": "Question"
         },
         {
-          "@type": "Question",
           "name": "Transportez-vous aussi des machines et du matériel de chantier ?",
+          "@type": "Question",
           "acceptedAnswer": {
             "text": "Oui : pelleteuses, chariots télescopiques, chariots élévateurs, nacelles élévatrices et autre matériel roulant. Pour ce qui est trop large, trop haut ou trop lourd, nous organisons un porte-char surbaissé et, si nécessaire, l’autorisation de transport exceptionnel.",
             "@type": "Answer"
@@ -136,7 +135,8 @@
       ],
       "@type": "FAQPage"
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

@@ -50,121 +50,121 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
       "priceRange": "€€",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/",
+      "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "2020",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressLocality": "Antwerpen",
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen"
+      },
+      "@type": "LocalBusiness",
       "areaServed": [
         {
-          "name": "Gent",
-          "@type": "City"
+          "@type": "City",
+          "name": "Gent"
         },
         {
           "@type": "City",
           "name": "Merelbeke"
         },
         {
-          "name": "Destelbergen",
-          "@type": "City"
+          "@type": "City",
+          "name": "Destelbergen"
         },
         {
           "@type": "City",
           "name": "Evergem"
         },
         {
-          "@type": "City",
-          "name": "Deinze"
+          "name": "Deinze",
+          "@type": "City"
         },
         {
           "name": "R4",
           "@type": "Place"
         },
         {
-          "@type": "Place",
-          "name": "E17"
+          "name": "E17",
+          "@type": "Place"
         }
       ],
-      "email": "faster@takeldienstfaster.be",
+      "@id": "https://takeldienstfaster.be/#business",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "url": "https://takeldienstfaster.be/",
-      "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "address": {
-        "addressCountry": "BE",
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
-        "postalCode": "2020"
-      },
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
-      "@id": "https://takeldienstfaster.be/#business"
+      "email": "faster@takeldienstfaster.be"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "name": "Strona główna",
-          "item": "https://takeldienstfaster.be/pl/",
+          "@type": "ListItem",
           "position": 1,
-          "@type": "ListItem"
+          "item": "https://takeldienstfaster.be/pl/",
+          "name": "Strona główna"
         },
         {
           "name": "Pomoc drogowa",
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "@type": "ListItem",
-          "position": 2
+          "position": 2,
+          "@type": "ListItem"
         },
         {
-          "name": "Gandawa",
-          "position": 3,
           "@type": "ListItem",
+          "position": 3,
+          "name": "Gandawa",
           "item": "https://takeldienstfaster.be/pl/takeldienst/gent/"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
+      "@type": "FAQPage",
       "mainEntity": [
         {
-          "name": "Czy są Państwo dostępni 24/7 w Gandawie?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tak. Faster jest dostępny 24/7, także wieczorem, w nocy i w weekendy."
-          }
+            "text": "Tak. Faster jest dostępny 24/7, także wieczorem, w nocy i w weekendy.",
+            "@type": "Answer"
+          },
+          "name": "Czy są Państwo dostępni 24/7 w Gandawie?",
+          "@type": "Question"
         },
         {
+          "name": "Jak szybko mogą Państwo być w Gandawie?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Mam lokalny zespół w Gandawie. Staramy się być na miejscu w ciągu 30 minut, aby Państwu pomóc."
           },
-          "@type": "Question",
-          "name": "Jak szybko mogą Państwo być w Gandawie?"
+          "@type": "Question"
         },
         {
           "acceptedAnswer": {
             "text": "Tak. Sami Państwo wybierają, dokąd trafi pojazd, my doradzamy, jeśli to przydatne.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Czy mogą Państwo przewieźć mój samochód do mojego warsztatu w Gandawie?"
+          "name": "Czy mogą Państwo przewieźć mój samochód do mojego warsztatu w Gandawie?",
+          "@type": "Question"
         },
         {
+          "@type": "Question",
           "acceptedAnswer": {
             "text": "Tak, pojazdy do 3,5 tony.",
             "@type": "Answer"
           },
-          "@type": "Question",
           "name": "Czy przewożą Państwo również samochody dostawcze w Gandawie?"
         },
         {
+          "@type": "Question",
+          "name": "Czy pomagają Państwo również przy samochodzie, który nie chce zapalić?",
           "acceptedAnswer": {
             "text": "Często tak. Najpierw sprawdzamy, co się dzieje i czy problem można rozwiązać na miejscu, czy jednak pojazd trzeba odholować.",
             "@type": "Answer"
-          },
-          "@type": "Question",
-          "name": "Czy pomagają Państwo również przy samochodzie, który nie chce zapalić?"
+          }
         },
         {
           "@type": "Question",
@@ -179,21 +179,21 @@
             "@type": "Answer",
             "text": "Tak. Znamy trasę i współpracujemy z siecią kontaktów w transporcie międzynarodowym."
           },
-          "@type": "Question",
-          "name": "Czy przewożą Państwo pojazdy również za granicę?"
+          "name": "Czy przewożą Państwo pojazdy również za granicę?",
+          "@type": "Question"
         },
         {
-          "name": "Jak ustalana jest cena?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Cenę omawiamy z góry. Jeśli przekażą Państwo prawidłowe informacje, dotrzymujemy tych ustaleń."
           },
+          "name": "Jak ustalana jest cena?",
           "@type": "Question"
         }
-      ],
-      "@type": "FAQPage"
+      ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 

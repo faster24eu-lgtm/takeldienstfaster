@@ -49,20 +49,8 @@
 {
   "@graph": [
     {
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
-      "priceRange": "€€",
-      "address": {
-        "postalCode": "2020",
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
-        "addressCountry": "BE",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen"
-      },
-      "url": "https://takeldienstfaster.be/",
+      "@type": "LocalBusiness",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "areaServed": [
         {
           "name": "Hasselt",
@@ -81,20 +69,20 @@
           "@type": "Place"
         },
         {
-          "@type": "Place",
-          "name": "Sint-Lambrechts-Herk"
+          "name": "Sint-Lambrechts-Herk",
+          "@type": "Place"
         },
         {
           "@type": "Place",
           "name": "Stokrooie"
         },
         {
-          "@type": "Place",
-          "name": "Wimmertingen"
+          "name": "Wimmertingen",
+          "@type": "Place"
         },
         {
-          "@type": "Place",
-          "name": "Kuringen"
+          "name": "Kuringen",
+          "@type": "Place"
         },
         {
           "@type": "Place",
@@ -113,93 +101,105 @@
           "name": "Genk"
         },
         {
-          "name": "Lummen",
-          "@type": "City"
+          "@type": "City",
+          "name": "Lummen"
         }
       ],
-      "@type": "LocalBusiness",
+      "email": "faster@takeldienstfaster.be",
+      "priceRange": "€€",
+      "address": {
+        "addressRegion": "Antwerpen",
+        "addressCountry": "BE",
+        "postalCode": "2020",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "addressLocality": "Antwerpen"
+      },
       "@id": "https://takeldienstfaster.be/#business",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
+      "url": "https://takeldienstfaster.be/",
+      "telephone": "+3233756737",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "name": "Faster Depannage Takeldienst"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
+          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/fr/",
           "position": 1,
-          "@type": "ListItem",
           "name": "Accueil"
         },
         {
-          "@type": "ListItem",
           "name": "Service de remorquage",
+          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/takeldienst/",
           "position": 2
         },
         {
-          "@type": "ListItem",
           "name": "Service de remorquage Limbourg",
-          "item": "https://takeldienstfaster.be/fr/takeldienst/limburg/",
-          "position": 3
+          "position": 3,
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/fr/takeldienst/limburg/"
         },
         {
-          "@type": "ListItem",
-          "name": "Hasselt",
+          "position": 4,
           "item": "https://takeldienstfaster.be/fr/takeldienst/hasselt/",
-          "position": 4
+          "@type": "ListItem",
+          "name": "Hasselt"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
-          "name": "Que faire si j’ai mis le mauvais carburant ?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Rouler avec le mauvais carburant peut endommager votre véhicule. Appelez-nous et nous proposons différentes solutions."
-          }
+          },
+          "@type": "Question",
+          "name": "Que faire si j’ai mis le mauvais carburant ?"
         },
         {
+          "name": "Ma voiture a été enlevée ?",
           "acceptedAnswer": {
             "text": "Pour une voiture enlevée après un stationnement interdit, vous devez vous adresser au service qui a effectué l’enlèvement. Cela se fait souvent en collaboration avec la ville. Renseignez-vous auprès d’eux pour savoir où se trouve votre voiture. C’est une autre procédure qu’une assistance en cas de panne.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Ma voiture a été enlevée ?"
+          "@type": "Question"
         },
         {
-          "@type": "Question",
-          "name": "Je suis en panne. Que dois-je faire d’abord ?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Assurez-vous d’abord que vous-même et vos passagers êtes en sécurité. Ce n’est qu’ensuite que vous appelez Faster. Si vous prenez soin de vous et de vos passagers, nous prenons soin de votre véhicule."
-          }
-        },
-        {
+          },
           "@type": "Question",
-          "name": "J’ai une grande voiture. Pouvez-vous aussi la remorquer ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nous pouvons dépanner et remorquer des véhicules jusqu’à 3,5 tonnes."
-          }
+          "name": "Je suis en panne. Que dois-je faire d’abord ?"
         },
         {
+          "acceptedAnswer": {
+            "text": "Nous pouvons dépanner et remorquer des véhicules jusqu’à 3,5 tonnes.",
+            "@type": "Answer"
+          },
+          "@type": "Question",
+          "name": "J’ai une grande voiture. Pouvez-vous aussi la remorquer ?"
+        },
+        {
+          "name": "En combien de temps êtes-vous sur place à Hasselt ?",
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Nous avons une équipe qui part de Zonhoven, de sorte qu’elle peut être sur place à Hasselt en environ 20 minutes."
-          },
-          "@type": "Question",
-          "name": "En combien de temps êtes-vous sur place à Hasselt ?"
+          }
         },
         {
+          "name": "Combien coûte un service de remorquage à Hasselt ?",
           "acceptedAnswer": {
             "text": "Un service de remorquage de Faster intervient à Hasselt dès 125 euros. Nous convenons toujours du prix avec vous à l’avance.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Combien coûte un service de remorquage à Hasselt ?"
+          "@type": "Question"
         }
       ]
     }

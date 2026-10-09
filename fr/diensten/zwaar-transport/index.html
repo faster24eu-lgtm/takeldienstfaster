@@ -50,49 +50,49 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
+      "address": {
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "addressLocality": "Antwerpen",
+        "addressRegion": "Antwerpen",
+        "addressCountry": "BE",
+        "postalCode": "2020"
+      },
+      "name": "Faster Depannage Takeldienst",
       "email": "faster@takeldienstfaster.be",
       "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
-      "address": {
-        "addressCountry": "BE",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen",
-        "postalCode": "2020",
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen"
-      },
-      "url": "https://takeldienstfaster.be/",
       "@type": "LocalBusiness",
+      "@id": "https://takeldienstfaster.be/#business",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@id": "https://takeldienstfaster.be/#business"
+      "url": "https://takeldienstfaster.be/"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "name": "Accueil",
           "@type": "ListItem",
-          "position": 1,
-          "item": "https://takeldienstfaster.be/fr/"
+          "item": "https://takeldienstfaster.be/fr/",
+          "position": 1
         },
         {
           "position": 2,
+          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/fr/diensten/",
-          "name": "Services",
-          "@type": "ListItem"
+          "name": "Services"
         },
         {
-          "name": "Transport lourd",
+          "item": "https://takeldienstfaster.be/fr/diensten/zwaar-transport/",
           "@type": "ListItem",
           "position": 3,
-          "item": "https://takeldienstfaster.be/fr/diensten/zwaar-transport/"
+          "name": "Transport lourd"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

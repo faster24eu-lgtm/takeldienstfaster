@@ -52,90 +52,90 @@
 {
   "@graph": [
     {
-      "address": {
-        "addressLocality": "Antwerpen",
-        "@type": "PostalAddress",
-        "postalCode": "2020",
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressCountry": "BE"
-      },
-      "priceRange": "€€",
-      "url": "https://takeldienstfaster.be/",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "telephone": "+3233756737",
-      "email": "faster@takeldienstfaster.be",
       "name": "Faster Depannage Takeldienst",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "@id": "https://takeldienstfaster.be/#business",
+      "url": "https://takeldienstfaster.be/",
+      "telephone": "+3233756737",
+      "@type": "LocalBusiness",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "email": "faster@takeldienstfaster.be",
+      "priceRange": "€€",
+      "address": {
+        "addressRegion": "Antwerpen",
+        "postalCode": "2020",
+        "addressCountry": "BE",
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress"
+      },
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Merksem"
+          "name": "Merksem",
+          "@type": "City"
         },
         {
           "@type": "Place",
           "name": "Antwerpse ring"
         },
         {
-          "name": "N148",
-          "@type": "Place"
-        }
-      ],
-      "@type": "LocalBusiness"
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "item": "https://takeldienstfaster.be/fr/",
-          "position": 1,
-          "@type": "ListItem",
-          "name": "Accueil"
-        },
-        {
-          "@type": "ListItem",
-          "name": "Service de remorquage",
-          "item": "https://takeldienstfaster.be/takeldienst/",
-          "position": 2
-        },
-        {
-          "item": "https://takeldienstfaster.be/fr/takeldienst/merksem/",
-          "position": 3,
-          "@type": "ListItem",
-          "name": "Merksem"
+          "@type": "Place",
+          "name": "N148"
         }
       ]
     },
     {
+      "itemListElement": [
+        {
+          "name": "Accueil",
+          "item": "https://takeldienstfaster.be/fr/",
+          "@type": "ListItem",
+          "position": 1
+        },
+        {
+          "name": "Service de remorquage",
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "@type": "ListItem",
+          "position": 2
+        },
+        {
+          "position": 3,
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/fr/takeldienst/merksem/",
+          "name": "Merksem"
+        }
+      ],
+      "@type": "BreadcrumbList"
+    },
+    {
       "mainEntity": [
         {
-          "acceptedAnswer": {
-            "text": "La plupart du temps environ 20 minutes. Je pars de Kiel via la N148 vers le Ring d’Anvers, puis je prends soit la sortie Merksem, soit je continue jusqu’à Deurne et passe le pont — selon l’endroit exact où vous êtes. En cas d’affluence sur le Ring, cela peut prendre plus de temps.",
-            "@type": "Answer"
-          },
           "name": "En combien de temps êtes-vous à Merksem ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "La plupart du temps environ 20 minutes. Je pars de Kiel via la N148 vers le Ring d’Anvers, puis je prends soit la sortie Merksem, soit je continue jusqu’à Deurne et passe le pont — selon l’endroit exact où vous êtes. En cas d’affluence sur le Ring, cela peut prendre plus de temps."
+          },
           "@type": "Question"
         },
         {
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Appelez-moi ou envoyez-moi un WhatsApp avec votre situation. Je communique le prix tout de suite, avant de partir."
           },
-          "@type": "Question",
           "name": "Combien coûte un service de remorquage à Merksem ?"
         },
         {
+          "name": "Connaissez-vous bien Merksem ?",
           "acceptedAnswer": {
             "text": "Oui. J’ai travaillé autrefois à l’usine Arvesta près de Merksem et j’y suis aussi allé à l’école. Je connais aussi quelques petits garages indépendants et carrosseries dans la commune.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Connaissez-vous bien Merksem ?"
+          "@type": "Question"
         },
         {
-          "@type": "Question",
           "name": "Et si ma voiture tombe en panne sur le Ring à hauteur de Merksem ?",
+          "@type": "Question",
           "acceptedAnswer": {
             "text": "La plupart des appels de Merksem viennent du Ring lui-même, souvent de véhicules plus anciens qui tombent en panne pour diverses raisons. Allumez vos feux de détresse, mettez-vous le plus en sécurité possible et appelez — je sais quelle sortie je dois prendre.",
             "@type": "Answer"
@@ -143,11 +143,11 @@
         },
         {
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui. En plus des voitures particulières, je fais aussi les camionnettes, les chariots élévateurs, les machines et le transport international."
+            "text": "Oui. En plus des voitures particulières, je fais aussi les camionnettes, les chariots élévateurs, les machines et le transport international.",
+            "@type": "Answer"
           },
-          "name": "Pouvez-vous aussi transporter des camionnettes, des chariots élévateurs ou des machines ?",
-          "@type": "Question"
+          "@type": "Question",
+          "name": "Pouvez-vous aussi transporter des camionnettes, des chariots élévateurs ou des machines ?"
         }
       ],
       "@type": "FAQPage"

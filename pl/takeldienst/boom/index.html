@@ -52,53 +52,54 @@
 {
   "@graph": [
     {
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/",
+      "name": "Faster Depannage Takeldienst",
+      "telephone": "+3233756737",
       "priceRange": "€€",
+      "@id": "https://takeldienstfaster.be/#business",
       "areaServed": [
         {
           "@type": "City",
           "name": "Boom"
         },
         {
-          "name": "Boom Markt",
+          "@type": "Place",
+          "name": "Boom Markt"
+        },
+        {
+          "name": "Industrieterrein Boom-Willebroek",
           "@type": "Place"
+        },
+        {
+          "@type": "City",
+          "name": "Willebroek"
         },
         {
           "@type": "Place",
-          "name": "Industrieterrein Boom-Willebroek"
-        },
-        {
-          "name": "Willebroek",
-          "@type": "City"
-        },
-        {
-          "name": "A12",
-          "@type": "Place"
+          "name": "A12"
         }
       ],
-      "email": "faster@takeldienstfaster.be",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "url": "https://takeldienstfaster.be/",
-      "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "email": "faster@takeldienstfaster.be",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
         "postalCode": "2020",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressLocality": "Antwerpen",
         "addressCountry": "BE",
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248"
+        "addressRegion": "Antwerpen"
       },
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
-      "@id": "https://takeldienstfaster.be/#business"
+      "@type": "LocalBusiness"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
+          "item": "https://takeldienstfaster.be/pl/",
           "name": "Strona główna",
-          "position": 1,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/pl/"
+          "position": 1
         },
         {
           "name": "Pomoc drogowa",
@@ -107,58 +108,57 @@
           "position": 2
         },
         {
-          "name": "Boom",
-          "@type": "ListItem",
           "position": 3,
+          "@type": "ListItem",
+          "name": "Boom",
           "item": "https://takeldienstfaster.be/pl/takeldienst/boom/"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
+      "@type": "FAQPage",
       "mainEntity": [
         {
-          "name": "Jak szybko są Państwo w Boom?",
           "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "W normalnych warunkach drogowych jadę przez A12 średnio około 15–20 minut. Przy dużym ruchu może to oczywiście wyglądać inaczej."
-          }
+          },
+          "name": "Jak szybko są Państwo w Boom?"
         },
         {
           "name": "Ile kosztuje pomoc drogowa w Boom?",
           "acceptedAnswer": {
-            "text": "Zawsze ustalam jasną cenę, zanim wyruszę. Bez ukrytych kosztów.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Zawsze ustalam jasną cenę, zanim wyruszę. Bez ukrytych kosztów."
           },
           "@type": "Question"
         },
         {
           "@type": "Question",
           "acceptedAnswer": {
-            "text": "Tak. Oprócz samochodów osobowych przewożę też samochody dostawcze, a od czasu do czasu motocykl.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Tak. Oprócz samochodów osobowych przewożę też samochody dostawcze, a od czasu do czasu motocykl."
           },
           "name": "Czy mogą Państwo holować również samochody dostawcze?"
-        },
-        {
-          "acceptedAnswer": {
-            "text": "Tak. Regularnie przewożę pojazdy z Boom do Antwerpii lub Puurs, a w razie potrzeby do specjalisty w Brukseli.",
-            "@type": "Answer"
-          },
-          "@type": "Question",
-          "name": "Czy mogą Państwo przewozić pojazdy do Antwerpii lub Puurs?"
         },
         {
           "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
+            "text": "Tak. Regularnie przewożę pojazdy z Boom do Antwerpii lub Puurs, a w razie potrzeby do specjalisty w Brukseli."
+          },
+          "name": "Czy mogą Państwo przewozić pojazdy do Antwerpii lub Puurs?"
+        },
+        {
+          "acceptedAnswer": {
+            "@type": "Answer",
             "text": "Tak. Samochód, który nie chce zapalić, problem elektryczny lub usterka mechaniczna to częste zgłoszenia w Boom."
           },
-          "name": "Czy pomagają Państwo również przy samochodzie, który nie chce zapalić?"
+          "name": "Czy pomagają Państwo również przy samochodzie, który nie chce zapalić?",
+          "@type": "Question"
         }
-      ],
-      "@type": "FAQPage"
+      ]
     }
   ],
   "@context": "https://schema.org"

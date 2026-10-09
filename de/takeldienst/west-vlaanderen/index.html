@@ -47,46 +47,31 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
-      "email": "faster@takeldienstfaster.be",
-      "address": {
-        "addressCountry": "BE",
-        "addressRegion": "Antwerpen",
-        "postalCode": "2020",
-        "addressLocality": "Antwerpen",
-        "@type": "PostalAddress",
-        "streetAddress": "De Bosschaertstraat 248"
-      },
-      "url": "https://takeldienstfaster.be/",
-      "telephone": "+3233756737",
-      "priceRange": "€€",
       "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "email": "faster@takeldienstfaster.be",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "@id": "https://takeldienstfaster.be/#business",
-      "name": "Faster Depannage Takeldienst",
       "areaServed": [
         {
-          "@type": "AdministrativeArea",
-          "name": "West-Vlaanderen"
+          "name": "West-Vlaanderen",
+          "@type": "AdministrativeArea"
         },
         {
-          "@type": "City",
-          "name": "Brugge"
+          "name": "Brugge",
+          "@type": "City"
         },
         {
           "@type": "City",
           "name": "Kortrijk"
         },
         {
-          "name": "Oostende",
-          "@type": "City"
+          "@type": "City",
+          "name": "Oostende"
         },
         {
-          "name": "Roeselare",
-          "@type": "City"
+          "@type": "City",
+          "name": "Roeselare"
         },
         {
           "@type": "City",
@@ -105,26 +90,40 @@
           "name": "Poperinge"
         },
         {
-          "name": "Tielt",
-          "@type": "City"
+          "@type": "City",
+          "name": "Tielt"
         },
         {
           "name": "Ieper",
           "@type": "City"
         },
         {
-          "name": "Blankenberge",
+          "@type": "City",
+          "name": "Blankenberge"
+        },
+        {
+          "name": "De Panne",
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "De Panne"
-        },
-        {
-          "@type": "City",
-          "name": "Knokke-Heist"
+          "name": "Knokke-Heist",
+          "@type": "City"
         }
-      ]
+      ],
+      "telephone": "+3233756737",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "@id": "https://takeldienstfaster.be/#business",
+      "address": {
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "postalCode": "2020"
+      },
+      "url": "https://takeldienstfaster.be/",
+      "name": "Faster Depannage Takeldienst",
+      "priceRange": "€€"
     },
     {
       "@type": "BreadcrumbList",
@@ -132,24 +131,25 @@
         {
           "position": 1,
           "item": "https://takeldienstfaster.be/de/",
-          "@type": "ListItem",
-          "name": "Startseite"
-        },
-        {
-          "name": "Abschleppdienst",
-          "position": 2,
-          "item": "https://takeldienstfaster.be/takeldienst/",
+          "name": "Startseite",
           "@type": "ListItem"
         },
         {
-          "name": "Abschleppdienst Westflandern",
+          "name": "Abschleppdienst",
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "position": 2
+        },
+        {
+          "item": "https://takeldienstfaster.be/de/takeldienst/west-vlaanderen/",
           "position": 3,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/de/takeldienst/west-vlaanderen/"
+          "name": "Abschleppdienst Westflandern"
         }
       ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 

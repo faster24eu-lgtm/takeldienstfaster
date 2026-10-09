@@ -50,53 +50,53 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
+      "name": "Faster Depannage Takeldienst",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "@id": "https://takeldienstfaster.be/#business",
+      "address": {
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "postalCode": "2020"
+      },
       "@type": "LocalBusiness",
       "email": "faster@takeldienstfaster.be",
-      "address": {
-        "addressRegion": "Antwerpen",
-        "postalCode": "2020",
-        "addressCountry": "BE",
-        "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "@type": "PostalAddress"
-      },
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "url": "https://takeldienstfaster.be/",
-      "@id": "https://takeldienstfaster.be/#business",
       "areaServed": {
-        "@type": "City",
-        "name": "Hoboken"
+        "name": "Hoboken",
+        "@type": "City"
       },
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst"
+      "telephone": "+3233756737"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/de/",
           "position": 1,
+          "item": "https://takeldienstfaster.be/de/",
+          "@type": "ListItem",
           "name": "Startseite"
         },
         {
-          "name": "Abschleppdienst",
-          "item": "https://takeldienstfaster.be/takeldienst/",
           "@type": "ListItem",
-          "position": 2
+          "name": "Abschleppdienst",
+          "position": 2,
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
-          "item": "https://takeldienstfaster.be/de/takeldienst/hoboken/",
-          "@type": "ListItem",
           "position": 3,
-          "name": "Hoboken"
+          "item": "https://takeldienstfaster.be/de/takeldienst/hoboken/",
+          "name": "Hoboken",
+          "@type": "ListItem"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

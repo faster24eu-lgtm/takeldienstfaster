@@ -48,73 +48,72 @@
 {
   "@graph": [
     {
+      "@id": "https://takeldienstfaster.be/#business",
       "areaServed": {
-        "name": "België",
-        "@type": "Country"
+        "@type": "Country",
+        "name": "België"
       },
       "email": "faster@takeldienstfaster.be",
+      "address": {
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "postalCode": "2020",
+        "addressRegion": "Antwerpen",
+        "addressCountry": "BE"
+      },
       "@type": "LocalBusiness",
       "url": "https://takeldienstfaster.be/",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "address": {
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE",
-        "@type": "PostalAddress",
-        "postalCode": "2020",
-        "addressLocality": "Antwerpen"
-      },
-      "@id": "https://takeldienstfaster.be/#business",
       "name": "Faster Depannage Takeldienst",
       "telephone": "+3233756737"
     },
     {
+      "serviceType": "Pomoc drogowa dla ciężarówek",
       "name": "Pomoc drogowa i holowanie ciężarówek",
-      "description": "Pomoc drogowa, holowanie i transport ciężarówek, naczep, autobusów, autokarów i maszyn od 3,5 tony.",
-      "areaServed": {
-        "name": "België",
-        "@type": "Country"
-      },
-      "@type": "Service",
       "provider": {
         "@id": "https://takeldienstfaster.be/#business"
       },
-      "serviceType": "Pomoc drogowa dla ciężarówek"
+      "@type": "Service",
+      "areaServed": {
+        "@type": "Country",
+        "name": "België"
+      },
+      "description": "Pomoc drogowa, holowanie i transport ciężarówek, naczep, autobusów, autokarów i maszyn od 3,5 tony."
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "name": "Strona główna",
-          "item": "https://takeldienstfaster.be/pl/",
+          "@type": "ListItem",
           "position": 1,
-          "@type": "ListItem"
+          "name": "Strona główna",
+          "item": "https://takeldienstfaster.be/pl/"
         },
         {
+          "item": "https://takeldienstfaster.be/pl/depannage-vrachtwagen/",
           "name": "Pomoc drogowa dla ciężarówek",
           "position": 2,
-          "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/pl/depannage-vrachtwagen/"
+          "@type": "ListItem"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
-          "name": "Moja ciężarówka stoi na autostradzie. Czy mogę wtedy zadzwonić bezpośrednio do Państwa?",
           "@type": "Question",
+          "name": "Moja ciężarówka stoi na autostradzie. Czy mogę wtedy zadzwonić bezpośrednio do Państwa?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Na flamandzkich autostradach, pasach awaryjnych i parkingach przy autostradzie pojazd, który nie może już jechać, jest usuwany przez pomoc drogową FAST wyznaczoną dla danego odcinka autostrady. Potem przejmujemy go my: z zajezdni do Państwa warsztatu, autoryzowanego serwisu, na własny teren lub z powrotem za granicę."
           }
         },
         {
-          "name": "Ile kosztuje pomoc drogowa dla ciężarówki?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "To zależy od masy, miejsca, odległości, godziny i tego, co trzeba zrobić na miejscu. Cenę otrzymują Państwo, zanim wyruszymy. Holowanie z dźwigiem po przewróceniu to zupełnie co innego niż ciągnik, który po prostu nie chce zapalić na parkingu."
+            "text": "To zależy od masy, miejsca, odległości, godziny i tego, co trzeba zrobić na miejscu. Cenę otrzymują Państwo, zanim wyruszymy. Holowanie z dźwigiem po przewróceniu to zupełnie co innego niż ciągnik, który po prostu nie chce zapalić na parkingu.",
+            "@type": "Answer"
           },
+          "name": "Ile kosztuje pomoc drogowa dla ciężarówki?",
           "@type": "Question"
         },
         {
@@ -122,18 +121,19 @@
             "text": "Tak. Autobusy miejskie, liniowe i autokary. Przy autobusie z pasażerami najpierw pomagamy zastanowić się, jak ludzie mogą jechać dalej, a dopiero potem myślimy o samym autobusie.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Czy pomagają Państwo również przy autobusach i autokarach?"
+          "name": "Czy pomagają Państwo również przy autobusach i autokarach?",
+          "@type": "Question"
         },
         {
-          "name": "Czy przewożą Państwo również maszyny i sprzęt budowlany?",
           "@type": "Question",
+          "name": "Czy przewożą Państwo również maszyny i sprzęt budowlany?",
           "acceptedAnswer": {
-            "text": "Tak: koparki, ładowarki teleskopowe, wózki widłowe, podnośniki koszowe i inny sprzęt na kołach. Dla tego, co jest za szerokie, za wysokie lub za ciężkie, organizujemy niskopodwoziowiec i w razie potrzeby zezwolenie na transport ponadgabarytowy.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Tak: koparki, ładowarki teleskopowe, wózki widłowe, podnośniki koszowe i inny sprzęt na kołach. Dla tego, co jest za szerokie, za wysokie lub za ciężkie, organizujemy niskopodwoziowiec i w razie potrzeby zezwolenie na transport ponadgabarytowy."
           }
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
   ],
   "@context": "https://schema.org"

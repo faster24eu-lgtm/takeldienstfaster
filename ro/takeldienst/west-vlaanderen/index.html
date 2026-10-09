@@ -50,23 +50,7 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "telephone": "+3233756737",
-      "@id": "https://takeldienstfaster.be/#business",
-      "name": "Faster Depannage Takeldienst",
-      "url": "https://takeldienstfaster.be/",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "BE",
-        "postalCode": "2020",
-        "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen"
-      },
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "@type": "LocalBusiness",
-      "priceRange": "€€",
-      "email": "faster@takeldienstfaster.be",
       "areaServed": [
         {
           "@type": "AdministrativeArea",
@@ -85,8 +69,8 @@
           "name": "Oostende"
         },
         {
-          "@type": "City",
-          "name": "Roeselare"
+          "name": "Roeselare",
+          "@type": "City"
         },
         {
           "name": "Torhout",
@@ -97,20 +81,20 @@
           "name": "Waregem"
         },
         {
-          "@type": "City",
-          "name": "Menen"
+          "name": "Menen",
+          "@type": "City"
         },
         {
           "@type": "City",
           "name": "Poperinge"
         },
         {
-          "@type": "City",
-          "name": "Tielt"
+          "name": "Tielt",
+          "@type": "City"
         },
         {
-          "name": "Ieper",
-          "@type": "City"
+          "@type": "City",
+          "name": "Ieper"
         },
         {
           "name": "Blankenberge",
@@ -121,31 +105,47 @@
           "@type": "City"
         },
         {
-          "name": "Knokke-Heist",
-          "@type": "City"
+          "@type": "City",
+          "name": "Knokke-Heist"
         }
-      ]
+      ],
+      "telephone": "+3233756737",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "priceRange": "€€",
+      "email": "faster@takeldienstfaster.be",
+      "url": "https://takeldienstfaster.be/",
+      "address": {
+        "postalCode": "2020",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressLocality": "Antwerpen",
+        "@type": "PostalAddress",
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen"
+      },
+      "name": "Faster Depannage Takeldienst",
+      "@id": "https://takeldienstfaster.be/#business",
+      "@type": "LocalBusiness"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "name": "Acasă",
+          "@type": "ListItem",
           "position": 1,
-          "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/ro/"
+          "item": "https://takeldienstfaster.be/ro/",
+          "name": "Acasă"
         },
         {
+          "name": "Serviciu de tractare",
+          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Serviciu de tractare"
+          "position": 2
         },
         {
-          "@type": "ListItem",
           "name": "Serviciu de tractare Flandra de Vest",
+          "item": "https://takeldienstfaster.be/ro/takeldienst/west-vlaanderen/",
           "position": 3,
-          "item": "https://takeldienstfaster.be/ro/takeldienst/west-vlaanderen/"
+          "@type": "ListItem"
         }
       ]
     }

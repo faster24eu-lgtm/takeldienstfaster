@@ -53,20 +53,16 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
-      "email": "faster@takeldienstfaster.be",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "priceRange": "€€",
       "address": {
-        "@type": "PostalAddress",
         "addressLocality": "Antwerpen",
-        "postalCode": "2020",
         "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
         "addressRegion": "Antwerpen",
+        "postalCode": "2020",
         "addressCountry": "BE"
       },
-      "url": "https://takeldienstfaster.be/",
+      "email": "faster@takeldienstfaster.be",
+      "priceRange": "€€",
       "areaServed": [
         {
           "name": "Kontich",
@@ -77,77 +73,81 @@
           "@type": "Place"
         },
         {
-          "name": "E19",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "E19"
         }
       ],
       "@type": "LocalBusiness",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@id": "https://takeldienstfaster.be/#business"
+      "name": "Faster Depannage Takeldienst",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "telephone": "+3233756737",
+      "@id": "https://takeldienstfaster.be/#business",
+      "url": "https://takeldienstfaster.be/"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "@type": "ListItem",
           "name": "Accueil",
+          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/fr/",
           "position": 1
         },
         {
-          "position": 2,
+          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "name": "Service de remorquage",
-          "@type": "ListItem"
+          "position": 2,
+          "name": "Service de remorquage"
         },
         {
           "position": 3,
+          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/fr/takeldienst/kontich/",
-          "name": "Kontich",
-          "@type": "ListItem"
+          "name": "Kontich"
         }
       ]
     },
     {
       "mainEntity": [
         {
-          "acceptedAnswer": {
-            "text": "Kontich est facilement accessible via l’E19. La plupart du temps, j’y suis en environ 10 à 20 minutes, selon la circulation et la disponibilité. Dans certains cas, cela peut aller jusqu’à environ 30 minutes.",
-            "@type": "Answer"
-          },
-          "name": "En combien de temps êtes-vous à Kontich ?",
-          "@type": "Question"
-        },
-        {
-          "name": "Combien coûte un service de remorquage à Kontich ?",
           "@type": "Question",
-          "acceptedAnswer": {
-            "text": "Je communique toujours d’abord un prix clair. Ce n’est qu’après votre accord que je viens chez vous.",
-            "@type": "Answer"
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Pouvez-vous aussi remorquer des camionnettes ou des motos ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Oui. La plupart des appels à Kontich concernent des voitures particulières qui ne démarrent pas ou ne peuvent plus avancer, mais j’aide aussi pour des camionnettes et de temps en temps une moto."
+            "text": "Kontich est facilement accessible via l’E19. La plupart du temps, j’y suis en environ 10 à 20 minutes, selon la circulation et la disponibilité. Dans certains cas, cela peut aller jusqu’à environ 30 minutes."
+          },
+          "name": "En combien de temps êtes-vous à Kontich ?"
+        },
+        {
+          "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Je communique toujours d’abord un prix clair. Ce n’est qu’après votre accord que je viens chez vous."
+          },
+          "name": "Combien coûte un service de remorquage à Kontich ?"
+        },
+        {
+          "name": "Pouvez-vous aussi remorquer des camionnettes ou des motos ?",
+          "@type": "Question",
+          "acceptedAnswer": {
+            "text": "Oui. La plupart des appels à Kontich concernent des voitures particulières qui ne démarrent pas ou ne peuvent plus avancer, mais j’aide aussi pour des camionnettes et de temps en temps une moto.",
+            "@type": "Answer"
           }
         },
         {
+          "name": "Connaissez-vous bien Kontich ?",
           "acceptedAnswer": {
             "text": "Oui. J’ai moi-même habité à la limite d’Edegem et de Kontich et je connais entre autres le centre, la rue commerçante, les alentours de l’église, le Park & Ride à l’E19 et le contrôle technique.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Connaissez-vous bien Kontich ?"
+          "@type": "Question"
         },
         {
           "name": "Pouvez-vous récupérer un véhicule chez un garage ou un concessionnaire à Kontich ?",
           "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui. Je récupère régulièrement des véhicules chez des garages et des concessionnaires à Kontich."
+            "text": "Oui. Je récupère régulièrement des véhicules chez des garages et des concessionnaires à Kontich.",
+            "@type": "Answer"
           }
         }
       ],

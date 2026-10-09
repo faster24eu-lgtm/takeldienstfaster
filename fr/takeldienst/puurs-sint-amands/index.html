@@ -50,26 +50,10 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
-      "url": "https://takeldienstfaster.be/",
-      "priceRange": "€€",
-      "address": {
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressCountry": "BE",
-        "addressLocality": "Antwerpen",
-        "@type": "PostalAddress",
-        "postalCode": "2020"
-      },
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
-      "email": "faster@takeldienstfaster.be",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@id": "https://takeldienstfaster.be/#business",
       "@type": "LocalBusiness",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "areaServed": [
         {
           "@type": "City",
@@ -88,34 +72,49 @@
           "@type": "Place"
         },
         {
-          "@type": "Place",
-          "name": "A12"
+          "name": "A12",
+          "@type": "Place"
         },
         {
           "@type": "Place",
           "name": "N16"
         }
-      ]
+      ],
+      "email": "faster@takeldienstfaster.be",
+      "priceRange": "€€",
+      "address": {
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "postalCode": "2020",
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen"
+      },
+      "url": "https://takeldienstfaster.be/",
+      "@id": "https://takeldienstfaster.be/#business",
+      "telephone": "+3233756737",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "name": "Faster Depannage Takeldienst"
     },
     {
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/fr/",
+          "name": "Accueil",
           "position": 1,
-          "@type": "ListItem",
-          "name": "Accueil"
+          "item": "https://takeldienstfaster.be/fr/",
+          "@type": "ListItem"
         },
         {
+          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/takeldienst/",
           "position": 2,
-          "@type": "ListItem",
           "name": "Service de remorquage"
         },
         {
-          "name": "Puurs-Sint-Amands",
-          "@type": "ListItem",
           "position": 3,
-          "item": "https://takeldienstfaster.be/fr/takeldienst/puurs-sint-amands/"
+          "item": "https://takeldienstfaster.be/fr/takeldienst/puurs-sint-amands/",
+          "@type": "ListItem",
+          "name": "Puurs-Sint-Amands"
         }
       ],
       "@type": "BreadcrumbList"
@@ -124,56 +123,57 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "En combien de temps pouvez-vous être à Puurs ?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Souvent, je suis sur place en environ 20 à 30 minutes depuis Anvers-Sud/Hoboken. C’est une indication, pas une garantie : la circulation, l’endroit et la situation jouent un rôle."
-          }
+            "text": "Souvent, je suis sur place en environ 20 à 30 minutes depuis Anvers-Sud/Hoboken. C’est une indication, pas une garantie : la circulation, l’endroit et la situation jouent un rôle.",
+            "@type": "Answer"
+          },
+          "name": "En combien de temps pouvez-vous être à Puurs ?"
         },
         {
           "@type": "Question",
-          "name": "Êtes-vous joignables 24/7 ?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Oui. Faster est joignable 24/7, aussi le soir, la nuit et le week-end."
-          }
+          },
+          "name": "Êtes-vous joignables 24/7 ?"
         },
         {
+          "@type": "Question",
           "acceptedAnswer": {
             "text": "Oui, si c’est sûr et accessible. Assurez-vous d’abord d’être dans un endroit sûr, puis appelez-moi, je regarde tout de suite ce qu’il faut.",
             "@type": "Answer"
           },
-          "@type": "Question",
           "name": "Pouvez-vous aider sur l’A12 près de Puurs ?"
         },
         {
-          "@type": "Question",
-          "name": "Aidez-vous aussi en cas de batterie vide ?",
           "acceptedAnswer": {
-            "text": "Oui. Là où c’est possible, j’essaie de démarrer le véhicule avec un booster. Si ça ne marche pas, j’organise un remorquage ou un transport.",
-            "@type": "Answer"
-          }
+            "@type": "Answer",
+            "text": "Oui. Là où c’est possible, j’essaie de démarrer le véhicule avec un booster. Si ça ne marche pas, j’organise un remorquage ou un transport."
+          },
+          "@type": "Question",
+          "name": "Aidez-vous aussi en cas de batterie vide ?"
         },
         {
+          "name": "Transportez-vous aussi des voitures pour des garages et des commerçants ?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Oui. Autour de Puurs, je roule régulièrement pour des garages, des négociants automobiles et des entreprises qui doivent faire amener un véhicule quelque part."
           },
-          "name": "Transportez-vous aussi des voitures pour des garages et des commerçants ?",
           "@type": "Question"
         },
         {
-          "@type": "Question",
           "name": "Travaillez-vous seulement à Puurs ?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Non. Je suis actif à Puurs-Sint-Amands et dans la région environnante, et le transport de véhicules peut aussi aller beaucoup plus loin."
-          }
+            "text": "Non. Je suis actif à Puurs-Sint-Amands et dans la région environnante, et le transport de véhicules peut aussi aller beaucoup plus loin.",
+            "@type": "Answer"
+          },
+          "@type": "Question"
         }
       ],
       "@type": "FAQPage"
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 

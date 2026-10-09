@@ -46,57 +46,58 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "email": "faster@takeldienstfaster.be",
       "areaServed": {
-        "@type": "Country",
-        "name": "België"
+        "name": "België",
+        "@type": "Country"
       },
       "@id": "https://takeldienstfaster.be/#business",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "telephone": "+3233756737",
+      "@type": "LocalBusiness",
       "name": "Faster Depannage Takeldienst",
+      "url": "https://takeldienstfaster.be/",
       "address": {
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressRegion": "Antwerpen",
         "addressCountry": "BE",
         "@type": "PostalAddress",
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
         "addressLocality": "Antwerpen",
         "postalCode": "2020"
-      },
-      "url": "https://takeldienstfaster.be/",
-      "@type": "LocalBusiness",
-      "email": "faster@takeldienstfaster.be",
-      "telephone": "+3233756737"
-    },
-    {
-      "areaServed": {
-        "@type": "Country",
-        "name": "België"
-      },
-      "serviceType": "Truck breakdown service",
-      "@type": "Service",
-      "name": "Breakdown service and towing for trucks",
-      "description": "Breakdown service, towing and transport of trucks, semi-trailers, buses, coaches and machines from 3.5 tonnes.",
-      "provider": {
-        "@id": "https://takeldienstfaster.be/#business"
       }
     },
     {
-      "@type": "BreadcrumbList",
+      "provider": {
+        "@id": "https://takeldienstfaster.be/#business"
+      },
+      "description": "Breakdown service, towing and transport of trucks, semi-trailers, buses, coaches and machines from 3.5 tonnes.",
+      "serviceType": "Truck breakdown service",
+      "@type": "Service",
+      "name": "Breakdown service and towing for trucks",
+      "areaServed": {
+        "@type": "Country",
+        "name": "België"
+      }
+    },
+    {
       "itemListElement": [
         {
           "@type": "ListItem",
           "name": "Home",
-          "position": 1,
-          "item": "https://takeldienstfaster.be/"
+          "item": "https://takeldienstfaster.be/en/",
+          "position": 1
         },
         {
-          "position": 2,
+          "item": "https://takeldienstfaster.be/en/depannage-vrachtwagen/",
           "name": "Truck breakdown service",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/en/depannage-vrachtwagen/"
+          "position": 2
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
       "@type": "FAQPage",
@@ -106,8 +107,8 @@
             "text": "On the Flemish motorways, hard shoulders and car parks along the motorway, a vehicle that can no longer drive is removed by the FAST towing service designated for that stretch of motorway. We take over after that: from the depot to your garage, brand dealer, own premises or back abroad.",
             "@type": "Answer"
           },
-          "name": "My truck has broken down on the motorway. Can I call you directly then?",
-          "@type": "Question"
+          "@type": "Question",
+          "name": "My truck has broken down on the motorway. Can I call you directly then?"
         },
         {
           "@type": "Question",
@@ -122,21 +123,20 @@
             "text": "Yes. City buses, service buses and coaches. With a bus carrying passengers, we first help think about how the people can continue, then about the bus itself.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Do you also help with buses and coaches?"
+          "name": "Do you also help with buses and coaches?",
+          "@type": "Question"
         },
         {
+          "name": "Do you also transport machines and site equipment?",
+          "@type": "Question",
           "acceptedAnswer": {
             "text": "Yes: excavators, telehandlers, forklifts, aerial work platforms and other rolling equipment. For what is too wide, too high or too heavy, we arrange a low loader and, where needed, the permit for exceptional transport.",
             "@type": "Answer"
-          },
-          "@type": "Question",
-          "name": "Do you also transport machines and site equipment?"
+          }
         }
       ]
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>
@@ -144,7 +144,7 @@
 <body>
   <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="../../index.html" aria-label="Faster towing service home"> <span class="brand-mark"><img src="../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
+        <a class="brand" href="../index.html" aria-label="Faster towing service home"> <span class="brand-mark"><img src="../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
         <nav class="main-nav" aria-label="Main navigation">
           <a href="../diensten/">Services</a> <a href="#wat-we-bergen">What we tow</a> <a href="#hoe-het-werkt">How it works</a> <a href="#faq">FAQ</a>
         </nav>
@@ -297,7 +297,7 @@
   <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <a class="brand brand-footer" href="../../index.html"><span class="brand-mark"><img src="../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
+          <a class="brand brand-footer" href="../index.html"><span class="brand-mark"><img src="../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
           <p class="footer-copy">Personal towing service from Antwerp. From breakdown assistance to truck breakdown service and international vehicle transport.</p>
         </div>
         <div><h3>Services</h3><a href="../diensten/#pechverhelping">Breakdown assistance</a><a href="../diensten/#takeldienst">Towing & recovery</a><a href="../depannage-vrachtwagen/">Truck breakdown service</a><a href="../diensten/zwaar-transport/">Heavy transport</a></div>

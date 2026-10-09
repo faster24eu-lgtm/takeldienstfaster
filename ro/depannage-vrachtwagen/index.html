@@ -46,36 +46,37 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
+      "areaServed": {
+        "@type": "Country",
+        "name": "België"
+      },
       "telephone": "+3233756737",
-      "@id": "https://takeldienstfaster.be/#business",
-      "name": "Faster Depannage Takeldienst",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "url": "https://takeldienstfaster.be/",
       "address": {
-        "addressCountry": "BE",
         "postalCode": "2020",
-        "@type": "PostalAddress",
-        "streetAddress": "De Bosschaertstraat 248",
+        "addressRegion": "Antwerpen",
         "addressLocality": "Antwerpen",
-        "addressRegion": "Antwerpen"
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressCountry": "BE",
+        "@type": "PostalAddress"
       },
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@type": "LocalBusiness",
+      "name": "Faster Depannage Takeldienst",
       "email": "faster@takeldienstfaster.be",
-      "areaServed": {
-        "name": "België",
-        "@type": "Country"
-      }
+      "@id": "https://takeldienstfaster.be/#business",
+      "@type": "LocalBusiness"
     },
     {
+      "@type": "Service",
+      "name": "Depanare și tractare pentru camioane",
+      "serviceType": "Depanare camioane",
       "areaServed": {
         "name": "België",
         "@type": "Country"
       },
-      "@type": "Service",
-      "serviceType": "Depanare camioane",
-      "name": "Depanare și tractare pentru camioane",
       "description": "Depanare, tractare și transport de camioane, semiremorci, autobuze, autocare și utilaje de la 3,5 tone.",
       "provider": {
         "@id": "https://takeldienstfaster.be/#business"
@@ -85,14 +86,14 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/ro/",
-          "@type": "ListItem",
           "name": "Acasă",
-          "position": 1
+          "item": "https://takeldienstfaster.be/ro/",
+          "position": 1,
+          "@type": "ListItem"
         },
         {
-          "item": "https://takeldienstfaster.be/ro/depannage-vrachtwagen/",
           "name": "Depanare camioane",
+          "item": "https://takeldienstfaster.be/ro/depannage-vrachtwagen/",
           "position": 2,
           "@type": "ListItem"
         }
@@ -102,41 +103,40 @@
       "@type": "FAQPage",
       "mainEntity": [
         {
-          "@type": "Question",
+          "name": "Camionul meu a rămas blocat pe autostradă. Vă pot suna direct atunci?",
           "acceptedAnswer": {
             "text": "Pe autostrăzile flamande, benzile de urgență și parcările de lângă autostradă, un vehicul care nu mai poate circula este ridicat de serviciul de tractare FAST desemnat pentru acel tronson de autostradă. Apoi preluăm noi: de la depou la service-ul dumneavoastră, la reprezentanța mărcii, pe terenul propriu sau înapoi în străinătate.",
             "@type": "Answer"
           },
-          "name": "Camionul meu a rămas blocat pe autostradă. Vă pot suna direct atunci?"
+          "@type": "Question"
         },
         {
           "name": "Cât costă depanarea unui camion?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Depinde de greutate, de loc, de distanță, de oră și de ce trebuie făcut la fața locului. Primiți prețul înainte să plecăm. O tractare cu macara după o răsturnare este cu totul altceva decât un cap tractor care pur și simplu nu mai pornește într-o parcare."
+            "text": "Depinde de greutate, de loc, de distanță, de oră și de ce trebuie făcut la fața locului. Primiți prețul înainte să plecăm. O tractare cu macara după o răsturnare este cu totul altceva decât un cap tractor care pur și simplu nu mai pornește într-o parcare.",
+            "@type": "Answer"
           },
           "@type": "Question"
         },
         {
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Autobuze urbane, autobuze de linie și autocare. La un autobuz cu pasageri, ne gândim mai întâi cum își pot continua oamenii drumul, apoi la autobuzul în sine."
-          },
           "@type": "Question",
-          "name": "Ajutați și la autobuze și autocare?"
+          "name": "Ajutați și la autobuze și autocare?",
+          "acceptedAnswer": {
+            "text": "Da. Autobuze urbane, autobuze de linie și autocare. La un autobuz cu pasageri, ne gândim mai întâi cum își pot continua oamenii drumul, apoi la autobuzul în sine.",
+            "@type": "Answer"
+          }
         },
         {
           "@type": "Question",
+          "name": "Transportați și utilaje și echipamente de șantier?",
           "acceptedAnswer": {
             "text": "Da: excavatoare, încărcătoare telescopice, stivuitoare, platforme de lucru la înălțime și alte echipamente pe roți. Pentru ce este prea lat, prea înalt sau prea greu, organizăm un trailer cu platformă joasă și, unde este nevoie, autorizația pentru transport agabaritic.",
             "@type": "Answer"
-          },
-          "name": "Transportați și utilaje și echipamente de șantier?"
+          }
         }
       ]
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

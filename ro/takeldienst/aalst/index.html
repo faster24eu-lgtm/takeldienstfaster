@@ -54,23 +54,24 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@id": "https://takeldienstfaster.be/#business",
-      "telephone": "+3233756737",
       "name": "Faster Depannage Takeldienst",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "@type": "LocalBusiness",
+      "@id": "https://takeldienstfaster.be/#business",
+      "url": "https://takeldienstfaster.be/",
       "address": {
-        "postalCode": "2020",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
         "addressCountry": "BE",
         "@type": "PostalAddress",
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressLocality": "Antwerpen"
+        "postalCode": "2020"
       },
-      "url": "https://takeldienstfaster.be/",
+      "priceRange": "€€",
+      "email": "faster@takeldienstfaster.be",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Aalst"
+          "name": "Aalst",
+          "@type": "City"
         },
         {
           "name": "Dendermonde",
@@ -89,16 +90,16 @@
           "name": "Berlare"
         },
         {
+          "name": "Haaltert",
+          "@type": "City"
+        },
+        {
           "@type": "City",
-          "name": "Haaltert"
+          "name": "Ninove"
         },
         {
-          "name": "Ninove",
-          "@type": "City"
-        },
-        {
-          "name": "Oosterzele",
-          "@type": "City"
+          "@type": "City",
+          "name": "Oosterzele"
         },
         {
           "@type": "City",
@@ -109,99 +110,97 @@
           "name": "E40"
         }
       ],
-      "priceRange": "€€",
-      "email": "faster@takeldienstfaster.be",
-      "@type": "LocalBusiness",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg"
+      "telephone": "+3233756737",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "position": 1,
           "name": "Acasă",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/ro/"
+          "item": "https://takeldienstfaster.be/ro/",
+          "position": 1
         },
         {
           "name": "Serviciu de tractare",
-          "position": 2,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "position": 2
         },
         {
-          "position": 3,
           "name": "Aalst și regiunea",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/ro/takeldienst/aalst/"
+          "item": "https://takeldienstfaster.be/ro/takeldienst/aalst/",
+          "position": 3
         }
       ]
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Lucrați și în afara orașului Aalst?",
+          "acceptedAnswer": {
+            "text": "Da. Merg la fel de bine la Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere și în localitățile din jur.",
+            "@type": "Answer"
+          }
+        },
         {
           "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Da. Merg la fel de bine la Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere și în localitățile din jur."
+            "text": "Da, 24/7. Și în weekend și de sărbători."
           },
-          "name": "Lucrați și în afara orașului Aalst?"
-        },
-        {
-          "acceptedAnswer": {
-            "text": "Da, 24/7. Și în weekend și de sărbători.",
-            "@type": "Answer"
-          },
-          "@type": "Question",
           "name": "Puteți fi contactați noaptea?"
         },
         {
-          "name": "Pot ști dinainte cât costă o tractare?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Da. Discut prețul înainte să trimit autotractarea, la telefon, pe WhatsApp sau prin e-mail."
           },
+          "name": "Pot ști dinainte cât costă o tractare?",
           "@type": "Question"
         },
         {
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "De obicei, da. Am dolly-uri și alt echipament pentru recuperări mai dificile."
           },
-          "@type": "Question",
           "name": "Puteți tracta o mașină care nu poate fi pusă în punctul mort?"
         },
         {
-          "name": "Puteți transporta o mașină fără o roată?",
           "@type": "Question",
           "acceptedAnswer": {
+            "text": "În multe cazuri da, în funcție de situație și cu echipamentul potrivit.",
+            "@type": "Answer"
+          },
+          "name": "Puteți transporta o mașină fără o roată?"
+        },
+        {
+          "@type": "Question",
+          "name": "Puteți transporta o mașină pe care tocmai am cumpărat-o?",
+          "acceptedAnswer": {
             "@type": "Answer",
-            "text": "În multe cazuri da, în funcție de situație și cu echipamentul potrivit."
+            "text": "Da, și un vehicul fără număr de înmatriculare."
           }
         },
         {
-          "acceptedAnswer": {
-            "text": "Da, și un vehicul fără număr de înmatriculare.",
-            "@type": "Answer"
-          },
-          "@type": "Question",
-          "name": "Puteți transporta o mașină pe care tocmai am cumpărat-o?"
-        },
-        {
-          "name": "Puteți ajuta după un accident?",
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Da, asigur o recuperare sigură a vehiculului.",
             "@type": "Answer"
-          }
+          },
+          "name": "Puteți ajuta după un accident?",
+          "@type": "Question"
         },
         {
+          "@type": "Question",
           "acceptedAnswer": {
             "text": "Neerlandeză, franceză și engleză.",
             "@type": "Answer"
           },
-          "@type": "Question",
           "name": "Ce limbi vorbiți?"
         },
         {
@@ -209,18 +208,19 @@
             "@type": "Answer",
             "text": "Nu. Pot fi contactat 24/7, și noaptea, în weekend și de sărbători."
           },
-          "@type": "Question",
-          "name": "Lucrați doar ziua?"
+          "name": "Lucrați doar ziua?",
+          "@type": "Question"
         },
         {
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Este chiar lângă E40, între Bruxelles și Gent, ceea ce face ca întreaga regiune din jurul orașului Aalst să fie ușor accesibilă."
-          },
           "@type": "Question",
-          "name": "De ce unul dintre șoferii dumneavoastră are baza în Erpe-Mere?"
+          "name": "De ce unul dintre șoferii dumneavoastră are baza în Erpe-Mere?",
+          "acceptedAnswer": {
+            "text": "Este chiar lângă E40, între Bruxelles și Gent, ceea ce face ca întreaga regiune din jurul orașului Aalst să fie ușor accesibilă.",
+            "@type": "Answer"
+          }
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
   ]
 }

@@ -53,10 +53,12 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "email": "faster@takeldienstfaster.be",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Merksem"
+          "name": "Merksem",
+          "@type": "City"
         },
         {
           "name": "Antwerpse ring",
@@ -67,91 +69,89 @@
           "@type": "Place"
         }
       ],
-      "priceRange": "€€",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@type": "LocalBusiness",
-      "url": "https://takeldienstfaster.be/",
       "@id": "https://takeldienstfaster.be/#business",
-      "name": "Faster Depannage Takeldienst",
-      "telephone": "+3233756737",
+      "@type": "LocalBusiness",
       "address": {
+        "addressCountry": "BE",
         "addressRegion": "Antwerpen",
         "streetAddress": "De Bosschaertstraat 248",
-        "addressCountry": "BE",
+        "@type": "PostalAddress",
         "postalCode": "2020",
-        "addressLocality": "Antwerpen",
-        "@type": "PostalAddress"
-      }
+        "addressLocality": "Antwerpen"
+      },
+      "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/",
+      "priceRange": "€€"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "name": "Strona główna",
+          "item": "https://takeldienstfaster.be/pl/",
           "@type": "ListItem",
-          "position": 1,
-          "item": "https://takeldienstfaster.be/pl/"
+          "position": 1
         },
         {
+          "item": "https://takeldienstfaster.be/takeldienst/",
           "name": "Pomoc drogowa",
           "position": 2,
-          "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "@type": "ListItem"
         },
         {
           "position": 3,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/pl/takeldienst/merksem/",
-          "name": "Merksem"
+          "name": "Merksem",
+          "item": "https://takeldienstfaster.be/pl/takeldienst/merksem/"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Zazwyczaj około 20 minut. Wyruszam z Kiel przez N148 na obwodnicę Antwerpii, a potem albo zjeżdżam zjazdem Merksem, albo jadę dalej do Deurne i przez most — w zależności od tego, gdzie dokładnie Państwo stoją. Przy dużym ruchu na obwodnicy może to potrwać dłużej."
           },
-          "name": "Jak szybko są Państwo w Merksem?"
+          "name": "Jak szybko są Państwo w Merksem?",
+          "@type": "Question"
         },
         {
           "@type": "Question",
+          "name": "Ile kosztuje pomoc drogowa w Merksem?",
           "acceptedAnswer": {
             "text": "Proszę zadzwonić lub napisać do mnie na WhatsApp, opisując sytuację. Cenę podam od razu, zanim wyruszę.",
             "@type": "Answer"
-          },
-          "name": "Ile kosztuje pomoc drogowa w Merksem?"
+          }
         },
         {
-          "name": "Czy dobrze znają Państwo Merksem?",
           "@type": "Question",
+          "name": "Czy dobrze znają Państwo Merksem?",
           "acceptedAnswer": {
-            "text": "Tak. Kiedyś pracowałem w fabryce Arvesta w pobliżu Merksem i chodziłem tam też do szkoły. Znam też kilka małych, niezależnych warsztatów i zakładów blacharskich w gminie.",
-            "@type": "Answer"
+            "@type": "Answer",
+            "text": "Tak. Kiedyś pracowałem w fabryce Arvesta w pobliżu Merksem i chodziłem tam też do szkoły. Znam też kilka małych, niezależnych warsztatów i zakładów blacharskich w gminie."
           }
         },
         {
           "name": "Co jeśli mój samochód ulegnie awarii na obwodnicy przy Merksem?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Większość zgłoszeń z Merksem pochodzi z samej obwodnicy, często od starszych pojazdów, które psują się z różnych powodów. Proszę włączyć światła awaryjne, stanąć jak najbezpieczniej i zadzwonić — wiem, którym zjazdem jechać."
-          }
+          },
+          "@type": "Question"
         },
         {
-          "acceptedAnswer": {
-            "text": "Tak. Oprócz samochodów osobowych zajmuję się też samochodami dostawczymi, wózkami widłowymi, maszynami i transportem międzynarodowym.",
-            "@type": "Answer"
-          },
           "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tak. Oprócz samochodów osobowych zajmuję się też samochodami dostawczymi, wózkami widłowymi, maszynami i transportem międzynarodowym."
+          },
           "name": "Czy mogą Państwo przewozić również samochody dostawcze, wózki widłowe lub maszyny?"
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
   ]
 }

@@ -50,29 +50,15 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressLocality": "Antwerpen",
-        "addressCountry": "BE",
-        "postalCode": "2020",
-        "addressRegion": "Antwerpen"
-      },
-      "email": "faster@takeldienstfaster.be",
-      "url": "https://takeldienstfaster.be/",
-      "priceRange": "€€",
-      "telephone": "+3233756737",
-      "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@id": "https://takeldienstfaster.be/#business",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "name": "Faster Depannage Takeldienst",
+      "telephone": "+3233756737",
       "areaServed": [
         {
-          "name": "Puurs-Sint-Amands",
-          "@type": "City"
+          "@type": "City",
+          "name": "Puurs-Sint-Amands"
         },
         {
           "@type": "Place",
@@ -83,97 +69,111 @@
           "name": "Sint-Amands"
         },
         {
-          "name": "Ruisbroek",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Ruisbroek"
         },
         {
-          "name": "A12",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "A12"
         },
         {
           "@type": "Place",
           "name": "N16"
         }
-      ]
+      ],
+      "email": "faster@takeldienstfaster.be",
+      "@type": "LocalBusiness",
+      "@id": "https://takeldienstfaster.be/#business",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/",
+      "address": {
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "postalCode": "2020",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen"
+      },
+      "priceRange": "€€",
+      "name": "Faster Depannage Takeldienst"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "name": "Startseite",
-          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/de/",
-          "position": 1
+          "position": 1,
+          "name": "Startseite",
+          "@type": "ListItem"
         },
         {
+          "name": "Abschleppdienst",
+          "@type": "ListItem",
           "position": 2,
-          "item": "https://takeldienstfaster.be/takeldienst/",
-          "@type": "ListItem",
-          "name": "Abschleppdienst"
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
+          "name": "Puurs-Sint-Amands",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/de/takeldienst/puurs-sint-amands/",
           "position": 3,
-          "name": "Puurs-Sint-Amands"
+          "item": "https://takeldienstfaster.be/de/takeldienst/puurs-sint-amands/"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
       "mainEntity": [
         {
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oft bin ich von Antwerpen-Süd/Hoboken aus in etwa 20 bis 30 Minuten vor Ort. Das ist ein Richtwert, keine Garantie: Verkehr, Ort und Situation spielen mit."
+            "text": "Oft bin ich von Antwerpen-Süd/Hoboken aus in etwa 20 bis 30 Minuten vor Ort. Das ist ein Richtwert, keine Garantie: Verkehr, Ort und Situation spielen mit.",
+            "@type": "Answer"
           },
+          "@type": "Question",
           "name": "Wie schnell können Sie in Puurs sein?"
         },
         {
           "@type": "Question",
+          "name": "Sind Sie 24/7 erreichbar?",
           "acceptedAnswer": {
             "text": "Ja. Faster ist 24/7 erreichbar, auch abends, nachts und am Wochenende.",
             "@type": "Answer"
-          },
-          "name": "Sind Sie 24/7 erreichbar?"
+          }
         },
         {
+          "@type": "Question",
+          "name": "Können Sie auf der A12 bei Puurs helfen?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ja, wenn das sicher und erreichbar ist. Sorgen Sie zuerst dafür, dass Sie an einem sicheren Ort stehen, und rufen Sie mich dann an, ich schaue sofort, was nötig ist."
-          },
-          "@type": "Question",
-          "name": "Können Sie auf der A12 bei Puurs helfen?"
-        },
-        {
-          "name": "Helfen Sie auch bei einer leeren Batterie?",
-          "@type": "Question",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja. Wo möglich versuche ich, das Fahrzeug mit einem Booster zu starten. Klappt das nicht, organisiere ich Abschleppdienst oder Transport."
           }
         },
         {
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ja. Rund um Puurs fahre ich regelmäßig für Werkstätten, Autohändler und Unternehmen, die ein Fahrzeug irgendwohin bringen müssen."
+            "text": "Ja. Wo möglich versuche ich, das Fahrzeug mit einem Booster zu starten. Klappt das nicht, organisiere ich Abschleppdienst oder Transport."
           },
+          "name": "Helfen Sie auch bei einer leeren Batterie?",
+          "@type": "Question"
+        },
+        {
           "@type": "Question",
-          "name": "Transportieren Sie auch Autos für Werkstätten und Händler?"
+          "name": "Transportieren Sie auch Autos für Werkstätten und Händler?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Rund um Puurs fahre ich regelmäßig für Werkstätten, Autohändler und Unternehmen, die ein Fahrzeug irgendwohin bringen müssen."
+          }
         },
         {
           "name": "Arbeiten Sie nur in Puurs?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nein. Ich bin in Puurs-Sint-Amands und der umliegenden Region aktiv, und Fahrzeugtransport kann auch viel weiter gehen."
-          },
-          "@type": "Question"
+            "text": "Nein. Ich bin in Puurs-Sint-Amands und der umliegenden Region aktiv, und Fahrzeugtransport kann auch viel weiter gehen.",
+            "@type": "Answer"
+          }
         }
       ],
       "@type": "FAQPage"
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 

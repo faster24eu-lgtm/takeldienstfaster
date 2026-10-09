@@ -49,74 +49,73 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@id": "https://takeldienstfaster.be/#business",
+      "email": "faster@takeldienstfaster.be",
+      "@type": "LocalBusiness",
+      "address": {
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "addressCountry": "BE",
+        "addressLocality": "Antwerpen",
+        "addressRegion": "Antwerpen",
+        "postalCode": "2020"
+      },
       "url": "https://takeldienstfaster.be/",
-      "name": "Faster Depannage Takeldienst",
       "areaServed": {
         "name": "België",
         "@type": "Country"
       },
       "telephone": "+3233756737",
-      "email": "faster@takeldienstfaster.be",
-      "@type": "LocalBusiness",
-      "address": {
-        "addressRegion": "Antwerpen",
-        "postalCode": "2020",
-        "addressCountry": "BE",
-        "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "@type": "PostalAddress"
-      },
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "name": "Faster Depannage Takeldienst",
+      "@id": "https://takeldienstfaster.be/#business"
     },
     {
-      "@type": "Service",
       "serviceType": "Lkw-Pannenhilfe",
-      "provider": {
-        "@id": "https://takeldienstfaster.be/#business"
-      },
       "areaServed": {
         "name": "België",
         "@type": "Country"
       },
       "description": "Pannenhilfe, Abschleppen und Transport von Lkw, Aufliegern, Bussen, Reisebussen und Maschinen ab 3,5 Tonnen.",
-      "name": "Pannenhilfe und Abschleppdienst für Lkw"
+      "name": "Pannenhilfe und Abschleppdienst für Lkw",
+      "provider": {
+        "@id": "https://takeldienstfaster.be/#business"
+      },
+      "@type": "Service"
     },
     {
       "itemListElement": [
         {
-          "name": "Startseite",
-          "item": "https://takeldienstfaster.be/de/",
           "@type": "ListItem",
-          "position": 1
+          "name": "Startseite",
+          "position": 1,
+          "item": "https://takeldienstfaster.be/de/"
         },
         {
+          "name": "Lkw-Pannenhilfe",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/de/depannage-vrachtwagen/",
           "position": 2,
-          "name": "Lkw-Pannenhilfe"
+          "item": "https://takeldienstfaster.be/de/depannage-vrachtwagen/"
         }
       ],
       "@type": "BreadcrumbList"
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Auf den flämischen Autobahnen, Standstreifen und Parkplätzen entlang der Autobahn wird ein Fahrzeug, das nicht mehr fahren kann, vom FAST-Abschleppdienst abgeholt, der für diesen Autobahnabschnitt zuständig ist. Danach übernehmen wir: vom Depot zu Ihrer Werkstatt, Markenwerkstatt, Ihrem eigenen Gelände oder zurück ins Ausland.",
             "@type": "Answer"
           },
-          "name": "Mein Lkw steht auf der Autobahn still. Darf ich Sie dann direkt anrufen?"
+          "name": "Mein Lkw steht auf der Autobahn still. Darf ich Sie dann direkt anrufen?",
+          "@type": "Question"
         },
         {
-          "name": "Was kostet eine Lkw-Pannenhilfe?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Das hängt vom Gewicht, dem Ort, der Entfernung, der Uhrzeit und davon ab, was vor Ort geschehen muss. Sie bekommen den Preis, bevor wir losfahren. Ein Abschleppen mit Kran nach einem Umkippen ist etwas anderes als eine Zugmaschine, die auf einem Parkplatz einfach nicht mehr anspringt.",
-            "@type": "Answer"
-          }
+            "@type": "Answer",
+            "text": "Das hängt vom Gewicht, dem Ort, der Entfernung, der Uhrzeit und davon ab, was vor Ort geschehen muss. Sie bekommen den Preis, bevor wir losfahren. Ein Abschleppen mit Kran nach einem Umkippen ist etwas anderes als eine Zugmaschine, die auf einem Parkplatz einfach nicht mehr anspringt."
+          },
+          "@type": "Question",
+          "name": "Was kostet eine Lkw-Pannenhilfe?"
         },
         {
           "name": "Helfen Sie auch bei Bussen und Reisebussen?",
@@ -128,13 +127,14 @@
         },
         {
           "name": "Transportieren Sie auch Maschinen und Baustellenmaterial?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Ja: Bagger, Teleskoplader, Gabelstapler, Hubarbeitsbühnen und anderes rollendes Gerät. Für das, was zu breit, zu hoch oder zu schwer ist, organisieren wir einen Tieflader und wo nötig die Genehmigung für Sondertransporte.",
-            "@type": "Answer"
-          },
-          "@type": "Question"
+            "@type": "Answer",
+            "text": "Ja: Bagger, Teleskoplader, Gabelstapler, Hubarbeitsbühnen und anderes rollendes Gerät. Für das, was zu breit, zu hoch oder zu schwer ist, organisieren wir einen Tieflader und wo nötig die Genehmigung für Sondertransporte."
+          }
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
   ]
 }

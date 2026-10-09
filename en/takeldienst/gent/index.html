@@ -53,61 +53,62 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "url": "https://takeldienstfaster.be/",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "address": {
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressRegion": "Antwerpen",
+        "addressCountry": "BE",
+        "postalCode": "2020",
+        "@type": "PostalAddress",
+        "addressLocality": "Antwerpen"
+      },
       "areaServed": [
         {
           "name": "Gent",
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Merelbeke"
+          "name": "Merelbeke",
+          "@type": "City"
         },
         {
           "@type": "City",
           "name": "Destelbergen"
         },
         {
-          "name": "Evergem",
-          "@type": "City"
+          "@type": "City",
+          "name": "Evergem"
         },
         {
           "@type": "City",
           "name": "Deinze"
         },
         {
-          "@type": "Place",
-          "name": "R4"
+          "name": "R4",
+          "@type": "Place"
         },
         {
           "name": "E17",
           "@type": "Place"
         }
       ],
-      "@id": "https://takeldienstfaster.be/#business",
+      "email": "faster@takeldienstfaster.be",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "name": "Faster Depannage Takeldienst",
-      "address": {
-        "addressCountry": "BE",
-        "@type": "PostalAddress",
-        "addressRegion": "Antwerpen",
-        "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "postalCode": "2020"
-      },
-      "priceRange": "€€",
-      "url": "https://takeldienstfaster.be/",
       "@type": "LocalBusiness",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
-      "telephone": "+3233756737"
+      "telephone": "+3233756737",
+      "priceRange": "€€",
+      "@id": "https://takeldienstfaster.be/#business"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/",
           "position": 1,
+          "name": "Home",
           "@type": "ListItem",
-          "name": "Home"
+          "item": "https://takeldienstfaster.be/en/"
         },
         {
           "position": 2,
@@ -116,23 +117,22 @@
           "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
-          "position": 3,
-          "@type": "ListItem",
           "name": "Ghent",
-          "item": "https://takeldienstfaster.be/en/takeldienst/gent/"
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/en/takeldienst/gent/",
+          "position": 3
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
       "mainEntity": [
         {
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Faster can be reached 24/7, also in the evening, at night and at weekends."
-          },
+          "@type": "Question",
           "name": "Can you be reached 24/7 in Ghent?",
-          "@type": "Question"
+          "acceptedAnswer": {
+            "text": "Yes. Faster can be reached 24/7, also in the evening, at night and at weekends.",
+            "@type": "Answer"
+          }
         },
         {
           "acceptedAnswer": {
@@ -143,52 +143,52 @@
           "name": "How quickly can you be in Ghent?"
         },
         {
+          "name": "Can you take my car to my own garage in Ghent?",
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes. You choose where the vehicle goes; we give advice if that is useful."
-          },
-          "@type": "Question",
-          "name": "Can you take my car to my own garage in Ghent?"
+          }
         },
         {
+          "name": "Do you also transport vans in Ghent?",
+          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Yes, vehicles up to 3.5 tonnes."
-          },
-          "@type": "Question",
-          "name": "Do you also transport vans in Ghent?"
+          }
         },
         {
-          "@type": "Question",
-          "name": "Do you also help with a car that won’t start?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Often, yes. We first look at what is going on and whether the problem can be solved on the spot, or whether the vehicle needs to be towed after all."
-          }
+            "text": "Often, yes. We first look at what is going on and whether the problem can be solved on the spot, or whether the vehicle needs to be towed after all.",
+            "@type": "Answer"
+          },
+          "@type": "Question",
+          "name": "Do you also help with a car that won’t start?"
         },
         {
           "acceptedAnswer": {
             "text": "Yes. Not every trip is urgent. If the vehicle is already safe, we simply schedule the transport.",
             "@type": "Answer"
           },
-          "name": "Do you also do planned transports in Ghent?",
-          "@type": "Question"
+          "@type": "Question",
+          "name": "Do you also do planned transports in Ghent?"
         },
         {
+          "@type": "Question",
+          "name": "Do you also transport vehicles internationally?",
           "acceptedAnswer": {
             "text": "Yes. We know the route and work with a network of contacts for international transport.",
             "@type": "Answer"
-          },
-          "@type": "Question",
-          "name": "Do you also transport vehicles internationally?"
+          }
         },
         {
-          "@type": "Question",
-          "name": "How does the price work?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "We discuss the price in advance. If you pass on the correct information, we stick to that agreement."
-          }
+          },
+          "name": "How does the price work?",
+          "@type": "Question"
         }
       ],
       "@type": "FAQPage"
@@ -215,9 +215,9 @@
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="../../../index.html" aria-label="Faster towing service home"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
+      <a class="brand" href="../../index.html" aria-label="Faster towing service home"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="../../diensten/">Services</a> <a href="../../../#hoe-het-werkt">How it works</a> <a href="../../../#werkgebied">Service area</a>
+        <a href="../../diensten/">Services</a> <a href="../../#hoe-het-werkt">How it works</a> <a href="../../#werkgebied">Service area</a>
         
         
       </nav>
@@ -565,7 +565,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand brand-footer" href="../../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
+        <a class="brand brand-footer" href="../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
         <p class="footer-copy">Personal towing service, active throughout Flanders. From a short local intervention to international vehicle transport.</p>
       </div>
       <div><h3>Services</h3><a href="../../diensten/#pechverhelping">Breakdown assistance</a><a href="../../diensten/#takeldienst">Towing & recovery</a><a href="../../diensten/#transport">Car transport</a><a href="../../diensten/#internationaal">International</a></div>

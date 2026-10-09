@@ -53,20 +53,23 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/",
       "address": {
-        "postalCode": "2020",
-        "addressCountry": "BE",
-        "@type": "PostalAddress",
         "addressRegion": "Antwerpen",
         "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248"
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "addressCountry": "BE",
+        "postalCode": "2020"
       },
-      "url": "https://takeldienstfaster.be/",
+      "name": "Faster Depannage Takeldienst",
+      "@type": "LocalBusiness",
+      "@id": "https://takeldienstfaster.be/#business",
+      "telephone": "+3233756737",
       "areaServed": [
         {
-          "name": "Hemiksem",
-          "@type": "City"
+          "@type": "City",
+          "name": "Hemiksem"
         },
         {
           "@type": "Place",
@@ -77,39 +80,35 @@
           "@type": "Place"
         }
       ],
-      "@type": "LocalBusiness",
-      "priceRange": "€€",
-      "email": "faster@takeldienstfaster.be",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "@id": "https://takeldienstfaster.be/#business",
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst"
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "priceRange": "€€",
+      "email": "faster@takeldienstfaster.be"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/ro/",
-          "@type": "ListItem",
           "name": "Acasă",
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/ro/",
           "position": 1
         },
         {
-          "item": "https://takeldienstfaster.be/takeldienst/",
+          "@type": "ListItem",
           "position": 2,
-          "name": "Serviciu de tractare",
-          "@type": "ListItem"
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "name": "Serviciu de tractare"
         },
         {
-          "position": 3,
-          "name": "Hemiksem",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/ro/takeldienst/hemiksem/"
+          "position": 3,
+          "item": "https://takeldienstfaster.be/ro/takeldienst/hemiksem/",
+          "name": "Hemiksem"
         }
       ]
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
@@ -124,18 +123,19 @@
             "@type": "Answer",
             "text": "Comunic întotdeauna mai întâi un preț clar, înainte să plec."
           },
-          "@type": "Question",
-          "name": "Cât costă un serviciu de tractare în Hemiksem?"
+          "name": "Cât costă un serviciu de tractare în Hemiksem?",
+          "@type": "Question"
         },
         {
-          "name": "Ajutați și la transportul unei mașini second-hand tocmai cumpărate?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Pe lângă intervențiile la pană fac din când în când și transport de vehicule, de exemplu după cumpărarea unei mașini second-hand."
+            "text": "Da. Pe lângă intervențiile la pană fac din când în când și transport de vehicule, de exemplu după cumpărarea unei mașini second-hand.",
+            "@type": "Answer"
           },
+          "name": "Ajutați și la transportul unei mașini second-hand tocmai cumpărate?",
           "@type": "Question"
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
   ]
 }

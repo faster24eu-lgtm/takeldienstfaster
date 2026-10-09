@@ -50,53 +50,53 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
-      "address": {
-        "postalCode": "2020",
-        "addressLocality": "Antwerpen",
-        "@type": "PostalAddress",
-        "addressCountry": "BE",
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248"
-      },
-      "url": "https://takeldienstfaster.be/",
-      "telephone": "+3233756737",
-      "name": "Faster Depannage Takeldienst",
-      "email": "faster@takeldienstfaster.be",
-      "@id": "https://takeldienstfaster.be/#business",
+      "@type": "LocalBusiness",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/",
+      "@id": "https://takeldienstfaster.be/#business",
+      "telephone": "+3233756737",
       "areaServed": {
         "@type": "City",
         "name": "Aartselaar"
       },
-      "@type": "LocalBusiness"
+      "email": "faster@takeldienstfaster.be",
+      "address": {
+        "addressRegion": "Antwerpen",
+        "addressCountry": "BE",
+        "postalCode": "2020",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressLocality": "Antwerpen"
+      },
+      "name": "Faster Depannage Takeldienst"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "@type": "ListItem",
           "name": "Accueil",
+          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/fr/",
           "position": 1
         },
         {
-          "item": "https://takeldienstfaster.be/takeldienst/",
+          "name": "Service de remorquage",
           "position": 2,
           "@type": "ListItem",
-          "name": "Service de remorquage"
+          "item": "https://takeldienstfaster.be/takeldienst/"
         },
         {
-          "@type": "ListItem",
-          "name": "Aartselaar",
+          "position": 3,
           "item": "https://takeldienstfaster.be/fr/takeldienst/aartselaar/",
-          "position": 3
+          "@type": "ListItem",
+          "name": "Aartselaar"
         }
       ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

@@ -53,48 +53,48 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "url": "https://takeldienstfaster.be/",
+      "email": "faster@takeldienstfaster.be",
+      "areaServed": {
+        "@type": "City",
+        "name": "Wilrijk"
+      },
+      "@id": "https://takeldienstfaster.be/#business",
       "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "address": {
-        "postalCode": "2020",
         "addressLocality": "Antwerpen",
         "@type": "PostalAddress",
-        "addressRegion": "Antwerpen",
+        "postalCode": "2020",
         "streetAddress": "De Bosschaertstraat 248",
+        "addressRegion": "Antwerpen",
         "addressCountry": "BE"
       },
-      "name": "Faster Depannage Takeldienst",
       "telephone": "+3233756737",
-      "@id": "https://takeldienstfaster.be/#business",
-      "areaServed": {
-        "name": "Wilrijk",
-        "@type": "City"
-      },
-      "email": "faster@takeldienstfaster.be"
+      "name": "Faster Depannage Takeldienst",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "name": "Strona główna",
+          "item": "https://takeldienstfaster.be/pl/",
           "@type": "ListItem",
-          "position": 1,
-          "item": "https://takeldienstfaster.be/pl/"
+          "position": 1
         },
         {
-          "item": "https://takeldienstfaster.be/takeldienst/",
           "@type": "ListItem",
           "position": 2,
+          "item": "https://takeldienstfaster.be/takeldienst/",
           "name": "Pomoc drogowa"
         },
         {
-          "name": "Wilrijk",
-          "item": "https://takeldienstfaster.be/pl/takeldienst/wilrijk/",
           "@type": "ListItem",
-          "position": 3
+          "position": 3,
+          "item": "https://takeldienstfaster.be/pl/takeldienst/wilrijk/",
+          "name": "Wilrijk"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     }
   ]
 }

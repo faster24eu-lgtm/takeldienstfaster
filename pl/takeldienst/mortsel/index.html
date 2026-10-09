@@ -50,114 +50,114 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
       "email": "faster@takeldienstfaster.be",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "priceRange": "€€",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Mortsel"
+          "name": "Mortsel",
+          "@type": "City"
         },
         {
           "name": "Mortsel centrum",
           "@type": "Place"
         },
         {
-          "@type": "Place",
-          "name": "A12"
+          "name": "A12",
+          "@type": "Place"
         },
         {
           "@type": "Place",
           "name": "R11"
         }
       ],
-      "address": {
-        "@type": "PostalAddress",
-        "postalCode": "2020",
-        "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE"
-      },
-      "name": "Faster Depannage Takeldienst",
-      "telephone": "+3233756737",
       "@id": "https://takeldienstfaster.be/#business",
-      "url": "https://takeldienstfaster.be/",
       "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
+      "address": {
+        "addressRegion": "Antwerpen",
+        "addressCountry": "BE",
+        "addressLocality": "Antwerpen",
+        "postalCode": "2020",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248"
+      },
+      "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/",
+      "priceRange": "€€"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "name": "Strona główna",
-          "position": 1,
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/pl/"
+          "position": 1,
+          "item": "https://takeldienstfaster.be/pl/",
+          "name": "Strona główna"
         },
         {
-          "name": "Pomoc drogowa",
           "item": "https://takeldienstfaster.be/takeldienst/",
+          "name": "Pomoc drogowa",
           "position": 2,
           "@type": "ListItem"
         },
         {
-          "name": "Mortsel",
-          "item": "https://takeldienstfaster.be/pl/takeldienst/mortsel/",
+          "@type": "ListItem",
           "position": 3,
-          "@type": "ListItem"
+          "name": "Mortsel",
+          "item": "https://takeldienstfaster.be/pl/takeldienst/mortsel/"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "name": "Jak szybko są Państwo w Mortsel?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Mortsel leży blisko mojej bazy w Hoboken. Przez A12 i R11 jestem zwykle na miejscu w około 15–25 minut, w zależności od ruchu i dostępności."
-          }
+            "text": "Mortsel leży blisko mojej bazy w Hoboken. Przez A12 i R11 jestem zwykle na miejscu w około 15–25 minut, w zależności od ruchu i dostępności.",
+            "@type": "Answer"
+          },
+          "@type": "Question"
         },
         {
+          "@type": "Question",
+          "name": "Ile kosztuje pomoc drogowa w Mortsel?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Zawsze potwierdzam cenę z klientem, zanim wyruszę."
-          },
-          "@type": "Question",
-          "name": "Ile kosztuje pomoc drogowa w Mortsel?"
+          }
         },
         {
-          "name": "Dlaczego klienci w Mortsel wybierają Faster?",
           "@type": "Question",
+          "name": "Dlaczego klienci w Mortsel wybierają Faster?",
           "acceptedAnswer": {
-            "text": "Przede wszystkim dlatego, że jestem blisko, mogę szybko być na miejscu i stosuję rozsądną cenę.",
+            "@type": "Answer",
+            "text": "Przede wszystkim dlatego, że jestem blisko, mogę szybko być na miejscu i stosuję rozsądną cenę."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Czy wykonują Państwo również transport pojazdów w Mortsel?",
+          "acceptedAnswer": {
+            "text": "Tak. Oprócz pomocy drogowej i holowania zajmuję się też transportem pojazdów, na przykład przy odbiorze lub dostarczeniu pojazdu.",
             "@type": "Answer"
           }
         },
         {
-          "name": "Czy wykonują Państwo również transport pojazdów w Mortsel?",
           "@type": "Question",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tak. Oprócz pomocy drogowej i holowania zajmuję się też transportem pojazdów, na przykład przy odbiorze lub dostarczeniu pojazdu."
-          }
-        },
-        {
-          "name": "Czy dobrze znają Państwo Mortsel?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Tak. Mam w Mortsel już dłuższe doświadczenie, m.in. w odbieraniu i dostarczaniu pojazdów (w tym samochodów leasingowych na koniec umowy), interwencjach w centrum i odbieraniu pojazdów z Cryns Carrosserie."
           },
-          "@type": "Question"
+          "name": "Czy dobrze znają Państwo Mortsel?"
         }
       ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

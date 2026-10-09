@@ -51,29 +51,10 @@
 
   <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "email": "faster@takeldienstfaster.be",
-      "telephone": "+3233756737",
-      "priceRange": "€€",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "BE",
-        "addressRegion": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressLocality": "Antwerpen",
-        "postalCode": "2020"
-      },
-      "url": "https://takeldienstfaster.be/",
-      "name": "Faster Depannage Takeldienst",
-      "@type": "LocalBusiness",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "sameAs": [
-        "https://wa.me/3233756737"
-      ],
-      "@id": "https://takeldienstfaster.be/#business",
       "areaServed": [
         {
           "@type": "City",
@@ -84,12 +65,12 @@
           "name": "Wilrijk"
         },
         {
-          "name": "Hoboken",
-          "@type": "City"
+          "@type": "City",
+          "name": "Hoboken"
         },
         {
-          "name": "Deurne",
-          "@type": "City"
+          "@type": "City",
+          "name": "Deurne"
         },
         {
           "@type": "City",
@@ -100,43 +81,61 @@
           "@type": "City"
         },
         {
-          "name": "Merksem",
-          "@type": "City"
+          "@type": "City",
+          "name": "Merksem"
         },
         {
           "name": "Edegem",
           "@type": "City"
         },
         {
-          "name": "Wommelgem",
-          "@type": "City"
+          "@type": "City",
+          "name": "Wommelgem"
         },
         {
-          "@type": "City",
-          "name": "Mortsel"
+          "name": "Mortsel",
+          "@type": "City"
         },
         {
           "@type": "City",
           "name": "Kontich"
         },
         {
-          "@type": "City",
-          "name": "Aartselaar"
+          "name": "Aartselaar",
+          "@type": "City"
         }
-      ]
+      ],
+      "@id": "https://takeldienstfaster.be/#business",
+      "priceRange": "€€",
+      "telephone": "+3233756737",
+      "name": "Faster Depannage Takeldienst",
+      "@type": "LocalBusiness",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "sameAs": [
+        "https://wa.me/3233756737"
+      ],
+      "url": "https://takeldienstfaster.be/",
+      "address": {
+        "addressCountry": "BE",
+        "addressRegion": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
+        "@type": "PostalAddress",
+        "addressLocality": "Antwerpen",
+        "postalCode": "2020"
+      }
     },
     {
       "itemListElement": [
         {
-          "position": 1,
-          "name": "Home",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/"
+          "name": "Home",
+          "item": "https://takeldienstfaster.be/en/",
+          "position": 1
         },
         {
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "name": "Towing service",
           "@type": "ListItem",
+          "name": "Towing service",
           "position": 2
         },
         {
@@ -148,7 +147,8 @@
       ],
       "@type": "BreadcrumbList"
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 
@@ -178,9 +178,9 @@ a.price-caps{font-weight:800}
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="../../../index.html" aria-label="Faster home"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
+      <a class="brand" href="../../index.html" aria-label="Faster home"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="../../diensten/">Services</a> <a href="../../../#hoe-het-werkt">How it works</a> <a href="../../../#werkgebied">Service area</a>
+        <a href="../../diensten/">Services</a> <a href="../../#hoe-het-werkt">How it works</a> <a href="../../#werkgebied">Service area</a>
         
         
       </nav>
@@ -476,7 +476,7 @@ a.price-caps{font-weight:800}
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand brand-footer" href="../../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
+        <a class="brand brand-footer" href="../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
         <p class="footer-copy">Personal towing service from Antwerp. From local breakdown assistance to vehicle transport and international jobs.</p>
       </div>
       <div><h3>Services</h3><a href="../../diensten/#pechverhelping">Breakdown assistance</a><a href="../../diensten/#takeldienst">Towing & recovery</a><a href="../../diensten/#transport">Car transport</a><a href="../../diensten/#machines">Machines & forklifts</a><a href="../../diensten/#internationaal">International</a></div>

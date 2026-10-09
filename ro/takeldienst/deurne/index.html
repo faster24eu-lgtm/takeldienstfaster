@@ -52,102 +52,102 @@
 {
   "@graph": [
     {
-      "email": "faster@takeldienstfaster.be",
-      "priceRange": "€€",
-      "@type": "LocalBusiness",
-      "areaServed": [
-        {
-          "@type": "City",
-          "name": "Deurne"
-        },
-        {
-          "@type": "Place",
-          "name": "Lotto Arena"
-        },
-        {
-          "@type": "Place",
-          "name": "N120"
-        }
-      ],
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
       "address": {
-        "streetAddress": "De Bosschaertstraat 248",
-        "addressLocality": "Antwerpen",
         "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "streetAddress": "De Bosschaertstraat 248",
         "addressCountry": "BE",
-        "postalCode": "2020",
-        "@type": "PostalAddress"
+        "@type": "PostalAddress",
+        "postalCode": "2020"
       },
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "url": "https://takeldienstfaster.be/",
       "name": "Faster Depannage Takeldienst",
+      "@type": "LocalBusiness",
       "@id": "https://takeldienstfaster.be/#business",
-      "telephone": "+3233756737"
+      "areaServed": [
+        {
+          "name": "Deurne",
+          "@type": "City"
+        },
+        {
+          "name": "Lotto Arena",
+          "@type": "Place"
+        },
+        {
+          "name": "N120",
+          "@type": "Place"
+        }
+      ],
+      "telephone": "+3233756737",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "email": "faster@takeldienstfaster.be",
+      "priceRange": "€€"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "@type": "ListItem",
-          "name": "Acasă",
+          "item": "https://takeldienstfaster.be/ro/",
           "position": 1,
-          "item": "https://takeldienstfaster.be/ro/"
+          "@type": "ListItem",
+          "name": "Acasă"
         },
         {
-          "item": "https://takeldienstfaster.be/takeldienst/",
-          "@type": "ListItem",
+          "name": "Serviciu de tractare",
           "position": 2,
-          "name": "Serviciu de tractare"
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "@type": "ListItem"
         },
         {
+          "name": "Deurne",
           "item": "https://takeldienstfaster.be/ro/takeldienst/deurne/",
-          "@type": "ListItem",
           "position": 3,
-          "name": "Deurne"
+          "@type": "ListItem"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
       "mainEntity": [
         {
-          "acceptedAnswer": {
-            "text": "De obicei ajung la marginea cartierului Deurne în aproximativ 13 minute, la ieșirea de lângă Lotto Arena. De acolo ajung repede la dumneavoastră, oriunde în Deurne v-ați afla.",
-            "@type": "Answer"
-          },
           "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "De obicei ajung la marginea cartierului Deurne în aproximativ 13 minute, la ieșirea de lângă Lotto Arena. De acolo ajung repede la dumneavoastră, oriunde în Deurne v-ați afla."
+          },
           "name": "Cât de repede ajungeți în Deurne?"
         },
         {
+          "name": "Cât costă un serviciu de tractare în Deurne?",
           "acceptedAnswer": {
             "text": "Sunați-mă sau scrieți-mi pe WhatsApp cu situația dumneavoastră. Vă comunic prețul imediat, înainte să plec.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Cât costă un serviciu de tractare în Deurne?"
+          "@type": "Question"
         },
         {
           "acceptedAnswer": {
             "text": "Cele mai multe recuperări au loc pe și în jurul N120 și pe străzile laterale. Cunosc bine și service-urile de pe Ten Eekhovelei și Bisschoppenhoflaan.",
             "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Unde au loc cele mai multe intervenții în Deurne?"
+          "name": "Unde au loc cele mai multe intervenții în Deurne?",
+          "@type": "Question"
         },
         {
           "name": "Colaborați cu service-uri sau specialiști din Deurne?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Pentru piese colaborez cu Victoria Auto Parts și Recuparts. Pe Melkerijstraat colaborez cu Old School Mechanics pentru lucrări specializate la motor și cu AM Tronic, vecinul lor, pentru programarea computerelor de bord."
-          }
-        },
-        {
-          "@type": "Question",
-          "acceptedAnswer": {
-            "text": "Da. Preiau regulat vehicule de la Ford Van Mossel și de la alți dealeri din apropiere.",
+            "text": "Da. Pentru piese colaborez cu Victoria Auto Parts și Recuparts. Pe Melkerijstraat colaborez cu Old School Mechanics pentru lucrări specializate la motor și cu AM Tronic, vecinul lor, pentru programarea computerelor de bord.",
             "@type": "Answer"
           },
-          "name": "Puteți prelua vehicule de la dealeri din Deurne?"
+          "@type": "Question"
+        },
+        {
+          "name": "Puteți prelua vehicule de la dealeri din Deurne?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da. Preiau regulat vehicule de la Ford Van Mossel și de la alți dealeri din apropiere."
+          },
+          "@type": "Question"
         }
       ],
       "@type": "FAQPage"

@@ -53,33 +53,37 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "name": "Faster Depannage Takeldienst",
+      "@type": "LocalBusiness",
+      "@id": "https://takeldienstfaster.be/#business",
       "url": "https://takeldienstfaster.be/",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
       "address": {
-        "addressCountry": "BE",
-        "postalCode": "2020",
         "@type": "PostalAddress",
+        "addressCountry": "BE",
         "streetAddress": "De Bosschaertstraat 248",
         "addressLocality": "Antwerpen",
-        "addressRegion": "Antwerpen"
+        "addressRegion": "Antwerpen",
+        "postalCode": "2020"
       },
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "priceRange": "€€",
+      "email": "faster@takeldienstfaster.be",
+      "telephone": "+3233756737",
       "areaServed": [
         {
-          "name": "Gent",
-          "@type": "City"
+          "@type": "City",
+          "name": "Gent"
         },
         {
-          "@type": "City",
-          "name": "Merelbeke"
+          "name": "Merelbeke",
+          "@type": "City"
         },
         {
           "name": "Destelbergen",
           "@type": "City"
         },
         {
-          "@type": "City",
-          "name": "Evergem"
+          "name": "Evergem",
+          "@type": "City"
         },
         {
           "@type": "City",
@@ -90,106 +94,102 @@
           "@type": "Place"
         },
         {
-          "name": "E17",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "E17"
         }
       ],
-      "priceRange": "€€",
-      "@type": "LocalBusiness",
-      "email": "faster@takeldienstfaster.be",
-      "telephone": "+3233756737",
-      "@id": "https://takeldienstfaster.be/#business",
-      "name": "Faster Depannage Takeldienst"
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/ro/",
+          "@type": "ListItem",
           "position": 1,
-          "name": "Acasă",
-          "@type": "ListItem"
+          "item": "https://takeldienstfaster.be/ro/",
+          "name": "Acasă"
         },
         {
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "name": "Serviciu de tractare",
           "position": 2,
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "name": "Serviciu de tractare"
         },
         {
           "@type": "ListItem",
-          "name": "Gent",
           "position": 3,
-          "item": "https://takeldienstfaster.be/ro/takeldienst/gent/"
+          "item": "https://takeldienstfaster.be/ro/takeldienst/gent/",
+          "name": "Gent"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Faster poate fi contactat 24/7, și seara, noaptea și în weekend."
-          },
-          "@type": "Question",
-          "name": "Puteți fi contactați 24/7 în Gent?"
-        },
-        {
-          "@type": "Question",
-          "acceptedAnswer": {
-            "text": "Am o echipă locală în Gent. Încercăm să fim la fața locului în 30 de minute pentru a vă ajuta.",
+            "text": "Da. Faster poate fi contactat 24/7, și seara, noaptea și în weekend.",
             "@type": "Answer"
           },
-          "name": "Cât de repede puteți fi în Gent?"
+          "name": "Puteți fi contactați 24/7 în Gent?",
+          "@type": "Question"
         },
         {
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Am o echipă locală în Gent. Încercăm să fim la fața locului în 30 de minute pentru a vă ajuta."
+          },
+          "name": "Cât de repede puteți fi în Gent?",
+          "@type": "Question"
+        },
+        {
+          "@type": "Question",
           "name": "Îmi puteți duce mașina la propriul meu service din Gent?",
           "acceptedAnswer": {
             "text": "Da. Alegeți dumneavoastră unde merge vehiculul, noi vă sfătuim dacă este util.",
             "@type": "Answer"
-          },
-          "@type": "Question"
+          }
         },
         {
-          "name": "Transportați și autoutilitare în Gent?",
-          "acceptedAnswer": {
-            "text": "Da, vehicule de până la 3,5 tone.",
-            "@type": "Answer"
-          },
-          "@type": "Question"
-        },
-        {
-          "name": "Ajutați și la o mașină care nu pornește?",
           "@type": "Question",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da, vehicule de până la 3,5 tone."
+          },
+          "name": "Transportați și autoutilitare în Gent?"
+        },
+        {
+          "@type": "Question",
+          "name": "Ajutați și la o mașină care nu pornește?",
           "acceptedAnswer": {
             "text": "Adesea, da. Ne uităm mai întâi ce s-a întâmplat și dacă problema poate fi rezolvată la fața locului sau dacă vehiculul trebuie totuși tractat.",
             "@type": "Answer"
           }
         },
         {
-          "name": "Efectuați și transporturi planificate în Gent?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Da. Nu orice cursă este urgentă. Dacă vehiculul se află deja în siguranță, pur și simplu planificăm transportul.",
+            "@type": "Answer",
+            "text": "Da. Nu orice cursă este urgentă. Dacă vehiculul se află deja în siguranță, pur și simplu planificăm transportul."
+          },
+          "name": "Efectuați și transporturi planificate în Gent?"
+        },
+        {
+          "name": "Transportați vehicule și internațional?",
+          "acceptedAnswer": {
+            "text": "Da. Cunoaștem traseul și lucrăm cu o rețea de contacte pentru transportul internațional.",
             "@type": "Answer"
           },
           "@type": "Question"
         },
         {
-          "name": "Transportați vehicule și internațional?",
-          "@type": "Question",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Da. Cunoaștem traseul și lucrăm cu o rețea de contacte pentru transportul internațional."
-          }
-        },
-        {
           "name": "Cum funcționează prețul?",
-          "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Discutăm prețul în avans. Dacă transmiteți informațiile corecte, respectăm această înțelegere."
-          }
+          },
+          "@type": "Question"
         }
       ]
     }

@@ -50,35 +50,43 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "@id": "https://takeldienstfaster.be/#business",
+      "url": "https://takeldienstfaster.be/",
+      "address": {
+        "postalCode": "2020",
+        "addressLocality": "Antwerpen",
+        "addressRegion": "Antwerpen",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressCountry": "BE"
+      },
+      "priceRange": "€€",
       "name": "Faster Depannage Takeldienst",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "telephone": "+3233756737",
       "areaServed": [
         {
           "@type": "City",
           "name": "Hasselt"
         },
         {
-          "name": "Kermt",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Kermt"
         },
         {
-          "name": "Spalbeek",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Spalbeek"
         },
         {
           "@type": "Place",
           "name": "Stevoort"
         },
         {
-          "name": "Sint-Lambrechts-Herk",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Sint-Lambrechts-Herk"
         },
         {
-          "@type": "Place",
-          "name": "Stokrooie"
+          "name": "Stokrooie",
+          "@type": "Place"
         },
         {
           "name": "Wimmertingen",
@@ -89,12 +97,12 @@
           "name": "Kuringen"
         },
         {
-          "name": "Kortessem",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "Kortessem"
         },
         {
-          "name": "Zonhoven",
-          "@type": "City"
+          "@type": "City",
+          "name": "Zonhoven"
         },
         {
           "@type": "City",
@@ -110,63 +118,55 @@
         }
       ],
       "email": "faster@takeldienstfaster.be",
-      "address": {
-        "addressLocality": "Antwerpen",
-        "streetAddress": "De Bosschaertstraat 248",
-        "@type": "PostalAddress",
-        "addressCountry": "BE",
-        "postalCode": "2020",
-        "addressRegion": "Antwerpen"
-      },
-      "url": "https://takeldienstfaster.be/",
-      "telephone": "+3233756737",
-      "priceRange": "€€"
+      "@type": "LocalBusiness",
+      "@id": "https://takeldienstfaster.be/#business",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png"
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "@type": "ListItem",
+          "name": "Startseite",
           "item": "https://takeldienstfaster.be/de/",
-          "position": 1,
-          "name": "Startseite"
+          "position": 1
         },
         {
-          "name": "Abschleppdienst",
-          "@type": "ListItem",
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "position": 2
+          "position": 2,
+          "@type": "ListItem",
+          "name": "Abschleppdienst"
         },
         {
+          "@type": "ListItem",
           "name": "Abschleppdienst Limburg",
-          "position": 3,
-          "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/de/takeldienst/limburg/"
+          "item": "https://takeldienstfaster.be/de/takeldienst/limburg/",
+          "position": 3
         },
         {
-          "position": 4,
-          "item": "https://takeldienstfaster.be/de/takeldienst/hasselt/",
+          "name": "Hasselt",
           "@type": "ListItem",
-          "name": "Hasselt"
+          "position": 4,
+          "item": "https://takeldienstfaster.be/de/takeldienst/hasselt/"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     },
     {
       "mainEntity": [
         {
-          "@type": "Question",
           "acceptedAnswer": {
             "text": "Das Fahren mit falschem Kraftstoff kann Ihr Fahrzeug beschädigen. Rufen Sie uns an und wir schlagen verschiedene Lösungen vor.",
             "@type": "Answer"
           },
+          "@type": "Question",
           "name": "Was mache ich, wenn ich falschen Kraftstoff getankt habe?"
         },
         {
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Für einen nach Falschparken abgeschleppten Wagen müssen Sie sich an die Stelle wenden, die das Abschleppen durchgeführt hat. Oft geschieht das in Zusammenarbeit mit der Stadt. Erkundigen Sie sich dort, wo Ihr Auto steht. Das ist ein anderes Verfahren als eine Pannenhilfe."
+            "text": "Für einen nach Falschparken abgeschleppten Wagen müssen Sie sich an die Stelle wenden, die das Abschleppen durchgeführt hat. Oft geschieht das in Zusammenarbeit mit der Stadt. Erkundigen Sie sich dort, wo Ihr Auto steht. Das ist ein anderes Verfahren als eine Pannenhilfe.",
+            "@type": "Answer"
           },
+          "@type": "Question",
           "name": "Mein Wagen wurde abgeschleppt?"
         },
         {
@@ -178,8 +178,8 @@
           }
         },
         {
-          "name": "Ich habe einen großen Wagen. Können Sie den auch abschleppen?",
           "@type": "Question",
+          "name": "Ich habe einen großen Wagen. Können Sie den auch abschleppen?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Wir können Fahrzeuge bis 3,5 Tonnen abschleppen und Pannenhilfe leisten."
@@ -187,19 +187,19 @@
         },
         {
           "@type": "Question",
+          "name": "Wie schnell sind Sie in Hasselt vor Ort?",
           "acceptedAnswer": {
             "text": "Wir haben ein Team, das von Zonhoven aus losfährt, sodass es in etwa 20 Minuten in Hasselt vor Ort sein kann.",
             "@type": "Answer"
-          },
-          "name": "Wie schnell sind Sie in Hasselt vor Ort?"
+          }
         },
         {
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ein Abschleppdienst von Faster kommt in Hasselt schon ab 125 Euro vor Ort. Wir vereinbaren den Preis immer vorab mit Ihnen."
           },
-          "@type": "Question",
-          "name": "Was kostet ein Abschleppdienst in Hasselt?"
+          "name": "Was kostet ein Abschleppdienst in Hasselt?",
+          "@type": "Question"
         }
       ],
       "@type": "FAQPage"

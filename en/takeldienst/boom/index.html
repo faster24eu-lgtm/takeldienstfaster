@@ -50,17 +50,23 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
+      "@id": "https://takeldienstfaster.be/#business",
+      "priceRange": "€€",
+      "telephone": "+3233756737",
+      "@type": "LocalBusiness",
+      "name": "Faster Depannage Takeldienst",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "email": "faster@takeldienstfaster.be",
       "areaServed": [
         {
-          "name": "Boom",
-          "@type": "City"
+          "@type": "City",
+          "name": "Boom"
         },
         {
-          "@type": "Place",
-          "name": "Boom Markt"
+          "name": "Boom Markt",
+          "@type": "Place"
         },
         {
           "name": "Industrieterrein Boom-Willebroek",
@@ -71,42 +77,35 @@
           "name": "Willebroek"
         },
         {
-          "name": "A12",
-          "@type": "Place"
+          "@type": "Place",
+          "name": "A12"
         }
       ],
-      "@id": "https://takeldienstfaster.be/#business",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "priceRange": "€€",
       "address": {
-        "postalCode": "2020",
-        "addressLocality": "Antwerpen",
         "streetAddress": "De Bosschaertstraat 248",
         "addressRegion": "Antwerpen",
+        "addressCountry": "BE",
+        "addressLocality": "Antwerpen",
         "@type": "PostalAddress",
-        "addressCountry": "BE"
+        "postalCode": "2020"
       },
-      "url": "https://takeldienstfaster.be/",
-      "name": "Faster Depannage Takeldienst",
-      "@type": "LocalBusiness",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
-      "telephone": "+3233756737"
+      "url": "https://takeldienstfaster.be/"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://takeldienstfaster.be/",
-          "@type": "ListItem",
           "name": "Home",
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/en/",
           "position": 1
         },
         {
-          "position": 2,
-          "name": "Towing service",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "name": "Towing service",
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "position": 2
         },
         {
           "item": "https://takeldienstfaster.be/en/takeldienst/boom/",
@@ -117,51 +116,52 @@
       ]
     },
     {
+      "@type": "FAQPage",
       "mainEntity": [
         {
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "In normal traffic conditions I am on the road for about 15 to 20 minutes on average via the A12. In heavy traffic that can of course differ."
-          },
+          "@type": "Question",
           "name": "How quickly are you in Boom?",
-          "@type": "Question"
+          "acceptedAnswer": {
+            "text": "In normal traffic conditions I am on the road for about 15 to 20 minutes on average via the A12. In heavy traffic that can of course differ.",
+            "@type": "Answer"
+          }
         },
         {
           "@type": "Question",
           "name": "What does a towing service in Boom cost?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "I always agree a clear price before I set off. No hidden costs."
-          }
-        },
-        {
-          "name": "Can you also tow vans?",
-          "@type": "Question",
-          "acceptedAnswer": {
-            "text": "Yes. Besides passenger cars I also transport vans, and now and then a motorbike.",
+            "text": "I always agree a clear price before I set off. No hidden costs.",
             "@type": "Answer"
           }
         },
         {
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Besides passenger cars I also transport vans, and now and then a motorbike."
+          },
+          "@type": "Question",
+          "name": "Can you also tow vans?"
+        },
+        {
+          "@type": "Question",
+          "name": "Can you transport vehicles to Antwerp or Puurs?",
           "acceptedAnswer": {
             "text": "Yes. I regularly transport vehicles from Boom to Antwerp or Puurs, and if needed to a specialist in Brussels.",
             "@type": "Answer"
-          },
-          "name": "Can you transport vehicles to Antwerp or Puurs?",
-          "@type": "Question"
+          }
         },
         {
-          "@type": "Question",
           "name": "Do you also help with a car that won’t start?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. A car that won’t start, an electrical problem or a mechanical defect are common calls in Boom."
+            "text": "Yes. A car that won’t start, an electrical problem or a mechanical defect are common calls in Boom.",
+            "@type": "Answer"
           }
         }
-      ],
-      "@type": "FAQPage"
+      ]
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>
@@ -169,9 +169,9 @@
 <body>
   <header class="site-header">
       <div class="container nav-wrap">
-        <a class="brand" href="../../../index.html" aria-label="Faster towing service home"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
+        <a class="brand" href="../../index.html" aria-label="Faster towing service home"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
         <nav class="main-nav" aria-label="Main navigation">
-          <a href="../../diensten/">Services</a> <a href="../../../#hoe-het-werkt">How it works</a> <a href="../../../#werkgebied">Service area</a>
+          <a href="../../diensten/">Services</a> <a href="../../#hoe-het-werkt">How it works</a> <a href="../../#werkgebied">Service area</a>
           
           
         </nav>
@@ -272,7 +272,7 @@
   <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <a class="brand brand-footer" href="../../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
+          <a class="brand brand-footer" href="../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Faster logo"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
           <p class="footer-copy">Personal towing service, active throughout Flanders. From a short local intervention to international vehicle transport.</p>
         </div>
         <div><h3>Services</h3><a href="../../diensten/#pechverhelping">Breakdown assistance</a><a href="../../diensten/#takeldienst">Towing & recovery</a><a href="../../diensten/#transport">Car transport</a><a href="../../diensten/#internationaal">International</a><a href="../../diensten/#machines">Machines & forklifts</a></div>
@@ -282,6 +282,6 @@
       <div class="container footer-bottom"><span>© 2026 Faster Depannage Takeldienst</span></div>
     </footer>
   <div class="mobile-bar"><a href="https://wa.me/3233756737?text=Hello%2C%20I%20need%20help%20with%20my%20vehicle." target="_blank" rel="noopener">WhatsApp</a></div>
-<a class="call-fab" href="tel:+3233756737" onclick="gtag('event','conversion',{'send_to':'AW-10963026341/i8ihCMaJo4QdEKWDyuso'});"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Call now — immediate help</span></a> <a class="price-badge" href="../../../#contact" aria-label="From 125 euros - request a price"><img src="../../../assets/images/price-badge-125-en.png" width="92" height="92" alt="From 125 euros" decoding="async"></a>
+<a class="call-fab" href="tel:+3233756737" onclick="gtag('event','conversion',{'send_to':'AW-10963026341/i8ihCMaJo4QdEKWDyuso'});"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Call now — immediate help</span></a> <a class="price-badge" href="../../#contact" aria-label="From 125 euros - request a price"><img src="../../../assets/images/price-badge-125-en.png" width="92" height="92" alt="From 125 euros" decoding="async"></a>
 </body>
 </html>

@@ -50,63 +50,64 @@
 
 <script type="application/ld+json">
 {
+  "@context": "https://schema.org",
   "@graph": [
     {
-      "priceRange": "€€",
-      "telephone": "+3233756737",
-      "url": "https://takeldienstfaster.be/",
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "@id": "https://takeldienstfaster.be/#business",
       "email": "faster@takeldienstfaster.be",
-      "address": {
-        "streetAddress": "De Bosschaertstraat 248",
-        "@type": "PostalAddress",
-        "addressLocality": "Antwerpen",
-        "addressRegion": "Antwerpen",
-        "postalCode": "2020",
-        "addressCountry": "BE"
-      },
+      "@type": "LocalBusiness",
       "areaServed": [
         {
-          "@type": "City",
-          "name": "Mortsel"
+          "name": "Mortsel",
+          "@type": "City"
         },
         {
-          "@type": "Place",
-          "name": "Mortsel centrum"
+          "name": "Mortsel centrum",
+          "@type": "Place"
         },
         {
           "name": "A12",
           "@type": "Place"
         },
         {
-          "@type": "Place",
-          "name": "R11"
+          "name": "R11",
+          "@type": "Place"
         }
       ],
-      "name": "Faster Depannage Takeldienst",
-      "@id": "https://takeldienstfaster.be/#business",
+      "telephone": "+3233756737",
       "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "@type": "LocalBusiness"
+      "name": "Faster Depannage Takeldienst",
+      "priceRange": "€€",
+      "address": {
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
+        "streetAddress": "De Bosschaertstraat 248",
+        "addressRegion": "Antwerpen",
+        "addressLocality": "Antwerpen",
+        "postalCode": "2020"
+      },
+      "url": "https://takeldienstfaster.be/"
     },
     {
       "itemListElement": [
         {
+          "name": "Startseite",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/de/",
           "position": 1,
-          "name": "Startseite"
+          "item": "https://takeldienstfaster.be/de/"
         },
         {
           "position": 2,
           "item": "https://takeldienstfaster.be/takeldienst/",
-          "@type": "ListItem",
-          "name": "Abschleppdienst"
+          "name": "Abschleppdienst",
+          "@type": "ListItem"
         },
         {
-          "position": 3,
-          "item": "https://takeldienstfaster.be/de/takeldienst/mortsel/",
           "@type": "ListItem",
-          "name": "Mortsel"
+          "name": "Mortsel",
+          "item": "https://takeldienstfaster.be/de/takeldienst/mortsel/",
+          "position": 3
         }
       ],
       "@type": "BreadcrumbList"
@@ -115,49 +116,48 @@
       "@type": "FAQPage",
       "mainEntity": [
         {
-          "name": "Wie schnell sind Sie in Mortsel?",
-          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Mortsel liegt nah an meinem Standort in Hoboken. Über die A12 und den R11 bin ich meist in etwa 15 bis 25 Minuten vor Ort, je nach Verkehr und Verfügbarkeit."
-          }
+            "text": "Mortsel liegt nah an meinem Standort in Hoboken. Über die A12 und den R11 bin ich meist in etwa 15 bis 25 Minuten vor Ort, je nach Verkehr und Verfügbarkeit.",
+            "@type": "Answer"
+          },
+          "@type": "Question",
+          "name": "Wie schnell sind Sie in Mortsel?"
         },
         {
-          "name": "Was kostet ein Abschleppdienst in Mortsel?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ich bestätige den Preis immer mit dem Kunden, bevor ich losfahre."
+            "text": "Ich bestätige den Preis immer mit dem Kunden, bevor ich losfahre.",
+            "@type": "Answer"
           },
+          "name": "Was kostet ein Abschleppdienst in Mortsel?",
           "@type": "Question"
         },
         {
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Vor allem, weil ich nah bin, schnell vor Ort sein kann und einen fairen Preis verlange."
+            "text": "Vor allem, weil ich nah bin, schnell vor Ort sein kann und einen fairen Preis verlange.",
+            "@type": "Answer"
           },
-          "@type": "Question",
-          "name": "Warum wählen Kunden in Mortsel Faster?"
+          "name": "Warum wählen Kunden in Mortsel Faster?",
+          "@type": "Question"
         },
         {
+          "name": "Machen Sie auch Fahrzeugtransport in Mortsel?",
           "@type": "Question",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Ja. Neben Pannenhilfe und Abschleppdienst übernehme ich auch Fahrzeugtransport, zum Beispiel beim Abholen oder Abliefern eines Fahrzeugs."
-          },
-          "name": "Machen Sie auch Fahrzeugtransport in Mortsel?"
+          }
         },
         {
           "name": "Kennen Sie Mortsel gut?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "text": "Ja. Ich habe in Mortsel schon länger Erfahrung, unter anderem mit dem Abholen und Abliefern von Fahrzeugen (darunter Leasingwagen am Ende ihres Vertrags), Einsätzen im Zentrum und dem Abholen von Fahrzeugen bei Cryns Carrosserie.",
-            "@type": "Answer"
-          },
-          "@type": "Question"
+            "@type": "Answer",
+            "text": "Ja. Ich habe in Mortsel schon länger Erfahrung, unter anderem mit dem Abholen und Abliefern von Fahrzeugen (darunter Leasingwagen am Ende ihres Vertrags), Einsätzen im Zentrum und dem Abholen von Fahrzeugen bei Cryns Carrosserie."
+          }
         }
       ]
     }
-  ],
-  "@context": "https://schema.org"
+  ]
 }
 </script>
 <style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>

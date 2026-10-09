@@ -53,44 +53,44 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "name": "Faster Depannage Takeldienst",
       "email": "faster@takeldienstfaster.be",
+      "@id": "https://takeldienstfaster.be/#business",
       "@type": "LocalBusiness",
-      "url": "https://takeldienstfaster.be/",
+      "telephone": "+3233756737",
       "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "url": "https://takeldienstfaster.be/",
       "address": {
-        "addressRegion": "Antwerpen",
+        "postalCode": "2020",
+        "addressCountry": "BE",
+        "@type": "PostalAddress",
         "streetAddress": "De Bosschaertstraat 248",
         "addressLocality": "Antwerpen",
-        "@type": "PostalAddress",
-        "postalCode": "2020",
-        "addressCountry": "BE"
-      },
-      "name": "Faster Depannage Takeldienst",
-      "telephone": "+3233756737",
-      "@id": "https://takeldienstfaster.be/#business"
+        "addressRegion": "Antwerpen"
+      }
     },
     {
+      "@type": "BreadcrumbList",
       "itemListElement": [
         {
           "position": 1,
-          "name": "Acasă",
+          "item": "https://takeldienstfaster.be/ro/",
           "@type": "ListItem",
-          "item": "https://takeldienstfaster.be/ro/"
+          "name": "Acasă"
         },
         {
-          "item": "https://takeldienstfaster.be/ro/diensten/",
-          "@type": "ListItem",
           "name": "Servicii",
-          "position": 2
+          "@type": "ListItem",
+          "position": 2,
+          "item": "https://takeldienstfaster.be/ro/diensten/"
         },
         {
           "item": "https://takeldienstfaster.be/ro/diensten/zwaar-transport/",
           "position": 3,
-          "name": "Transport greu",
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "name": "Transport greu"
         }
-      ],
-      "@type": "BreadcrumbList"
+      ]
     }
   ]
 }
