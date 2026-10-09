@@ -21,7 +21,14 @@
 <link rel="alternate" hreflang="fr" href="https://takeldienstfaster.be/fr/takeldienst/aalst/">
 <link rel="alternate" hreflang="en" href="https://takeldienstfaster.be/en/takeldienst/aalst/">
 <link rel="alternate" hreflang="pl" href="https://takeldienstfaster.be/pl/takeldienst/aalst/">
+<link rel="alternate" hreflang="ro" href="https://takeldienstfaster.be/ro/takeldienst/aalst/">
 <link rel="alternate" hreflang="x-default" href="https://takeldienstfaster.be/takeldienst/aalst/">
+
+
+
+
+
+
 <link rel="icon" href="../../../assets/images/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/favicon-16.png">
@@ -44,26 +51,24 @@
 
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LocalBusiness",
       "@id": "https://takeldienstfaster.be/#business",
       "name": "Faster Depannage Takeldienst",
-      "url": "https://takeldienstfaster.be/",
-      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
-      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
-      "email": "faster@takeldienstfaster.be",
       "telephone": "+3233756737",
-      "priceRange": "€€",
       "address": {
-        "@type": "PostalAddress",
         "streetAddress": "De Bosschaertstraat 248",
+        "addressRegion": "Antwerpen",
+        "addressCountry": "BE",
         "postalCode": "2020",
         "addressLocality": "Antwerpen",
-        "addressRegion": "Antwerpen",
-        "addressCountry": "BE"
+        "@type": "PostalAddress"
       },
+      "logo": "https://takeldienstfaster.be/assets/images/faster-logo.png",
+      "@type": "LocalBusiness",
+      "url": "https://takeldienstfaster.be/",
+      "image": "https://takeldienstfaster.be/assets/images/faster-road-transport.jpg",
+      "email": "faster@takeldienstfaster.be",
       "areaServed": [
         {
           "@type": "City",
@@ -90,8 +95,8 @@
           "name": "Haaltert"
         },
         {
-          "@type": "City",
-          "name": "Ninove"
+          "name": "Ninove",
+          "@type": "City"
         },
         {
           "@type": "City",
@@ -102,120 +107,122 @@
           "name": "Erpe-Mere"
         },
         {
-          "@type": "Place",
-          "name": "E40"
+          "name": "E40",
+          "@type": "Place"
         }
-      ]
+      ],
+      "priceRange": "€€"
     },
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
+          "item": "https://takeldienstfaster.be/pl/",
           "@type": "ListItem",
           "position": 1,
-          "name": "Home",
-          "item": "https://takeldienstfaster.be/pl/"
+          "name": "Strona główna"
         },
         {
-          "@type": "ListItem",
-          "position": 2,
           "name": "Pomoc drogowa",
-          "item": "https://takeldienstfaster.be/takeldienst/"
+          "item": "https://takeldienstfaster.be/takeldienst/",
+          "position": 2,
+          "@type": "ListItem"
         },
         {
-          "@type": "ListItem",
           "position": 3,
-          "name": "Aalst i region",
-          "item": "https://takeldienstfaster.be/pl/takeldienst/aalst/"
+          "@type": "ListItem",
+          "item": "https://takeldienstfaster.be/pl/takeldienst/aalst/",
+          "name": "Aalst i region"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList"
     },
     {
-      "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Czy działacie również poza Aalst?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Tak. Równie dobrze jeżdżę do Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere i okolicznych gmin."
-          }
+          },
+          "name": "Czy pracują Państwo także poza Aalst?"
         },
         {
-          "@type": "Question",
-          "name": "Czy jesteście dostępni w nocy?",
+          "name": "Czy są Państwo dostępni w nocy?",
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Tak, 24/7. Również w weekendy i święta."
-          }
+          },
+          "@type": "Question"
         },
         {
-          "@type": "Question",
           "name": "Czy mogę z góry wiedzieć, ile kosztuje holowanie?",
+          "@type": "Question",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tak. Omawiam cenę, zanim wyślę lawetę – telefonicznie, przez WhatsApp lub e-mailem."
+            "text": "Tak. Omawiam cenę, zanim wyślę lawetę, telefonicznie, przez WhatsApp lub e-mailem.",
+            "@type": "Answer"
           }
         },
         {
-          "@type": "Question",
-          "name": "Czy możecie holować samochód, którego nie da się ustawić na luzie?",
+          "name": "Czy mogą Państwo odholować samochód, którego nie da się wrzucić na luz?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Zazwyczaj tak. Mam wózki do przetaczania (dollies) i inny sprzęt do trudniejszych akcji ratowniczych."
+            "text": "Zazwyczaj tak. Mam wózki transportowe (dollies) i inny sprzęt do trudniejszych akcji.",
+            "@type": "Answer"
+          },
+          "@type": "Question"
+        },
+        {
+          "name": "Czy mogą Państwo przewieźć samochód bez koła?",
+          "@type": "Question",
+          "acceptedAnswer": {
+            "text": "W wielu przypadkach tak, w zależności od sytuacji i z odpowiednim sprzętem.",
+            "@type": "Answer"
           }
         },
         {
-          "@type": "Question",
-          "name": "Czy możecie przewieźć samochód bez koła?",
+          "name": "Czy mogą Państwo przewieźć samochód, który właśnie kupiłem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "W wielu przypadkach tak, w zależności od sytuacji i z odpowiednim sprzętem."
+            "text": "Tak, również pojazd bez tablic rejestracyjnych."
+          },
+          "@type": "Question"
+        },
+        {
+          "name": "Czy mogą Państwo pomóc po wypadku?",
+          "@type": "Question",
+          "acceptedAnswer": {
+            "text": "Tak, zapewniam bezpieczne zabezpieczenie i zabranie pojazdu.",
+            "@type": "Answer"
           }
         },
         {
-          "@type": "Question",
-          "name": "Czy możecie przewieźć samochód, który właśnie kupiłem/kupiłam?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tak, również pojazd bez tablicy rejestracyjnej."
+            "text": "Niderlandzki, francuski i angielski.",
+            "@type": "Answer"
+          },
+          "@type": "Question",
+          "name": "Jakimi językami Państwo mówią?"
+        },
+        {
+          "name": "Czy pracują Państwo tylko w dzień?",
+          "@type": "Question",
+          "acceptedAnswer": {
+            "text": "Nie. Jestem dostępny 24/7, także w nocy, w weekendy i w święta.",
+            "@type": "Answer"
           }
         },
         {
-          "@type": "Question",
-          "name": "Czy możecie pomóc po wypadku?",
+          "name": "Dlaczego jeden z Państwa kierowców stacjonuje w Erpe-Mere?",
           "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tak, zapewniam bezpieczne zabranie pojazdu z miejsca zdarzenia."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Jakimi językami się posługujecie?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Niderlandzkim, francuskim i angielskim."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Czy pracujecie tylko w dzień?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nie. Jestem dostępny 24/7, również w nocy, w weekendy i święta."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Dlaczego jeden z waszych kierowców stacjonuje w Erpe-Mere?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "To tuż przy E40 między Brukselą a Gandawą, dzięki czemu cały region wokół Aalst jest łatwo dostępny."
-          }
+            "text": "To tuż przy E40 między Brukselą a Gandawą, dzięki czemu cały region wokół Aalst jest łatwo dostępny.",
+            "@type": "Answer"
+          },
+          "@type": "Question"
         }
-      ]
+      ],
+      "@type": "FAQPage"
     }
-  ]
+  ],
+  "@context": "https://schema.org"
 }
 </script>
 
@@ -280,18 +287,14 @@
 .area-links .area-link{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:800;padding:11px 16px}
 .area-links .area-link:before{content:"";width:6px;height:6px;background:var(--accent);flex-shrink:0}
 </style>
+<style>@media(max-width:640px){.section-head{flex-direction:column;align-items:flex-start}.section-head p{max-width:none}}h1{overflow-wrap:anywhere;hyphens:auto}h2,h3,summary{overflow-wrap:break-word;hyphens:auto}</style>
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a class="brand" href="../../index.html" aria-label="Takeldienst Faster – strona główna">
-        <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Logo Faster"></span>
-        <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span>
-      </a>
+      <a class="brand" href="../../index.html" aria-label="Strona główna pomocy drogowej Faster"> <span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Logo Faster"></span> <span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span> </a>
       <nav class="main-nav" aria-label="Nawigacja główna">
-        <a href="../../diensten/">Usługi</a>
-        <a href="../../#hoe-het-werkt">Jak to działa</a>
-        <a href="../../#werkgebied">Obszar działania</a>
+        <a href="../../diensten/">Usługi</a> <a href="../../#hoe-het-werkt">Jak to działa</a> <a href="../../#werkgebied">Obszar działania</a>
         
         
       </nav>
@@ -310,22 +313,21 @@
           <h1>Pomoc drogowa Aalst i region</h1>
           <p class="hero-lead">Pomoc drogowa 24/7 dla Aalst, Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere i okolicznych gmin.</p>
           <div class="hero-actions">
-            <a class="button" href="tel:+3233756737">Zadzwoń 03/375.67.37</a>
-            <a class="button button-green" href="https://wa.me/3233756737?text=Dzie%C5%84%20dobry%2C%20potrzebuj%C4%99%20pomocy%20z%20moim%20pojazdem%20w%20regionie%20Aalst." target="_blank" rel="noopener">WhatsApp</a>
+            <a class="button" href="tel:+3233756737">Zadzwoń 03/375.67.37</a> <a class="button button-green" href="https://wa.me/3233756737?text=Dzie%C5%84%20dobry%2C%20potrzebuj%C4%99%20pomocy%20z%20moim%20pojazdem%20w%20regionie%20Aalst." target="_blank" rel="noopener">WhatsApp</a>
           </div>
           <div class="hero-proof">
-            <div><strong>24/7</strong><span>Również w nocy i w weekendy</span></div>
+            <div><strong>24/7</strong><span>Także w nocy i w weekendy</span></div>
             <div><strong>Cena z góry</strong><span>Zanim wyślę lawetę</span></div>
             <div><strong>Cały region</strong><span>Nie tylko samo Aalst</span></div>
-            <div><strong>Dollies</strong><span>Również przy trudnych akcjach</span></div>
+            <div><strong>Dollies</strong><span>Także przy trudnych akcjach</span></div>
           </div>
         </div>
         <div class="hero-media hero-visual">
           <div class="hero-visual-panel hero-visual-photo">
-            <img src="../../../assets/images/faster-road-transport.jpg" alt="Laweta Faster z transportowanym pojazdem" loading="eager" fetchpriority="high" width="1200" height="900">
+            <img src="../../../assets/images/faster-road-transport.jpg" alt="Laweta Faster z transportem pojazdu" loading="eager" fetchpriority="high" width="1200" height="900">
           </div>
           <div class="hero-visual-panel hero-visual-map is-active">
-            <div id="hero-regio-map" class="regio-map-embed" role="img" aria-label="Mapa z obszarem działania Faster wokół Aalst"></div>
+            <div id="hero-regio-map" class="regio-map-embed" role="img" aria-label="Mapa obszaru działania Faster wokół Aalst"></div>
           </div>
           <div class="hero-visual-dots" aria-hidden="true">
             <span data-dot="photo"></span>
@@ -343,15 +345,7 @@
           <p>Aalst to jedna z gmin, do których wyjeżdżam najczęściej, ale Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele i Erpe-Mere równie dobrze należą do mojego codziennego obszaru działania.</p>
         </div>
         <div class="area-links">
-          <a class="area-link" href="#gemeente-aalst">Aalst</a>
-          <a class="area-link" href="#gemeente-dendermonde">Dendermonde</a>
-          <a class="area-link" href="#gemeente-wetteren">Wetteren</a>
-          <a class="area-link" href="#gemeente-zele">Zele</a>
-          <a class="area-link" href="#gemeente-berlare">Berlare</a>
-          <a class="area-link" href="#gemeente-haaltert">Haaltert</a>
-          <a class="area-link" href="#gemeente-ninove">Ninove</a>
-          <a class="area-link" href="#gemeente-oosterzele">Oosterzele</a>
-          <a class="area-link" href="#gemeente-erpe-mere">Erpe-Mere</a>
+          <a class="area-link" href="#gemeente-aalst">Aalst</a> <a class="area-link" href="#gemeente-dendermonde">Dendermonde</a> <a class="area-link" href="#gemeente-wetteren">Wetteren</a> <a class="area-link" href="#gemeente-zele">Zele</a> <a class="area-link" href="#gemeente-berlare">Berlare</a> <a class="area-link" href="#gemeente-haaltert">Haaltert</a> <a class="area-link" href="#gemeente-ninove">Ninove</a> <a class="area-link" href="#gemeente-oosterzele">Oosterzele</a> <a class="area-link" href="#gemeente-erpe-mere">Erpe-Mere</a>
         </div>
       </div>
     </section>
@@ -361,9 +355,9 @@
       <div class="container">
         <div class="section-head">
           <div><span class="eyebrow">REGION</span><h2>Od Aalst po Dendermonde i Ninove.</h2></div>
-          <p>Codziennie jeżdżę między tymi gminami. Z Aalst przychodzi wiele zgłoszeń, z reszty regionu równie dużo.</p>
+          <p>Codziennie jeżdżę między tymi gminami. Z Aalst przychodzi wiele zgłoszeń, z reszty regionu tak samo.</p>
         </div>
-        <div id="regio-map-groot" class="regio-map-large" role="img" aria-label="Mapa z gminami, w których Faster działa wokół Aalst"></div>
+        <div id="regio-map-groot" class="regio-map-large" role="img" aria-label="Mapa gmin, w których Faster działa wokół Aalst"></div>
       </div>
     </section>
 
@@ -372,12 +366,12 @@
       <div class="container">
         <div class="section-head">
           <div><span class="eyebrow">DLACZEGO TEN REGION</span><h2>Jeden kierowca, blisko E40.</h2></div>
-          <p>Żadnego call center, które Pana/Panią przełącza: bezpośredni kontakt z tym, kto przyjedzie.</p>
+          <p>Żadnego call center, które Państwa przełącza: bezpośredni kontakt z osobą, która przyjedzie.</p>
         </div>
         <div class="safety-grid">
           <div>
             <p>Jeden z moich kierowców stacjonuje w Erpe-Mere, tuż przy wjeździe na E40 między Brukselą a Gandawą. Stamtąd szybko jest w drodze w kierunku Aalst i okolicznych gmin.</p>
-            <p>Aalst dostarcza obecnie największą część moich zgłoszeń w tym regionie, ale on równie dobrze jeździ do Dendermonde, Wetteren, Ninove czy Zele. To nie jest sprawa poboczna, to równie duża część pracy.</p>
+            <p>Z Aalst pochodzi obecnie większość moich zgłoszeń w tym regionie, ale on równie dobrze jeździ do Dendermonde, Wetteren, Ninove czy Zele. To nie sprawa uboczna, to równie duża część pracy.</p>
           </div>
           <div class="quote-box">
             <strong>Tuż przy E40 Bruksela–Gandawa.</strong>
@@ -396,12 +390,12 @@
         </div>
         <div class="safety-grid">
           <div>
-            <p>Mój kierowca w tym regionie przez sześć lat pracował jako mechanik w warsztacie Opla, zanim zaczął pracę w Faster. Jest to szczególnie przydatne, gdy samochód nagle nie chce odpalić, po problemie elektrycznym lub gdy trzeba na miejscu szybko ocenić, co dzieje się z autem.</p>
-            <p>To doświadczenie pomaga w samej ocenie: co to jest, czy pojazd może jeszcze jechać i jaki jest najbezpieczniejszy sposób, by go przewieźć.</p>
+            <p>Mój kierowca w tym regionie przez sześć lat pracował jako mechanik w warsztacie Opla, zanim zaczął w Faster. Jest to szczególnie przydatne, gdy samochód nagle nie chce zapalić, po problemie elektrycznym, lub gdy musi on szybko ocenić na miejscu, co dzieje się z autem.</p>
+            <p>To doświadczenie pomaga w samej ocenie: co to jest, czy pojazd może jeszcze jechać i jaki jest najbezpieczniejszy sposób jego przewozu.</p>
           </div>
           <div class="quote-box">
             <strong>Żadnego zgadywania.</strong>
-            <p>Lata doświadczenia mechanicznego, również w trasie.</p>
+            <p>Lata doświadczenia w mechanice, także w trasie.</p>
           </div>
         </div>
       </div>
@@ -411,16 +405,16 @@
     <section class="section light">
       <div class="container">
         <div class="section-head">
-          <div><span class="eyebrow">CO ROBIĘ</span><h2>Przede wszystkim pomoc drogowa i ratownictwo drogowe.</h2></div>
+          <div><span class="eyebrow">CZYM SIĘ ZAJMUJĘ</span><h2>Przede wszystkim pomoc przy awarii i holowanie.</h2></div>
           <p>Większość zgłoszeń dotyczy samochodu, który utknął lub nie może jechać dalej.</p>
         </div>
         <div class="service-grid">
-          <article class="service-card"><h3>Awaria w trasie</h3><p>Awaria silnika, samochód, który nagle staje lub nie chce odpalić.</p></article>
-          <article class="service-card"><h3>Problemy elektryczne</h3><p>Usterka, która unieruchamia samochód w trasie lub sprawia, że dalsza jazda jest niebezpieczna.</p></article>
-          <article class="service-card"><h3>Po wypadku</h3><p>Bezpieczne zabranie pojazdu, również przy zablokowanych kołach lub brakującym kole.</p></article>
-          <article class="service-card"><h3>Trudne akcje ratownicze</h3><p>Z wózkami do przetaczania (dollies) dla samochodów, których nie da się ustawić na luzie lub które nie toczą się normalnie.</p></article>
-          <article class="service-card"><h3>Wycieki</h3><p>Poważny wyciek oleju lub płynu chłodniczego, stwierdzony w trasie lub w domu.</p></article>
-          <article class="service-card"><h3>Transport pojazdów</h3><p>Świeżo kupiony samochód, pojazd bez tablicy rejestracyjnej lub samochód, który nie może jeździć.</p></article>
+          <article class="service-card"><h3>Awaria w trasie</h3><p>Awaria silnika, samochód, który nagle staje lub nie chce zapalić.</p></article>
+          <article class="service-card"><h3>Problemy elektryczne</h3><p>Usterka, przez którą samochód staje w trasie lub dalsza jazda staje się niebezpieczna.</p></article>
+          <article class="service-card"><h3>Po wypadku</h3><p>Bezpieczne zabranie pojazdu, także przy zablokowanych kołach lub brakującym kole.</p></article>
+          <article class="service-card"><h3>Trudne akcje</h3><p>Z wózkami (dollies) do samochodów, których nie da się wrzucić na luz lub które nie toczą się normalnie.</p></article>
+          <article class="service-card"><h3>Wycieki</h3><p>Poważny wyciek oleju lub płynu chłodzącego, zauważony w trasie lub w domu.</p></article>
+          <article class="service-card"><h3>Transport pojazdów</h3><p>Właśnie kupiony samochód, pojazd bez tablic rejestracyjnych lub auto, które nie może jeździć.</p></article>
         </div>
       </div>
     </section>
@@ -431,11 +425,11 @@
         <div>
           <span class="eyebrow">CENA Z GÓRY</span>
           <h2>Najpierw cena, potem wysyłam lawetę.</h2>
-          <p>Nie musi Pan/Pani czekać, aż samochód znajdzie się na lawecie, by wiedzieć, ile to kosztuje. Gdy Pan/Pani zadzwoni, napisze na WhatsApp lub wyśle mi e-mail, najpierw omawiam cenę. Dopiero potem kogoś wysyłam.</p>
+          <p>Nie muszą Państwo czekać, aż samochód znajdzie się na lawecie, aby wiedzieć, ile to kosztuje. Gdy do mnie zadzwonią, napiszą na WhatsApp lub wyślą e-mail, najpierw omawiam cenę. Dopiero potem kogoś wysyłam.</p>
         </div>
         <div class="quote-box">
-          <strong>Żadnych niespodzianek po fakcie.</strong>
-          <p>Z góry wie Pan/Pani, na czym stoi.</p>
+          <strong>Żadnej niespodzianki po fakcie.</strong>
+          <p>Z góry wiedzą Państwo, na czym stoją.</p>
         </div>
       </div>
     </section>
@@ -444,12 +438,12 @@
     <section class="section light">
       <div class="container">
         <div class="section-head">
-          <div><span class="eyebrow">DOSTĘPNOŚĆ</span><h2>Również w nocy, w weekendy i święta.</h2></div>
+          <div><span class="eyebrow">DOSTĘPNOŚĆ</span><h2>Także w nocy, w weekendy i w święta.</h2></div>
           <p>Awaria nie liczy się z godzinami pracy biura.</p>
         </div>
         <div class="hero-proof" style="border-top:1px solid var(--line);padding-top:20px">
-          <div><strong>24/7</strong><span>Dostępny każdego dnia</span></div>
-          <div><strong>Noce</strong><span>Również późnym wieczorem</span></div>
+          <div><strong>24/7</strong><span>Dostępni codziennie</span></div>
+          <div><strong>Noce</strong><span>Także późnym wieczorem</span></div>
           <div><strong>Weekendy</strong><span>Sobota i niedziela</span></div>
           <div><strong>Święta</strong><span>Bez wyjątku</span></div>
         </div>
@@ -461,13 +455,13 @@
       <div class="container">
         <div class="section-head">
           <div><span class="eyebrow">JAK TO DZIAŁA</span><h2>W czterech krokach.</h2></div>
-          <p>Bez zbędnych komplikacji.</p>
+          <p>Bez objazdów.</p>
         </div>
         <div class="process-grid">
-          <article class="card"><div class="step">01</div><h3>Proszę zadzwonić lub wysłać wiadomość</h3><p>Proszę mi powiedzieć, co się stało z samochodem i gdzie Pan/Pani się znajduje.</p></article>
-          <article class="card"><div class="step">02</div><h3>Omawiam cenę</h3><p>Z góry wie Pan/Pani, ile kosztuje holowanie lub transport.</p></article>
-          <article class="card"><div class="step">03</div><h3>Wysyłam lawetę</h3><p>Odpowiedni pojazd i potrzebny sprzęt, w razie potrzeby również wózki do przetaczania (dollies).</p></article>
-          <article class="card"><div class="step">04</div><h3>Pana/Pani samochód zostaje bezpiecznie przewieziony</h3><p>Do Pana/Pani warsztatu, do domu lub w inne uzgodnione miejsce.</p></article>
+          <article class="card"><div class="step">01</div><h3>Proszę zadzwonić lub wysłać wiadomość</h3><p>Proszę mi powiedzieć, co się stało z samochodem i gdzie Państwo stoją.</p></article>
+          <article class="card"><div class="step">02</div><h3>Omawiam cenę</h3><p>Z góry wiedzą Państwo, ile kosztuje holowanie lub transport.</p></article>
+          <article class="card"><div class="step">03</div><h3>Wysyłam lawetę</h3><p>Odpowiedni pojazd i potrzebny sprzęt, w razie potrzeby także wózki (dollies).</p></article>
+          <article class="card"><div class="step">04</div><h3>Państwa samochód zostaje bezpiecznie przewieziony</h3><p>Do Państwa warsztatu, do domu lub w inne uzgodnione miejsce.</p></article>
         </div>
       </div>
     </section>
@@ -477,10 +471,10 @@
       <div class="container safety-grid">
         <div>
           <span class="eyebrow">POTRZEBNA POMOC?</span>
-          <h2>Potrzebna pomoc lub transport pojazdu?</h2>
-          <p>Woli Pan/Pani najpierw opisać swoją sytuację? Proszę wypełnić formularz. Sprawdzę, co jest potrzebne, i skontaktuję się jak najszybciej.</p>
+          <h2>Potrzebują Państwo pomocy lub przewiezienia pojazdu?</h2>
+          <p>Wolą Państwo najpierw opisać swoją sytuację? Proszę wypełnić formularz. Sprawdzę, co jest potrzebne, i jak najszybciej się skontaktuję.</p>
           <div class="quote-box" style="margin-top:20px">
-            <strong>Pilna sprawa i stoi Pan/Pani przy drodze?</strong>
+            <strong>Pilne i stoją Państwo na poboczu?</strong>
             <p>Proszę zadzwonić po cenę.</p>
             <div class="cta-actions">
               <a class="button" href="tel:+3233756737">Zadzwoń 03/375.67.37</a>
@@ -488,21 +482,21 @@
           </div>
         </div>
         <form class="formbox" id="offerte" action="https://formsubmit.co/faster24eu@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Nieuwe aanvraag via Takeldienst Faster (Aalst & Regio)">
+          <input type="hidden" name="_subject" value="Nowe zapytanie przez Takeldienst Faster (Aalst i region)">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="true">
-          <input type="hidden" name="_next" value="https://takeldienstfaster.be/bedankt/">
+          <input type="hidden" name="_next" value="https://takeldienstfaster.be/pl/bedankt/">
           <div class="formgrid">
             <label>Imię i nazwisko *<input name="naam" required></label>
             <label>E-mail *<input type="email" name="email" required></label>
             <label>Telefon<input name="telefoon"></label>
             <label>Marka i model<input name="voertuig"></label>
             <label class="full">Gdzie stoi pojazd?<input name="ophaalplaats"></label>
-            <label class="full">Dokąd ma zostać przewieziony?<input name="bestemming"></label>
+            <label class="full">Dokąd ma jechać?<input name="bestemming"></label>
             <label class="full">Co się stało?<textarea name="situatie"></textarea></label>
             <div class="full"><button class="button" type="submit" style="width:100%">Wyślij zapytanie</button></div>
           </div>
-          <p class="disclaimer">To zapytanie zostanie przesłane e-mailem do Faster Depannage Takeldienst. Po szybką pomoc: WhatsApp lub telefon.</p>
+          <p class="disclaimer">To zapytanie zostanie przesłane e-mailem do Faster Depannage Takeldienst. Szybka pomoc: WhatsApp lub telefon.</p>
         </form>
       </div>
     </section>
@@ -511,13 +505,13 @@
     <section class="section safety">
       <div class="container">
         <div class="section-head">
-          <div><span class="eyebrow">AWARIA W TRASIE</span><h2>Awaria w trasie? Najpierw bezpiecznie się zatrzymać.</h2></div>
-          <p>Dopiero potem zadzwonić do Faster.</p>
+          <div><span class="eyebrow">AWARIA W TRASIE</span><h2>Awaria w trasie? Najpierw bezpieczne miejsce.</h2></div>
+          <p>Dopiero potem proszę dzwonić do Faster.</p>
         </div>
         <div class="safety-list">
-          <div class="safety-item"><b>01</b>Proszę jak najbezpieczniej zjechać samochodem na bok.</div>
+          <div class="safety-item"><b>01</b>Proszę zjechać samochodem na bok tak bezpiecznie, jak to możliwe.</div>
           <div class="safety-item"><b>02</b>Proszę włączyć światła awaryjne.</div>
-          <div class="safety-item"><b>03</b>Proszę wysiąść z samochodu tylko wtedy, gdy jest to bezpieczne.</div>
+          <div class="safety-item"><b>03</b>Proszę wysiadać z samochodu tylko wtedy, gdy jest to bezpieczne.</div>
           <div class="safety-item"><b>04</b>Na autostradzie: proszę nie wchodzić na jezdnię i przestrzegać zasad bezpieczeństwa.</div>
         </div>
       </div>
@@ -527,12 +521,12 @@
     <section class="section light">
       <div class="container hero-grid" style="align-items:center">
         <div class="hero-media" style="min-height:340px">
-          <img src="../../../assets/images/faster-warehouse.jpg" alt="Laweta Faster z transportowanym pojazdem w hali" loading="lazy" width="1200" height="900">
+          <img src="../../../assets/images/faster-warehouse.jpg" alt="Laweta Faster z transportem pojazdu w hali" loading="lazy" width="1200" height="900">
         </div>
         <div>
           <span class="eyebrow">WŁASNY SPRZĘT</span>
           <h2>Odpowiedni sprzęt na większość sytuacji.</h2>
-          <p>Platforma, wózki do przetaczania (dollies) do trudniejszych akcji ratowniczych i wystarczające doświadczenie, by na miejscu szybko zdecydować, co jest potrzebne. Każdy pojazd otrzymuje taką samą troskę przy załadunku i mocowaniu.</p>
+          <p>Platforma, wózki (dollies) do trudniejszych akcji i wystarczające doświadczenie, aby szybko zdecydować na miejscu, co jest potrzebne. Każdy pojazd otrzymuje taką samą staranność przy załadunku i mocowaniu.</p>
         </div>
       </div>
     </section>
@@ -546,13 +540,13 @@
         </div>
         <div class="review-grid">
           <article class="review-card" id="gemeente-aalst"><h3>Aalst</h3><p>Aalst to jedno z miejsc, do których wyjeżdżam najczęściej: awaria, wypadek lub transport, dniem i nocą.</p></article>
-          <article class="review-card" id="gemeente-dendermonde"><h3>Dendermonde</h3><p>Od rozładowanego akumulatora po transport do warsztatu: dobrze znam Dendermonde i jego części składowe.</p></article>
-          <article class="review-card" id="gemeente-wetteren"><h3>Wetteren</h3><p>Pomoc drogowa i holowanie dla Wetteren i okolic, również poza godzinami pracy biura.</p></article>
+          <article class="review-card" id="gemeente-dendermonde"><h3>Dendermonde</h3><p>Od rozładowanego akumulatora po transport do warsztatu: dobrze znam Dendermonde i jego dzielnice.</p></article>
+          <article class="review-card" id="gemeente-wetteren"><h3>Wetteren</h3><p>Pomoc drogowa i holowanie w Wetteren i okolicach, także poza godzinami pracy biura.</p></article>
           <article class="review-card" id="gemeente-zele"><h3>Zele</h3><p>Awaria lub wypadek w Zele? Przyjeżdżam na miejsce i omawiam cenę, zanim wyruszę.</p></article>
-          <article class="review-card" id="gemeente-berlare"><h3>Berlare</h3><p>Holowanie, pomoc drogowa i transport pojazdów w Berlare, bez zbędnych komplikacji.</p></article>
-          <article class="review-card" id="gemeente-haaltert"><h3>Haaltert</h3><p>Szybko w drodze do Haaltert, również w nocy i w weekendy.</p></article>
+          <article class="review-card" id="gemeente-berlare"><h3>Berlare</h3><p>Holowanie, pomoc przy awarii i transport pojazdów w Berlare, bez objazdów.</p></article>
+          <article class="review-card" id="gemeente-haaltert"><h3>Haaltert</h3><p>Szybko w drodze do Haaltert, także w nocy i w weekendy.</p></article>
           <article class="review-card" id="gemeente-ninove"><h3>Ninove</h3><p>Holowanie i pomoc drogowa w Ninove i okolicznych gminach.</p></article>
-          <article class="review-card" id="gemeente-oosterzele"><h3>Oosterzele</h3><p>Również w Oosterzele klienci liczą na mnie w zakresie pomocy drogowej i transportu.</p></article>
+          <article class="review-card" id="gemeente-oosterzele"><h3>Oosterzele</h3><p>Również w Oosterzele klienci liczą na mnie w zakresie pomocy przy awarii i transportu.</p></article>
           <article class="review-card" id="gemeente-erpe-mere"><h3>Erpe-Mere</h3><p>Mój kierowca stacjonuje tutaj, tuż przy E40. Dzięki temu cały region jest łatwo dostępny.</p></article>
         </div>
       </div>
@@ -562,48 +556,48 @@
     <section class="section light" id="faq">
       <div class="container">
         <div class="section-head">
-          <div><span class="eyebrow">NAJCZĘŚCIEJ ZADAWANE PYTANIA</span><h2>Pomoc drogowa Aalst i region: co chciałby Pan/chciałaby Pani wiedzieć?</h2></div>
-          <p>Praktyczne odpowiedzi na wypadek awarii lub gdy trzeba przewieźć pojazd.</p>
+          <div><span class="eyebrow">NAJCZĘSTSZE PYTANIA</span><h2>Pomoc drogowa Aalst i region: co chcieliby Państwo wiedzieć?</h2></div>
+          <p>Praktyczne odpowiedzi na wypadek awarii lub potrzeby przewiezienia pojazdu.</p>
         </div>
         <div class="faq-grid">
           <details>
-            <summary>Czy działacie również poza Aalst?</summary>
+            <summary>Czy pracują Państwo także poza Aalst?</summary>
             <div class="faq-answer">Tak. Równie dobrze jeżdżę do Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele, Erpe-Mere i okolicznych gmin.</div>
           </details>
           <details>
-            <summary>Czy jesteście dostępni w nocy?</summary>
+            <summary>Czy są Państwo dostępni w nocy?</summary>
             <div class="faq-answer">Tak, 24/7. Również w weekendy i święta.</div>
           </details>
           <details>
             <summary>Czy mogę z góry wiedzieć, ile kosztuje holowanie?</summary>
-            <div class="faq-answer">Tak. Omawiam cenę, zanim wyślę lawetę – telefonicznie, przez WhatsApp lub e-mailem.</div>
+            <div class="faq-answer">Tak. Omawiam cenę, zanim wyślę lawetę, telefonicznie, przez WhatsApp lub e-mailem.</div>
           </details>
           <details>
-            <summary>Czy możecie holować samochód, którego nie da się ustawić na luzie?</summary>
-            <div class="faq-answer">Zazwyczaj tak. Mam wózki do przetaczania (dollies) i inny sprzęt do trudniejszych akcji ratowniczych.</div>
+            <summary>Czy mogą Państwo odholować samochód, którego nie da się wrzucić na luz?</summary>
+            <div class="faq-answer">Zazwyczaj tak. Mam wózki transportowe (dollies) i inny sprzęt do trudniejszych akcji.</div>
           </details>
           <details>
-            <summary>Czy możecie przewieźć samochód bez koła?</summary>
+            <summary>Czy mogą Państwo przewieźć samochód bez koła?</summary>
             <div class="faq-answer">W wielu przypadkach tak, w zależności od sytuacji i z odpowiednim sprzętem.</div>
           </details>
           <details>
-            <summary>Czy możecie przewieźć samochód, który właśnie kupiłem/kupiłam?</summary>
-            <div class="faq-answer">Tak, również pojazd bez tablicy rejestracyjnej.</div>
+            <summary>Czy mogą Państwo przewieźć samochód, który właśnie kupiłem?</summary>
+            <div class="faq-answer">Tak, również pojazd bez tablic rejestracyjnych.</div>
           </details>
           <details>
-            <summary>Czy możecie pomóc po wypadku?</summary>
-            <div class="faq-answer">Tak, zapewniam bezpieczne zabranie pojazdu z miejsca zdarzenia.</div>
+            <summary>Czy mogą Państwo pomóc po wypadku?</summary>
+            <div class="faq-answer">Tak, zapewniam bezpieczne zabezpieczenie i zabranie pojazdu.</div>
           </details>
           <details>
-            <summary>Jakimi językami się posługujecie?</summary>
-            <div class="faq-answer">Niderlandzkim, francuskim i angielskim.</div>
+            <summary>Jakimi językami Państwo mówią?</summary>
+            <div class="faq-answer">Niderlandzki, francuski i angielski.</div>
           </details>
           <details>
-            <summary>Czy pracujecie tylko w dzień?</summary>
-            <div class="faq-answer">Nie. Jestem dostępny 24/7, również w nocy, w weekendy i święta.</div>
+            <summary>Czy pracują Państwo tylko w dzień?</summary>
+            <div class="faq-answer">Nie. Jestem dostępny 24/7, także w nocy, w weekendy i w święta.</div>
           </details>
           <details>
-            <summary>Dlaczego jeden z waszych kierowców stacjonuje w Erpe-Mere?</summary>
+            <summary>Dlaczego jeden z Państwa kierowców stacjonuje w Erpe-Mere?</summary>
             <div class="faq-answer">To tuż przy E40 między Brukselą a Gandawą, dzięki czemu cały region wokół Aalst jest łatwo dostępny.</div>
           </details>
         </div>
@@ -614,12 +608,11 @@
     <section class="cta-band">
       <div class="container cta-inner">
         <div>
-          <h2>Potrzebna pomoc drogowa w Aalst lub w regionie?</h2>
-          <p>Aalst, Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele czy Erpe-Mere: proszę zadzwonić lub napisać na WhatsApp do Faster. Omawiam cenę, zanim wyruszę.</p>
+          <h2>Potrzebna pomoc drogowa w Aalst lub regionie?</h2>
+          <p>Aalst, Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele czy Erpe-Mere: proszę zadzwonić do Faster lub napisać na WhatsApp. Omawiam cenę, zanim wyruszę.</p>
         </div>
         <div class="cta-actions">
-          <a class="button" href="tel:+3233756737">Zadzwoń 03/375.67.37</a>
-          <a class="button button-outline" href="https://wa.me/3233756737?text=Dzie%C5%84%20dobry%2C%20potrzebuj%C4%99%20pomocy%20z%20moim%20pojazdem%20w%20regionie%20Aalst." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="button" href="tel:+3233756737">Zadzwoń 03/375.67.37</a> <a class="button button-outline" href="https://wa.me/3233756737?text=Dzie%C5%84%20dobry%2C%20potrzebuj%C4%99%20pomocy%20z%20moim%20pojazdem%20w%20regionie%20Aalst." target="_blank" rel="noopener">WhatsApp</a>
         </div>
       </div>
     </section>
@@ -631,7 +624,7 @@
         <a class="brand brand-footer" href="../../index.html"><span class="brand-mark"><img src="../../../assets/images/faster-logo.png" alt="Logo Faster"></span><span class="brand-text"><strong>FASTER</strong><small>DEPANNAGE & TAKELDIENST</small></span></a>
         <p class="footer-copy">Pomoc drogowa dla Aalst i regionu: Dendermonde, Wetteren, Zele, Berlare, Haaltert, Ninove, Oosterzele i Erpe-Mere.</p>
       </div>
-      <div><h3>Usługi</h3><a href="../../diensten/#pechverhelping">Pomoc drogowa</a><a href="../../diensten/#takeldienst">Holowanie i ratownictwo drogowe</a><a href="../../diensten/#transport">Transport samochodów</a><a href="../../diensten/#internationaal">Międzynarodowo</a></div>
+      <div><h3>Usługi</h3><a href="../../diensten/#pechverhelping">Pomoc przy awarii</a><a href="../../diensten/#takeldienst">Holowanie i ratownictwo drogowe</a><a href="../../diensten/#transport">Transport samochodów</a><a href="../../diensten/#internationaal">Międzynarodowo</a></div>
       <div><h3>Obszar działania</h3><a href="../antwerpen/">Pomoc drogowa Antwerpia</a><a href="../gent/">Pomoc drogowa Gandawa</a><a href="../sint-niklaas/">Pomoc drogowa Sint-Niklaas</a></div>
       <div><h3>Kontakt</h3><a href="tel:+3233756737">03/375.67.37</a><a href="mailto:faster@takeldienstfaster.be">faster@takeldienstfaster.be</a><p>De Bosschaertstraat 248<br>2020 Antwerpia (Kiel)</p></div>
     </div>
@@ -759,7 +752,6 @@ if (!reduceMotion) {
   });
 })();
 </script>
-<a class="call-fab" href="tel:+3233756737" onclick="gtag('event','conversion',{'send_to':'AW-10963026341/i8ihCMaJo4QdEKWDyuso'});"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Zadzwoń teraz — natychmiastowa pomoc</span></a>
-<a class="price-badge" href="#offerte" aria-label="Od 125 euro – zapytaj o cenę"><img src="../../../assets/images/price-badge-125.png" width="92" height="92" alt="Od 125 euro" decoding="async"></a>
+<a class="call-fab" href="tel:+3233756737" onclick="gtag('event','conversion',{'send_to':'AW-10963026341/i8ihCMaJo4QdEKWDyuso'});"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Zadzwoń teraz — natychmiastowa pomoc</span></a> <a class="price-badge" href="#offerte" aria-label="Od 125 euro - zapytaj o cenę"><img src="../../../assets/images/price-badge-125-pl.png" width="92" height="92" alt="Od 125 euro" decoding="async"></a>
 </body>
 </html>
