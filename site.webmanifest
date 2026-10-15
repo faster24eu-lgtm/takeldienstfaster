@@ -2,8 +2,8 @@
   "name": "Faster Depannage / Takeldienst",
   "short_name": "Faster",
   "icons": [
-    { "src": "/takeldienstfaster/assets/images/icon-192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/takeldienstfaster/assets/images/icon-512.png", "sizes": "512x512", "type": "image/png" }
+    { "src": "/assets/images/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/images/icon-512.png", "sizes": "512x512", "type": "image/png" }
   ],
   "theme_color": "#f6c400",
   "background_color": "#ffffff",

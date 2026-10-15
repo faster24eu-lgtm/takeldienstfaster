@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://faster24eu-lgtm.github.io/takeldienstfaster/sitemap.xml
+Sitemap: https://takeldienst-depannage.com/sitemap.xml
