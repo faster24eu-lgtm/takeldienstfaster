@@ -32,3 +32,13 @@ Done (`scripts/link-mentions.pl` + `scripts/link-mentions.txt`, rerunnable, all 
 Not possible under the no-text rule: anchor-text variation, new FAQs/sections, titles/meta for "takeldienst gent" (12.9) and "depannage gent" (30).
 Most of the Dutch city pages only mention their own area, so the Dutch pass added just 12 links; the rest are on the language versions.
 Open: the old domain takeldienstfaster.be does not resolve, so its rankings and any backlinks are not passed on. Renewing it and 301-redirecting every URL to takeldienst-depannage.com, then running Search Console "Change of address", would carry them over.
+
+## V10 – Titles and two H1s from Search Console queries (2026-10-18, owner approved)
+Only these texts changed; body text untouched.
+- Gent: title "Takeldienst & Depannage Gent 24/7, vanaf €125" (was 73 chars with the phone number; og/twitter titles updated too), H1 "Takeldienst & depannage Gent 24/7" (was "Depannage Gent 24/7"). Queries: takeldienst gent 12.9, depannage gent 30.
+- Antwerpen: H1 "Takeldienst & depannage Antwerpen 24/7" (was "Depannage Antwerpen 24/7"). Query: takeldienst antwerpen 6.3.
+- Aalst: title "Takeldienst Aalst & Dendermonde 24/7 | Faster" (was 96 chars). Queries: takeldienst dendermonde 10.2, takeldienst aalst 11.1.
+- West-Vlaanderen: title "Takeldienst West-Vlaanderen 24/7 | Brugge, Oostende, Kortrijk". Queries: takeldienst oostende 8.7, takeldienst brugge 11.2.
+- Hasselt: title "Takeldienst & Depannage Hasselt 24/7, vanaf €125" (og/twitter too). Queries: takeldienst hasselt 9.5, depannage hasselt 9.9.
+- Limburg: title "Takeldienst Limburg 24/7 | Hasselt, Genk, Sint-Truiden" (was 90 chars).
+Homepage and Antwerpen title deliberately unchanged.
