@@ -1,0 +1,53 @@
+# Words that already appear in the body text and are turned into internal links (no text is added or changed).
+# Used by scripts/link-mentions.pl. Tab-separated: language, target (Dutch path; the script adds /en/, /fr/, ... for other languages),
+# phrases in order of preference (separated by |). Phrases come from the Search Console queries of the target
+# (takeldienstfaster.be, Aug-Oct 2026); the place name in that language is the fallback.
+# Order of lines = priority when a page reaches the per-page limit.
+nl	/takeldienst/gent/	takeldienst in Gent|takeldienst Gent|depannage in Gent|depannage Gent|Gent
+nl	/takeldienst/aalst/	takeldienst in Aalst|takeldienst Aalst|takeldienst Dendermonde|Dendermonde|Aalst
+nl	/takeldienst/west-vlaanderen/	takeldienst in West-Vlaanderen|West-Vlaanderen|takeldienst Oostende|Oostende|Brugge
+nl	/takeldienst/hasselt/	takeldienst in Hasselt|takeldienst Hasselt|depannage Hasselt|Hasselt
+nl	/takeldienst/limburg/	takeldienst in Limburg|takeldienst Limburg|Limburg
+nl	/takeldienst/antwerpen/	takeldienst in Antwerpen|takeldienst Antwerpen|depannage in Antwerpen|depannage Antwerpen|sleepdienst in Antwerpen|Antwerpen
+nl	/depannage-vrachtwagen/	depannage vrachtwagen|depannage van vrachtwagens|vrachtwagens|vrachtwagen
+nl	/takeldienst/sint-niklaas/	takeldienst in Sint-Niklaas|Sint-Niklaas
+nl	/diensten/zwaar-transport/	zwaar transport|dieplader
+
+en	/takeldienst/antwerpen/	towing in Antwerp|towing service in Antwerp|Antwerp
+en	/takeldienst/gent/	towing in Ghent|Ghent
+en	/takeldienst/aalst/	Aalst|Dendermonde
+en	/takeldienst/hasselt/	Hasselt
+en	/takeldienst/limburg/	Limburg
+en	/takeldienst/west-vlaanderen/	West Flanders|Ostend|Bruges
+en	/takeldienst/sint-niklaas/	Sint-Niklaas
+
+fr	/takeldienst/antwerpen/	dépannage à Anvers|remorquage à Anvers|Anvers
+fr	/takeldienst/gent/	dépannage à Gand|Gand
+fr	/takeldienst/aalst/	Alost|Termonde
+fr	/takeldienst/hasselt/	Hasselt
+fr	/takeldienst/limburg/	Limbourg
+fr	/takeldienst/west-vlaanderen/	Flandre-Occidentale|Ostende|Bruges
+fr	/takeldienst/sint-niklaas/	Saint-Nicolas
+
+de	/takeldienst/antwerpen/	Abschleppdienst in Antwerpen|Antwerpen
+de	/takeldienst/gent/	Gent
+de	/takeldienst/aalst/	Aalst|Dendermonde
+de	/takeldienst/hasselt/	Hasselt
+de	/takeldienst/limburg/	Limburg
+de	/takeldienst/west-vlaanderen/	Westflandern|Ostende
+de	/takeldienst/sint-niklaas/	Sint-Niklaas
+
+pl	/takeldienst/antwerpen/	Antwerpia|Antwerpii|Antwerpi
+pl	/takeldienst/gent/	Gandawa|Gandawy|Gandawie
+pl	/takeldienst/aalst/	Aalst|Dendermonde
+pl	/takeldienst/hasselt/	Hasselt
+pl	/takeldienst/limburg/	Limburgia|Limburgii|Limburgi
+pl	/takeldienst/sint-niklaas/	Sint-Niklaas
+
+ro	/takeldienst/antwerpen/	Anvers
+ro	/takeldienst/gent/	Gent
+ro	/takeldienst/aalst/	Aalst|Dendermonde
+ro	/takeldienst/hasselt/	Hasselt
+ro	/takeldienst/limburg/	Limburg
+ro	/takeldienst/west-vlaanderen/	Flandra de Vest|Ostende|Bruges
+ro	/takeldienst/sint-niklaas/	Sint-Niklaas
