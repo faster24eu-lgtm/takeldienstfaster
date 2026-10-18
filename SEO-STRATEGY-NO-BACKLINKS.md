@@ -34,6 +34,6 @@ No invented prices, response times, reviews, addresses or statistics. Facts in n
 | abschleppdienst-faster.de | sc-domain:abschleppdienst-faster.de | Cycle 45 done 2026-10-18 (see SEO-ROADMAP.md) |
 | takeldienst-depannage.com (was takeldienstfaster.be) | https://takeldienstfaster.be/ (history), https://takeldienst-depannage.com/ | Internal links only (owner: no text changes), 2026-10-18, see SEO-NOTES.md V9 |
 | sleepdienstfaster.nl | https://sleepdienstfaster.nl/ | to do |
-| fasterbreakdownrecovery.co.uk | https://fasterbreakdownrecovery.co.uk/ | to do |
+| fasterbreakdownrecovery.co.uk | https://fasterbreakdownrecovery.co.uk/ | Internal links + clean hub URLs 2026-10-18 (too little GSC data for the query part yet), see `_build/SEO-NOTES.md` |
 | autoopkoper.com | https://autoopkoper.com/ | to do |
 | depannageplusvite.fr | https://depannageplusvite.fr/ | domain does not resolve (footer link removed) |
