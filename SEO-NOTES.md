@@ -42,3 +42,9 @@ Only these texts changed; body text untouched.
 - Hasselt: title "Takeldienst & Depannage Hasselt 24/7, vanaf €125" (og/twitter too). Queries: takeldienst hasselt 9.5, depannage hasselt 9.9.
 - Limburg: title "Takeldienst Limburg 24/7 | Hasselt, Genk, Sint-Truiden" (was 90 chars).
 Homepage and Antwerpen title deliberately unchanged.
+
+## V11 – Polish: "pomoc drogowa belgia" (2026-10-19, owner approved)
+Search Console (Aug-Oct): ~59 impressions for "pomoc drogowa belgia", spread over /en/ (33, pos 65), /pl/takeldienst/antwerpen/ (7, pos 37), /pl/ (6, pos 49), /pl/takeldienst/aalst/ (4, pos 36), Limburg, Gent. The Polish pages never said "Belgia", only "Flandria".
+- /pl/: title "Pomoc drogowa Belgia 24/7 – Antwerpia i Flandria | Faster", description "Pomoc drogowa w Belgii 24/7: …", H1 "Pomoc drogowa w Belgii, która naprawdę przyjeżdża." (og/twitter too). No claim that Polish is spoken (not stated anywhere on the site).
+- hreflang: 22 Dutch pages listed nl/de/fr/en/pl but not ro, while the other languages did list ro; the ro return link is now added everywhere a ro page exists (no visible change).
+Re-check from ~2026-11-08: which page Google shows for "pomoc drogowa belgia" (goal: /pl/).
