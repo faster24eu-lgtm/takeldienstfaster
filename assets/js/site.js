@@ -1,13 +1,3 @@
-// Google Ads conversion: WhatsApp klik (every link to wa.me and the quote form that opens WhatsApp)
-function trackWhatsApp() {
-  if (typeof gtag === 'function') { gtag('event', 'conversion', {'send_to': 'AW-10963026341/GaNaCICrtIYdEKWDyuso'}); }
-}
-document.addEventListener('click', function (e) {
-  var a = e.target && e.target.closest ? e.target.closest('a[href*="wa.me"]') : null;
-  if (a) { trackWhatsApp(); }
-}, true);
-
-
 document.addEventListener('click', (e) => {
   const link = e.target.closest('a[href^="#"]');
   if (!link) return;
@@ -16,26 +6,6 @@ document.addEventListener('click', (e) => {
   const target = document.querySelector(id);
   if (target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
 });
-
-const quoteForm = document.querySelector('#quote-form');
-if (quoteForm) {
-  quoteForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const form = new FormData(quoteForm);
-    const message = [
-      'Hallo Faster, ik wil graag informatie/offerte voor mijn voertuig.',
-      '',
-      `Naam: ${form.get('name') || ''}`,
-      `Telefoon: ${form.get('phone') || ''}`,
-      `Waar sta ik: ${form.get('pickup') || ''}`,
-      `Bestemming: ${form.get('dropoff') || ''}`,
-      `Voertuig: ${form.get('vehicle') || ''}`,
-      `Situatie: ${form.get('problem') || ''}`
-    ].join('\n');
-    trackWhatsApp();
-    window.open('https://wa.me/3233756737?text=' + encodeURIComponent(message), '_blank', 'noopener');
-  });
-}
 
 // Keep the mobile bar visible while allowing browser safe-area padding.
 document.documentElement.style.setProperty('--safe-bottom', 'env(safe-area-inset-bottom, 0px)');
