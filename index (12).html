@@ -2,19 +2,20 @@
 <html lang="nl">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10963026341"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18517785509"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'AW-10963026341');
-</script>
-<script>
-  gtag('config', 'AW-10963026341/Mhc0CO7U4fUcEKWDyuso', {
-    'phone_conversion_number': '03.375.67.37'
+  gtag('config', 'AW-18517785509');
+  // Conversion "Bel nu klik BE (03.375.67.37)": fires on every tap on the Belgian number, site-wide
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="tel:+3233756737"]');
+    if (!a) return;
+    gtag('event', 'conversion', {send_to: 'AW-18517785509/DIEBCLmYlaYdEKX3-_1E', transport_type: 'beacon'});
   });
 </script>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Takeldienst Wilrijk | Faster</title>
   <meta name="description" content="Takeldienst Faster in Wilrijk. 24/7 pechverhelping, takelen en voertuigtransport. Duidelijke prijs vooraf en hulp vanuit Antwerpen.">
   <meta name="theme-color" content="#121212">

@@ -1,15 +1,16 @@
 <!doctype html><html lang="nl"><head>
 <!-- Google tag (gtag.js) -->
-
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18517785509"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'AW-10963026341');
-</script>
-<script>
-  gtag('config', 'AW-10963026341/Mhc0CO7U4fUcEKWDyuso', {
-    'phone_conversion_number': '03.375.67.37'
+  gtag('config', 'AW-18517785509');
+  // Conversion "Bel nu klik BE (03.375.67.37)": fires on every tap on the Belgian number, site-wide
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="tel:+3233756737"]');
+    if (!a) return;
+    gtag('event', 'conversion', {send_to: 'AW-18517785509/DIEBCLmYlaYdEKX3-_1E', transport_type: 'beacon'});
   });
 </script>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Pagina niet gevonden | Faster Depannage Takeldienst</title><meta name="description" content="Deze pagina bestaat niet (meer). Ga terug naar Faster Depannage / Takeldienst voor takeldienst, pechverhelping en autotransport in Antwerpen."><meta name="robots" content="noindex"><link rel="canonical" href="https://takeldienst-depannage.com/404.html">
