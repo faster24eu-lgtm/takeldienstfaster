@@ -48,3 +48,7 @@ Search Console (Aug-Oct): ~59 impressions for "pomoc drogowa belgia", spread ove
 - /pl/: title "Pomoc drogowa Belgia 24/7 – Antwerpia i Flandria | Faster", description "Pomoc drogowa w Belgii 24/7: …", H1 "Pomoc drogowa w Belgii, która naprawdę przyjeżdża." (og/twitter too). No claim that Polish is spoken (not stated anywhere on the site).
 - hreflang: 22 Dutch pages listed nl/de/fr/en/pl but not ro, while the other languages did list ro; the ro return link is now added everywhere a ro page exists (no visible change).
 Re-check from ~2026-11-08: which page Google shows for "pomoc drogowa belgia" (goal: /pl/).
+
+## 2026-11-05: no price anywhere
+
+Owner decision: no "vanaf €125" / "from €125" on any page, ad or listing any more (does not tow for that price, does not want price-hunting customers). Pages only say the price is agreed before the tow truck sets off. The titles above that still say "vanaf €125" are history.
