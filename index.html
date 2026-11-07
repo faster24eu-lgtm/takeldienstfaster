@@ -87,8 +87,22 @@
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+3233756737",
-        "contactType": "customer service",
-        "areaServed": "BE"
+        "contactType": "emergency",
+        "areaServed": "BE",
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
       },
       "address": {
         "@type": "PostalAddress",
@@ -115,17 +129,132 @@
         }
       ],
       "areaServed": [
-        {"@type":"City","name":"Antwerpen"},
-        {"@type":"City","name":"Deurne"},
-        {"@type":"City","name":"Hoboken"},
-        {"@type":"City","name":"Wilrijk"},
-        {"@type":"City","name":"Edegem"},
-        {"@type":"City","name":"Merksem"},
-        {"@type":"City","name":"Wommelgem"},
-        {"@type":"AdministrativeArea","name":"Vlaanderen"},
-        {"@type":"Country","name":"België"}
+        {
+          "@type": "City",
+          "name": "Antwerpen"
+        },
+        {
+          "@type": "City",
+          "name": "Deurne"
+        },
+        {
+          "@type": "City",
+          "name": "Hoboken"
+        },
+        {
+          "@type": "City",
+          "name": "Wilrijk"
+        },
+        {
+          "@type": "City",
+          "name": "Edegem"
+        },
+        {
+          "@type": "City",
+          "name": "Merksem"
+        },
+        {
+          "@type": "City",
+          "name": "Wommelgem"
+        },
+        {
+          "@type": "City",
+          "name": "Kiel"
+        },
+        {
+          "@type": "City",
+          "name": "Berchem"
+        },
+        {
+          "@type": "City",
+          "name": "Mortsel"
+        },
+        {
+          "@type": "City",
+          "name": "Kontich"
+        },
+        {
+          "@type": "City",
+          "name": "Aartselaar"
+        },
+        {
+          "@type": "City",
+          "name": "Hemiksem"
+        },
+        {
+          "@type": "City",
+          "name": "Boom"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Vlaanderen"
+        },
+        {
+          "@type": "Country",
+          "name": "België"
+        }
       ],
-      "sameAs": []
+      "sameAs": [],
+      "alternateName": [
+        "Takeldienst Faster",
+        "Faster Depannage",
+        "Faster Takeldienst"
+      ],
+      "description": "Kleine, zelfstandige 24/7 takeldienst en depannagedienst uit Kiel (Antwerpen), vlak naast Hoboken. Pechverhelping, takelen en berging, transport van niet-rijdende voertuigen, bestelwagens, motoren, machines en internationale voertuigrepatriëring in Antwerpen, Vlaanderen en Europa. De prijs wordt telefonisch afgesproken voor de takelwagen vertrekt.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Diensten van Faster Depannage Takeldienst",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Pechverhelping",
+              "url": "https://takeldienst-depannage.com/diensten/#pechverhelping"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Takeldienst en berging",
+              "url": "https://takeldienst-depannage.com/diensten/#takeldienst"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Voertuigtransport",
+              "url": "https://takeldienst-depannage.com/diensten/#transport"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bestelwagens en lichte vracht",
+              "url": "https://takeldienst-depannage.com/diensten/#bestelwagens"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Machines en heftrucks",
+              "url": "https://takeldienst-depannage.com/diensten/#machines"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Internationale voertuigrepatriëring",
+              "url": "https://takeldienst-depannage.com/diensten/#internationaal"
+            }
+          }
+        ]
+      }
     },
     {
       "@type": "WebSite",
@@ -143,14 +272,106 @@
 
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"Hoe snel kunnen jullie ter plaatse zijn?","acceptedAnswer":{"@type":"Answer","text":"Dat hangt af van locatie, verkeer, drukte en urgentie. Bij dringende interventies is ongeveer 30 minuten vaak mogelijk."}},
-    {"@type":"Question","name":"Krijg ik vooraf een prijs?","acceptedAnswer":{"@type":"Answer","text":"Ja. We vragen waar u staat, waar u naartoe moet, welk merk en model u hebt en wat er gebeurd is. Op basis daarvan spreken we vooraf een duidelijke prijs af."}},
-    {"@type":"Question","name":"Doen jullie internationale transporten?","acceptedAnswer":{"@type":"Answer","text":"Ja. Faster organiseert ook voertuigtransport en repatriëring in Europa, afhankelijk van de opdracht."}},
-    {"@type":"Question","name":"Kan ik ook 's nachts contact opnemen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Faster is 24/7 bereikbaar."}}
-  ]
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Welke takeldienst helpt in Hoboken en Antwerpen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Faster Depannage Takeldienst helpt 24/7 in Hoboken, Antwerpen en de Antwerpse districten. De vaste basis ligt in Kiel, vlak naast Hoboken. Bel 03.375.67.37."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Hoe regel ik een takeldienst of depannage in Antwerpen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Bel 03.375.67.37 of stuur een WhatsApp. Geef door waar u staat, welk merk en model u hebt, wat er gebeurd is en waar het voertuig naartoe moet. U hoort meteen de prijs en, als u akkoord gaat, vertrekt de takelwagen."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Hoe snel kunnen jullie ter plaatse zijn?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Dat hangt af van locatie, verkeer, drukte en urgentie. Bij dringende interventies is ongeveer 30 minuten vaak mogelijk."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wat kost een takeldienst?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Er is geen vaste standaardprijs, want elke situatie is anders. De prijs hangt af van locatie, bestemming, type voertuig, wat er gebeurd is en de dringendheid. U hoort de prijs altijd vooraf, voor de takelwagen vertrekt."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Krijg ik vooraf een prijs?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Met locatie, bestemming, merk/model en situatie kan ik meestal direct een prijs bespreken."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Wanneer kan een prijs wijzigen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Alleen wanneer de doorgegeven situatie of afstand duidelijk afwijkt van de werkelijke situatie."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Vervoeren jullie auto's die niet meer rijden?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Ook auto's die niet starten, niet rijklaar zijn of beschadigd zijn na een ongeval worden veilig geladen en vervoerd. Zeg vooraf wat er met het voertuig aan de hand is."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kunnen jullie mijn wagen naar een garage brengen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Naar een garage, thuis, haven of andere bestemming, ook internationaal."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Doen jullie internationaal autotransport?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Faster verzorgt voertuigtransport en repatriëring vanuit en naar het buitenland, onder meer Frankrijk, Spanje, Duitsland, Italië, Oostenrijk, Zwitserland, het Verenigd Koninkrijk en Ierland, afhankelijk van de opdracht."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Doen jullie heftrucks en machines?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Daarvoor is het juiste laad- en takelmaterieel belangrijk."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Hoe vraag ik dringend pechhulp aan?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Breng eerst uzelf en uw passagiers in veiligheid: vier pinkers aan, fluovest aan en, als het kan, achter de vangrail. Bel daarna 03.375.67.37 of stuur uw GPS-locatie via WhatsApp."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Kunnen jullie 's nachts helpen?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Ja. Faster is 24/7 telefonisch bereikbaar."
+   }
+  }
+ ]
 }
 </script>
 <style>.contact-grid>:only-child,.safety-grid>:only-child,.area-grid>:only-child{grid-column:1/-1}</style></head><body>
@@ -171,7 +392,7 @@
 <section class="section grey" id="hoe-het-werkt"><div class="container"><div class="section-head"><div><span class="eyebrow">Zo werkt het</span><h2>Wij stemmen onze hulp af op uw nood.</h2></div><p>Wij werken niet met standaard of kant-en-klare oplossingen. Elke situatie vereist een op maat gemaakte specifieke aanpak. Wij luisteren, adviseren en zorgen voor de juiste hulp.</p></div><div class="process-grid"><article class="card"><div class="step">01</div><h3>Uw situatie</h3><p>Beschrijf uw situatie en uw locatie. Geef het merk en model van uw voertuig door en omschrijf de dringendheid van uw oproep.</p></article><article class="card"><div class="step">02</div><h3>Ons advies</h3><p>Wij analyseren uw situatie, adviseren een oplossing en geven u vooraf een eerlijke vastgestelde prijs.</p></article><article class="card"><div class="step">03</div><h3>De oplossing</h3><p>Wij, of een van onze betrouwbare partners, komen de afgesproken hulp bieden.</p></article></div></div></section>
 <section class="section safety" id="veiligheid"><div class="container safety-grid"><div><span class="eyebrow">Staat u met pech op de weg?</span><h2>Eerst veiligheid,<br>dan Faster.</h2><p>Veiligheid voor alles! Pech onderweg is allesbehalve leuk, maar denk eraan hulp is onderweg. Waak, terwijl u op ons wacht, over uw eigen veiligheid en die van uw medepassagiers.</p><div class="safety-list"><div class="safety-item"><b>01</b>Zet uw vier pinkers op.</div><div class="safety-item"><b>02</b>Doe uw fluovest aan.</div><div class="safety-item"><b>03</b>Zet uw gevarendriehoek indien nodig.</div><div class="safety-item"><b>04</b>Ga, als u kunt, wachten achter de vangrail wachten.</div></div></div><div class="quote"><strong>“Voor elk probleem is een oplossing!”</strong><p>Niet elke situatie is even makkelijk op te lossen, maar moeilijke oplossingen bestaan ook.</p></div></div></section>
 <section class="section white" id="ervaring"><div class="container"><div class="section-head"><div><span class="eyebrow">Het echte werk.</span><h2>Dit is Faster Depannage Takeldienst.</h2></div><p>Onze talrijke interventies zorgen ervoor dat we geen stockfoto’s nodig om ons werk te illustreren. Hieronder een greep uit ons fotoarchief.</p></div><div class="photos"><div class="photo-large"><img src="assets/images/faster-warehouse.jpg" alt="Faster voertuigtransport in loods"><div class="photo-label">VOERTUIGTRANSPORT</div></div><div class="photo-side"><div class="photo-small"><img src="assets/images/faster-road-transport.jpg" alt="Takelwagen onderweg voor pechverhelping in Vlaanderen"><div class="photo-label">ONDERWEG</div></div><div class="photo-small"><img src="assets/images/faster-intervention-workshop.jpg" alt="Faster takeldienst interventie ter plaatse"><div class="photo-label">INTERVENTIE</div></div><div class="photo-small"><img src="assets/images/faster-road-transport.jpg" alt="Faster wegtransport"><div class="photo-label">BESTELWAGEN</div></div><div class="photo-small"><img src="assets/images/faster-warehouse.jpg" alt="Faster in depot"><div class="photo-label">DEPOT / TRANSPORT</div></div></div></div><div style="margin-top:28px;text-align:center"><a class="btn btn-yellow" href="takeldienst/antwerpen/#interventies">Bekijk onze interventies!</a></div></div></section>
-<section class="section grey"><div class="container"><div class="section-head"><div><h2>Wie is Faster?</h2></div><p>Faster in een klein team met één aanspreekpunt, zodat de communicatie en afspraken vlot en persoonlijk verlopen.</p></div><div class="process-grid" style="grid-template-columns:1fr"><article class="card"><p>Zaakvoerder: “Als zaakvoerder met jarenlange ervaring in de autosector kan ik de problemen goed inschatten en juiste betaalbare oplossingen adviseren. Door te investeren in goed kwalitatief werkmateriaal en in een netwerk van professionele partners kunnen we veel problemen oplossen.”</p></article></div></div></section>
+<section class="section grey"><div class="container"><div class="section-head"><div><h2>Wie is Faster?</h2></div><p>Faster is een klein team met één aanspreekpunt, zodat de communicatie en afspraken vlot en persoonlijk verlopen.</p></div><div class="process-grid" style="grid-template-columns:1fr"><article class="card"><p>Zaakvoerder: “Als zaakvoerder met jarenlange ervaring in de autosector kan ik de problemen goed inschatten en juiste betaalbare oplossingen adviseren. Door te investeren in goed kwalitatief werkmateriaal en in een netwerk van professionele partners kunnen we veel problemen oplossen.”</p></article></div><h3 style="margin:34px 0 14px;font-size:24px">Faster in het kort</h3><div class="process-grid"><article class="card"><h3>Wie</h3><p>Faster Depannage Takeldienst (ook gekend als Takeldienst Faster) is een kleine, zelfstandige takeldienst uit Antwerpen met één vast aanspreekpunt: de zaakvoerder.</p></article><article class="card"><h3>Wat</h3><p>Pechverhelping, takelen en berging na pech, ongeval of brand, transport van auto&#x27;s die niet meer rijden, bestelwagens, motoren, machines en heftrucks, en internationale voertuigrepatriëring.</p></article><article class="card"><h3>Waar</h3><p>Vaste basis in Kiel (De Bosschaertstraat 248, 2020 Antwerpen), vlak naast Hoboken. Vooral actief in Antwerpen en de districten, de gemeenten rond Antwerpen en verder in Vlaanderen.</p></article><article class="card"><h3>Hoe aanvragen</h3><p>Bel 03.375.67.37 of stuur een WhatsApp met uw locatie, merk en model, de bestemming en wat er gebeurd is. Dag en nacht, ook in het weekend.</p></article><article class="card"><h3>Prijs</h3><p>Geen vaste standaardprijs: elke situatie is anders. U hoort de prijs aan de telefoon en pas als u akkoord gaat, vertrekt de takelwagen.</p></article><article class="card"><h3>Waarom Faster</h3><p>Persoonlijk contact met de zaakvoerder, eigen professioneel materieel, een netwerk van betrouwbare partners en eerlijke info over prijs en aankomsttijd.</p></article></div></div></section>
 
 <section class="section white"><div class="container"><div class="section-head"><div><h2>Klantenbeoordelingen</h2></div></div><div class="review-grid">
 <article class="card review-card review-featured-1"><div class="stars">★★★★★</div><p>“Zeer tevreden, ze waren al binnen 15 minuten aanwezig en de prijs is gewoonweg geweldig!!! Zeker een aanrader!!!”</p><div class="review-name">Alattim Tokmak</div><div class="review-source">Google review</div><div class="review-meta">Reasonable price · 3 weeks ago</div></article>
@@ -212,10 +433,10 @@
 <a class="city-card" href="takeldienst/aalst/"><span class="city-card-main"><span class="city-card-name">Aalst & Regio</span><span class="city-card-tags">Takeldienst · Pechverhelping</span></span><span class="city-card-cta">Bekijk gebied<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></svg></span></a>
 <a class="city-card" href="takeldienst/limburg/"><span class="city-card-main"><span class="city-card-name">Limburg</span><span class="city-card-tags">Takeldienst · Voertuigtransport</span></span><span class="city-card-cta">Bekijk gebied<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></svg></span></a>
 <a class="city-card" href="takeldienst/west-vlaanderen/"><span class="city-card-main"><span class="city-card-name">West-Vlaanderen</span><span class="city-card-tags">Takeldienst · Autotransport</span></span><span class="city-card-cta">Bekijk gebied<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6"/></svg></span></a>
-</nav><div class="area-card dark"><span class="eyebrow" style="color:#f6c400">OOK INTERNATIONAAL</span><h3>Europa is geen grens.</h3><p>Frankrijk · Spanje · Duitsland · Italië · Oostenrijk · Zwitserland · Verenigd Koninkrijk · Ierland</p><a class="btn btn-yellow" href="tel:+3233756737">Bel Faster — 03.375.67.37</a></div></div></section>
-<section class="section white" id="faq"><div class="container"><div class="section-head"><div><span class="eyebrow">FAQ</span><h2>Antwoorden voordat u contact opneemt.</h2></div><p>Praktische informatie, zonder marketingjargon.</p></div><div class="faq-grid"><details><summary>Hoe snel kunnen jullie ter plaatse zijn?</summary><div class="answer">Dat hangt af van locatie, verkeer, drukte en urgentie. Bij dringende interventies is ongeveer 30 minuten vaak mogelijk.</div></details><details><summary>Krijg ik vooraf een prijs?</summary><div class="answer">Ja. Met locatie, bestemming, merk/model en situatie kan ik meestal direct een prijs bespreken.</div></details><details><summary>Wanneer kan een prijs wijzigen?</summary><div class="answer">Alleen wanneer de doorgegeven situatie of afstand duidelijk afwijkt van de werkelijke situatie.</div></details><details><summary>Kunnen jullie mijn wagen naar een garage brengen?</summary><div class="answer">Ja. Naar een garage, thuis, haven of andere bestemming, ook internationaal.</div></details><details><summary>Doen jullie heftrucks en machines?</summary><div class="answer">Ja. Daarvoor is het juiste laad- en takelmaterieel belangrijk.</div></details><details><summary>Kunnen jullie 's nachts helpen?</summary><div class="answer">Ja. Faster is 24/7 telefonisch bereikbaar.</div></details></div></div></section>
+</nav><p style="margin:0 0 20px"><a href="takeldienst/" style="font-weight:900;text-decoration:underline">Bekijk het volledige werkgebied →</a></p><div class="area-card dark"><span class="eyebrow" style="color:#f6c400">OOK INTERNATIONAAL</span><h3>Europa is geen grens.</h3><p>Frankrijk · Spanje · Duitsland · Italië · Oostenrijk · Zwitserland · Verenigd Koninkrijk · Ierland</p><a class="btn btn-yellow" href="tel:+3233756737">Bel Faster — 03.375.67.37</a></div></div></section>
+<section class="section white" id="faq"><div class="container"><div class="section-head"><div><span class="eyebrow">FAQ</span><h2>Antwoorden voordat u contact opneemt.</h2></div><p>Praktische informatie, zonder marketingjargon.</p></div><div class="faq-grid"><details><summary>Welke takeldienst helpt in Hoboken en Antwerpen?</summary><div class="answer">Faster Depannage Takeldienst helpt 24/7 in Hoboken, Antwerpen en de Antwerpse districten. De vaste basis ligt in Kiel, vlak naast Hoboken. Bel 03.375.67.37.</div></details><details><summary>Hoe regel ik een takeldienst of depannage in Antwerpen?</summary><div class="answer">Bel 03.375.67.37 of stuur een WhatsApp. Geef door waar u staat, welk merk en model u hebt, wat er gebeurd is en waar het voertuig naartoe moet. U hoort meteen de prijs en, als u akkoord gaat, vertrekt de takelwagen.</div></details><details><summary>Hoe snel kunnen jullie ter plaatse zijn?</summary><div class="answer">Dat hangt af van locatie, verkeer, drukte en urgentie. Bij dringende interventies is ongeveer 30 minuten vaak mogelijk.</div></details><details><summary>Wat kost een takeldienst?</summary><div class="answer">Er is geen vaste standaardprijs, want elke situatie is anders. De prijs hangt af van locatie, bestemming, type voertuig, wat er gebeurd is en de dringendheid. U hoort de prijs altijd vooraf, voor de takelwagen vertrekt.</div></details><details><summary>Krijg ik vooraf een prijs?</summary><div class="answer">Ja. Met locatie, bestemming, merk/model en situatie kan ik meestal direct een prijs bespreken.</div></details><details><summary>Wanneer kan een prijs wijzigen?</summary><div class="answer">Alleen wanneer de doorgegeven situatie of afstand duidelijk afwijkt van de werkelijke situatie.</div></details><details><summary>Vervoeren jullie auto's die niet meer rijden?</summary><div class="answer">Ja. Ook auto's die niet starten, niet rijklaar zijn of beschadigd zijn na een ongeval worden veilig geladen en vervoerd. Zeg vooraf wat er met het voertuig aan de hand is.</div></details><details><summary>Kunnen jullie mijn wagen naar een garage brengen?</summary><div class="answer">Ja. Naar een garage, thuis, haven of andere bestemming, ook internationaal.</div></details><details><summary>Doen jullie internationaal autotransport?</summary><div class="answer">Ja. Faster verzorgt voertuigtransport en repatriëring vanuit en naar het buitenland, onder meer Frankrijk, Spanje, Duitsland, Italië, Oostenrijk, Zwitserland, het Verenigd Koninkrijk en Ierland, afhankelijk van de opdracht.</div></details><details><summary>Doen jullie heftrucks en machines?</summary><div class="answer">Ja. Daarvoor is het juiste laad- en takelmaterieel belangrijk.</div></details><details><summary>Hoe vraag ik dringend pechhulp aan?</summary><div class="answer">Breng eerst uzelf en uw passagiers in veiligheid: vier pinkers aan, fluovest aan en, als het kan, achter de vangrail. Bel daarna 03.375.67.37 of stuur uw GPS-locatie via WhatsApp.</div></details><details><summary>Kunnen jullie 's nachts helpen?</summary><div class="answer">Ja. Faster is 24/7 telefonisch bereikbaar.</div></details></div></div></section>
 <section class="cta"><div class="container cta-inner"><div><h2>Staat uw voertuig stil?</h2><p>Bel ons rechtstreeks. We bekijken meteen wat er nodig is.</p></div><a class="btn btn-yellow" href="tel:+3233756737">Bel 03.375.67.37</a></div></section>
-<section class="section white"><div class="container contact-grid" id="contact"><div><h2 style="margin:0 0 14px;font-size:clamp(34px,4vw,50px);line-height:1.02">Dringende interventie nodig?</h2><p style="color:#666;max-width:520px">Bel ons! Wij zijn 24/7 te bereiken om u zo snel mogelijk te helpen.</p><h3 style="margin:22px 0 8px;font-size:22px">Hebt u een vraag, maar zit er geen haast achter?</h3><p style="color:#666;max-width:520px">Bel ons gerust, ook voor een vraag of een gepland transport. Wij helpen u meteen verder.</p><div class="hero-actions"><a class="btn btn-yellow" href="tel:+3233756737">Bel 03.375.67.37</a></div></div></div></section>
+<section class="section white"><div class="container contact-grid" id="contact"><div><h2 style="margin:0 0 14px;font-size:clamp(34px,4vw,50px);line-height:1.02">Dringende interventie nodig?</h2><p style="color:#666;max-width:520px">Bel ons! Wij zijn 24/7 te bereiken om u zo snel mogelijk te helpen.</p><h3 style="margin:22px 0 8px;font-size:22px">Hebt u een vraag, maar zit er geen haast achter?</h3><p style="color:#666;max-width:520px">Bel ons gerust, ook voor een vraag of een gepland transport. Wij helpen u meteen verder.</p><div class="hero-actions"><a class="btn btn-yellow" href="tel:+3233756737">Bel 03.375.67.37</a><a class="btn btn-wa" href="https://wa.me/3233756737?text=Hallo%20Faster%2C%20ik%20heb%20hulp%20nodig%20met%20mijn%20voertuig.%20Ik%20stuur%20mijn%20locatie." target="_blank" rel="noopener">WhatsApp uw locatie</a></div><p style="color:#666;font-size:13px;margin-top:12px">Faster Depannage Takeldienst · De Bosschaertstraat 248, 2020 Antwerpen (Kiel) · <a href="tel:+3233756737">03.375.67.37</a> · <a href="mailto:faster24eu@gmail.com">faster24eu@gmail.com</a></p></div></div></section>
 </main>
 <script>
 // Hero review carousel: shows one Google review at a time, rotates every 4s,
@@ -297,4 +518,5 @@
 </script>
 <a class="call-fab" href="tel:+3233756737"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>Bel nu — direct hulp</span></a>
 
+<script src="/assets/js/faster-track.js" defer></script>
 </body></html>

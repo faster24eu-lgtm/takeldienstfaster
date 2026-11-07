@@ -52,3 +52,26 @@ Re-check from ~2026-11-08: which page Google shows for "pomoc drogowa belgia" (g
 ## 2026-11-05: no price anywhere
 
 Owner decision: no "vanaf €125" / "from €125" on any page, ad or listing any more (does not tow for that price, does not want price-hunting customers). Pages only say the price is agreed before the tow truck sets off. The titles above that still say "vanaf €125" are history.
+
+## V12 – AI search (GEO) & local SEO pass (2026-11-07)
+Owner request: make Faster easier to find and cite in ChatGPT Search, Google (AI Overviews, Maps), Copilot/Bing, Perplexity and Gemini, with Hoboken and Antwerpen first. No new prices, reviews, addresses or response-time promises; only facts already on the site.
+
+Fixed
+- Removed 9 stray uploads (`index (2|4|6|8|12|13|15|17|19).html`, `styles (11).css`, `README (9).md`, root `site.js`). They were live at URLs like `/index%20(17).html`, still showed the old €125 price and had broken links. Root `site.js` also had a syntax error.
+- 24 location pages (Edegem, Hoboken, Wilrijk, Wommelgem in 6 languages) had empty call-button slots: no call button in the page body on desktop. Now filled with the same localized button as the other city pages.
+- All 120 location pages: the empty header slot now shows the phone number on desktop (`.nav-call`, hidden below 640px where the floating call button already shows).
+- 123 BreadcrumbList entries pointed to `/takeldienst/`, which did not exist (404). New hub page `/takeldienst/` (Werkgebied) fixes them and links every area page.
+- Homepage FAQ schema did not match the visible FAQ (Google requires a match). Both now hold the same 12 questions.
+- Homepage typo "Faster in een klein team" → "Faster is een klein team". FR services page had the same title as EN.
+- Titles over 75 chars on Deurne, Merksem, Boom, Berchem, Kontich, Mortsel: only the brand suffix shortened to "| Faster"; keyword part unchanged.
+
+Added
+- `robots.txt`: everything still allowed; AI/search crawlers (OAI-SearchBot, ChatGPT-User, GPTBot, bingbot, Googlebot, Google-Extended, PerplexityBot, Perplexity-User, ClaudeBot, Claude-SearchBot, Claude-User, Applebot, Applebot-Extended) listed explicitly.
+- `llms.txt`: plain summary of who Faster is, services, area, contact, how pricing works, main pages.
+- Homepage: "Faster in het kort" block (wie / wat / waar / hoe aanvragen / prijs / waarom), 6 new FAQ answers (Hoboken/Antwerpen, how to arrange a tow, cost, non-running cars, international, urgent help), WhatsApp button + NAP line in the contact block, link to the Werkgebied hub, business schema with alternateName "Takeldienst Faster", description, extra areaServed and an OfferCatalog of the 6 services.
+- `/takeldienst/hoboken/` rewritten (was ~150 words): grew-up-in-Hoboken / base-in-Kiel angle from the Antwerpen page, services, local streets (Kioskplaats, Kapelstraat, Sint-Bernardsesteenweg, De Zwaantjes, Hobokense Polder), neighbour links, safety, 8 FAQs; schema Service + WebPage + Breadcrumb + FAQPage. Title "Takeldienst & Depannage Hoboken 24/7 | Faster".
+- `/takeldienst/wilrijk/` expanded the same way (6 FAQs).
+- `assets/js/faster-track.js` on every page: see `AI-SEO-ACTIONS.md`. Existing Google Ads tag and conversions untouched.
+
+Not touched: Antwerpen page text and title (ranks ~6, owner-written), other languages' content (only the call buttons).
+Re-check in Search Console from ~2026-12-05: "takeldienst hoboken", "depannage hoboken", "takeldienst wilrijk", homepage CTR.

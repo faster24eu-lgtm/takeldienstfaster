@@ -1,4 +1,53 @@
+# takeldienst-depannage.com – Faster Depannage Takeldienst
+# All public content may be crawled. Thank-you pages are noindex via meta tag.
+
 User-agent: *
+Allow: /
+
+# Search and AI-answer crawlers, listed explicitly so their access is unambiguous.
+# OpenAI (ChatGPT Search, ChatGPT browsing, model training)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# Microsoft Bing / Copilot
+User-agent: bingbot
+Allow: /
+
+# Google Search, AI Overviews and Gemini
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Apple (Siri / Spotlight / Apple Intelligence)
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://takeldienst-depannage.com/sitemap.xml
