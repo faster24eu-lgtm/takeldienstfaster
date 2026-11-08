@@ -36,4 +36,3 @@ No invented prices, response times, reviews, addresses or statistics. Facts in n
 | sleepdienstfaster.nl | https://sleepdienstfaster.nl/ | Internal links 2026-10-18 (1 week of GSC data, too early for titles), see `_build/SEO-NOTES.md` |
 | fasterbreakdownrecovery.co.uk | https://fasterbreakdownrecovery.co.uk/ | Internal links + clean hub URLs 2026-10-18 (too little GSC data for the query part yet), see `_build/SEO-NOTES.md` |
 | autoopkoper.com | https://autoopkoper.com/ | Internal links 2026-10-19 (no GSC data yet), see its README |
-| depannageplusvite.fr | https://depannageplusvite.fr/ | domain does not resolve (footer link removed) |
