@@ -13,7 +13,7 @@ Key facts (as stated on the website):
 - How to request help: call +32 3 375 67 37 (fastest) or send a WhatsApp message with your location, the make and model of the vehicle, the destination and what happened
 - Pricing: there is no fixed public price. The price is discussed and agreed on the phone before the tow truck sets off; it only changes if the actual situation or distance is clearly different from what was described
 - Response time: depends on location, traffic, demand and urgency; for urgent call-outs around 30 minutes is often possible, but this is not guaranteed
-- Languages of the website: Dutch (full site); French and English for the homepage, Antwerpen and Gent
+- Languages of the website: Dutch (full site); French and English for the homepage, Antwerpen and Gent; Polish for the homepage
 - Services: roadside assistance (flat battery, jump start, flat tyre, starting problems, locked out), towing and recovery after breakdown, accident or fire, transport of non-running vehicles, car transport to a garage, home, buyer, seller or the port of Antwerp, vans and light commercial vehicles under 3.5 tonnes, motorcycles and scooters, forklifts and machines, international vehicle transport and repatriation (e.g. France, Spain, Germany, Italy, Austria, Switzerland, United Kingdom, Ireland)
 - Not offered: towing of vehicles removed by the city or police for illegal parking (that is an administrative tow; contact the authority that ordered it)
 
@@ -63,3 +63,4 @@ Key facts (as stated on the website):
 
 - [English](https://takeldienst-depannage.com/en/)
 - [Français](https://takeldienst-depannage.com/fr/)
+- [Polski](https://takeldienst-depannage.com/pl/)

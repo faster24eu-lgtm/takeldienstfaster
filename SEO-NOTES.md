@@ -79,6 +79,7 @@ Re-check in Search Console from ~2026-12-05: "takeldienst hoboken", "depannage h
 ## V13 – audit 9 Nov 2026: languages, titles, new Antwerp pages (2026-11-09)
 - Removed from indexing (redirect stubs + out of sitemap + out of hreflang): all /de/, /pl/, /ro/ pages and the /fr/, /en/ pages other than home, Antwerpen and Gent (125 pages). DE/PL/RO homes -> /en/; other removed pages -> the Dutch page on the same topic. List in the commit.
   Note: /pl/ was targeted on 19 Oct for "pomoc drogowa belgia" (V11); that page is now a redirect to /en/.
+- 2026-11-09 (owner request): /pl/ homepage restored as a full page (V11 title/H1 kept, WebP logo, no DE/RO links), back in the sitemap and in hreflang/switcher on the NL, EN, FR and PL homes. The other /pl/ pages stay redirects to the Dutch pages.
 - Home title: "Takeldienst Antwerpen 24/7 – depannage & pechhulp | Faster". /takeldienst/antwerpen/ title changed to "Depannage Antwerpen 24/7: Ring, tunnels & wijken | Faster" to avoid two pages with the same target.
 - All indexable titles now <= 60 characters (17 shortened by hand).
 - /ervaring-ionos/: noindex, out of the sitemap, footer link removed.
