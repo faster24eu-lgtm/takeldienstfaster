@@ -75,3 +75,15 @@ Added
 
 Not touched: Antwerpen page text and title (ranks ~6, owner-written), other languages' content (only the call buttons).
 Re-check in Search Console from ~2026-12-05: "takeldienst hoboken", "depannage hoboken", "takeldienst wilrijk", homepage CTR.
+
+## V13 – audit 9 Nov 2026: languages, titles, new Antwerp pages (2026-11-09)
+- Removed from indexing (redirect stubs + out of sitemap + out of hreflang): all /de/, /pl/, /ro/ pages and the /fr/, /en/ pages other than home, Antwerpen and Gent (125 pages). DE/PL/RO homes -> /en/; other removed pages -> the Dutch page on the same topic. List in the commit.
+  Note: /pl/ was targeted on 19 Oct for "pomoc drogowa belgia" (V11); that page is now a redirect to /en/.
+- Home title: "Takeldienst Antwerpen 24/7 – depannage & pechhulp | Faster". /takeldienst/antwerpen/ title changed to "Depannage Antwerpen 24/7: Ring, tunnels & wijken | Faster" to avoid two pages with the same target.
+- All indexable titles now <= 60 characters (17 shortened by hand).
+- /ervaring-ionos/: noindex, out of the sitemap, footer link removed.
+- Review-carousel dots: 24x24 px tap area. Logo: faster-logo.png (287 KB) -> faster-logo-360.webp (9 KB) / -720.webp (2x).
+- Rewritten: /takeldienst/edegem/, /takeldienst/wommelgem/ (were ~150 words, 0.52 similar). Wilrijk cards/safety text rewritten (0.46 -> 0.26 vs Hoboken).
+- New: /takeldienst/kennedytunnel-ring/, /takeldienst/ekeren-schoten-brasschaat-kapellen/, /depannage-haven-antwerpen/, /takeldienst-antwerpen-prijs/ (no prices, per the 5 Nov decision).
+- Deleted the leftover /public/takeldienst-antwerpen/ and /public/takeldienst/deurne/ copies.
+- OPEN (owner): NAP conflict. Footer and schema: De Bosschaertstraat 248, 2020 Antwerpen. The German Impressum (abschleppdienst-faster.de, abschleppdienstbredemeier.de) gives Boniverlei 172, 2650 Edegem as Geschäftssitz. Decide which address is the business address; not changed here.
